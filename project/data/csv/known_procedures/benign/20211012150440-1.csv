@@ -1,0 +1,87 @@
+Timestamp,Module,Method_Name,Arguments,Responses,Exceptions
+2021:10:12:15:04:42.755737,C9,_init_,ftdi: None,,None
+2021:10:12:15:04:43.576844,C9,PING,,None,None
+2021:10:12:15:04:43.943240,C9,BIAS,,None,None
+2021:10:12:15:04:44.251847,C9,SPED,"velocity: 20000, acceleration: 20000",None,None
+2021:10:12:15:04:44.538679,C9,BIAS,bias: 0,None,None
+2021:10:12:15:04:44.924651,C9,HOME,if_needed: 1,None,None
+2021:10:12:15:04:45.241848,C9,CURR,axis: 0,None,None
+2021:10:12:15:04:45.547382,C9,CURR,axis: 0,None,None
+2021:10:12:15:04:45.871284,C9,CURR,axis: 0,None,None
+2021:10:12:15:04:46.311320,C9,CURR,axis: 0,None,None
+2021:10:12:15:04:46.647347,C9,CURR,axis: 0,None,None
+2021:10:12:15:04:46.973451,C9,CURR,axis: 0,None,None
+2021:10:12:15:04:47.272378,C9,CURR,axis: 0,None,None
+2021:10:12:15:04:47.752146,C9,CURR,axis: 0,None,None
+2021:10:12:15:04:48.049570,C9,CURR,axis: 0,None,None
+2021:10:12:15:04:48.508091,C9,CURR,axis: 0,None,None
+2021:10:12:15:04:48.906480,Tecan Cavro,_init_,ftdi: None,,None
+2021:10:12:15:04:49.394124,Magnetic Stirrer,_init_,serial: COM9,,None
+2021:10:12:15:04:49.651546,Magnetic Stirrer,IN_NAME,,None,None
+2021:10:12:15:04:49.805894,Magnetic Stirrer,IN_PV_1,,None,None
+2021:10:12:15:04:49.944526,Magnetic Stirrer,IN_PV_2,,None,None
+2021:10:12:15:04:50.098597,Magnetic Stirrer,IN_SP_1,,None,None
+2021:10:12:15:04:50.231955,Magnetic Stirrer,IN_PV_4,,None,None
+2021:10:12:15:04:50.374195,Magnetic Stirrer,IN_SP_4,,None,None
+2021:10:12:15:04:50.531586,Magnetic Stirrer,STOP_4,,None,None
+2021:10:12:15:04:50.583449,Magnetic Stirrer,STOP_1,,None,None
+2021:10:12:15:05:04.283735,ArduinoAugmentedQuantos,_init_,"logging_level: 10, address: 13, serial_port: None, tcp_port: None, perfect_counts: 8700",,None
+2021:10:12:15:05:04.332608,ArduinoAugmentedQuantos,set_home_direction,direction: 0,None,None
+2021:10:12:15:05:06.014617,UR3Arm,_init_,"host: 192.168.254.88, default_velocity: 250, max_velocity: 500, position_units: Units.MILLIMETERS, default_joint_velocity: 20.0, max_joint_velocity: 180.0, gripper_default_velocity: 0.5, gripper_default_force: 0.5, gripper_id: 1, gripper_base_port: 63352, gripper_connect: True, connect: True",,None
+2021:10:12:15:05:08.783578,C9,JLEN,length_offset: 41500,None,None
+2021:10:12:15:05:08.888764,C9,ARM,"velocity: 20000, acceleration: 20000, X: 273149, Y: -159436, Z: 308000, elbow_bias: 0",None,None
+2021:10:12:15:05:10.617189,C9,MVNG,"axes: 1,2,3",None,None
+2021:10:12:15:05:10.745879,C9,MVNG,"axes: 1,2,3",None,None
+2021:10:12:15:05:10.874278,C9,MVNG,"axes: 1,2,3",None,None
+2021:10:12:15:05:10.994955,C9,MVNG,"axes: 1,2,3",None,None
+2021:10:12:15:05:11.132583,C9,MVNG,"axes: 1,2,3",None,None
+2021:10:12:15:05:11.268619,C9,MVNG,"axes: 1,2,3",None,None
+2021:10:12:15:05:11.389586,C9,MVNG,"axes: 1,2,3",None,None
+2021:10:12:15:05:11.523490,C9,MVNG,"axes: 1,2,3",None,None
+2021:10:12:15:05:11.644230,C9,MVNG,"axes: 1,2,3",None,None
+2021:10:12:15:05:11.779284,C9,MVNG,"axes: 1,2,3",None,None
+2021:10:12:15:05:11.938863,C9,MVNG,"axes: 1,2,3",None,None
+2021:10:12:15:05:12.069390,C9,MVNG,"axes: 1,2,3",None,None
+2021:10:12:15:05:12.187071,C9,JLEN,length_offset: 0,None,None
+2021:10:12:15:05:12.289801,C9,JLEN,length_offset: 41500,None,None
+2021:10:12:15:05:12.399541,C9,ARM,"velocity: 20000, acceleration: 20000, X: 155680, Y: -161000, Z: 308000, gripper: 45000, elbow_bias: 0",None,None
+2021:10:12:15:05:13.403589,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:12:15:05:13.552926,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:12:15:05:13.661634,C9,JLEN,length_offset: 0,None,None
+2021:10:12:15:05:13.760571,C9,JLEN,length_offset: 41500,None,None
+2021:10:12:15:05:13.864308,C9,ARM,"velocity: 20000, acceleration: 20000, X: 155680, Y: -161000, Z: 294000, gripper: 45000, elbow_bias: 0",None,None
+2021:10:12:15:05:14.421925,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:12:15:05:14.536614,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:12:15:05:14.638364,C9,JLEN,length_offset: 0,None,None
+2021:10:12:15:05:14.746072,C9,JLEN,length_offset: 41500,None,None
+2021:10:12:15:05:14.838824,C9,ARM,"velocity: 20000, acceleration: 20000, X: 127000, Y: -161000, Z: 294000, gripper: 45000, elbow_bias: 0",None,None
+2021:10:12:15:05:15.343824,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:12:15:05:15.463752,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:12:15:05:15.567622,C9,JLEN,length_offset: 0,None,None
+2021:10:12:15:05:15.672511,C9,JLEN,length_offset: 41500,None,None
+2021:10:12:15:05:15.769252,C9,ARM,"velocity: 20000, acceleration: 20000, X: 127000, Y: -161000, Z: 308000, gripper: 45000, elbow_bias: 0",None,None
+2021:10:12:15:05:16.313996,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:12:15:05:16.466641,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:12:15:05:16.569367,C9,JLEN,length_offset: 0,None,None
+2021:10:12:15:05:16.664484,C9,JLEN,length_offset: 41500,None,None
+2021:10:12:15:05:16.759709,C9,ARM,"velocity: 20000, acceleration: 20000, X: 127000, Y: -161000, Z: 308000, gripper: 45000, elbow_bias: 0",None,None
+2021:10:12:15:05:16.987183,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:12:15:05:17.135477,C9,JLEN,length_offset: 0,None,None
+2021:10:12:15:05:17.228661,C9,JLEN,length_offset: 41500,None,None
+2021:10:12:15:05:17.344670,C9,ARM,"velocity: 20000, acceleration: 20000, X: 273149, Y: -159436, Z: 308000, elbow_bias: 0",None,None
+2021:10:12:15:05:18.398048,C9,MVNG,"axes: 1,2,3",None,None
+2021:10:12:15:05:18.521337,C9,MVNG,"axes: 1,2,3",None,None
+2021:10:12:15:05:18.648379,C9,MVNG,"axes: 1,2,3",None,None
+2021:10:12:15:05:18.788376,C9,JLEN,length_offset: 0,None,None
+2021:10:12:15:05:18.906060,C9,JLEN,length_offset: 41500,None,None
+2021:10:12:15:05:19.001857,C9,ARM,"velocity: 20000, acceleration: 20000, X: 273149, Y: -159436, Z: 150072, elbow_bias: 0",None,None
+2021:10:12:15:05:20.563369,C9,MVNG,"axes: 1,2,3",None,None
+2021:10:12:15:05:20.691442,C9,MVNG,"axes: 1,2,3",None,None
+2021:10:12:15:05:20.811517,C9,MVNG,"axes: 1,2,3",None,None
+2021:10:12:15:05:20.943335,C9,JLEN,length_offset: 0,None,None
+2021:10:12:15:05:21.047729,C9,JLEN,length_offset: 41500,None,None
+2021:10:12:15:05:21.145892,C9,ARM,"velocity: 20000, acceleration: 20000, X: 273149, Y: -159436, Z: 308000, elbow_bias: 0",None,None
+2021:10:12:15:05:22.720719,C9,MVNG,"axes: 1,2,3",None,None
+2021:10:12:15:05:22.837683,C9,MVNG,"axes: 1,2,3",None,None
+2021:10:12:15:05:22.946607,C9,MVNG,"axes: 1,2,3",None,None
+2021:10:12:15:05:23.044308,C9,JLEN,length_offset: 0,None,None

@@ -1,0 +1,16 @@
+Timestamp,Module,Method_Name,Arguments,Responses,Exceptions
+2021:09:17:12:26:52.950918,C9,_init_,ftdi: None,,None
+2021:09:17:13:00:40.021063,C9,_init_,ftdi: None,,None
+2021:09:17:13:00:41.363467,C9,PING,,None,None
+2021:09:17:13:00:44.704600,C9,PING,,None,None
+2021:09:17:13:00:48.765697,C9,PING,,None,None
+2021:09:17:13:00:53.551688,C9,PING,,None,None
+2021:09:17:13:00:59.240620,C9,PING,,None,None
+2021:09:17:13:01:06.077763,C9,PING,,None,None
+2021:09:17:13:01:06.978387,C9,PING,,None,None
+2021:09:17:13:01:18.537286,C9,_init_,ftdi: None,,None
+2021:09:17:13:01:19.935791,C9,PING,,None,None
+2021:09:17:13:01:21.101233,C9,BIAS,,None,None
+2021:09:17:13:01:22.062071,C9,SPED,"velocity: 20000, acceleration: 20000",None,None
+2021:09:17:13:01:22.968824,C9,BIAS,bias: 0,None,None
+2021:09:17:13:01:23.880600,C9,HOME,if_needed: 1,None,None

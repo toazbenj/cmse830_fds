@@ -1,0 +1,27 @@
+Timestamp,Module,Method_Name,Arguments,Responses,Exceptions
+2021:10:12:12:13:54.922842,C9,_init_,ftdi: None,,None
+2021:10:12:12:13:55.636096,C9,PING,,None,None
+2021:10:12:12:13:55.989585,C9,BIAS,,None,None
+2021:10:12:12:13:56.296373,C9,SPED,"velocity: 20000, acceleration: 20000",None,None
+2021:10:12:12:13:56.613521,C9,BIAS,bias: 0,None,None
+2021:10:12:12:13:56.888759,C9,HOME,if_needed: 1,None,None
+2021:10:12:12:13:57.153811,C9,CURR,axis: 0,None,None
+2021:10:12:12:13:57.601234,C9,CURR,axis: 0,None,None
+2021:10:12:12:13:58.046975,C9,CURR,axis: 0,None,None
+2021:10:12:12:13:58.453891,C9,CURR,axis: 0,None,None
+2021:10:12:12:13:58.870068,C9,CURR,axis: 0,None,None
+2021:10:12:12:13:59.295550,C9,CURR,axis: 0,None,None
+2021:10:12:12:13:59.712853,C9,CURR,axis: 0,None,None
+2021:10:12:12:14:00.021996,C9,CURR,axis: 0,None,None
+2021:10:12:12:14:00.399485,C9,CURR,axis: 0,None,None
+2021:10:12:12:14:00.771811,C9,CURR,axis: 0,None,None
+2021:10:12:12:14:01.076585,Tecan Cavro,_init_,ftdi: None,,None
+2021:10:12:12:14:01.503612,Magnetic Stirrer,_init_,serial: COM9,,None
+2021:10:12:12:14:01.703647,Magnetic Stirrer,IN_NAME,,None,None
+2021:10:12:12:14:01.828702,Magnetic Stirrer,IN_PV_1,,None,None
+2021:10:12:12:14:01.960188,Magnetic Stirrer,IN_PV_2,,None,None
+2021:10:12:12:14:02.077500,Magnetic Stirrer,IN_SP_1,,None,None
+2021:10:12:12:14:02.196120,Magnetic Stirrer,IN_PV_4,,None,None
+2021:10:12:12:14:02.308660,Magnetic Stirrer,IN_SP_4,,None,None
+2021:10:12:12:14:02.435316,Magnetic Stirrer,STOP_4,,None,None
+2021:10:12:12:14:02.488179,Magnetic Stirrer,STOP_1,,None,None

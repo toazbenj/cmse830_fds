@@ -1,0 +1,258 @@
+Timestamp,Module,Method_Name,Arguments,Responses,Exceptions
+2021:10:13:11:08:55.582150,C9,_init_,ftdi: None,,None
+2021:10:13:11:08:56.247404,C9,PING,,None,None
+2021:10:13:11:08:56.564549,C9,BIAS,,None,None
+2021:10:13:11:08:56.882588,C9,SPED,"velocity: 20000, acceleration: 20000",None,None
+2021:10:13:11:08:57.176805,C9,BIAS,bias: 0,None,None
+2021:10:13:11:08:57.473225,C9,HOME,if_needed: 1,None,None
+2021:10:13:11:08:57.750484,C9,CURR,axis: 0,None,None
+2021:10:13:11:08:58.173774,C9,CURR,axis: 0,None,None
+2021:10:13:11:08:58.599441,C9,CURR,axis: 0,None,None
+2021:10:13:11:08:59.038705,C9,CURR,axis: 0,None,None
+2021:10:13:11:08:59.417957,C9,CURR,axis: 0,None,None
+2021:10:13:11:08:59.796478,C9,CURR,axis: 0,None,None
+2021:10:13:11:09:00.172270,C9,CURR,axis: 0,None,None
+2021:10:13:11:09:00.598954,C9,CURR,axis: 0,None,None
+2021:10:13:11:09:00.979338,C9,CURR,axis: 0,None,None
+2021:10:13:11:09:01.393747,C9,CURR,axis: 0,None,None
+2021:10:13:11:09:01.781881,Tecan Cavro,_init_,ftdi: None,,None
+2021:10:13:11:09:02.249445,Magnetic Stirrer,_init_,serial: COM9,,None
+2021:10:13:11:09:02.465768,Magnetic Stirrer,IN_NAME,,None,None
+2021:10:13:11:09:02.624079,Magnetic Stirrer,IN_PV_1,,None,None
+2021:10:13:11:09:02.803658,Magnetic Stirrer,IN_PV_2,,None,None
+2021:10:13:11:09:02.932734,Magnetic Stirrer,IN_SP_1,,None,None
+2021:10:13:11:09:03.064389,Magnetic Stirrer,IN_PV_4,,None,None
+2021:10:13:11:09:03.193341,Magnetic Stirrer,IN_SP_4,,None,None
+2021:10:13:11:09:03.321638,Magnetic Stirrer,STOP_4,,None,None
+2021:10:13:11:09:03.369368,Magnetic Stirrer,STOP_1,,None,None
+2021:10:13:11:09:17.066348,ArduinoAugmentedQuantos,_init_,"logging_level: 10, address: 13, serial_port: None, tcp_port: None, perfect_counts: 8700",,None
+2021:10:13:11:09:17.111224,ArduinoAugmentedQuantos,set_home_direction,direction: 0,None,None
+2021:10:13:11:09:18.511269,UR3Arm,_init_,"host: 192.168.254.88, default_velocity: 250, max_velocity: 500, position_units: Units.MILLIMETERS, default_joint_velocity: 20.0, max_joint_velocity: 180.0, gripper_default_velocity: 0.5, gripper_default_force: 0.5, gripper_id: 1, gripper_base_port: 63352, gripper_connect: True, connect: True",,None
+2021:10:13:11:09:24.928473,ArduinoAugmentedQuantos,lock_dosing_pin_position,,None,None
+2021:10:13:11:09:41.086736,ArduinoAugmentedQuantos,unlock_dosing_pin_position,,None,None
+2021:10:13:11:09:41.307109,C9,OUTP,"output: 0, value: 0",None,None
+2021:10:13:11:09:41.412291,C9,JLEN,length_offset: 0,None,None
+2021:10:13:11:09:41.526944,C9,ARM,"velocity: 20000, acceleration: 20000, X: -160083, Y: 222313, Z: 300000, elbow_bias: 0",None,None
+2021:10:13:11:09:42.440969,C9,MVNG,"axes: 1,2,3",None,None
+2021:10:13:11:09:42.561307,C9,MVNG,"axes: 1,2,3",None,None
+2021:10:13:11:09:42.681652,C9,MVNG,"axes: 1,2,3",None,None
+2021:10:13:11:09:42.806002,C9,MVNG,"axes: 1,2,3",None,None
+2021:10:13:11:09:42.932437,C9,MVNG,"axes: 1,2,3",None,None
+2021:10:13:11:09:43.059501,C9,MVNG,"axes: 1,2,3",None,None
+2021:10:13:11:09:43.189314,C9,MVNG,"axes: 1,2,3",None,None
+2021:10:13:11:09:43.319139,C9,MVNG,"axes: 1,2,3",None,None
+2021:10:13:11:09:43.441854,C9,MVNG,"axes: 1,2,3",None,None
+2021:10:13:11:09:43.566476,C9,MVNG,"axes: 1,2,3",None,None
+2021:10:13:11:09:43.690152,C9,MVNG,"axes: 1,2,3",None,None
+2021:10:13:11:09:43.802845,C9,ARM,"velocity: 20000, acceleration: 20000, X: -160083, Y: 222313, Z: 134850, elbow_bias: 0",None,None
+2021:10:13:11:09:45.390674,C9,MVNG,"axes: 1,2,3",None,None
+2021:10:13:11:09:45.516000,C9,MVNG,"axes: 1,2,3",None,None
+2021:10:13:11:09:45.641667,C9,MVNG,"axes: 1,2,3",None,None
+2021:10:13:11:09:45.751402,C9,OUTP,"output: 0, value: 1",None,None
+2021:10:13:11:09:45.851104,C9,ARM,"velocity: 20000, acceleration: 20000, X: -160083, Y: 222313, Z: 300000, elbow_bias: 0",None,None
+2021:10:13:11:09:47.433343,C9,MVNG,"axes: 1,2,3",None,None
+2021:10:13:11:09:47.559383,C9,MVNG,"axes: 1,2,3",None,None
+2021:10:13:11:09:47.684054,C9,MVNG,"axes: 1,2,3",None,None
+2021:10:13:11:09:48.362612,ArduinoAugmentedQuantos,front_door_position,close,,None
+2021:10:13:11:09:57.410508,ArduinoAugmentedQuantos,zero,,None,None
+2021:10:13:11:09:57.428419,C9,ARM,"velocity: 20000, acceleration: 20000, X: -223600, Y: 41040, Z: 300000, gripper: 52610, elbow_bias: 0",None,None
+2021:10:13:11:09:58.649793,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:13:11:09:58.811941,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:13:11:09:59.934419,ArduinoAugmentedQuantos,home_z_stage,,None,None
+2021:10:13:11:10:05.278076,ArduinoAugmentedQuantos,front_door_position,open,,None
+2021:10:13:11:10:05.294027,C9,ARM,"velocity: 20000, acceleration: 20000, X: -223600, Y: 41040, Z: 151600, gripper: 52610, elbow_bias: 0",None,None
+2021:10:13:11:10:06.805619,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:13:11:10:06.947632,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:13:11:10:07.109176,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:13:11:10:07.224189,C9,ARM,"velocity: 20000, acceleration: 20000, X: -223600, Y: -184200, Z: 151600, gripper: 52613, elbow_bias: 0",None,None
+2021:10:13:11:10:08.901457,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:13:11:10:09.035807,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:13:11:10:09.159535,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:13:11:10:09.285203,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:13:11:10:09.393909,C9,ARM,"velocity: 20000, acceleration: 20000, X: -223600, Y: -184200, Z: 145000, gripper: 52613, elbow_bias: 0",None,None
+2021:10:13:11:10:09.812319,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:13:11:10:09.937100,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:13:11:10:10.087896,C9,ARM,"velocity: 20000, acceleration: 20000, X: -223600, Y: -184200, Z: 143000, gripper: 52613, elbow_bias: 0",None,None
+2021:10:13:11:10:10.393150,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:13:11:10:13.501142,C9,OUTP,"output: 0, value: 0",None,None
+2021:10:13:11:10:13.608677,C9,ARM,"velocity: 20000, acceleration: 20000, X: -223600, Y: -184200, Z: 156600, gripper: 52613, elbow_bias: 0",None,None
+2021:10:13:11:10:14.159849,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:13:11:10:14.283703,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:13:11:10:14.436085,C9,ARM,"velocity: 20000, acceleration: 20000, X: -223600, Y: 41040, Z: 156600, gripper: 52610, elbow_bias: 0",None,None
+2021:10:13:11:10:16.118367,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:13:11:10:16.250018,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:13:11:10:16.379668,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:13:11:10:16.508371,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:13:11:10:16.622545,C9,ARM,"velocity: 20000, acceleration: 20000, X: -220600, Y: 41040, Z: 300000, gripper: 52610, elbow_bias: 0",None,None
+2021:10:13:11:10:18.123204,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:13:11:10:18.248346,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:13:11:10:18.384833,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:13:11:10:19.500972,ArduinoAugmentedQuantos,home_z_stage,,None,None
+2021:10:13:11:10:24.928010,ArduinoAugmentedQuantos,front_door_position,close,,None
+2021:10:13:11:10:35.289892,ArduinoAugmentedQuantos,front_door_position,open,,None
+2021:10:13:11:10:36.311118,ArduinoAugmentedQuantos,home_z_stage,,None,None
+2021:10:13:11:10:36.959036,ArduinoAugmentedQuantos,front_door_position,open,,None
+2021:10:13:11:10:36.975993,C9,ARM,"velocity: 20000, acceleration: 20000, X: -223600, Y: 41040, Z: 300000, gripper: 52610, elbow_bias: 0",None,None
+2021:10:13:11:10:37.283166,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:13:11:10:37.409831,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:13:11:10:37.570748,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:13:11:10:37.699383,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:13:11:10:37.815074,C9,ARM,"velocity: 20000, acceleration: 20000, X: -223600, Y: 41040, Z: 154600, gripper: 52610, elbow_bias: 0",None,None
+2021:10:13:11:10:39.321451,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:13:11:10:39.448493,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:13:11:10:39.565374,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:13:11:10:39.714973,C9,ARM,"velocity: 20000, acceleration: 20000, X: -223600, Y: -184200, Z: 154600, gripper: 52613, elbow_bias: 0",None,None
+2021:10:13:11:10:41.400087,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:13:11:10:41.527537,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:13:11:10:41.658262,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:13:11:10:41.781637,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:13:11:10:41.900351,C9,ARM,"velocity: 20000, acceleration: 20000, X: -223600, Y: -184200, Z: 136000, gripper: 52613, elbow_bias: 0",None,None
+2021:10:13:11:10:42.538833,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:13:11:10:42.664919,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:13:11:10:42.819503,C9,OUTP,"output: 0, value: 1",None,None
+2021:10:13:11:10:42.929948,C9,ARM,"velocity: 20000, acceleration: 20000, X: -223600, Y: -184200, Z: 151600, gripper: 52613, elbow_bias: 0",None,None
+2021:10:13:11:10:43.516024,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:13:11:10:43.650999,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:13:11:10:43.781624,C9,ARM,"velocity: 20000, acceleration: 20000, X: -223600, Y: 41040, Z: 151600, gripper: 52610, elbow_bias: 0",None,None
+2021:10:13:11:10:45.460046,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:13:11:10:45.594649,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:13:11:10:45.728174,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:13:11:10:45.855234,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:13:11:10:45.964937,C9,ARM,"velocity: 20000, acceleration: 20000, X: -223600, Y: 41040, Z: 300000, gripper: 52610, elbow_bias: 0",None,None
+2021:10:13:11:10:47.475061,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:13:11:10:47.639967,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:13:11:10:47.768484,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:13:11:10:53.227815,ArduinoAugmentedQuantos,front_door_position,close,,None
+2021:10:13:11:10:53.242725,C9,OUTP,"output: 1, value: 0",None,None
+2021:10:13:11:10:53.338471,C9,ARM,"velocity: 20000, acceleration: 20000, X: -186600, Y: -13900, Z: 300000, gripper: 150620, elbow_bias: 0",None,None
+2021:10:13:11:10:54.023677,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:13:11:10:54.143371,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:13:11:10:54.281039,C9,ARM,"velocity: 20000, acceleration: 20000, X: -186600, Y: -13900, Z: 111600, gripper: 150620, elbow_bias: 0",None,None
+2021:10:13:11:10:55.970953,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:13:11:10:56.095682,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:13:11:10:56.216454,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:13:11:10:56.333143,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:13:11:10:56.468779,C9,OUTP,"output: 1, value: 1",None,None
+2021:10:13:11:10:56.562526,C9,OUTP,"output: 0, value: 0",None,None
+2021:10:13:11:10:56.690777,C9,ARM,"velocity: 20000, acceleration: 20000, X: -186600, Y: -13900, Z: 300000, gripper: 150621, elbow_bias: 0",None,None
+2021:10:13:11:10:58.373903,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:13:11:10:58.503261,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:13:11:10:58.655037,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:13:11:10:58.758111,C9,OUTP,"output: 1, value: 0",None,None
+2021:10:13:11:10:58.868878,C9,OUTP,"output: 1, value: 1",None,None
+2021:10:13:11:10:58.995567,C9,ARM,"velocity: 20000, acceleration: 20000, X: -187000, Y: -14200, Z: 310000, gripper: 150600, elbow_bias: 0",None,None
+2021:10:13:11:10:59.728716,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:13:11:10:59.839789,C9,ARM,"velocity: 20000, acceleration: 20000, X: -187000, Y: -14200, Z: 116050, gripper: 150600, elbow_bias: 0",None,None
+2021:10:13:11:11:01.568280,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:13:11:11:01.692768,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:13:11:11:01.838724,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:13:11:11:01.948429,C9,OUTP,"output: 0, value: 1",None,None
+2021:10:13:11:11:02.047413,C9,OUTP,"output: 1, value: 0",None,None
+2021:10:13:11:11:02.177087,C9,OUTP,"output: 0, value: 0",None,None
+2021:10:13:11:11:02.274830,C9,OUTP,"output: 0, value: 1",None,None
+2021:10:13:11:11:03.379040,C9,OUTP,"output: 1, value: 1",None,None
+2021:10:13:11:11:03.484807,C9,OUTP,"output: 0, value: 1",None,None
+2021:10:13:11:11:04.623373,C9,CURR,axis: 0,None,None
+2021:10:13:11:11:04.774522,C9,MOVE,,None,None
+2021:10:13:11:11:05.988429,C9,MVNG,"axes: 0,3",None,None
+2021:10:13:11:11:06.112903,C9,MVNG,"axes: 0,3",None,None
+2021:10:13:11:11:06.222609,C9,MVNG,"axes: 0,3",None,None
+2021:10:13:11:11:06.330317,C9,POS,C: 1,None,None
+2021:10:13:11:11:06.460005,C9,CURR,axis: 0,None,None
+2021:10:13:11:11:06.586661,C9,ARM,"velocity: 20000, acceleration: 20000, X: -187000, Y: -14200, Z: 310000, gripper: 150600, elbow_bias: 0",None,None
+2021:10:13:11:11:08.283342,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:13:11:11:08.444246,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:13:11:11:08.600777,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:13:11:11:08.713575,C9,OUTP,"output: 1, value: 0",None,None
+2021:10:13:11:11:13.806552,C9,OUTP,"output: 1, value: 1",None,None
+2021:10:13:11:11:13.937534,C9,ARM,"velocity: 20000, acceleration: 20000, X: -317700, Y: -16400, Z: 310000, gripper: 150600, elbow_bias: 0",None,None
+2021:10:13:11:11:15.231692,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:13:11:11:15.356352,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:13:11:11:15.480228,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:13:11:11:15.597916,C9,ARM,"velocity: 20000, acceleration: 20000, X: -317700, Y: -16400, Z: 186753, gripper: 150600, elbow_bias: 0",None,None
+2021:10:13:11:11:16.985537,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:13:11:11:17.118962,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:13:11:11:17.244044,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:13:11:11:18.355497,C9,MOVE,,None,None
+2021:10:13:11:11:19.156575,C9,MVNG,"axes: 0,3",None,None
+2021:10:13:11:11:19.281593,C9,MVNG,"axes: 0,3",None,None
+2021:10:13:11:11:20.398002,C9,OUTP,"output: 0, value: 0",None,None
+2021:10:13:11:11:20.517737,C9,ARM,"velocity: 20000, acceleration: 20000, X: -317700, Y: -16400, Z: 310000, gripper: 150600, elbow_bias: 0",None,None
+2021:10:13:11:11:21.923830,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:13:11:11:22.055585,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:13:11:11:22.176690,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:13:11:11:22.295995,C9,OUTP,"output: 0, value: 0",None,None
+2021:10:13:11:11:22.394734,C9,ARM,"velocity: 20000, acceleration: 20000, X: -186600, Y: -13900, Z: 300000, gripper: 150620, elbow_bias: 0",None,None
+2021:10:13:11:11:23.679283,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:13:11:11:23.801442,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:13:11:11:23.917153,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:13:11:11:24.060180,C9,ARM,"velocity: 20000, acceleration: 20000, X: -186600, Y: -13900, Z: 107180, gripper: 150620, elbow_bias: 0",None,None
+2021:10:13:11:11:25.754015,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:13:11:11:25.910621,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:13:11:11:26.031716,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:13:11:11:26.143414,C9,OUTP,"output: 0, value: 1",None,None
+2021:10:13:11:11:26.247141,C9,OUTP,"output: 1, value: 0",None,None
+2021:10:13:11:11:32.368591,C9,ARM,"velocity: 20000, acceleration: 20000, X: -186600, Y: -13900, Z: 250000, gripper: 150621, elbow_bias: 0",None,None
+2021:10:13:11:11:33.846405,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:13:11:11:33.966085,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:13:11:11:34.089024,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:13:11:11:35.197926,ArduinoAugmentedQuantos,home_z_stage,,None,None
+2021:10:13:11:11:58.328695,ArduinoAugmentedQuantos,move_z_stage,"steps: 8600, speed: 400",None,None
+2021:10:13:11:11:58.948384,ArduinoAugmentedQuantos,front_door_position,close,,None
+2021:10:13:11:11:59.010249,ArduinoAugmentedQuantos,target_mass,20.0,,None
+2021:10:13:11:13:05.824190,ArduinoAugmentedQuantos,start_dosing,wait_for: True,None,None
+2021:10:13:11:13:29.505002,ArduinoAugmentedQuantos,home_z_stage,,None,None
+2021:10:13:11:14:44.186587,C9,_init_,ftdi: None,,None
+2021:10:13:11:14:44.606572,C9,PING,,None,None
+2021:10:13:11:14:44.789421,C9,BIAS,,None,None
+2021:10:13:11:14:44.911097,C9,SPED,"velocity: 20000, acceleration: 20000",None,None
+2021:10:13:11:14:45.036913,C9,BIAS,bias: 0,None,None
+2021:10:13:11:14:45.139112,C9,HOME,if_needed: 1,None,None
+2021:10:13:11:14:45.263529,C9,SPED,,None,None
+2021:10:13:11:14:45.394287,C9,BIAS,,None,None
+2021:10:13:11:14:45.493081,C9,SPED,"velocity: 40000, acceleration: 100000",None,None
+2021:10:13:11:14:45.602034,C9,BIAS,bias: 2,None,None
+2021:10:13:11:14:45.699798,C9,POS,"axes: 1,units: 1",None,None
+2021:10:13:11:14:45.803515,C9,POS,"axes: 2,units: 1",None,None
+2021:10:13:11:14:45.910357,C9,POS,"axes: 0,units: 1",None,None
+2021:10:13:11:14:46.018069,C9,POS,C: 1,None,None
+2021:10:13:11:14:46.705039,C9,JLEN,length_offset: 0,None,None
+2021:10:13:11:14:46.806770,C9,ARM,"X: -186053, Y: -13900, Z: 250000, gripper: 150664, elbow_bias: 2",None,None
+2021:10:13:11:14:47.048637,C9,POS,"axes: 1,units: 1",None,None
+2021:10:13:11:14:47.167388,C9,POS,"axes: 2,units: 1",None,None
+2021:10:13:11:14:47.276971,C9,POS,"axes: 0,units: 1",None,None
+2021:10:13:11:14:47.386096,C9,POS,C: 1,None,None
+2021:10:13:11:14:47.538688,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:13:11:14:47.652930,C9,ARM,"X: -181287, Y: -4773, Z: 250000, gripper: 150664, elbow_bias: 2",None,None
+2021:10:13:11:14:47.941586,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:13:11:14:48.097481,C9,ARM,"X: -174021, Y: 2766, Z: 250000, gripper: 150664, elbow_bias: 2",None,None
+2021:10:13:11:14:48.395029,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:13:11:14:48.524175,C9,ARM,"X: -165193, Y: 8004, Z: 250000, gripper: 150664, elbow_bias: 2",None,None
+2021:10:13:11:14:48.822586,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:13:11:14:48.970199,C9,ARM,"X: -156365, Y: 13004, Z: 250000, gripper: 150664, elbow_bias: 2",None,None
+2021:10:13:11:14:49.255246,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:13:11:14:49.374474,C9,ARM,"X: -147459, Y: 17924, Z: 250000, gripper: 150664, elbow_bias: 2",None,None
+2021:10:13:11:14:49.658788,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:13:11:14:49.767967,C9,ARM,"X: -138396, Y: 22210, Z: 250000, gripper: 150664, elbow_bias: 2",None,None
+2021:10:13:11:14:50.062670,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:13:11:14:50.183709,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:13:11:14:50.310180,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:13:11:14:50.427998,C9,ARM,"X: -129334, Y: 26337, Z: 250000, gripper: 150664, elbow_bias: 2",None,None
+2021:10:13:11:14:50.719555,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:13:11:14:50.828370,C9,ARM,"X: -120271, Y: 30543, Z: 250000, gripper: 150664, elbow_bias: 2",None,None
+2021:10:13:11:14:51.120774,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:13:11:14:51.226897,C9,ARM,"X: -111209, Y: 34749, Z: 250000, gripper: 150664, elbow_bias: 2",None,None
+2021:10:13:11:14:51.536480,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:13:11:14:51.646192,C9,ARM,"X: -102146, Y: 38956, Z: 250000, gripper: 150664, elbow_bias: 2",None,None
+2021:10:13:11:14:51.953275,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:13:11:14:52.065214,C9,ARM,"X: -93084, Y: 43162, Z: 250000, gripper: 150664, elbow_bias: 2",None,None
+2021:10:13:11:14:52.390428,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:13:11:14:52.504113,C9,ARM,"X: -84021, Y: 47368, Z: 250000, gripper: 150664, elbow_bias: 2",None,None
+2021:10:13:11:14:52.835231,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:13:11:14:52.949610,C9,ARM,"X: -74959, Y: 51574, Z: 250000, gripper: 150664, elbow_bias: 2",None,None
+2021:10:13:11:14:53.147170,C9,ARM,"X: -74959, Y: 51574, Z: 250000, gripper: 150664, elbow_bias: 2",None,None
+2021:10:13:11:14:53.331684,C9,ARM,"X: -74959, Y: 51574, Z: 250000, gripper: 150664, elbow_bias: 2",None,None
+2021:10:13:11:14:53.522687,C9,ARM,"X: -75037, Y: 51971, Z: 250000, gripper: 150664, elbow_bias: 2",None,None
+2021:10:13:11:14:53.726142,C9,ARM,"X: -75115, Y: 52527, Z: 250000, gripper: 150664, elbow_bias: 2",None,None
+2021:10:13:11:14:53.921617,C9,ARM,"X: -77303, Y: 52368, Z: 250000, gripper: 150664, elbow_bias: 2",None,None
+2021:10:13:11:14:54.233236,C9,MVNG,"axes: 1,2,3,0",None,None

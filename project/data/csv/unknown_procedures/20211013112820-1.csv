@@ -1,0 +1,32 @@
+Timestamp,Module,Method_Name,Arguments,Responses,Exceptions
+2021:10:13:11:32:07.939117,C9,_init_,ftdi: None,,None
+2021:10:13:11:32:09.312412,C9,PING,,None,None
+2021:10:13:11:32:10.291791,C9,BIAS,,None,None
+2021:10:13:11:32:11.187396,C9,SPED,"velocity: 20000, acceleration: 20000",None,None
+2021:10:13:11:32:12.073028,C9,BIAS,bias: 0,None,None
+2021:10:13:11:32:12.925796,C9,HOME,if_needed: 1,None,None
+2021:10:13:11:32:13.794332,C9,CURR,axis: 0,None,None
+2021:10:13:11:32:14.646618,C9,CURR,axis: 0,None,None
+2021:10:13:11:32:15.514169,C9,CURR,axis: 0,None,None
+2021:10:13:11:32:16.357608,C9,CURR,axis: 0,None,None
+2021:10:13:11:32:17.212775,C9,CURR,axis: 0,None,None
+2021:10:13:11:32:18.081343,C9,CURR,axis: 0,None,None
+2021:10:13:11:32:18.954388,C9,CURR,axis: 0,None,None
+2021:10:13:11:32:19.822040,C9,CURR,axis: 0,None,None
+2021:10:13:11:32:20.656615,C9,CURR,axis: 0,None,None
+2021:10:13:11:32:21.597250,C9,CURR,axis: 0,None,None
+2021:10:13:11:32:22.273477,Tecan Cavro,_init_,ftdi: None,,None
+2021:10:13:11:32:23.127420,Magnetic Stirrer,_init_,serial: COM9,,None
+2021:10:13:11:32:23.841358,Magnetic Stirrer,IN_NAME,,None,None
+2021:10:13:11:32:24.316004,Magnetic Stirrer,IN_PV_1,,None,None
+2021:10:13:11:32:24.719128,Magnetic Stirrer,IN_PV_2,,None,None
+2021:10:13:11:32:25.115445,Magnetic Stirrer,IN_SP_1,,None,None
+2021:10:13:11:32:25.486241,Magnetic Stirrer,IN_PV_4,,None,None
+2021:10:13:11:32:25.860603,Magnetic Stirrer,IN_SP_4,,None,None
+2021:10:13:11:32:26.268340,Magnetic Stirrer,STOP_4,,None,None
+2021:10:13:11:32:26.425920,Magnetic Stirrer,STOP_1,,None,None
+2021:10:13:11:32:40.150854,ArduinoAugmentedQuantos,_init_,"logging_level: 10, address: 13, serial_port: None, tcp_port: None, perfect_counts: 8700",,None
+2021:10:13:11:32:40.280927,ArduinoAugmentedQuantos,set_home_direction,direction: 0,None,None
+2021:10:13:11:32:43.231048,UR3Arm,_init_,"host: 192.168.254.88, default_velocity: 250, max_velocity: 500, position_units: Units.MILLIMETERS, default_joint_velocity: 20.0, max_joint_velocity: 180.0, gripper_default_velocity: 0.5, gripper_default_force: 0.5, gripper_id: 1, gripper_base_port: 63352, gripper_connect: True, connect: True",,None
+2021:10:13:11:32:52.378938,Magnetic Stirrer,OUT_SP_4,2000,None,None
+2021:10:13:11:32:59.912522,Magnetic Stirrer,START_4,,None,None

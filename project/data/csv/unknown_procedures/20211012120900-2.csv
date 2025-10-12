@@ -1,0 +1,50 @@
+Timestamp,Module,Method_Name,Arguments,Responses,Exceptions
+2021:10:12:12:09:00.238167,C9,_init_,ftdi: None,,None
+2021:10:12:12:09:00.650066,C9,PING,,None,None
+2021:10:12:12:09:00.904385,C9,BIAS,,None,None
+2021:10:12:12:09:01.022064,C9,SPED,"velocity: 20000, acceleration: 20000",None,None
+2021:10:12:12:09:01.136757,C9,BIAS,bias: 0,None,None
+2021:10:12:12:09:01.221534,C9,HOME,if_needed: 1,None,None
+2021:10:12:12:09:01.371131,C9,SPED,,None,None
+2021:10:12:12:09:01.505014,C9,BIAS,,None,None
+2021:10:12:12:09:01.606744,C9,SPED,"velocity: 40000, acceleration: 100000",None,None
+2021:10:12:12:09:01.718451,C9,BIAS,bias: 2,None,None
+2021:10:12:12:09:01.813219,C9,POS,"axes: 1,units: 1",None,None
+2021:10:12:12:09:01.913923,C9,POS,"axes: 2,units: 1",None,None
+2021:10:12:12:09:02.025632,C9,POS,"axes: 0,units: 1",None,None
+2021:10:12:12:09:02.137323,C9,POS,C: 1,None,None
+2021:10:12:12:09:02.822493,C9,ARM,"X: 158900, Y: 182500, Z: 190750, gripper: 108980, elbow_bias: 2",None,None
+2021:10:12:12:09:03.048908,C9,JLEN,length_offset: 0,None,None
+2021:10:12:12:09:03.156597,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:12:12:09:03.273291,C9,POS,"axes: 1,units: 1",None,None
+2021:10:12:12:09:03.384347,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:12:12:09:03.502032,C9,POS,"axes: 2,units: 1",None,None
+2021:10:12:12:09:03.613027,C9,ARM,"X: 158900, Y: 182500, Z: 200750, gripper: 108980, elbow_bias: 2",None,None
+2021:10:12:12:09:03.842440,C9,POS,"axes: 0,units: 1",None,None
+2021:10:12:12:09:03.958104,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:12:12:09:04.094899,C9,POS,C: 1,None,None
+2021:10:12:12:09:04.252567,C9,ARM,"X: 158900, Y: 182500, Z: 210750, gripper: 108980, elbow_bias: 2",None,None
+2021:10:12:12:09:04.536025,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:12:12:09:04.646724,C9,ARM,"X: 158900, Y: 182500, Z: 220750, gripper: 108980, elbow_bias: 2",None,None
+2021:10:12:12:09:04.934959,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:12:12:09:05.045657,C9,ARM,"X: 158900, Y: 182500, Z: 230750, gripper: 108980, elbow_bias: 2",None,None
+2021:10:12:12:09:05.345858,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:12:12:09:05.469526,C9,ARM,"X: 158900, Y: 182500, Z: 240750, gripper: 108980, elbow_bias: 2",None,None
+2021:10:12:12:09:05.769428,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:12:12:09:05.897083,C9,ARM,"X: 158900, Y: 182500, Z: 250750, gripper: 108980, elbow_bias: 2",None,None
+2021:10:12:12:09:06.189564,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:12:12:09:06.326195,C9,ARM,"X: 158900, Y: 182500, Z: 260750, gripper: 108980, elbow_bias: 2",None,None
+2021:10:12:12:09:06.628391,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:12:12:09:06.770015,C9,ARM,"X: 158900, Y: 182500, Z: 270750, gripper: 108980, elbow_bias: 2",None,None
+2021:10:12:12:09:07.075196,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:12:12:09:07.201853,C9,ARM,"X: 158900, Y: 182500, Z: 280750, gripper: 108980, elbow_bias: 2",None,None
+2021:10:12:12:09:07.501060,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:12:12:09:07.610762,C9,ARM,"X: 158900, Y: 182500, Z: 290750, gripper: 108980, elbow_bias: 2",None,None
+2021:10:12:12:09:07.912074,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:12:12:09:08.023773,C9,ARM,"X: 158900, Y: 182500, Z: 300750, gripper: 108980, elbow_bias: 2",None,None
+2021:10:12:12:09:08.307020,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:12:12:09:08.425288,C9,ARM,"X: 158900, Y: 182500, Z: 310750, gripper: 108980, elbow_bias: 2",None,None
+2021:10:12:12:09:08.632213,C9,ARM,"X: 158900, Y: 182500, Z: 310750, gripper: 108980, elbow_bias: 2",None,None
+2021:10:12:12:09:08.837667,C9,ARM,"X: 158900, Y: 182500, Z: 310750, gripper: 108980, elbow_bias: 2",None,None
+2021:10:12:12:09:09.051090,C9,ARM,"X: 158900, Y: 182500, Z: 310750, gripper: 108980, elbow_bias: 2",None,None
+2021:10:12:12:09:09.271513,C9,ARM,"X: 158900, Y: 182500, Z: 310750, gripper: 108980, elbow_bias: 2",None,None

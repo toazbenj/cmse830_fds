@@ -1,0 +1,37 @@
+Timestamp,Module,Method_Name,Arguments,Responses,Exceptions
+2021:10:12:12:12:30.787983,C9,_init_,ftdi: None,,None
+2021:10:12:12:12:31.506969,C9,PING,,None,None
+2021:10:12:12:12:31.951977,C9,BIAS,,None,None
+2021:10:12:12:12:32.253030,C9,SPED,"velocity: 20000, acceleration: 20000",None,None
+2021:10:12:12:12:32.534138,C9,BIAS,bias: 0,None,None
+2021:10:12:12:12:32.811909,C9,HOME,if_needed: 1,None,None
+2021:10:12:12:12:33.085103,C9,CURR,axis: 0,None,None
+2021:10:12:12:12:33.468642,C9,CURR,axis: 0,None,None
+2021:10:12:12:12:33.835847,C9,CURR,axis: 0,None,None
+2021:10:12:12:12:34.207422,C9,CURR,axis: 0,None,None
+2021:10:12:12:12:34.574410,C9,CURR,axis: 0,None,None
+2021:10:12:12:12:34.954967,C9,CURR,axis: 0,None,None
+2021:10:12:12:12:35.332137,C9,CURR,axis: 0,None,None
+2021:10:12:12:12:35.708427,C9,CURR,axis: 0,None,None
+2021:10:12:12:12:36.082214,C9,CURR,axis: 0,None,None
+2021:10:12:12:12:36.476094,C9,CURR,axis: 0,None,None
+2021:10:12:12:12:36.797761,Tecan Cavro,_init_,ftdi: None,,None
+2021:10:12:12:12:37.234408,Magnetic Stirrer,_init_,serial: COM9,,None
+2021:10:12:12:12:37.459974,Magnetic Stirrer,IN_NAME,,None,None
+2021:10:12:12:12:37.592038,Magnetic Stirrer,IN_PV_1,,None,None
+2021:10:12:12:12:37.711401,Magnetic Stirrer,IN_PV_2,,None,None
+2021:10:12:12:12:37.832866,Magnetic Stirrer,IN_SP_1,,None,None
+2021:10:12:12:12:37.961829,Magnetic Stirrer,IN_PV_4,,None,None
+2021:10:12:12:12:38.082827,Magnetic Stirrer,IN_SP_4,,None,None
+2021:10:12:12:12:38.221271,Magnetic Stirrer,STOP_4,,None,None
+2021:10:12:12:12:38.275159,Magnetic Stirrer,STOP_1,,None,None
+2021:10:12:12:12:59.325855,Magnetic Stirrer,STOP_1,,None,None
+2021:10:12:12:12:59.339815,Magnetic Stirrer,STOP_4,,None,None
+2021:10:12:12:13:27.510588,C9,_init_,ftdi: None,,None
+2021:10:12:12:13:28.180373,C9,PING,,None,None
+2021:10:12:12:13:28.489859,C9,BIAS,,None,None
+2021:10:12:12:13:28.782515,C9,SPED,"velocity: 20000, acceleration: 20000",None,None
+2021:10:12:12:13:29.039197,C9,BIAS,bias: 0,None,None
+2021:10:12:12:13:29.287474,C9,HOME,if_needed: 1,None,None
+2021:10:12:12:13:29.678219,C9,CURR,axis: 0,None,None
+2021:10:12:12:13:30.065934,C9,CURR,axis: 0,None,None

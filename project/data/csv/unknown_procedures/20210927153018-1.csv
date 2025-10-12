@@ -1,0 +1,1715 @@
+Timestamp,Module,Method_Name,Arguments,Responses,Exceptions
+2021:09:27:15:36:08.008678,C9,_init_,ftdi: None,,None
+2021:09:27:15:36:08.433943,C9,PING,,None,None
+2021:09:27:15:36:08.616467,C9,BIAS,,None,None
+2021:09:27:15:36:08.772041,C9,SPED,"velocity: 20000, acceleration: 20000",None,None
+2021:09:27:15:36:08.883897,C9,BIAS,bias: 0,None,None
+2021:09:27:15:36:08.981483,C9,OUTP,"output: 0, value: 0",None,None
+2021:09:27:15:36:09.114134,C9,JLEN,length_offset: 0,None,None
+2021:09:27:15:36:09.231175,C9,ARM,"velocity: 20000, acceleration: 20000, X: -244600, Y: 120000, Z: 300000, gripper: -175510, elbow_bias: 0",None,None
+2021:09:27:15:36:09.711899,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:15:36:09.857341,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:15:36:09.999831,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:15:36:10.130478,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:15:36:10.255424,C9,ARM,"velocity: 20000, acceleration: 20000, X: -244600, Y: 120000, Z: 167008, gripper: -175510, elbow_bias: 0",None,None
+2021:09:27:15:36:11.706170,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:15:36:11.865151,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:15:36:12.002797,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:15:36:12.113525,C9,OUTP,"output: 0, value: 1",None,None
+2021:09:27:15:36:12.250163,C9,ARM,"velocity: 20000, acceleration: 20000, X: -244600, Y: 120000, Z: 300000, gripper: -175510, elbow_bias: 0",None,None
+2021:09:27:15:36:13.702492,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:15:36:13.823211,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:15:36:13.952862,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:15:36:14.077801,C9,ARM,"velocity: 20000, acceleration: 20000, X: -99500, Y: 149000, Z: 300000, gripper: -175500, elbow_bias: 0",None,None
+2021:09:27:15:36:15.615379,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:15:36:15.741420,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:15:36:15.876361,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:15:36:16.009182,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:15:36:16.155793,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:15:36:16.271480,C9,ARM,"velocity: 20000, acceleration: 20000, X: -99500, Y: 149000, Z: 218000, gripper: -174500, elbow_bias: 0",None,None
+2021:09:27:15:36:17.584007,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:15:36:17.719966,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:15:36:17.851614,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:15:36:17.982266,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:15:36:18.119445,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:15:36:18.259076,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:15:36:18.424901,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:15:36:18.569510,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:15:36:18.705211,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:15:36:18.862793,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:15:37:30.307444,C9,ARM,"velocity: 20000, acceleration: 20000, X: -99500, Y: 149000, Z: 300000, gripper: -174500, elbow_bias: 0",None,None
+2021:09:27:15:37:31.547223,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:15:37:31.717300,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:15:37:31.871961,C9,ARM,"velocity: 20000, acceleration: 20000, X: -119500, Y: 149000, Z: 300000, gripper: -175500, elbow_bias: 0",None,None
+2021:09:27:15:37:32.577170,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:15:37:32.749766,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:15:37:32.887937,C9,ARM,"velocity: 20000, acceleration: 20000, X: -119500, Y: 149000, Z: 218000, gripper: -174500, elbow_bias: 0",None,None
+2021:09:27:15:37:34.209406,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:15:37:34.364193,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:15:37:34.553836,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:15:37:34.731342,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:15:37:34.881077,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:15:37:35.031249,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:15:37:35.198329,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:15:37:35.361159,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:15:38:44.353073,C9,ARM,"velocity: 20000, acceleration: 20000, X: -119500, Y: 149000, Z: 300000, gripper: -174500, elbow_bias: 0",None,None
+2021:09:27:15:38:45.592345,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:15:38:45.775054,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:15:38:45.937653,C9,ARM,"velocity: 20000, acceleration: 20000, X: -139500, Y: 149000, Z: 300000, gripper: -175500, elbow_bias: 0",None,None
+2021:09:27:15:38:46.635032,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:15:38:46.856571,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:15:38:47.021403,C9,ARM,"velocity: 20000, acceleration: 20000, X: -139500, Y: 149000, Z: 218000, gripper: -174500, elbow_bias: 0",None,None
+2021:09:27:15:38:48.343586,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:15:38:48.524638,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:15:38:48.702326,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:15:38:48.886148,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:15:38:49.057313,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:15:38:49.229457,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:15:38:49.411882,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:15:38:49.569699,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:15:40:01.059099,C9,ARM,"velocity: 20000, acceleration: 20000, X: -139500, Y: 149000, Z: 300000, gripper: -174500, elbow_bias: 0",None,None
+2021:09:27:15:40:02.303566,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:15:40:02.463079,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:15:40:02.626255,C9,ARM,"velocity: 20000, acceleration: 20000, X: -159500, Y: 149000, Z: 300000, gripper: -175500, elbow_bias: 0",None,None
+2021:09:27:15:40:03.329209,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:15:40:03.494723,C9,ARM,"velocity: 20000, acceleration: 20000, X: -159500, Y: 149000, Z: 218000, gripper: -174500, elbow_bias: 0",None,None
+2021:09:27:15:40:04.814684,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:15:40:04.991258,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:15:40:05.170386,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:15:40:05.342829,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:15:40:05.498781,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:15:40:05.664539,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:15:40:05.847068,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:15:40:06.025591,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:15:42:54.627372,C9,_init_,ftdi: None,,None
+2021:09:27:15:42:55.109722,C9,PING,,None,None
+2021:09:27:15:42:55.379002,C9,BIAS,,None,None
+2021:09:27:15:42:55.562511,C9,SPED,"velocity: 20000, acceleration: 20000",None,None
+2021:09:27:15:42:55.705330,C9,BIAS,bias: 0,None,None
+2021:09:27:15:42:55.825011,C9,HOME,if_needed: 1,None,None
+2021:09:27:15:42:55.983593,C9,SPED,,None,None
+2021:09:27:15:42:56.137247,C9,BIAS,,None,None
+2021:09:27:15:42:56.297108,C9,SPED,"velocity: 40000, acceleration: 100000",None,None
+2021:09:27:15:42:56.441728,C9,BIAS,bias: 2,None,None
+2021:09:27:15:42:56.586339,C9,POS,"axes: 1,units: 1",None,None
+2021:09:27:15:42:56.760871,C9,POS,"axes: 2,units: 1",None,None
+2021:09:27:15:42:56.979894,C9,POS,"axes: 0,units: 1",None,None
+2021:09:27:15:42:57.143521,C9,POS,C: 1,None,None
+2021:09:27:15:42:58.769432,C9,OUTP,output: 0,None,None
+2021:09:27:15:43:00.842253,C9,JLEN,length_offset: 0,None,None
+2021:09:27:15:43:02.692034,C9,OUTP,"output: 0, value: 0",None,None
+2021:09:27:15:43:04.738615,C9,POS,"axes: 1,units: 1",None,None
+2021:09:27:15:43:06.575754,C9,POS,"axes: 2,units: 1",None,None
+2021:09:27:15:43:09.039436,C9,POS,"axes: 0,units: 1",None,None
+2021:09:27:15:43:11.204646,C9,POS,C: 1,None,None
+2021:09:27:15:43:15.503872,C9,_init_,ftdi: None,,None
+2021:09:27:15:43:16.003836,C9,PING,,None,None
+2021:09:27:15:43:16.273119,C9,BIAS,,None,None
+2021:09:27:15:43:16.461615,C9,SPED,"velocity: 20000, acceleration: 20000",None,None
+2021:09:27:15:43:16.640135,C9,BIAS,bias: 0,None,None
+2021:09:27:15:43:16.785744,C9,OUTP,"output: 0, value: 0",None,None
+2021:09:27:15:43:16.919580,C9,JLEN,length_offset: 0,None,None
+2021:09:27:15:43:17.075965,C9,ARM,"velocity: 20000, acceleration: 20000, X: -244600, Y: 120000, Z: 300000, gripper: -175510, elbow_bias: 0",None,None
+2021:09:27:15:43:18.364926,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:15:43:18.552639,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:15:43:18.727738,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:15:43:18.893278,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:15:43:19.080130,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:15:43:19.252205,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:15:43:19.419830,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:15:43:19.551475,C9,ARM,"velocity: 20000, acceleration: 20000, X: -244600, Y: 120000, Z: 167008, gripper: -175510, elbow_bias: 0",None,None
+2021:09:27:15:43:21.047801,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:15:43:21.215785,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:15:43:21.355410,C9,OUTP,"output: 0, value: 1",None,None
+2021:09:27:15:43:21.492044,C9,ARM,"velocity: 20000, acceleration: 20000, X: -244600, Y: 120000, Z: 300000, gripper: -175510, elbow_bias: 0",None,None
+2021:09:27:15:43:22.978343,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:15:43:23.168829,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:15:43:23.337125,C9,ARM,"velocity: 20000, acceleration: 20000, X: -99500, Y: 149000, Z: 300000, gripper: -175500, elbow_bias: 0",None,None
+2021:09:27:15:43:24.915672,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:15:43:25.091446,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:15:43:25.259170,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:15:43:25.437286,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:15:43:25.599848,C9,ARM,"velocity: 20000, acceleration: 20000, X: -99500, Y: 149000, Z: 218000, gripper: -174500, elbow_bias: 0",None,None
+2021:09:27:15:43:26.945601,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:15:43:27.124093,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:15:43:27.285167,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:15:43:27.447098,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:15:43:27.621937,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:15:43:27.797618,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:15:43:28.014199,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:15:43:28.197428,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:15:44:42.649638,C9,ARM,"velocity: 20000, acceleration: 20000, X: -99500, Y: 149000, Z: 300000, gripper: -174500, elbow_bias: 0",None,None
+2021:09:27:15:44:43.858045,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:15:44:44.047760,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:15:44:44.202388,C9,ARM,"velocity: 20000, acceleration: 20000, X: -119500, Y: 149000, Z: 300000, gripper: -175500, elbow_bias: 0",None,None
+2021:09:27:15:44:44.932823,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:15:44:45.093056,C9,ARM,"velocity: 20000, acceleration: 20000, X: -119500, Y: 149000, Z: 218000, gripper: -174500, elbow_bias: 0",None,None
+2021:09:27:15:44:46.428060,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:15:44:46.602589,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:15:44:46.784113,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:15:44:46.984554,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:15:44:47.156066,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:15:44:47.336810,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:15:44:47.508346,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:15:44:47.688037,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:15:46:02.166616,C9,ARM,"velocity: 20000, acceleration: 20000, X: -119500, Y: 149000, Z: 300000, gripper: -174500, elbow_bias: 0",None,None
+2021:09:27:15:46:03.393915,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:15:46:03.557253,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:15:46:03.748791,C9,ARM,"velocity: 20000, acceleration: 20000, X: -139500, Y: 149000, Z: 300000, gripper: -175500, elbow_bias: 0",None,None
+2021:09:27:15:46:04.431213,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:15:46:04.597774,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:15:46:04.779517,C9,ARM,"velocity: 20000, acceleration: 20000, X: -139500, Y: 149000, Z: 218000, gripper: -174500, elbow_bias: 0",None,None
+2021:09:27:15:46:06.123904,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:15:46:06.308886,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:15:46:06.467013,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:15:46:06.637399,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:15:46:06.844847,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:15:46:07.028358,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:15:46:07.207676,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:15:46:07.383602,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:15:47:21.839775,C9,ARM,"velocity: 20000, acceleration: 20000, X: -139500, Y: 149000, Z: 300000, gripper: -174500, elbow_bias: 0",None,None
+2021:09:27:15:47:23.089182,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:15:47:23.277652,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:15:47:23.452396,C9,ARM,"velocity: 20000, acceleration: 20000, X: -159500, Y: 149000, Z: 300000, gripper: -175500, elbow_bias: 0",None,None
+2021:09:27:15:47:24.159229,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:15:47:24.320894,C9,ARM,"velocity: 20000, acceleration: 20000, X: -159500, Y: 149000, Z: 218000, gripper: -174500, elbow_bias: 0",None,None
+2021:09:27:15:47:25.661659,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:15:47:25.871889,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:15:47:26.051313,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:15:47:26.223473,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:15:47:26.408085,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:15:47:26.580180,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:15:47:26.780888,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:15:48:41.245155,C9,ARM,"velocity: 20000, acceleration: 20000, X: -159500, Y: 149000, Z: 300000, gripper: -174500, elbow_bias: 0",None,None
+2021:09:27:15:48:42.478202,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:15:48:42.660041,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:15:48:42.822650,C9,ARM,"velocity: 20000, acceleration: 20000, X: -179500, Y: 149000, Z: 300000, gripper: -175500, elbow_bias: 0",None,None
+2021:09:27:15:48:43.544254,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:15:48:43.720276,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:15:48:43.895916,C9,ARM,"velocity: 20000, acceleration: 20000, X: -179500, Y: 149000, Z: 218000, gripper: -174500, elbow_bias: 0",None,None
+2021:09:27:15:48:45.352036,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:15:48:45.530128,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:15:48:45.726660,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:15:48:45.912267,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:15:50:00.352070,C9,ARM,"velocity: 20000, acceleration: 20000, X: -179500, Y: 149000, Z: 300000, gripper: -174500, elbow_bias: 0",None,None
+2021:09:27:15:50:01.583079,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:15:50:01.775182,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:15:50:01.947717,C9,ARM,"velocity: 20000, acceleration: 20000, X: -99500, Y: 129000, Z: 300000, gripper: -175500, elbow_bias: 0",None,None
+2021:09:27:15:50:03.280540,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:15:50:03.465064,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:15:50:03.660555,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:15:50:03.828765,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:15:50:04.041246,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:15:50:04.234728,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:15:50:04.417242,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:15:50:04.574822,C9,ARM,"velocity: 20000, acceleration: 20000, X: -99500, Y: 129000, Z: 218000, gripper: -174500, elbow_bias: 0",None,None
+2021:09:27:15:50:05.911025,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:15:50:06.088593,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:15:50:06.274061,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:15:50:06.461134,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:15:50:06.640755,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:15:50:06.818276,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:15:50:07.003058,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:15:50:07.192646,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:15:51:21.652759,C9,ARM,"velocity: 20000, acceleration: 20000, X: -99500, Y: 129000, Z: 300000, gripper: -174500, elbow_bias: 0",None,None
+2021:09:27:15:51:22.878525,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:15:51:23.099942,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:15:51:23.269003,C9,ARM,"velocity: 20000, acceleration: 20000, X: -119500, Y: 129000, Z: 300000, gripper: -175500, elbow_bias: 0",None,None
+2021:09:27:15:51:24.016546,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:15:51:24.201262,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:15:51:24.378886,C9,ARM,"velocity: 20000, acceleration: 20000, X: -119500, Y: 129000, Z: 218000, gripper: -174500, elbow_bias: 0",None,None
+2021:09:27:15:51:25.719769,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:15:51:25.902425,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:15:51:26.100997,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:15:51:26.280665,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:15:51:26.453207,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:15:51:26.650679,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:15:51:26.818372,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:15:51:26.997244,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:15:52:41.491757,C9,ARM,"velocity: 20000, acceleration: 20000, X: -119500, Y: 129000, Z: 300000, gripper: -174500, elbow_bias: 0",None,None
+2021:09:27:15:52:42.737432,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:15:52:42.931572,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:15:52:43.096124,C9,ARM,"velocity: 20000, acceleration: 20000, X: -139500, Y: 129000, Z: 300000, gripper: -175500, elbow_bias: 0",None,None
+2021:09:27:15:52:43.821704,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:15:52:44.016955,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:15:52:44.214720,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:15:52:44.390255,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:15:52:44.548780,C9,ARM,"velocity: 20000, acceleration: 20000, X: -139500, Y: 129000, Z: 218000, gripper: -174500, elbow_bias: 0",None,None
+2021:09:27:15:52:45.878181,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:15:52:46.053710,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:15:52:46.265136,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:15:52:46.451631,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:15:52:46.623253,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:15:52:46.823719,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:15:52:46.973313,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:15:52:47.204769,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:15:54:01.676697,C9,ARM,"velocity: 20000, acceleration: 20000, X: -139500, Y: 129000, Z: 300000, gripper: -174500, elbow_bias: 0",None,None
+2021:09:27:15:54:02.906762,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:15:54:03.109322,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:15:54:03.294824,C9,ARM,"velocity: 20000, acceleration: 20000, X: -159500, Y: 129000, Z: 300000, gripper: -175500, elbow_bias: 0",None,None
+2021:09:27:15:54:03.997943,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:15:54:04.192714,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:15:54:04.350320,C9,ARM,"velocity: 20000, acceleration: 20000, X: -159500, Y: 129000, Z: 218000, gripper: -174500, elbow_bias: 0",None,None
+2021:09:27:15:54:05.804601,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:15:54:05.980199,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:15:54:06.152028,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:15:54:06.333665,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:15:55:20.757105,C9,ARM,"velocity: 20000, acceleration: 20000, X: -159500, Y: 129000, Z: 300000, gripper: -174500, elbow_bias: 0",None,None
+2021:09:27:15:55:21.987069,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:15:55:22.160768,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:15:55:22.341288,C9,ARM,"velocity: 20000, acceleration: 20000, X: -179500, Y: 129000, Z: 300000, gripper: -175500, elbow_bias: 0",None,None
+2021:09:27:15:55:23.053420,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:15:55:23.264818,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:15:55:23.446505,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:15:55:23.619406,C9,ARM,"velocity: 20000, acceleration: 20000, X: -179500, Y: 129000, Z: 218000, gripper: -174500, elbow_bias: 0",None,None
+2021:09:27:15:55:24.956012,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:15:55:25.132831,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:15:55:25.322443,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:15:55:25.498140,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:15:55:25.668897,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:15:55:25.841129,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:15:55:26.020831,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:15:55:26.206819,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:15:56:40.691307,C9,ARM,"velocity: 20000, acceleration: 20000, X: -179500, Y: 129000, Z: 300000, gripper: -174500, elbow_bias: 0",None,None
+2021:09:27:15:56:41.919685,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:15:56:42.120628,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:15:56:42.301252,C9,ARM,"velocity: 20000, acceleration: 20000, X: -99500, Y: 109000, Z: 300000, gripper: -175500, elbow_bias: 0",None,None
+2021:09:27:15:56:43.530531,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:15:56:43.724133,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:15:56:43.930669,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:15:56:44.115641,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:15:56:44.303198,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:15:56:44.455134,C9,ARM,"velocity: 20000, acceleration: 20000, X: -99500, Y: 109000, Z: 218000, gripper: -174500, elbow_bias: 0",None,None
+2021:09:27:15:56:45.795108,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:15:56:45.989811,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:15:56:46.193579,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:15:56:46.378626,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:15:56:46.548172,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:15:56:46.744705,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:15:56:46.933405,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:15:58:01.442807,C9,ARM,"velocity: 20000, acceleration: 20000, X: -99500, Y: 109000, Z: 300000, gripper: -174500, elbow_bias: 0",None,None
+2021:09:27:15:58:02.661190,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:15:58:02.850037,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:15:58:03.030657,C9,ARM,"velocity: 20000, acceleration: 20000, X: -119500, Y: 109000, Z: 300000, gripper: -175500, elbow_bias: 0",None,None
+2021:09:27:15:58:03.783266,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:15:58:03.977784,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:15:58:04.188175,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:15:58:04.361711,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:15:58:04.534255,C9,ARM,"velocity: 20000, acceleration: 20000, X: -119500, Y: 109000, Z: 218000, gripper: -174500, elbow_bias: 0",None,None
+2021:09:27:15:58:05.873905,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:15:58:06.057413,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:15:58:06.258873,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:15:58:06.441378,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:15:58:06.609931,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:15:58:06.803414,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:15:58:06.977992,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:15:58:07.172575,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:15:59:21.667172,C9,ARM,"velocity: 20000, acceleration: 20000, X: -119500, Y: 109000, Z: 300000, gripper: -174500, elbow_bias: 0",None,None
+2021:09:27:15:59:22.920994,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:15:59:23.143555,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:15:59:23.307197,C9,ARM,"velocity: 20000, acceleration: 20000, X: -139500, Y: 109000, Z: 300000, gripper: -175500, elbow_bias: 0",None,None
+2021:09:27:15:59:24.061726,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:15:59:24.302084,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:15:59:24.515129,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:15:59:24.700632,C9,ARM,"velocity: 20000, acceleration: 20000, X: -139500, Y: 109000, Z: 218000, gripper: -174500, elbow_bias: 0",None,None
+2021:09:27:15:59:26.068242,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:15:59:26.246755,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:15:59:26.452380,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:15:59:26.657930,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:15:59:26.873179,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:15:59:27.053696,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:15:59:27.252166,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:16:00:41.731305,C9,ARM,"velocity: 20000, acceleration: 20000, X: -139500, Y: 109000, Z: 300000, gripper: -174500, elbow_bias: 0",None,None
+2021:09:27:16:00:42.986252,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:16:00:43.217627,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:16:00:43.393167,C9,ARM,"velocity: 20000, acceleration: 20000, X: -159500, Y: 109000, Z: 300000, gripper: -175500, elbow_bias: 0",None,None
+2021:09:27:16:00:44.093737,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:16:00:44.284209,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:16:00:44.453867,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:16:00:44.618735,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:16:00:44.788287,C9,ARM,"velocity: 20000, acceleration: 20000, X: -159500, Y: 109000, Z: 218000, gripper: -174500, elbow_bias: 0",None,None
+2021:09:27:16:00:46.135739,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:16:00:46.327227,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:16:00:46.519713,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:16:00:46.693403,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:16:00:46.893712,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:16:00:47.079462,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:16:00:47.260216,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:16:02:01.752829,C9,ARM,"velocity: 20000, acceleration: 20000, X: -159500, Y: 109000, Z: 300000, gripper: -174500, elbow_bias: 0",None,None
+2021:09:27:16:02:02.978800,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:16:02:03.163304,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:16:02:03.348808,C9,ARM,"velocity: 20000, acceleration: 20000, X: -179500, Y: 109000, Z: 300000, gripper: -175500, elbow_bias: 0",None,None
+2021:09:27:16:02:04.062063,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:16:02:04.201782,C9,ARM,"velocity: 20000, acceleration: 20000, X: -179500, Y: 109000, Z: 218000, gripper: -174500, elbow_bias: 0",None,None
+2021:09:27:16:02:05.646747,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:16:02:05.838695,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:16:02:06.015421,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:16:02:06.212954,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:16:03:20.659142,C9,ARM,"velocity: 20000, acceleration: 20000, X: -179500, Y: 109000, Z: 300000, gripper: -174500, elbow_bias: 0",None,None
+2021:09:27:16:03:21.909294,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:16:03:22.114900,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:16:03:22.302363,C9,ARM,"velocity: 20000, acceleration: 20000, X: -99500, Y: 89000, Z: 300000, gripper: -175500, elbow_bias: 0",None,None
+2021:09:27:16:03:23.500257,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:16:03:23.684814,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:16:03:23.871285,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:16:03:24.052159,C9,ARM,"velocity: 20000, acceleration: 20000, X: -99500, Y: 89000, Z: 218000, gripper: -174500, elbow_bias: 0",None,None
+2021:09:27:16:03:25.383778,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:16:03:25.571278,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:16:03:25.747801,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:16:03:25.927321,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:16:03:26.130419,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:16:03:26.319911,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:16:03:26.497431,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:16:03:26.683934,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:16:04:41.141477,C9,ARM,"velocity: 20000, acceleration: 20000, X: -99500, Y: 89000, Z: 300000, gripper: -174500, elbow_bias: 0",None,None
+2021:09:27:16:04:42.377482,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:16:04:42.574951,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:16:04:42.748487,C9,ARM,"velocity: 20000, acceleration: 20000, X: -119500, Y: 89000, Z: 300000, gripper: -175500, elbow_bias: 0",None,None
+2021:09:27:16:04:43.492501,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:16:04:43.660049,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:16:04:43.812641,C9,ARM,"velocity: 20000, acceleration: 20000, X: -119500, Y: 89000, Z: 218000, gripper: -174500, elbow_bias: 0",None,None
+2021:09:27:16:04:45.149111,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:16:04:45.315700,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:16:04:45.482221,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:16:04:45.646785,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:16:04:45.814373,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:16:04:45.988950,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:16:04:46.160498,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:16:04:46.357009,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:16:06:00.768180,C9,ARM,"velocity: 20000, acceleration: 20000, X: -119500, Y: 89000, Z: 300000, gripper: -174500, elbow_bias: 0",None,None
+2021:09:27:16:06:02.007968,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:16:06:02.213477,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:16:06:02.390943,C9,ARM,"velocity: 20000, acceleration: 20000, X: -139500, Y: 89000, Z: 300000, gripper: -175500, elbow_bias: 0",None,None
+2021:09:27:16:06:03.103347,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:16:06:03.281287,C9,ARM,"velocity: 20000, acceleration: 20000, X: -139500, Y: 89000, Z: 218000, gripper: -174500, elbow_bias: 0",None,None
+2021:09:27:16:06:04.712857,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:16:06:04.898355,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:16:06:05.100819,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:16:06:05.294464,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:16:07:19.731408,C9,ARM,"velocity: 20000, acceleration: 20000, X: -139500, Y: 89000, Z: 300000, gripper: -174500, elbow_bias: 0",None,None
+2021:09:27:16:07:20.969306,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:16:07:21.147075,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:16:07:21.333626,C9,ARM,"velocity: 20000, acceleration: 20000, X: -159500, Y: 89000, Z: 300000, gripper: -175500, elbow_bias: 0",None,None
+2021:09:27:16:07:22.030514,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:16:07:22.214023,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:16:07:22.418698,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:16:07:22.596220,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:16:07:22.810663,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:16:07:23.029284,C9,ARM,"velocity: 20000, acceleration: 20000, X: -159500, Y: 89000, Z: 218000, gripper: -174500, elbow_bias: 0",None,None
+2021:09:27:16:07:24.356199,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:16:07:24.546862,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:16:07:24.734677,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:16:07:24.931834,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:16:07:25.112811,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:16:07:25.308467,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:16:07:25.492399,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:16:08:39.956224,C9,ARM,"velocity: 20000, acceleration: 20000, X: -159500, Y: 89000, Z: 300000, gripper: -174500, elbow_bias: 0",None,None
+2021:09:27:16:08:41.172970,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:16:08:41.366568,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:16:08:41.542146,C9,ARM,"velocity: 20000, acceleration: 20000, X: -179500, Y: 89000, Z: 300000, gripper: -175500, elbow_bias: 0",None,None
+2021:09:27:16:08:42.240579,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:16:08:42.404333,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:16:08:42.596914,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:16:08:42.768455,C9,ARM,"velocity: 20000, acceleration: 20000, X: -179500, Y: 89000, Z: 218000, gripper: -174500, elbow_bias: 0",None,None
+2021:09:27:16:08:44.222802,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:16:08:44.425296,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:16:08:44.619070,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:16:09:59.086423,C9,ARM,"velocity: 20000, acceleration: 20000, X: -179500, Y: 89000, Z: 300000, gripper: -174500, elbow_bias: 0",None,None
+2021:09:27:16:10:00.327547,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:16:10:00.514403,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:16:10:00.696913,C9,ARM,"velocity: 20000, acceleration: 20000, X: -244600, Y: 120000, Z: 300000, gripper: -175510, elbow_bias: 0",None,None
+2021:09:27:16:10:01.700925,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:16:10:01.874485,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:16:10:02.042260,C9,ARM,"velocity: 20000, acceleration: 20000, X: -244600, Y: 120000, Z: 167008, gripper: -174510, elbow_bias: 0",None,None
+2021:09:27:16:10:03.829308,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:16:10:04.007027,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:16:10:04.190883,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:16:10:04.367761,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:16:10:04.535534,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:16:10:04.719171,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:16:10:04.908124,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:16:10:05.072989,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:16:10:05.228859,C9,OUTP,"output: 0, value: 0",None,None
+2021:09:27:16:10:05.376586,C9,ARM,"velocity: 20000, acceleration: 20000, X: -244600, Y: 120000, Z: 300000, gripper: -175510, elbow_bias: 0",None,None
+2021:09:27:16:10:07.169430,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:16:10:07.375222,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:16:10:07.537825,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:16:10:07.730671,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:16:10:07.918206,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:16:10:08.094850,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:16:10:08.267389,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:16:10:08.420974,C9,OUTP,"output: 0, value: 0",None,None
+2021:09:27:16:10:08.568262,C9,ARM,"velocity: 20000, acceleration: 20000, X: -244600, Y: 120000, Z: 300000, gripper: -175510, elbow_bias: 0",None,None
+2021:09:27:16:10:08.863701,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:16:10:09.057468,C9,ARM,"velocity: 20000, acceleration: 20000, X: -244600, Y: 120000, Z: 167008, gripper: -175510, elbow_bias: 0",None,None
+2021:09:27:16:10:10.549998,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:16:10:10.698796,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:16:10:10.884517,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:16:10:11.046262,C9,OUTP,"output: 0, value: 1",None,None
+2021:09:27:16:10:11.180024,C9,ARM,"velocity: 20000, acceleration: 20000, X: -244600, Y: 120000, Z: 300000, gripper: -175510, elbow_bias: 0",None,None
+2021:09:27:16:10:12.684337,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:16:10:12.850981,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:16:10:12.998563,C9,ARM,"velocity: 20000, acceleration: 20000, X: -99500, Y: 149000, Z: 300000, gripper: -175500, elbow_bias: 0",None,None
+2021:09:27:16:10:14.583520,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:16:10:14.760053,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:16:10:14.935575,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:16:10:15.095149,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:16:10:15.250029,C9,ARM,"velocity: 20000, acceleration: 20000, X: -99500, Y: 149000, Z: 218000, gripper: -174500, elbow_bias: 0",None,None
+2021:09:27:16:10:16.569492,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:16:10:16.752001,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:16:10:16.914540,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:16:10:17.084118,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:16:10:17.263606,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:16:10:17.431193,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:16:10:17.609712,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:16:10:17.799214,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:16:11:32.260237,C9,ARM,"velocity: 20000, acceleration: 20000, X: -99500, Y: 149000, Z: 300000, gripper: -174500, elbow_bias: 0",None,None
+2021:09:27:16:11:33.511314,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:16:11:33.700809,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:16:11:33.888504,C9,ARM,"velocity: 20000, acceleration: 20000, X: -119500, Y: 149000, Z: 300000, gripper: -175500, elbow_bias: 0",None,None
+2021:09:27:16:11:34.616961,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:16:11:34.805019,C9,ARM,"velocity: 20000, acceleration: 20000, X: -119500, Y: 149000, Z: 218000, gripper: -174500, elbow_bias: 0",None,None
+2021:09:27:16:11:36.134893,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:16:11:36.341334,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:16:11:36.524847,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:16:11:36.696390,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:16:11:36.904829,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:16:11:37.093395,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:16:11:37.279897,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:16:12:51.728724,C9,ARM,"velocity: 20000, acceleration: 20000, X: -119500, Y: 149000, Z: 300000, gripper: -174500, elbow_bias: 0",None,None
+2021:09:27:16:12:52.964681,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:16:12:53.163343,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:16:12:53.334982,C9,ARM,"velocity: 20000, acceleration: 20000, X: -139500, Y: 149000, Z: 300000, gripper: -175500, elbow_bias: 0",None,None
+2021:09:27:16:12:54.058051,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:16:12:54.228672,C9,ARM,"velocity: 20000, acceleration: 20000, X: -139500, Y: 149000, Z: 218000, gripper: -174500, elbow_bias: 0",None,None
+2021:09:27:16:12:55.573317,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:16:12:55.762806,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:16:12:55.966375,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:16:12:56.143897,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:16:12:56.332396,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:16:12:56.518928,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:16:12:56.706399,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:16:14:11.184373,C9,ARM,"velocity: 20000, acceleration: 20000, X: -139500, Y: 149000, Z: 300000, gripper: -174500, elbow_bias: 0",None,None
+2021:09:27:16:14:12.412089,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:16:14:12.600588,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:16:14:12.778111,C9,ARM,"velocity: 20000, acceleration: 20000, X: -159500, Y: 149000, Z: 300000, gripper: -175500, elbow_bias: 0",None,None
+2021:09:27:16:14:13.504168,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:16:14:13.678698,C9,ARM,"velocity: 20000, acceleration: 20000, X: -159500, Y: 149000, Z: 218000, gripper: -174500, elbow_bias: 0",None,None
+2021:09:27:16:14:15.026783,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:16:14:15.219269,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:16:14:15.405924,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:16:14:15.577578,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:16:14:15.748111,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:16:14:15.920653,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:16:14:16.100169,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:16:14:16.277691,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:16:15:30.745267,C9,ARM,"velocity: 20000, acceleration: 20000, X: -159500, Y: 149000, Z: 300000, gripper: -174500, elbow_bias: 0",None,None
+2021:09:27:16:15:31.981217,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:16:15:32.162730,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:16:15:32.352230,C9,ARM,"velocity: 20000, acceleration: 20000, X: -179500, Y: 149000, Z: 300000, gripper: -175500, elbow_bias: 0",None,None
+2021:09:27:16:15:33.067309,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:16:15:33.257799,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:16:15:33.426363,C9,ARM,"velocity: 20000, acceleration: 20000, X: -179500, Y: 149000, Z: 218000, gripper: -174500, elbow_bias: 0",None,None
+2021:09:27:16:15:34.869721,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:16:15:35.065906,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:16:15:35.245428,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:16:15:35.429938,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:16:16:49.893327,C9,ARM,"velocity: 20000, acceleration: 20000, X: -179500, Y: 149000, Z: 300000, gripper: -174500, elbow_bias: 0",None,None
+2021:09:27:16:16:51.122041,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:16:16:51.315675,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:16:16:51.485588,C9,ARM,"velocity: 20000, acceleration: 20000, X: -99500, Y: 129000, Z: 300000, gripper: -175500, elbow_bias: 0",None,None
+2021:09:27:16:16:52.841405,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:16:16:53.067794,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:16:16:53.266287,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:16:16:53.477722,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:16:16:53.682486,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:16:16:53.876283,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:16:16:54.075741,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:16:16:54.262238,C9,ARM,"velocity: 20000, acceleration: 20000, X: -99500, Y: 129000, Z: 218000, gripper: -174500, elbow_bias: 0",None,None
+2021:09:27:16:16:55.583665,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:16:16:55.768447,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:16:16:55.945727,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:16:16:56.131232,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:16:16:56.312720,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:16:16:56.488294,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:16:16:56.656830,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:16:16:56.842301,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:16:18:11.318103,C9,ARM,"velocity: 20000, acceleration: 20000, X: -99500, Y: 129000, Z: 300000, gripper: -174500, elbow_bias: 0",None,None
+2021:09:27:16:18:12.562078,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:16:18:12.761622,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:16:18:12.951589,C9,ARM,"velocity: 20000, acceleration: 20000, X: -119500, Y: 129000, Z: 300000, gripper: -175500, elbow_bias: 0",None,None
+2021:09:27:16:18:13.689179,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:16:18:13.895752,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:16:18:14.074331,C9,ARM,"velocity: 20000, acceleration: 20000, X: -119500, Y: 129000, Z: 218000, gripper: -174500, elbow_bias: 0",None,None
+2021:09:27:16:18:15.412432,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:16:18:15.600310,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:16:18:15.783751,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:16:18:15.995705,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:16:18:16.175424,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:16:18:16.353221,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:16:18:16.530747,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:16:19:31.008103,C9,ARM,"velocity: 20000, acceleration: 20000, X: -119500, Y: 129000, Z: 300000, gripper: -174500, elbow_bias: 0",None,None
+2021:09:27:16:19:32.247096,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:16:19:32.420778,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:16:19:32.599503,C9,ARM,"velocity: 20000, acceleration: 20000, X: -139500, Y: 129000, Z: 300000, gripper: -175500, elbow_bias: 0",None,None
+2021:09:27:16:19:33.347922,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:16:19:33.528276,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:16:19:33.725748,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:16:19:33.913251,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:16:19:34.108728,C9,ARM,"velocity: 20000, acceleration: 20000, X: -139500, Y: 129000, Z: 218000, gripper: -174500, elbow_bias: 0",None,None
+2021:09:27:16:19:35.441376,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:16:19:35.629869,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:16:19:35.815373,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:16:19:35.995896,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:16:19:36.185389,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:16:19:36.361912,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:16:19:36.540434,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:16:19:36.727940,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:16:20:51.189547,C9,ARM,"velocity: 20000, acceleration: 20000, X: -139500, Y: 129000, Z: 300000, gripper: -174500, elbow_bias: 0",None,None
+2021:09:27:16:20:52.385266,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:16:20:52.572090,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:16:20:52.753924,C9,ARM,"velocity: 20000, acceleration: 20000, X: -159500, Y: 129000, Z: 300000, gripper: -175500, elbow_bias: 0",None,None
+2021:09:27:16:20:53.493327,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:16:20:53.680762,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:16:20:53.846691,C9,ARM,"velocity: 20000, acceleration: 20000, X: -159500, Y: 129000, Z: 218000, gripper: -174500, elbow_bias: 0",None,None
+2021:09:27:16:20:55.305049,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:16:20:55.497526,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:16:20:55.678214,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:16:20:55.864935,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:16:22:10.333697,C9,ARM,"velocity: 20000, acceleration: 20000, X: -159500, Y: 129000, Z: 300000, gripper: -174500, elbow_bias: 0",None,None
+2021:09:27:16:22:11.548235,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:16:22:11.726756,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:16:22:11.899305,C9,ARM,"velocity: 20000, acceleration: 20000, X: -179500, Y: 129000, Z: 300000, gripper: -175500, elbow_bias: 0",None,None
+2021:09:27:16:22:12.602422,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:16:22:12.793915,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:16:22:12.967606,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:16:22:13.135303,C9,ARM,"velocity: 20000, acceleration: 20000, X: -179500, Y: 129000, Z: 218000, gripper: -174500, elbow_bias: 0",None,None
+2021:09:27:16:22:14.498892,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:16:22:14.694559,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:16:22:14.864099,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:16:22:15.047619,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:16:22:15.223189,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:16:22:15.407702,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:16:22:15.601173,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:16:23:30.060770,C9,ARM,"velocity: 20000, acceleration: 20000, X: -179500, Y: 129000, Z: 300000, gripper: -174500, elbow_bias: 0",None,None
+2021:09:27:16:23:31.316143,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:16:23:31.510843,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:16:23:31.693465,C9,ARM,"velocity: 20000, acceleration: 20000, X: -99500, Y: 109000, Z: 300000, gripper: -175500, elbow_bias: 0",None,None
+2021:09:27:16:23:32.913320,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:16:23:33.099883,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:16:23:33.283796,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:16:23:33.469501,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:16:23:33.651302,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:16:23:33.833170,C9,ARM,"velocity: 20000, acceleration: 20000, X: -99500, Y: 109000, Z: 218000, gripper: -174500, elbow_bias: 0",None,None
+2021:09:27:16:23:35.199884,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:16:23:35.377414,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:16:23:35.561916,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:16:23:35.756397,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:16:23:35.930965,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:16:23:36.102517,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:16:23:36.279026,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:16:23:36.460521,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:16:24:50.889666,C9,ARM,"velocity: 20000, acceleration: 20000, X: -99500, Y: 109000, Z: 300000, gripper: -174500, elbow_bias: 0",None,None
+2021:09:27:16:24:52.121690,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:16:24:52.327625,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:16:24:52.499284,C9,ARM,"velocity: 20000, acceleration: 20000, X: -119500, Y: 109000, Z: 300000, gripper: -175500, elbow_bias: 0",None,None
+2021:09:27:16:24:53.245978,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:16:24:53.447507,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:16:24:53.626325,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:16:24:53.834756,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:16:24:54.005348,C9,ARM,"velocity: 20000, acceleration: 20000, X: -119500, Y: 109000, Z: 218000, gripper: -174500, elbow_bias: 0",None,None
+2021:09:27:16:24:55.344075,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:16:24:55.502744,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:16:24:55.686609,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:16:24:55.891300,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:16:24:56.070041,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:16:24:56.251725,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:16:24:56.422269,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:16:24:56.593804,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:16:26:11.064288,C9,ARM,"velocity: 20000, acceleration: 20000, X: -119500, Y: 109000, Z: 300000, gripper: -174500, elbow_bias: 0",None,None
+2021:09:27:16:26:12.319925,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:16:26:12.503428,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:16:26:12.685025,C9,ARM,"velocity: 20000, acceleration: 20000, X: -139500, Y: 109000, Z: 300000, gripper: -175500, elbow_bias: 0",None,None
+2021:09:27:16:26:13.415554,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:16:26:13.590084,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:16:26:13.778576,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:16:26:13.981035,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:16:26:14.159557,C9,ARM,"velocity: 20000, acceleration: 20000, X: -139500, Y: 109000, Z: 218000, gripper: -174500, elbow_bias: 0",None,None
+2021:09:27:16:26:15.489011,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:16:26:15.674513,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:16:26:15.871192,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:16:26:16.043229,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:16:26:16.220748,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:16:26:16.405408,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:16:26:16.584193,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:16:26:16.772930,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:16:27:31.232070,C9,ARM,"velocity: 20000, acceleration: 20000, X: -139500, Y: 109000, Z: 300000, gripper: -174500, elbow_bias: 0",None,None
+2021:09:27:16:27:32.455048,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:16:27:32.642624,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:16:27:32.824142,C9,ARM,"velocity: 20000, acceleration: 20000, X: -159500, Y: 109000, Z: 300000, gripper: -175500, elbow_bias: 0",None,None
+2021:09:27:16:27:33.556558,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:16:27:33.760014,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:16:27:33.945521,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:16:27:34.121047,C9,ARM,"velocity: 20000, acceleration: 20000, X: -159500, Y: 109000, Z: 218000, gripper: -174500, elbow_bias: 0",None,None
+2021:09:27:16:27:35.474429,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:16:27:35.667193,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:16:27:35.857830,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:16:27:36.062843,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:16:27:36.241365,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:16:27:36.443824,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:16:27:36.634310,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:16:28:51.091737,C9,ARM,"velocity: 20000, acceleration: 20000, X: -159500, Y: 109000, Z: 300000, gripper: -174500, elbow_bias: 0",None,None
+2021:09:27:16:28:52.331515,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:16:28:52.523001,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:16:28:52.696531,C9,ARM,"velocity: 20000, acceleration: 20000, X: -179500, Y: 109000, Z: 300000, gripper: -175500, elbow_bias: 0",None,None
+2021:09:27:16:28:53.404786,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:16:28:53.577535,C9,ARM,"velocity: 20000, acceleration: 20000, X: -179500, Y: 109000, Z: 218000, gripper: -174500, elbow_bias: 0",None,None
+2021:09:27:16:28:55.034301,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:16:28:55.235808,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:16:28:55.433236,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:16:30:09.913236,C9,ARM,"velocity: 20000, acceleration: 20000, X: -179500, Y: 109000, Z: 300000, gripper: -174500, elbow_bias: 0",None,None
+2021:09:27:16:30:11.136953,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:16:30:11.326609,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:16:30:11.513111,C9,ARM,"velocity: 20000, acceleration: 20000, X: -99500, Y: 89000, Z: 300000, gripper: -175500, elbow_bias: 0",None,None
+2021:09:27:16:30:12.700178,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:16:30:12.881697,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:16:30:13.081159,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:16:30:13.252707,C9,ARM,"velocity: 20000, acceleration: 20000, X: -99500, Y: 89000, Z: 218000, gripper: -174500, elbow_bias: 0",None,None
+2021:09:27:16:30:14.598384,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:16:30:14.782893,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:16:30:14.963408,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:16:30:15.165867,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:16:30:15.366479,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:16:30:15.549986,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:16:30:15.735450,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:16:31:30.202375,C9,ARM,"velocity: 20000, acceleration: 20000, X: -99500, Y: 89000, Z: 300000, gripper: -174500, elbow_bias: 0",None,None
+2021:09:27:16:31:31.414581,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:16:31:31.592791,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:16:31:31.764343,C9,ARM,"velocity: 20000, acceleration: 20000, X: -119500, Y: 89000, Z: 300000, gripper: -175500, elbow_bias: 0",None,None
+2021:09:27:16:31:32.547787,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:16:31:32.730403,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:16:31:32.920828,C9,ARM,"velocity: 20000, acceleration: 20000, X: -119500, Y: 89000, Z: 218000, gripper: -174500, elbow_bias: 0",None,None
+2021:09:27:16:31:34.276304,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:16:31:34.479754,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:16:31:34.716338,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:16:31:35.001572,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:16:31:35.191062,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:16:31:35.375568,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:16:32:49.834047,C9,ARM,"velocity: 20000, acceleration: 20000, X: -119500, Y: 89000, Z: 300000, gripper: -174500, elbow_bias: 0",None,None
+2021:09:27:16:32:51.068975,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:16:32:51.256480,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:16:32:51.446972,C9,ARM,"velocity: 20000, acceleration: 20000, X: -139500, Y: 89000, Z: 300000, gripper: -175500, elbow_bias: 0",None,None
+2021:09:27:16:32:52.176089,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:16:32:52.355748,C9,ARM,"velocity: 20000, acceleration: 20000, X: -139500, Y: 89000, Z: 218000, gripper: -174500, elbow_bias: 0",None,None
+2021:09:27:16:32:53.815030,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:16:32:53.997813,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:16:32:54.194557,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:16:32:54.402988,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:16:34:08.839062,C9,ARM,"velocity: 20000, acceleration: 20000, X: -139500, Y: 89000, Z: 300000, gripper: -174500, elbow_bias: 0",None,None
+2021:09:27:16:34:10.073893,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:16:34:10.269370,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:16:34:10.453880,C9,ARM,"velocity: 20000, acceleration: 20000, X: -159500, Y: 89000, Z: 300000, gripper: -175500, elbow_bias: 0",None,None
+2021:09:27:16:34:11.155478,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:16:34:11.339981,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:16:34:11.523494,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:16:34:11.713987,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:16:34:11.918438,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:16:34:12.078047,C9,ARM,"velocity: 20000, acceleration: 20000, X: -159500, Y: 89000, Z: 218000, gripper: -174500, elbow_bias: 0",None,None
+2021:09:27:16:34:13.427114,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:16:34:13.611621,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:16:34:13.785154,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:16:34:13.970658,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:16:34:14.165139,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:16:34:14.361976,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:16:34:14.553464,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:16:35:29.023380,C9,ARM,"velocity: 20000, acceleration: 20000, X: -159500, Y: 89000, Z: 300000, gripper: -174500, elbow_bias: 0",None,None
+2021:09:27:16:35:30.250067,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:16:35:30.462488,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:16:35:30.637021,C9,ARM,"velocity: 20000, acceleration: 20000, X: -179500, Y: 89000, Z: 300000, gripper: -175500, elbow_bias: 0",None,None
+2021:09:27:16:35:31.326427,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:16:35:31.514490,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:16:35:31.741876,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:16:35:31.913424,C9,ARM,"velocity: 20000, acceleration: 20000, X: -179500, Y: 89000, Z: 218000, gripper: -174500, elbow_bias: 0",None,None
+2021:09:27:16:35:33.401282,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:16:35:33.587785,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:16:35:33.766310,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:16:36:48.252498,C9,ARM,"velocity: 20000, acceleration: 20000, X: -179500, Y: 89000, Z: 300000, gripper: -174500, elbow_bias: 0",None,None
+2021:09:27:16:36:49.508497,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:16:36:49.715943,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:16:36:49.874553,C9,ARM,"velocity: 20000, acceleration: 20000, X: -244600, Y: 120000, Z: 300000, gripper: -175510, elbow_bias: 0",None,None
+2021:09:27:16:36:50.883865,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:16:36:51.061434,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:16:36:51.219010,C9,ARM,"velocity: 20000, acceleration: 20000, X: -244600, Y: 120000, Z: 167008, gripper: -174510, elbow_bias: 0",None,None
+2021:09:27:16:36:53.002330,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:16:36:53.182855,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:16:36:53.378569,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:16:36:53.562337,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:16:36:53.724896,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:16:36:53.902525,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:16:36:54.072178,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:16:36:54.274788,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:16:36:54.445333,C9,OUTP,"output: 0, value: 0",None,None
+2021:09:27:16:36:54.583961,C9,ARM,"velocity: 20000, acceleration: 20000, X: -244600, Y: 120000, Z: 300000, gripper: -175510, elbow_bias: 0",None,None
+2021:09:27:16:36:56.384810,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:16:36:56.564327,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:16:36:56.727084,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:16:36:56.930539,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:16:36:57.109065,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:16:36:57.287593,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:16:36:57.455144,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:16:36:57.630887,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:16:36:57.802009,C9,OUTP,"output: 0, value: 0",None,None
+2021:09:27:16:36:57.936643,C9,ARM,"velocity: 20000, acceleration: 20000, X: -244600, Y: 120000, Z: 300000, gripper: -175510, elbow_bias: 0",None,None
+2021:09:27:16:36:58.233858,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:16:36:58.402406,C9,ARM,"velocity: 20000, acceleration: 20000, X: -244600, Y: 120000, Z: 167008, gripper: -175510, elbow_bias: 0",None,None
+2021:09:27:16:36:59.914648,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:16:37:00.086220,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:16:37:00.240774,C9,OUTP,"output: 0, value: 1",None,None
+2021:09:27:16:37:00.367474,C9,ARM,"velocity: 20000, acceleration: 20000, X: -244600, Y: 120000, Z: 300000, gripper: -175510, elbow_bias: 0",None,None
+2021:09:27:16:37:01.848510,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:16:37:02.003064,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:16:37:02.167623,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:16:37:02.339164,C9,ARM,"velocity: 20000, acceleration: 20000, X: -99500, Y: 149000, Z: 300000, gripper: -175500, elbow_bias: 0",None,None
+2021:09:27:16:37:03.897994,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:16:37:04.077514,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:16:37:04.267007,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:16:37:04.450523,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:16:37:04.617083,C9,ARM,"velocity: 20000, acceleration: 20000, X: -99500, Y: 149000, Z: 218000, gripper: -174500, elbow_bias: 0",None,None
+2021:09:27:16:37:05.972147,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:16:37:06.173608,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:16:37:06.369127,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:16:37:06.532749,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:16:37:06.725843,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:16:37:06.938275,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:16:37:07.127769,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:16:38:21.607313,C9,ARM,"velocity: 20000, acceleration: 20000, X: -99500, Y: 149000, Z: 300000, gripper: -174500, elbow_bias: 0",None,None
+2021:09:27:16:38:22.858334,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:16:38:23.044943,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:16:38:23.231564,C9,ARM,"velocity: 20000, acceleration: 20000, X: -119500, Y: 149000, Z: 300000, gripper: -175500, elbow_bias: 0",None,None
+2021:09:27:16:38:23.961006,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:16:38:24.144545,C9,ARM,"velocity: 20000, acceleration: 20000, X: -119500, Y: 149000, Z: 218000, gripper: -174500, elbow_bias: 0",None,None
+2021:09:27:16:38:25.478414,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:16:38:25.678871,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:16:38:25.863384,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:16:38:26.045896,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:16:38:26.241593,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:16:38:26.431281,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:16:38:26.617184,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:16:39:41.067357,C9,ARM,"velocity: 20000, acceleration: 20000, X: -119500, Y: 149000, Z: 300000, gripper: -174500, elbow_bias: 0",None,None
+2021:09:27:16:39:42.238045,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:16:39:42.424108,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:16:39:42.594798,C9,ARM,"velocity: 20000, acceleration: 20000, X: -139500, Y: 149000, Z: 300000, gripper: -175500, elbow_bias: 0",None,None
+2021:09:27:16:39:43.323882,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:16:39:43.479653,C9,ARM,"velocity: 20000, acceleration: 20000, X: -139500, Y: 149000, Z: 218000, gripper: -174500, elbow_bias: 0",None,None
+2021:09:27:16:39:44.829085,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:16:39:45.014069,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:16:39:45.218695,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:16:39:45.392423,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:16:39:45.576930,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:16:39:45.765425,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:16:39:45.958909,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:16:41:00.394065,C9,ARM,"velocity: 20000, acceleration: 20000, X: -139500, Y: 149000, Z: 300000, gripper: -174500, elbow_bias: 0",None,None
+2021:09:27:16:41:01.621013,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:16:41:01.834621,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:16:41:02.005148,C9,ARM,"velocity: 20000, acceleration: 20000, X: -159500, Y: 149000, Z: 300000, gripper: -175500, elbow_bias: 0",None,None
+2021:09:27:16:41:02.722943,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:16:41:02.895752,C9,ARM,"velocity: 20000, acceleration: 20000, X: -159500, Y: 149000, Z: 218000, gripper: -174500, elbow_bias: 0",None,None
+2021:09:27:16:41:04.198689,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:16:41:04.405259,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:16:41:04.595768,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:16:41:04.786259,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:16:41:04.953817,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:16:41:05.142392,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:16:41:05.321874,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:16:41:05.509395,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:16:42:19.975721,C9,ARM,"velocity: 20000, acceleration: 20000, X: -159500, Y: 149000, Z: 300000, gripper: -174500, elbow_bias: 0",None,None
+2021:09:27:16:42:21.214962,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:16:42:21.414431,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:16:42:21.577071,C9,ARM,"velocity: 20000, acceleration: 20000, X: -179500, Y: 149000, Z: 300000, gripper: -175500, elbow_bias: 0",None,None
+2021:09:27:16:42:22.302425,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:16:42:22.489912,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:16:42:22.656463,C9,ARM,"velocity: 20000, acceleration: 20000, X: -179500, Y: 149000, Z: 218000, gripper: -174500, elbow_bias: 0",None,None
+2021:09:27:16:42:24.115567,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:16:42:24.311080,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:16:42:24.520481,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:16:43:38.977237,C9,ARM,"velocity: 20000, acceleration: 20000, X: -179500, Y: 149000, Z: 300000, gripper: -174500, elbow_bias: 0",None,None
+2021:09:27:16:43:40.198481,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:16:43:40.384958,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:16:43:40.555502,C9,ARM,"velocity: 20000, acceleration: 20000, X: -99500, Y: 129000, Z: 300000, gripper: -175500, elbow_bias: 0",None,None
+2021:09:27:16:43:41.903089,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:16:43:42.064653,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:16:43:42.236197,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:16:43:42.406714,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:16:43:42.580248,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:16:43:42.775726,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:16:43:42.933305,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:16:43:43.103875,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:16:43:43.271454,C9,ARM,"velocity: 20000, acceleration: 20000, X: -99500, Y: 129000, Z: 218000, gripper: -174500, elbow_bias: 0",None,None
+2021:09:27:16:43:44.604835,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:16:43:44.773389,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:16:43:44.974849,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:16:43:45.151373,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:16:43:45.315933,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:16:43:45.500613,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:16:43:45.680295,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:16:43:45.862193,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:16:45:00.306443,C9,ARM,"velocity: 20000, acceleration: 20000, X: -99500, Y: 129000, Z: 300000, gripper: -174500, elbow_bias: 0",None,None
+2021:09:27:16:45:01.513452,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:16:45:01.698958,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:16:45:01.877757,C9,ARM,"velocity: 20000, acceleration: 20000, X: -119500, Y: 129000, Z: 300000, gripper: -175500, elbow_bias: 0",None,None
+2021:09:27:16:45:02.632183,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:16:45:02.827626,C9,ARM,"velocity: 20000, acceleration: 20000, X: -119500, Y: 129000, Z: 218000, gripper: -174500, elbow_bias: 0",None,None
+2021:09:27:16:45:04.179233,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:16:45:04.377702,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:16:45:04.578166,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:16:45:04.761675,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:16:45:04.963138,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:16:45:05.159826,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:16:45:05.348379,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:16:46:19.804094,C9,ARM,"velocity: 20000, acceleration: 20000, X: -119500, Y: 129000, Z: 300000, gripper: -174500, elbow_bias: 0",None,None
+2021:09:27:16:46:21.017076,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:16:46:21.201725,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:16:46:21.391574,C9,ARM,"velocity: 20000, acceleration: 20000, X: -139500, Y: 129000, Z: 300000, gripper: -175500, elbow_bias: 0",None,None
+2021:09:27:16:46:22.111826,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:16:46:22.297495,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:16:46:22.481005,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:16:46:22.671840,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:16:46:22.912224,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:16:46:23.102715,C9,ARM,"velocity: 20000, acceleration: 20000, X: -139500, Y: 129000, Z: 218000, gripper: -174500, elbow_bias: 0",None,None
+2021:09:27:16:46:24.464828,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:16:46:24.639364,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:16:46:24.819099,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:16:46:24.997624,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:16:46:25.178113,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:16:46:25.370019,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:16:46:25.611506,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:16:47:40.050938,C9,ARM,"velocity: 20000, acceleration: 20000, X: -139500, Y: 129000, Z: 300000, gripper: -174500, elbow_bias: 0",None,None
+2021:09:27:16:47:41.272379,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:16:47:41.452892,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:16:47:41.625766,C9,ARM,"velocity: 20000, acceleration: 20000, X: -159500, Y: 129000, Z: 300000, gripper: -175500, elbow_bias: 0",None,None
+2021:09:27:16:47:42.344328,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:16:47:42.526820,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:16:47:42.687696,C9,ARM,"velocity: 20000, acceleration: 20000, X: -159500, Y: 129000, Z: 218000, gripper: -174500, elbow_bias: 0",None,None
+2021:09:27:16:47:44.123858,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:16:47:44.296395,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:16:47:44.472922,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:16:47:44.655430,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:16:48:59.121381,C9,ARM,"velocity: 20000, acceleration: 20000, X: -159500, Y: 129000, Z: 300000, gripper: -174500, elbow_bias: 0",None,None
+2021:09:27:16:49:00.346593,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:16:49:00.554104,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:16:49:00.761913,C9,ARM,"velocity: 20000, acceleration: 20000, X: -179500, Y: 129000, Z: 300000, gripper: -175500, elbow_bias: 0",None,None
+2021:09:27:16:49:01.461018,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:16:49:01.658645,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:16:49:01.859435,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:16:49:02.027397,C9,ARM,"velocity: 20000, acceleration: 20000, X: -179500, Y: 129000, Z: 218000, gripper: -174500, elbow_bias: 0",None,None
+2021:09:27:16:49:03.376134,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:16:49:03.559007,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:16:49:03.750247,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:16:49:03.940182,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:16:49:04.122909,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:16:49:04.307504,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:16:49:04.480216,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:16:50:18.912577,C9,ARM,"velocity: 20000, acceleration: 20000, X: -179500, Y: 129000, Z: 300000, gripper: -174500, elbow_bias: 0",None,None
+2021:09:27:16:50:20.155511,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:16:50:20.352983,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:16:50:20.530540,C9,ARM,"velocity: 20000, acceleration: 20000, X: -99500, Y: 109000, Z: 300000, gripper: -175500, elbow_bias: 0",None,None
+2021:09:27:16:50:21.748457,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:16:50:21.913018,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:16:50:22.087521,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:16:50:22.255073,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:16:50:22.448809,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:16:50:22.630386,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:16:50:22.825837,C9,ARM,"velocity: 20000, acceleration: 20000, X: -99500, Y: 109000, Z: 218000, gripper: -174500, elbow_bias: 0",None,None
+2021:09:27:16:50:24.165284,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:16:50:24.352780,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:16:50:24.530278,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:16:50:24.701820,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:16:50:24.873360,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:16:50:25.039917,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:16:50:25.212488,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:16:50:25.383996,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:16:51:39.819024,C9,ARM,"velocity: 20000, acceleration: 20000, X: -99500, Y: 109000, Z: 300000, gripper: -174500, elbow_bias: 0",None,None
+2021:09:27:16:51:41.053889,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:16:51:41.253457,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:16:51:41.427994,C9,ARM,"velocity: 20000, acceleration: 20000, X: -119500, Y: 109000, Z: 300000, gripper: -175500, elbow_bias: 0",None,None
+2021:09:27:16:51:42.171742,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:16:51:42.368094,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:16:51:42.572553,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:16:51:42.756052,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:16:51:42.929588,C9,ARM,"velocity: 20000, acceleration: 20000, X: -119500, Y: 109000, Z: 218000, gripper: -174500, elbow_bias: 0",None,None
+2021:09:27:16:51:44.291180,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:16:51:44.483654,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:16:51:44.655566,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:16:51:44.860236,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:16:51:45.045744,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:16:51:45.240224,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:16:51:45.427722,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:16:52:59.889895,C9,ARM,"velocity: 20000, acceleration: 20000, X: -119500, Y: 109000, Z: 300000, gripper: -174500, elbow_bias: 0",None,None
+2021:09:27:16:53:01.180856,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:16:53:01.386684,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:16:53:01.585183,C9,ARM,"velocity: 20000, acceleration: 20000, X: -139500, Y: 109000, Z: 300000, gripper: -175500, elbow_bias: 0",None,None
+2021:09:27:16:53:02.330834,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:16:53:02.534344,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:16:53:02.761740,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:16:53:02.963196,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:16:53:03.172641,C9,ARM,"velocity: 20000, acceleration: 20000, X: -139500, Y: 109000, Z: 218000, gripper: -174500, elbow_bias: 0",None,None
+2021:09:27:16:53:04.532999,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:16:53:04.782329,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:16:53:04.986783,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:16:53:05.177331,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:16:53:05.375894,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:16:53:05.562396,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:16:53:05.751889,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:16:54:20.187683,C9,ARM,"velocity: 20000, acceleration: 20000, X: -139500, Y: 109000, Z: 300000, gripper: -174500, elbow_bias: 0",None,None
+2021:09:27:16:54:21.417668,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:16:54:21.604164,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:16:54:21.769722,C9,ARM,"velocity: 20000, acceleration: 20000, X: -159500, Y: 109000, Z: 300000, gripper: -175500, elbow_bias: 0",None,None
+2021:09:27:16:54:22.479080,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:16:54:22.658603,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:16:54:22.882998,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:16:54:23.119368,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:16:54:23.314213,C9,ARM,"velocity: 20000, acceleration: 20000, X: -159500, Y: 109000, Z: 218000, gripper: -174500, elbow_bias: 0",None,None
+2021:09:27:16:54:24.652146,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:16:54:24.843635,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:16:54:25.015182,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:16:54:25.221882,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:16:54:25.417356,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:16:54:25.600289,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:16:54:25.793354,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:16:55:40.251447,C9,ARM,"velocity: 20000, acceleration: 20000, X: -159500, Y: 109000, Z: 300000, gripper: -174500, elbow_bias: 0",None,None
+2021:09:27:16:55:41.463280,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:16:55:41.664575,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:16:55:41.826768,C9,ARM,"velocity: 20000, acceleration: 20000, X: -179500, Y: 109000, Z: 300000, gripper: -175500, elbow_bias: 0",None,None
+2021:09:27:16:55:42.523920,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:16:55:42.703430,C9,ARM,"velocity: 20000, acceleration: 20000, X: -179500, Y: 109000, Z: 218000, gripper: -174500, elbow_bias: 0",None,None
+2021:09:27:16:55:44.196437,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:16:55:44.383930,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:16:55:44.546613,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:16:56:58.971753,C9,ARM,"velocity: 20000, acceleration: 20000, X: -179500, Y: 109000, Z: 300000, gripper: -174500, elbow_bias: 0",None,None
+2021:09:27:16:57:00.211837,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:16:57:00.380801,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:16:57:00.542505,C9,ARM,"velocity: 20000, acceleration: 20000, X: -99500, Y: 89000, Z: 300000, gripper: -175500, elbow_bias: 0",None,None
+2021:09:27:16:57:01.744635,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:16:57:01.942484,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:16:57:02.136298,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:16:57:02.300201,C9,ARM,"velocity: 20000, acceleration: 20000, X: -99500, Y: 89000, Z: 218000, gripper: -174500, elbow_bias: 0",None,None
+2021:09:27:16:57:03.625771,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:16:57:03.795318,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:16:57:03.990766,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:16:57:04.165205,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:16:57:04.330763,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:16:57:04.519486,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:16:57:04.679120,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:16:57:04.855649,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:16:58:19.294466,C9,ARM,"velocity: 20000, acceleration: 20000, X: -99500, Y: 89000, Z: 300000, gripper: -174500, elbow_bias: 0",None,None
+2021:09:27:16:58:20.510582,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:16:58:20.692971,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:16:58:20.869897,C9,ARM,"velocity: 20000, acceleration: 20000, X: -119500, Y: 89000, Z: 300000, gripper: -175500, elbow_bias: 0",None,None
+2021:09:27:16:58:21.637788,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:16:58:21.809505,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:16:58:21.966280,C9,ARM,"velocity: 20000, acceleration: 20000, X: -119500, Y: 89000, Z: 218000, gripper: -174500, elbow_bias: 0",None,None
+2021:09:27:16:58:23.304658,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:16:58:23.486855,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:16:58:23.663632,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:16:58:23.857684,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:16:58:24.029671,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:16:58:24.224919,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:16:58:24.394027,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:16:58:24.584755,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:16:59:39.081856,C9,ARM,"velocity: 20000, acceleration: 20000, X: -119500, Y: 89000, Z: 300000, gripper: -174500, elbow_bias: 0",None,None
+2021:09:27:16:59:40.310859,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:16:59:40.487909,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:16:59:40.630958,C9,ARM,"velocity: 20000, acceleration: 20000, X: -139500, Y: 89000, Z: 300000, gripper: -175500, elbow_bias: 0",None,None
+2021:09:27:16:59:41.346335,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:16:59:41.509794,C9,ARM,"velocity: 20000, acceleration: 20000, X: -139500, Y: 89000, Z: 218000, gripper: -174500, elbow_bias: 0",None,None
+2021:09:27:16:59:42.969939,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:16:59:43.149512,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:16:59:43.306092,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:16:59:43.476743,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:17:00:57.950808,C9,ARM,"velocity: 20000, acceleration: 20000, X: -139500, Y: 89000, Z: 300000, gripper: -174500, elbow_bias: 0",None,None
+2021:09:27:17:00:59.185302,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:17:00:59.362798,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:17:00:59.525418,C9,ARM,"velocity: 20000, acceleration: 20000, X: -159500, Y: 89000, Z: 300000, gripper: -175500, elbow_bias: 0",None,None
+2021:09:27:17:01:00.247887,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:17:01:00.418517,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:17:01:00.626376,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:17:01:00.812256,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:17:01:00.992987,C9,ARM,"velocity: 20000, acceleration: 20000, X: -159500, Y: 89000, Z: 218000, gripper: -174500, elbow_bias: 0",None,None
+2021:09:27:17:01:02.348360,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:17:01:02.525112,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:17:01:02.726980,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:17:01:02.934798,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:17:01:03.128663,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:17:01:03.307489,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:17:01:03.482498,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:17:02:17.930906,C9,ARM,"velocity: 20000, acceleration: 20000, X: -159500, Y: 89000, Z: 300000, gripper: -174500, elbow_bias: 0",None,None
+2021:09:27:17:02:19.156421,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:17:02:19.343298,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:17:02:19.517996,C9,ARM,"velocity: 20000, acceleration: 20000, X: -179500, Y: 89000, Z: 300000, gripper: -175500, elbow_bias: 0",None,None
+2021:09:27:17:02:20.218185,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:17:02:20.398767,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:17:02:20.588289,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:17:02:20.739130,C9,ARM,"velocity: 20000, acceleration: 20000, X: -179500, Y: 89000, Z: 218000, gripper: -174500, elbow_bias: 0",None,None
+2021:09:27:17:02:22.202303,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:17:02:22.380358,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:17:02:22.550776,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:17:02:22.728372,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:17:03:37.238695,C9,ARM,"velocity: 20000, acceleration: 20000, X: -179500, Y: 89000, Z: 300000, gripper: -174500, elbow_bias: 0",None,None
+2021:09:27:17:03:38.459516,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:17:03:38.668271,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:17:03:38.857129,C9,ARM,"velocity: 20000, acceleration: 20000, X: -244600, Y: 120000, Z: 300000, gripper: -175510, elbow_bias: 0",None,None
+2021:09:27:17:03:39.860279,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:17:03:40.047264,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:17:03:40.222756,C9,ARM,"velocity: 20000, acceleration: 20000, X: -244600, Y: 120000, Z: 167008, gripper: -174510, elbow_bias: 0",None,None
+2021:09:27:17:03:42.032826,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:17:03:42.226732,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:17:03:42.397292,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:17:03:42.571887,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:17:03:42.744780,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:17:03:42.945478,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:17:03:43.107510,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:17:03:43.273068,C9,OUTP,"output: 0, value: 0",None,None
+2021:09:27:17:03:43.399714,C9,ARM,"velocity: 20000, acceleration: 20000, X: -244600, Y: 120000, Z: 300000, gripper: -175510, elbow_bias: 0",None,None
+2021:09:27:17:03:45.187280,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:17:03:45.364168,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:17:03:45.536705,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:17:03:45.693799,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:17:03:45.860352,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:17:03:46.036391,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:17:03:46.193973,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:17:03:46.372498,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:17:03:46.518670,C9,OUTP,"output: 0, value: 0",None,None
+2021:09:27:17:03:46.643338,C9,ARM,"velocity: 20000, acceleration: 20000, X: -244600, Y: 120000, Z: 300000, gripper: -175510, elbow_bias: 0",None,None
+2021:09:27:17:03:46.928573,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:17:03:47.102132,C9,ARM,"velocity: 20000, acceleration: 20000, X: -244600, Y: 120000, Z: 167008, gripper: -175510, elbow_bias: 0",None,None
+2021:09:27:17:03:48.595117,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:17:03:48.772018,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:17:03:48.926604,C9,OUTP,"output: 0, value: 1",None,None
+2021:09:27:17:03:49.058253,C9,ARM,"velocity: 20000, acceleration: 20000, X: -244600, Y: 120000, Z: 300000, gripper: -175510, elbow_bias: 0",None,None
+2021:09:27:17:03:50.555504,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:17:03:50.737642,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:17:03:50.930287,C9,ARM,"velocity: 20000, acceleration: 20000, X: -99500, Y: 149000, Z: 300000, gripper: -175500, elbow_bias: 0",None,None
+2021:09:27:17:03:52.504806,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:17:03:52.702074,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:17:03:52.878688,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:17:03:53.073379,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:17:03:53.241655,C9,ARM,"velocity: 20000, acceleration: 20000, X: -99500, Y: 149000, Z: 218000, gripper: -174500, elbow_bias: 0",None,None
+2021:09:27:17:03:54.587806,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:17:03:54.783925,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:17:03:54.965394,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:17:03:55.155919,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:17:03:55.331263,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:17:03:55.504022,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:17:03:55.674701,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:17:03:55.869419,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:17:05:10.323998,C9,ARM,"velocity: 20000, acceleration: 20000, X: -99500, Y: 149000, Z: 300000, gripper: -174500, elbow_bias: 0",None,None
+2021:09:27:17:05:11.542274,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:17:05:11.765794,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:17:05:11.939628,C9,ARM,"velocity: 20000, acceleration: 20000, X: -119500, Y: 149000, Z: 300000, gripper: -175500, elbow_bias: 0",None,None
+2021:09:27:17:05:12.619877,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:17:05:12.790780,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:17:05:12.947241,C9,ARM,"velocity: 20000, acceleration: 20000, X: -119500, Y: 149000, Z: 218000, gripper: -174500, elbow_bias: 0",None,None
+2021:09:27:17:05:14.269635,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:17:05:14.455309,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:17:05:14.640815,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:17:05:14.809362,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:17:05:15.001921,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:17:05:15.185590,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:17:05:15.351970,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:17:05:15.536933,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:17:06:29.971824,C9,ARM,"velocity: 20000, acceleration: 20000, X: -119500, Y: 149000, Z: 300000, gripper: -174500, elbow_bias: 0",None,None
+2021:09:27:17:06:31.193971,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:17:06:31.375488,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:17:06:31.550078,C9,ARM,"velocity: 20000, acceleration: 20000, X: -139500, Y: 149000, Z: 300000, gripper: -175500, elbow_bias: 0",None,None
+2021:09:27:17:06:32.274276,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:17:06:32.468841,C9,ARM,"velocity: 20000, acceleration: 20000, X: -139500, Y: 149000, Z: 218000, gripper: -174500, elbow_bias: 0",None,None
+2021:09:27:17:06:33.813027,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:17:06:34.001966,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:17:06:34.196795,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:17:06:34.424054,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:17:06:34.599707,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:17:06:34.774543,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:17:06:34.940311,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:17:07:49.392406,C9,ARM,"velocity: 20000, acceleration: 20000, X: -139500, Y: 149000, Z: 300000, gripper: -174500, elbow_bias: 0",None,None
+2021:09:27:17:07:50.635127,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:17:07:50.830678,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:17:07:50.983227,C9,ARM,"velocity: 20000, acceleration: 20000, X: -159500, Y: 149000, Z: 300000, gripper: -175500, elbow_bias: 0",None,None
+2021:09:27:17:07:51.718040,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:17:07:51.919091,C9,ARM,"velocity: 20000, acceleration: 20000, X: -159500, Y: 149000, Z: 218000, gripper: -174500, elbow_bias: 0",None,None
+2021:09:27:17:07:53.252803,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:17:07:53.428022,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:17:07:53.600911,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:17:07:53.796633,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:17:07:53.972316,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:17:07:54.146181,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:17:07:54.311529,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:17:07:54.499449,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:17:09:08.942573,C9,ARM,"velocity: 20000, acceleration: 20000, X: -159500, Y: 149000, Z: 300000, gripper: -174500, elbow_bias: 0",None,None
+2021:09:27:17:09:10.167787,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:17:09:10.360510,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:17:09:10.520318,C9,ARM,"velocity: 20000, acceleration: 20000, X: -179500, Y: 149000, Z: 300000, gripper: -175500, elbow_bias: 0",None,None
+2021:09:27:17:09:11.244944,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:17:09:11.430230,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:17:09:11.611695,C9,ARM,"velocity: 20000, acceleration: 20000, X: -179500, Y: 149000, Z: 218000, gripper: -174500, elbow_bias: 0",None,None
+2021:09:27:17:09:13.056305,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:17:09:13.237975,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:17:09:13.425924,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:17:09:13.608063,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:17:10:28.091564,C9,ARM,"velocity: 20000, acceleration: 20000, X: -179500, Y: 149000, Z: 300000, gripper: -174500, elbow_bias: 0",None,None
+2021:09:27:17:10:29.320310,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:17:10:29.500786,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:17:10:29.673871,C9,ARM,"velocity: 20000, acceleration: 20000, X: -99500, Y: 129000, Z: 300000, gripper: -175500, elbow_bias: 0",None,None
+2021:09:27:17:10:31.010776,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:17:10:31.204349,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:17:10:31.401379,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:17:10:31.598282,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:17:10:31.784680,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:17:10:31.998427,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:17:10:32.184002,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:17:10:32.366248,C9,ARM,"velocity: 20000, acceleration: 20000, X: -99500, Y: 129000, Z: 218000, gripper: -174500, elbow_bias: 0",None,None
+2021:09:27:17:10:33.726410,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:17:10:33.915292,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:17:10:34.123004,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:17:10:34.320917,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:17:10:34.508102,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:17:10:34.709209,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:17:10:34.918626,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:17:11:49.393236,C9,ARM,"velocity: 20000, acceleration: 20000, X: -99500, Y: 129000, Z: 300000, gripper: -174500, elbow_bias: 0",None,None
+2021:09:27:17:11:50.613125,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:17:11:50.803048,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:17:11:50.974978,C9,ARM,"velocity: 20000, acceleration: 20000, X: -119500, Y: 129000, Z: 300000, gripper: -175500, elbow_bias: 0",None,None
+2021:09:27:17:11:51.730696,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:17:11:51.915206,C9,ARM,"velocity: 20000, acceleration: 20000, X: -119500, Y: 129000, Z: 218000, gripper: -174500, elbow_bias: 0",None,None
+2021:09:27:17:11:53.259961,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:17:11:53.451490,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:17:11:53.629571,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:17:11:53.802812,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:17:11:53.993330,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:17:11:54.186418,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:17:11:54.354748,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:17:11:54.547800,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:17:13:09.015518,C9,ARM,"velocity: 20000, acceleration: 20000, X: -119500, Y: 129000, Z: 300000, gripper: -174500, elbow_bias: 0",None,None
+2021:09:27:17:13:10.253448,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:17:13:10.470459,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:17:13:10.641131,C9,ARM,"velocity: 20000, acceleration: 20000, X: -139500, Y: 129000, Z: 300000, gripper: -175500, elbow_bias: 0",None,None
+2021:09:27:17:13:11.375388,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:17:13:11.557644,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:17:13:11.731136,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:17:13:11.896670,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:17:13:12.078242,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:17:13:12.264751,C9,ARM,"velocity: 20000, acceleration: 20000, X: -139500, Y: 129000, Z: 218000, gripper: -174500, elbow_bias: 0",None,None
+2021:09:27:17:13:13.609475,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:17:13:13.779024,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:17:13:13.977491,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:17:13:14.159984,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:17:13:14.347700,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:17:13:14.535442,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:17:13:14.716960,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:17:14:29.170414,C9,ARM,"velocity: 20000, acceleration: 20000, X: -139500, Y: 129000, Z: 300000, gripper: -174500, elbow_bias: 0",None,None
+2021:09:27:17:14:30.397629,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:17:14:30.556749,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:17:14:30.730941,C9,ARM,"velocity: 20000, acceleration: 20000, X: -159500, Y: 129000, Z: 300000, gripper: -175500, elbow_bias: 0",None,None
+2021:09:27:17:14:31.447109,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:17:14:31.624200,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:17:14:31.806738,C9,ARM,"velocity: 20000, acceleration: 20000, X: -159500, Y: 129000, Z: 218000, gripper: -174500, elbow_bias: 0",None,None
+2021:09:27:17:14:33.272443,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:17:14:33.465123,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:17:14:33.640917,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:17:14:33.815117,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:17:15:48.305954,C9,ARM,"velocity: 20000, acceleration: 20000, X: -159500, Y: 129000, Z: 300000, gripper: -174500, elbow_bias: 0",None,None
+2021:09:27:17:15:49.560579,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:17:15:49.732112,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:17:15:49.929886,C9,ARM,"velocity: 20000, acceleration: 20000, X: -179500, Y: 129000, Z: 300000, gripper: -175500, elbow_bias: 0",None,None
+2021:09:27:17:15:50.643584,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:17:15:50.861441,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:17:15:51.068336,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:17:15:51.235944,C9,ARM,"velocity: 20000, acceleration: 20000, X: -179500, Y: 129000, Z: 218000, gripper: -174500, elbow_bias: 0",None,None
+2021:09:27:17:15:52.556079,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:17:15:52.740580,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:17:15:52.931135,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:17:15:53.131603,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:17:15:53.301405,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:17:15:53.489327,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:17:15:53.662908,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:17:15:53.838603,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:17:17:08.286624,C9,ARM,"velocity: 20000, acceleration: 20000, X: -179500, Y: 129000, Z: 300000, gripper: -174500, elbow_bias: 0",None,None
+2021:09:27:17:17:09.514303,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:17:17:09.695849,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:17:17:09.852428,C9,ARM,"velocity: 20000, acceleration: 20000, X: -99500, Y: 109000, Z: 300000, gripper: -175500, elbow_bias: 0",None,None
+2021:09:27:17:17:11.068148,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:17:17:11.247666,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:17:17:11.407239,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:17:17:11.579779,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:17:17:11.768315,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:17:17:11.955794,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:17:17:12.113351,C9,ARM,"velocity: 20000, acceleration: 20000, X: -99500, Y: 109000, Z: 218000, gripper: -174500, elbow_bias: 0",None,None
+2021:09:27:17:17:13.447096,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:17:17:13.627633,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:17:17:13.811364,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:17:17:13.989255,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:17:17:14.174122,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:17:17:14.353215,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:17:17:14.553440,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:17:17:14.719515,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:17:18:29.161000,C9,ARM,"velocity: 20000, acceleration: 20000, X: -99500, Y: 109000, Z: 300000, gripper: -174500, elbow_bias: 0",None,None
+2021:09:27:17:18:30.383945,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:17:18:30.602668,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:17:18:30.784208,C9,ARM,"velocity: 20000, acceleration: 20000, X: -119500, Y: 109000, Z: 300000, gripper: -175500, elbow_bias: 0",None,None
+2021:09:27:17:18:31.508210,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:17:18:31.696713,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:17:18:31.881721,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:17:18:32.049338,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:17:18:32.210900,C9,ARM,"velocity: 20000, acceleration: 20000, X: -119500, Y: 109000, Z: 218000, gripper: -174500, elbow_bias: 0",None,None
+2021:09:27:17:18:33.557258,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:17:18:33.741844,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:17:18:33.927413,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:17:18:34.100953,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:17:18:34.266505,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:17:18:34.467174,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:17:18:34.642019,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:17:18:34.827182,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:17:19:49.333104,C9,ARM,"velocity: 20000, acceleration: 20000, X: -119500, Y: 109000, Z: 300000, gripper: -174500, elbow_bias: 0",None,None
+2021:09:27:17:19:50.547839,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:17:19:50.753872,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:17:19:50.918163,C9,ARM,"velocity: 20000, acceleration: 20000, X: -139500, Y: 109000, Z: 300000, gripper: -175500, elbow_bias: 0",None,None
+2021:09:27:17:19:51.622835,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:17:19:51.800859,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:17:19:51.995335,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:17:19:52.170868,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:17:19:52.349846,C9,ARM,"velocity: 20000, acceleration: 20000, X: -139500, Y: 109000, Z: 218000, gripper: -174500, elbow_bias: 0",None,None
+2021:09:27:17:19:53.707203,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:17:19:53.900748,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:17:19:54.091608,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:17:19:54.284000,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:17:19:54.464094,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:17:19:54.653100,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:17:19:54.840676,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:17:21:09.320023,C9,ARM,"velocity: 20000, acceleration: 20000, X: -139500, Y: 109000, Z: 300000, gripper: -174500, elbow_bias: 0",None,None
+2021:09:27:17:21:10.534784,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:17:21:10.723644,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:17:21:10.880227,C9,ARM,"velocity: 20000, acceleration: 20000, X: -159500, Y: 109000, Z: 300000, gripper: -175500, elbow_bias: 0",None,None
+2021:09:27:17:21:11.595801,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:17:21:11.802126,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:17:21:11.989908,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:17:21:12.187433,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:17:21:12.375083,C9,ARM,"velocity: 20000, acceleration: 20000, X: -159500, Y: 109000, Z: 218000, gripper: -174500, elbow_bias: 0",None,None
+2021:09:27:17:21:13.700968,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:17:21:13.895499,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:17:21:14.088526,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:17:21:14.287566,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:17:21:14.489052,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:17:21:14.679571,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:17:21:14.869128,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:17:22:29.318914,C9,ARM,"velocity: 20000, acceleration: 20000, X: -159500, Y: 109000, Z: 300000, gripper: -174500, elbow_bias: 0",None,None
+2021:09:27:17:22:30.547388,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:17:22:30.742910,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:17:22:30.907917,C9,ARM,"velocity: 20000, acceleration: 20000, X: -179500, Y: 109000, Z: 300000, gripper: -175500, elbow_bias: 0",None,None
+2021:09:27:17:22:31.609367,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:17:22:31.793296,C9,ARM,"velocity: 20000, acceleration: 20000, X: -179500, Y: 109000, Z: 218000, gripper: -174500, elbow_bias: 0",None,None
+2021:09:27:17:22:33.228028,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:17:22:33.419565,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:17:22:33.607299,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:17:22:33.792992,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:17:23:48.270870,C9,ARM,"velocity: 20000, acceleration: 20000, X: -179500, Y: 109000, Z: 300000, gripper: -174500, elbow_bias: 0",None,None
+2021:09:27:17:23:49.496488,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:17:23:49.662017,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:17:23:49.821592,C9,ARM,"velocity: 20000, acceleration: 20000, X: -99500, Y: 89000, Z: 300000, gripper: -175500, elbow_bias: 0",None,None
+2021:09:27:17:23:51.036343,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:17:23:51.205890,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:17:23:51.398376,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:17:23:51.563933,C9,ARM,"velocity: 20000, acceleration: 20000, X: -99500, Y: 89000, Z: 218000, gripper: -174500, elbow_bias: 0",None,None
+2021:09:27:17:23:52.897366,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:17:23:53.087860,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:17:23:53.291920,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:17:23:53.474227,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:17:23:53.657853,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:17:23:53.838475,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:17:23:54.008992,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:17:23:54.189514,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:17:25:08.627915,C9,ARM,"velocity: 20000, acceleration: 20000, X: -99500, Y: 89000, Z: 300000, gripper: -174500, elbow_bias: 0",None,None
+2021:09:27:17:25:09.865384,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:17:25:10.054906,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:17:25:10.232431,C9,ARM,"velocity: 20000, acceleration: 20000, X: -119500, Y: 89000, Z: 300000, gripper: -175500, elbow_bias: 0",None,None
+2021:09:27:17:25:10.988995,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:17:25:11.174980,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:17:25:11.339697,C9,ARM,"velocity: 20000, acceleration: 20000, X: -119500, Y: 89000, Z: 218000, gripper: -174500, elbow_bias: 0",None,None
+2021:09:27:17:25:12.687048,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:17:25:12.863754,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:17:25:13.019523,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:17:25:13.194127,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:17:25:13.370842,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:17:25:13.551441,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:17:25:13.723137,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:17:25:13.926611,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:17:26:28.353137,C9,ARM,"velocity: 20000, acceleration: 20000, X: -119500, Y: 89000, Z: 300000, gripper: -174500, elbow_bias: 0",None,None
+2021:09:27:17:26:29.590174,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:17:26:29.770035,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:17:26:29.943209,C9,ARM,"velocity: 20000, acceleration: 20000, X: -139500, Y: 89000, Z: 300000, gripper: -175500, elbow_bias: 0",None,None
+2021:09:27:17:26:30.658425,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:17:26:30.823981,C9,ARM,"velocity: 20000, acceleration: 20000, X: -139500, Y: 89000, Z: 218000, gripper: -174500, elbow_bias: 0",None,None
+2021:09:27:17:26:32.280014,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:17:26:32.469278,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:17:26:32.653781,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:17:26:32.828715,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:17:27:47.286666,C9,ARM,"velocity: 20000, acceleration: 20000, X: -139500, Y: 89000, Z: 300000, gripper: -174500, elbow_bias: 0",None,None
+2021:09:27:17:27:48.501817,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:17:27:48.707271,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:17:27:48.870216,C9,ARM,"velocity: 20000, acceleration: 20000, X: -159500, Y: 89000, Z: 300000, gripper: -175500, elbow_bias: 0",None,None
+2021:09:27:17:27:49.574360,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:17:27:49.768219,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:17:27:49.963696,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:17:27:50.148582,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:17:27:50.332103,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:17:27:50.505866,C9,ARM,"velocity: 20000, acceleration: 20000, X: -159500, Y: 89000, Z: 218000, gripper: -174500, elbow_bias: 0",None,None
+2021:09:27:17:27:51.851255,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:17:27:52.056953,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:17:27:52.236444,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:17:27:52.416641,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:17:27:52.575241,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:17:27:52.761738,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:17:27:52.923309,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:17:27:53.086873,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:17:29:07.567755,C9,ARM,"velocity: 20000, acceleration: 20000, X: -159500, Y: 89000, Z: 300000, gripper: -174500, elbow_bias: 0",None,None
+2021:09:27:17:29:08.806885,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:17:29:08.997905,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:17:29:09.176513,C9,ARM,"velocity: 20000, acceleration: 20000, X: -179500, Y: 89000, Z: 300000, gripper: -175500, elbow_bias: 0",None,None
+2021:09:27:17:29:09.876513,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:17:29:10.094720,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:17:29:10.276703,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:17:29:10.451236,C9,ARM,"velocity: 20000, acceleration: 20000, X: -179500, Y: 89000, Z: 218000, gripper: -174500, elbow_bias: 0",None,None
+2021:09:27:17:29:11.913034,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:17:29:12.118676,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:17:29:12.328361,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:17:30:26.785521,C9,ARM,"velocity: 20000, acceleration: 20000, X: -179500, Y: 89000, Z: 300000, gripper: -174500, elbow_bias: 0",None,None
+2021:09:27:17:30:28.053194,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:17:30:28.235768,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:17:30:28.427554,C9,ARM,"velocity: 20000, acceleration: 20000, X: -244600, Y: 120000, Z: 300000, gripper: -175510, elbow_bias: 0",None,None
+2021:09:27:17:30:29.417142,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:17:30:29.598228,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:17:30:29.750826,C9,ARM,"velocity: 20000, acceleration: 20000, X: -244600, Y: 120000, Z: 167008, gripper: -174510, elbow_bias: 0",None,None
+2021:09:27:17:30:31.557334,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:17:30:31.717904,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:17:30:31.905401,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:17:30:32.094896,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:17:30:32.265438,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:17:30:32.453934,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:17:30:32.605633,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:17:30:32.778164,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:17:30:32.923774,C9,OUTP,"output: 0, value: 0",None,None
+2021:09:27:17:30:33.068389,C9,ARM,"velocity: 20000, acceleration: 20000, X: -244600, Y: 120000, Z: 300000, gripper: -175510, elbow_bias: 0",None,None
+2021:09:27:17:30:34.865583,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:17:30:35.041112,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:17:30:35.202898,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:17:30:35.380634,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:17:30:35.545288,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:17:30:35.702893,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:17:30:35.864438,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:17:30:36.051936,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:17:30:36.216494,C9,OUTP,"output: 0, value: 0",None,None
+2021:09:27:17:30:36.361105,C9,ARM,"velocity: 20000, acceleration: 20000, X: -244600, Y: 120000, Z: 300000, gripper: -175510, elbow_bias: 0",None,None
+2021:09:27:17:30:36.656721,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:17:30:36.808506,C9,ARM,"velocity: 20000, acceleration: 20000, X: -244600, Y: 120000, Z: 167008, gripper: -175510, elbow_bias: 0",None,None
+2021:09:27:17:30:38.318155,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:17:30:38.497738,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:17:30:38.662532,C9,OUTP,"output: 0, value: 1",None,None
+2021:09:27:17:30:38.804148,C9,ARM,"velocity: 20000, acceleration: 20000, X: -244600, Y: 120000, Z: 300000, gripper: -175510, elbow_bias: 0",None,None
+2021:09:27:17:30:40.342831,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:17:30:40.535849,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:17:30:40.689298,C9,ARM,"velocity: 20000, acceleration: 20000, X: -99500, Y: 149000, Z: 300000, gripper: -175500, elbow_bias: 0",None,None
+2021:09:27:17:30:42.332133,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:17:30:42.593372,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:17:30:42.816151,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:17:30:43.054628,C9,ARM,"velocity: 20000, acceleration: 20000, X: -99500, Y: 149000, Z: 218000, gripper: -174500, elbow_bias: 0",None,None
+2021:09:27:17:30:44.400988,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:17:30:44.611860,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:17:30:44.821291,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:17:30:45.014774,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:17:30:45.197286,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:17:30:45.385782,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:17:30:45.573625,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:17:32:00.010703,C9,ARM,"velocity: 20000, acceleration: 20000, X: -99500, Y: 149000, Z: 300000, gripper: -174500, elbow_bias: 0",None,None
+2021:09:27:17:32:01.238781,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:17:32:01.430375,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:17:32:01.587032,C9,ARM,"velocity: 20000, acceleration: 20000, X: -119500, Y: 149000, Z: 300000, gripper: -175500, elbow_bias: 0",None,None
+2021:09:27:17:32:02.325399,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:17:32:02.496148,C9,ARM,"velocity: 20000, acceleration: 20000, X: -119500, Y: 149000, Z: 218000, gripper: -174500, elbow_bias: 0",None,None
+2021:09:27:17:32:03.811391,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:17:32:04.013614,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:17:32:04.223017,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:17:32:04.406824,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:17:32:04.575435,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:17:32:04.785878,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:17:32:04.960492,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:17:33:19.446476,C9,ARM,"velocity: 20000, acceleration: 20000, X: -119500, Y: 149000, Z: 300000, gripper: -174500, elbow_bias: 0",None,None
+2021:09:27:17:33:20.683285,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:17:33:20.871787,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:17:33:21.051327,C9,ARM,"velocity: 20000, acceleration: 20000, X: -139500, Y: 149000, Z: 300000, gripper: -175500, elbow_bias: 0",None,None
+2021:09:27:17:33:21.775730,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:17:33:21.941284,C9,ARM,"velocity: 20000, acceleration: 20000, X: -139500, Y: 149000, Z: 218000, gripper: -174500, elbow_bias: 0",None,None
+2021:09:27:17:33:23.304817,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:17:33:23.499987,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:17:33:23.686705,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:17:33:23.853321,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:17:33:24.030850,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:17:33:24.231733,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:17:33:24.421578,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:17:34:38.870892,C9,ARM,"velocity: 20000, acceleration: 20000, X: -139500, Y: 149000, Z: 300000, gripper: -174500, elbow_bias: 0",None,None
+2021:09:27:17:34:40.119143,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:17:34:40.348977,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:17:34:40.525505,C9,ARM,"velocity: 20000, acceleration: 20000, X: -159500, Y: 149000, Z: 300000, gripper: -175500, elbow_bias: 0",None,None
+2021:09:27:17:34:41.269008,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:17:34:41.448800,C9,ARM,"velocity: 20000, acceleration: 20000, X: -159500, Y: 149000, Z: 218000, gripper: -174500, elbow_bias: 0",None,None
+2021:09:27:17:34:42.817974,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:17:34:43.001129,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:17:34:43.179863,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:17:34:43.385657,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:17:34:43.584205,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:17:34:43.751769,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:17:34:43.962798,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:17:35:58.405024,C9,ARM,"velocity: 20000, acceleration: 20000, X: -159500, Y: 149000, Z: 300000, gripper: -174500, elbow_bias: 0",None,None
+2021:09:27:17:35:59.634630,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:17:35:59.817138,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:17:35:59.992673,C9,ARM,"velocity: 20000, acceleration: 20000, X: -179500, Y: 149000, Z: 300000, gripper: -175500, elbow_bias: 0",None,None
+2021:09:27:17:36:00.715749,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:17:36:00.899919,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:17:36:01.086425,C9,ARM,"velocity: 20000, acceleration: 20000, X: -179500, Y: 149000, Z: 218000, gripper: -174500, elbow_bias: 0",None,None
+2021:09:27:17:36:02.541020,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:17:36:02.729058,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:17:36:02.901594,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:17:36:03.100769,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:17:37:17.541530,C9,ARM,"velocity: 20000, acceleration: 20000, X: -179500, Y: 149000, Z: 300000, gripper: -174500, elbow_bias: 0",None,None
+2021:09:27:17:37:18.795004,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:17:37:18.989003,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:17:37:19.166019,C9,ARM,"velocity: 20000, acceleration: 20000, X: -99500, Y: 129000, Z: 300000, gripper: -175500, elbow_bias: 0",None,None
+2021:09:27:17:37:20.518427,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:17:37:20.699942,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:17:37:20.882809,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:17:37:21.090814,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:17:37:21.264355,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:17:37:21.481791,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:17:37:21.676760,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:17:37:21.863466,C9,ARM,"velocity: 20000, acceleration: 20000, X: -99500, Y: 129000, Z: 218000, gripper: -174500, elbow_bias: 0",None,None
+2021:09:27:17:37:23.218007,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:17:37:23.411493,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:17:37:23.599286,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:17:37:23.789125,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:17:37:23.976037,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:17:37:24.163490,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:17:37:24.362951,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:17:38:38.834716,C9,ARM,"velocity: 20000, acceleration: 20000, X: -99500, Y: 129000, Z: 300000, gripper: -174500, elbow_bias: 0",None,None
+2021:09:27:17:38:40.088745,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:17:38:40.268612,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:17:38:40.425537,C9,ARM,"velocity: 20000, acceleration: 20000, X: -119500, Y: 129000, Z: 300000, gripper: -175500, elbow_bias: 0",None,None
+2021:09:27:17:38:41.174423,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:17:38:41.359927,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:17:38:41.521511,C9,ARM,"velocity: 20000, acceleration: 20000, X: -119500, Y: 129000, Z: 218000, gripper: -174500, elbow_bias: 0",None,None
+2021:09:27:17:38:42.884212,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:17:38:43.073465,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:17:38:43.259188,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:17:38:43.449794,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:17:38:43.621326,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:17:38:43.837795,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:17:38:44.015318,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:17:39:58.491588,C9,ARM,"velocity: 20000, acceleration: 20000, X: -119500, Y: 129000, Z: 300000, gripper: -174500, elbow_bias: 0",None,None
+2021:09:27:17:39:59.677494,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:17:39:59.879357,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:17:40:00.068894,C9,ARM,"velocity: 20000, acceleration: 20000, X: -139500, Y: 129000, Z: 300000, gripper: -175500, elbow_bias: 0",None,None
+2021:09:27:17:40:00.789001,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:17:40:01.001522,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:17:40:01.197514,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:17:40:01.417152,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:17:40:01.588509,C9,ARM,"velocity: 20000, acceleration: 20000, X: -139500, Y: 129000, Z: 218000, gripper: -174500, elbow_bias: 0",None,None
+2021:09:27:17:40:02.945234,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:17:40:03.145166,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:17:40:03.318706,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:17:40:03.507485,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:17:40:03.687836,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:17:40:03.878340,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:17:40:04.055863,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:17:41:18.536499,C9,ARM,"velocity: 20000, acceleration: 20000, X: -139500, Y: 129000, Z: 300000, gripper: -174500, elbow_bias: 0",None,None
+2021:09:27:17:41:19.799728,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:17:41:19.986028,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:17:41:20.195106,C9,ARM,"velocity: 20000, acceleration: 20000, X: -159500, Y: 129000, Z: 300000, gripper: -175500, elbow_bias: 0",None,None
+2021:09:27:17:41:20.919752,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:17:41:21.119154,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:17:41:21.283830,C9,ARM,"velocity: 20000, acceleration: 20000, X: -159500, Y: 129000, Z: 218000, gripper: -174500, elbow_bias: 0",None,None
+2021:09:27:17:41:22.730309,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:17:41:22.983665,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:17:41:23.221657,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:17:42:37.679958,C9,ARM,"velocity: 20000, acceleration: 20000, X: -159500, Y: 129000, Z: 300000, gripper: -174500, elbow_bias: 0",None,None
+2021:09:27:17:42:38.860219,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:17:42:39.083035,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:17:42:39.268621,C9,ARM,"velocity: 20000, acceleration: 20000, X: -179500, Y: 129000, Z: 300000, gripper: -175500, elbow_bias: 0",None,None
+2021:09:27:17:42:39.959651,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:17:42:40.138174,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:17:42:40.327894,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:17:42:40.505579,C9,ARM,"velocity: 20000, acceleration: 20000, X: -179500, Y: 129000, Z: 218000, gripper: -174500, elbow_bias: 0",None,None
+2021:09:27:17:42:41.845545,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:17:42:42.043421,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:17:42:42.252460,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:17:42:42.455852,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:17:42:42.676261,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:17:42:42.891233,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:17:42:43.169115,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:17:43:57.690927,C9,ARM,"velocity: 20000, acceleration: 20000, X: -179500, Y: 129000, Z: 300000, gripper: -174500, elbow_bias: 0",None,None
+2021:09:27:17:43:58.895503,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:17:43:59.072009,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:17:43:59.264849,C9,ARM,"velocity: 20000, acceleration: 20000, X: -99500, Y: 109000, Z: 300000, gripper: -175500, elbow_bias: 0",None,None
+2021:09:27:17:44:00.484809,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:17:44:00.697678,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:17:44:00.887765,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:17:44:01.077702,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:17:44:01.274581,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:17:44:01.447762,C9,ARM,"velocity: 20000, acceleration: 20000, X: -99500, Y: 109000, Z: 218000, gripper: -174500, elbow_bias: 0",None,None
+2021:09:27:17:44:02.787844,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:17:44:02.968357,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:17:44:03.147666,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:17:44:03.353585,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:17:44:03.551173,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:17:44:03.734734,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:17:44:03.946422,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:17:45:18.406728,C9,ARM,"velocity: 20000, acceleration: 20000, X: -99500, Y: 109000, Z: 300000, gripper: -174500, elbow_bias: 0",None,None
+2021:09:27:17:45:19.667217,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:17:45:19.854482,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:17:45:20.028296,C9,ARM,"velocity: 20000, acceleration: 20000, X: -119500, Y: 109000, Z: 300000, gripper: -175500, elbow_bias: 0",None,None
+2021:09:27:17:45:20.728121,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:17:45:20.967432,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:17:45:21.154287,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:17:45:21.332005,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:17:45:21.506889,C9,ARM,"velocity: 20000, acceleration: 20000, X: -119500, Y: 109000, Z: 218000, gripper: -174500, elbow_bias: 0",None,None
+2021:09:27:17:45:22.859984,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:17:45:23.126470,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:17:45:23.355209,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:17:45:23.529349,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:17:45:23.711864,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:17:45:23.911329,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:17:45:24.095846,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:17:46:38.558289,C9,ARM,"velocity: 20000, acceleration: 20000, X: -119500, Y: 109000, Z: 300000, gripper: -174500, elbow_bias: 0",None,None
+2021:09:27:17:46:39.763097,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:17:46:39.958311,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:17:46:40.141184,C9,ARM,"velocity: 20000, acceleration: 20000, X: -139500, Y: 109000, Z: 300000, gripper: -175500, elbow_bias: 0",None,None
+2021:09:27:17:46:40.909823,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:17:46:41.090700,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:17:46:41.316540,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:17:46:41.526216,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:17:46:41.699750,C9,ARM,"velocity: 20000, acceleration: 20000, X: -139500, Y: 109000, Z: 218000, gripper: -174500, elbow_bias: 0",None,None
+2021:09:27:17:46:43.059363,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:17:46:43.270030,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:17:46:43.478815,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:17:46:43.682980,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:17:46:43.894455,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:17:46:44.096006,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:17:46:44.272532,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:17:47:58.751219,C9,ARM,"velocity: 20000, acceleration: 20000, X: -139500, Y: 109000, Z: 300000, gripper: -174500, elbow_bias: 0",None,None
+2021:09:27:17:47:59.985142,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:17:48:00.187697,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:17:48:00.351253,C9,ARM,"velocity: 20000, acceleration: 20000, X: -159500, Y: 109000, Z: 300000, gripper: -175500, elbow_bias: 0",None,None
+2021:09:27:17:48:01.055783,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:17:48:01.236667,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:17:48:01.419281,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:17:48:01.620969,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:17:48:01.788345,C9,ARM,"velocity: 20000, acceleration: 20000, X: -159500, Y: 109000, Z: 218000, gripper: -174500, elbow_bias: 0",None,None
+2021:09:27:17:48:03.134509,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:17:48:03.318282,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:17:48:03.519035,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:17:48:03.718723,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:17:48:03.908562,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:17:48:04.102409,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:17:48:04.294342,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:17:49:18.782940,C9,ARM,"velocity: 20000, acceleration: 20000, X: -159500, Y: 109000, Z: 300000, gripper: -174500, elbow_bias: 0",None,None
+2021:09:27:17:49:20.035572,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:17:49:20.245920,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:17:49:20.421888,C9,ARM,"velocity: 20000, acceleration: 20000, X: -179500, Y: 109000, Z: 300000, gripper: -175500, elbow_bias: 0",None,None
+2021:09:27:17:49:21.144895,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:17:49:21.321793,C9,ARM,"velocity: 20000, acceleration: 20000, X: -179500, Y: 109000, Z: 218000, gripper: -174500, elbow_bias: 0",None,None
+2021:09:27:17:49:22.758494,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:17:49:23.052630,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:17:49:23.295866,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:17:50:37.774100,C9,ARM,"velocity: 20000, acceleration: 20000, X: -179500, Y: 109000, Z: 300000, gripper: -174500, elbow_bias: 0",None,None
+2021:09:27:17:50:38.996393,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:17:50:39.192838,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:17:50:39.357399,C9,ARM,"velocity: 20000, acceleration: 20000, X: -99500, Y: 89000, Z: 300000, gripper: -175500, elbow_bias: 0",None,None
+2021:09:27:17:50:40.554804,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:17:50:40.752320,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:17:50:40.943850,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:17:50:41.123732,C9,ARM,"velocity: 20000, acceleration: 20000, X: -99500, Y: 89000, Z: 218000, gripper: -174500, elbow_bias: 0",None,None
+2021:09:27:17:50:42.457307,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:17:50:42.637358,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:17:50:42.870931,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:17:50:43.138464,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:17:50:43.364260,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:17:50:43.608649,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:17:51:58.110403,C9,ARM,"velocity: 20000, acceleration: 20000, X: -99500, Y: 89000, Z: 300000, gripper: -174500, elbow_bias: 0",None,None
+2021:09:27:17:51:59.351862,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:17:51:59.536363,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:17:51:59.704627,C9,ARM,"velocity: 20000, acceleration: 20000, X: -119500, Y: 89000, Z: 300000, gripper: -175500, elbow_bias: 0",None,None
+2021:09:27:17:52:00.477838,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:17:52:00.723990,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:17:52:00.916986,C9,ARM,"velocity: 20000, acceleration: 20000, X: -119500, Y: 89000, Z: 218000, gripper: -174500, elbow_bias: 0",None,None
+2021:09:27:17:52:02.266019,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:17:52:02.449882,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:17:52:02.657761,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:17:52:02.852983,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:17:52:03.061375,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:17:52:03.266102,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:17:52:03.459561,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:17:53:17.976256,C9,ARM,"velocity: 20000, acceleration: 20000, X: -119500, Y: 89000, Z: 300000, gripper: -174500, elbow_bias: 0",None,None
+2021:09:27:17:53:19.208273,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:17:53:19.405989,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:17:53:19.581950,C9,ARM,"velocity: 20000, acceleration: 20000, X: -139500, Y: 89000, Z: 300000, gripper: -175500, elbow_bias: 0",None,None
+2021:09:27:17:53:20.338362,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:17:53:20.505921,C9,ARM,"velocity: 20000, acceleration: 20000, X: -139500, Y: 89000, Z: 218000, gripper: -174500, elbow_bias: 0",None,None
+2021:09:27:17:53:21.946514,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:17:53:22.142414,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:17:53:22.343953,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:17:53:22.533625,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:17:54:37.001065,C9,ARM,"velocity: 20000, acceleration: 20000, X: -139500, Y: 89000, Z: 300000, gripper: -174500, elbow_bias: 0",None,None
+2021:09:27:17:54:38.245362,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:17:54:38.475221,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:17:54:38.668798,C9,ARM,"velocity: 20000, acceleration: 20000, X: -159500, Y: 89000, Z: 300000, gripper: -175500, elbow_bias: 0",None,None
+2021:09:27:17:54:39.384670,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:17:54:39.631371,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:17:54:39.855443,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:17:54:40.064906,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:17:54:40.279540,C9,ARM,"velocity: 20000, acceleration: 20000, X: -159500, Y: 89000, Z: 218000, gripper: -174500, elbow_bias: 0",None,None
+2021:09:27:17:54:41.592052,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:17:54:41.833020,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:17:54:42.069592,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:17:54:42.317381,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:17:54:42.538510,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:17:54:42.775479,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:17:55:57.271696,C9,ARM,"velocity: 20000, acceleration: 20000, X: -159500, Y: 89000, Z: 300000, gripper: -174500, elbow_bias: 0",None,None
+2021:09:27:17:55:58.527275,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:17:55:58.746999,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:17:55:58.942527,C9,ARM,"velocity: 20000, acceleration: 20000, X: -179500, Y: 89000, Z: 300000, gripper: -175500, elbow_bias: 0",None,None
+2021:09:27:17:55:59.612791,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:17:55:59.805658,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:17:55:59.994115,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:17:56:00.190953,C9,ARM,"velocity: 20000, acceleration: 20000, X: -179500, Y: 89000, Z: 218000, gripper: -174500, elbow_bias: 0",None,None
+2021:09:27:17:56:01.627383,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:17:56:01.833097,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:17:56:02.030571,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:17:57:16.518418,C9,ARM,"velocity: 20000, acceleration: 20000, X: -179500, Y: 89000, Z: 300000, gripper: -174500, elbow_bias: 0",None,None
+2021:09:27:17:57:17.744144,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:17:57:17.943581,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:17:57:18.162996,C9,ARM,"velocity: 20000, acceleration: 20000, X: -244600, Y: 120000, Z: 300000, gripper: -175510, elbow_bias: 0",None,None
+2021:09:27:17:57:19.159370,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:17:57:19.336888,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:17:57:19.488453,C9,ARM,"velocity: 20000, acceleration: 20000, X: -244600, Y: 120000, Z: 167008, gripper: -174510, elbow_bias: 0",None,None
+2021:09:27:17:57:21.294620,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:17:57:21.463170,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:17:57:21.640724,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:17:57:21.809279,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:17:57:21.982786,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:17:57:22.154917,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:17:57:22.329977,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:17:57:22.511681,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:17:57:22.678424,C9,OUTP,"output: 0, value: 0",None,None
+2021:09:27:17:57:22.850280,C9,ARM,"velocity: 20000, acceleration: 20000, X: -244600, Y: 120000, Z: 300000, gripper: -175510, elbow_bias: 0",None,None
+2021:09:27:17:57:24.699220,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:17:57:24.889078,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:17:57:25.062820,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:17:57:25.242399,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:17:57:25.436357,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:17:57:25.620863,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:09:27:17:57:25.798383,C9,MVNG,"axes: 1,2,3,0",None,None

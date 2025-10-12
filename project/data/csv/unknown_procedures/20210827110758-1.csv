@@ -1,0 +1,265 @@
+Timestamp,Module,Method_Name,Arguments,Responses,Exceptions
+2021:08:27:11:08:17.967554,C9,_init_,ftdi: None,,None
+2021:08:27:11:08:18.632474,C9,PING,,None,None
+2021:08:27:11:08:19.030603,C9,BIAS,,None,None
+2021:08:27:11:08:19.409974,C9,SPED,"velocity: 20000, acceleration: 20000",None,None
+2021:08:27:11:08:19.765730,C9,BIAS,bias: 0,None,None
+2021:08:27:11:08:20.129636,C9,HOME,if_needed: 1,None,None
+2021:08:27:11:08:20.478968,C9,CURR,axis: 0,None,None
+2021:08:27:11:08:20.834229,C9,CURR,axis: 0,None,None
+2021:08:27:11:08:21.187434,C9,CURR,axis: 0,None,None
+2021:08:27:11:08:21.558660,C9,CURR,axis: 0,None,None
+2021:08:27:11:08:21.912868,C9,CURR,axis: 0,None,None
+2021:08:27:11:08:22.265504,C9,CURR,axis: 0,None,None
+2021:08:27:11:08:22.619696,C9,CURR,axis: 0,None,None
+2021:08:27:11:08:22.964559,C9,CURR,axis: 0,None,None
+2021:08:27:11:08:23.317429,C9,CURR,axis: 0,None,None
+2021:08:27:11:08:23.667706,C9,CURR,axis: 0,None,None
+2021:08:27:11:08:23.931235,Tecan Cavro,_init_,ftdi: None,,b'\x80\x03cftdi_serial\nSerialDeviceOpenException\nq\x00X \x00\x00\x00Error opening FTDI serial deviceq\x01\x85q\x02Rq\x03.'
+2021:08:27:11:08:24.443021,Tecan Cavro,_init_,ftdi: None,,b'\x80\x03cftdi_serial\nSerialDeviceOpenException\nq\x00X \x00\x00\x00Error opening FTDI serial deviceq\x01\x85q\x02Rq\x03.'
+2021:08:27:11:08:24.954035,Tecan Cavro,_init_,ftdi: None,,b'\x80\x03cftdi_serial\nSerialDeviceOpenException\nq\x00X \x00\x00\x00Error opening FTDI serial deviceq\x01\x85q\x02Rq\x03.'
+2021:08:27:11:08:25.466906,Tecan Cavro,_init_,ftdi: None,,b'\x80\x03cftdi_serial\nSerialDeviceOpenException\nq\x00X \x00\x00\x00Error opening FTDI serial deviceq\x01\x85q\x02Rq\x03.'
+2021:08:27:11:08:25.977895,Tecan Cavro,_init_,ftdi: None,,b'\x80\x03cftdi_serial\nSerialDeviceOpenException\nq\x00X \x00\x00\x00Error opening FTDI serial deviceq\x01\x85q\x02Rq\x03.'
+2021:08:27:11:08:26.490249,Tecan Cavro,_init_,ftdi: None,,b'\x80\x03cftdi_serial\nSerialDeviceOpenException\nq\x00X \x00\x00\x00Error opening FTDI serial deviceq\x01\x85q\x02Rq\x03.'
+2021:08:27:11:08:27.001919,Tecan Cavro,_init_,ftdi: None,,b'\x80\x03cftdi_serial\nSerialDeviceOpenException\nq\x00X \x00\x00\x00Error opening FTDI serial deviceq\x01\x85q\x02Rq\x03.'
+2021:08:27:11:08:27.513787,Tecan Cavro,_init_,ftdi: None,,b'\x80\x03cftdi_serial\nSerialDeviceOpenException\nq\x00X \x00\x00\x00Error opening FTDI serial deviceq\x01\x85q\x02Rq\x03.'
+2021:08:27:11:08:28.025469,Tecan Cavro,_init_,ftdi: None,,b'\x80\x03cftdi_serial\nSerialDeviceOpenException\nq\x00X \x00\x00\x00Error opening FTDI serial deviceq\x01\x85q\x02Rq\x03.'
+2021:08:27:11:08:28.537190,Tecan Cavro,_init_,ftdi: None,,b'\x80\x03cftdi_serial\nSerialDeviceOpenException\nq\x00X \x00\x00\x00Error opening FTDI serial deviceq\x01\x85q\x02Rq\x03.'
+2021:08:27:11:08:29.048683,Tecan Cavro,_init_,ftdi: None,,b'\x80\x03cftdi_serial\nSerialDeviceOpenException\nq\x00X \x00\x00\x00Error opening FTDI serial deviceq\x01\x85q\x02Rq\x03.'
+2021:08:27:11:08:29.559787,Tecan Cavro,_init_,ftdi: None,,b'\x80\x03cftdi_serial\nSerialDeviceOpenException\nq\x00X \x00\x00\x00Error opening FTDI serial deviceq\x01\x85q\x02Rq\x03.'
+2021:08:27:11:08:30.072534,Tecan Cavro,_init_,ftdi: None,,b'\x80\x03cftdi_serial\nSerialDeviceOpenException\nq\x00X \x00\x00\x00Error opening FTDI serial deviceq\x01\x85q\x02Rq\x03.'
+2021:08:27:11:08:30.583498,Tecan Cavro,_init_,ftdi: None,,b'\x80\x03cftdi_serial\nSerialDeviceOpenException\nq\x00X \x00\x00\x00Error opening FTDI serial deviceq\x01\x85q\x02Rq\x03.'
+2021:08:27:11:08:31.094129,Tecan Cavro,_init_,ftdi: None,,b'\x80\x03cftdi_serial\nSerialDeviceOpenException\nq\x00X \x00\x00\x00Error opening FTDI serial deviceq\x01\x85q\x02Rq\x03.'
+2021:08:27:11:08:31.606029,Tecan Cavro,_init_,ftdi: None,,b'\x80\x03cftdi_serial\nSerialDeviceOpenException\nq\x00X \x00\x00\x00Error opening FTDI serial deviceq\x01\x85q\x02Rq\x03.'
+2021:08:27:11:08:32.119072,Tecan Cavro,_init_,ftdi: None,,b'\x80\x03cftdi_serial\nSerialDeviceOpenException\nq\x00X \x00\x00\x00Error opening FTDI serial deviceq\x01\x85q\x02Rq\x03.'
+2021:08:27:11:08:32.630704,Tecan Cavro,_init_,ftdi: None,,b'\x80\x03cftdi_serial\nSerialDeviceOpenException\nq\x00X \x00\x00\x00Error opening FTDI serial deviceq\x01\x85q\x02Rq\x03.'
+2021:08:27:11:08:33.143490,Tecan Cavro,_init_,ftdi: None,,b'\x80\x03cftdi_serial\nSerialDeviceOpenException\nq\x00X \x00\x00\x00Error opening FTDI serial deviceq\x01\x85q\x02Rq\x03.'
+2021:08:27:11:08:33.654760,Tecan Cavro,_init_,ftdi: None,,b'\x80\x03cftdi_serial\nSerialDeviceOpenException\nq\x00X \x00\x00\x00Error opening FTDI serial deviceq\x01\x85q\x02Rq\x03.'
+2021:08:27:11:08:34.165036,Tecan Cavro,_init_,ftdi: None,,b'\x80\x03cftdi_serial\nSerialDeviceOpenException\nq\x00X \x00\x00\x00Error opening FTDI serial deviceq\x01\x85q\x02Rq\x03.'
+2021:08:27:11:08:34.677599,Tecan Cavro,_init_,ftdi: None,,b'\x80\x03cftdi_serial\nSerialDeviceOpenException\nq\x00X \x00\x00\x00Error opening FTDI serial deviceq\x01\x85q\x02Rq\x03.'
+2021:08:27:11:08:35.189368,Tecan Cavro,_init_,ftdi: None,,b'\x80\x03cftdi_serial\nSerialDeviceOpenException\nq\x00X \x00\x00\x00Error opening FTDI serial deviceq\x01\x85q\x02Rq\x03.'
+2021:08:27:11:08:35.700693,Tecan Cavro,_init_,ftdi: None,,b'\x80\x03cftdi_serial\nSerialDeviceOpenException\nq\x00X \x00\x00\x00Error opening FTDI serial deviceq\x01\x85q\x02Rq\x03.'
+2021:08:27:11:08:36.213390,Tecan Cavro,_init_,ftdi: None,,b'\x80\x03cftdi_serial\nSerialDeviceOpenException\nq\x00X \x00\x00\x00Error opening FTDI serial deviceq\x01\x85q\x02Rq\x03.'
+2021:08:27:11:08:36.724806,Tecan Cavro,_init_,ftdi: None,,b'\x80\x03cftdi_serial\nSerialDeviceOpenException\nq\x00X \x00\x00\x00Error opening FTDI serial deviceq\x01\x85q\x02Rq\x03.'
+2021:08:27:11:08:37.237143,Tecan Cavro,_init_,ftdi: None,,b'\x80\x03cftdi_serial\nSerialDeviceOpenException\nq\x00X \x00\x00\x00Error opening FTDI serial deviceq\x01\x85q\x02Rq\x03.'
+2021:08:27:11:08:37.748493,Tecan Cavro,_init_,ftdi: None,,b'\x80\x03cftdi_serial\nSerialDeviceOpenException\nq\x00X \x00\x00\x00Error opening FTDI serial deviceq\x01\x85q\x02Rq\x03.'
+2021:08:27:11:08:38.274902,Tecan Cavro,_init_,ftdi: None,,None
+2021:08:27:11:08:42.183498,Magnetic Stirrer,_init_,serial: COM9,,None
+2021:08:27:11:08:42.454880,Magnetic Stirrer,IN_NAME,,None,None
+2021:08:27:11:08:42.621435,Magnetic Stirrer,IN_PV_1,,None,None
+2021:08:27:11:08:42.776905,Magnetic Stirrer,IN_PV_2,,None,None
+2021:08:27:11:08:42.951709,Magnetic Stirrer,IN_SP_1,,None,None
+2021:08:27:11:08:43.114119,Magnetic Stirrer,IN_PV_4,,None,None
+2021:08:27:11:08:43.268045,Magnetic Stirrer,IN_SP_4,,None,None
+2021:08:27:11:08:43.435985,Magnetic Stirrer,STOP_4,,None,None
+2021:08:27:11:08:43.500812,Magnetic Stirrer,STOP_1,,None,None
+2021:08:27:11:08:58.409086,Tecan Cavro,_init_,ftdi: None,,b'\x80\x03cftdi_serial\nSerialDeviceOpenException\nq\x00X \x00\x00\x00Error opening FTDI serial deviceq\x01\x85q\x02Rq\x03.'
+2021:08:27:11:08:58.922403,Tecan Cavro,_init_,ftdi: None,,b'\x80\x03cftdi_serial\nSerialDeviceOpenException\nq\x00X \x00\x00\x00Error opening FTDI serial deviceq\x01\x85q\x02Rq\x03.'
+2021:08:27:11:08:59.432975,Tecan Cavro,_init_,ftdi: None,,b'\x80\x03cftdi_serial\nSerialDeviceOpenException\nq\x00X \x00\x00\x00Error opening FTDI serial deviceq\x01\x85q\x02Rq\x03.'
+2021:08:27:11:08:59.944370,Tecan Cavro,_init_,ftdi: None,,b'\x80\x03cftdi_serial\nSerialDeviceOpenException\nq\x00X \x00\x00\x00Error opening FTDI serial deviceq\x01\x85q\x02Rq\x03.'
+2021:08:27:11:09:00.455911,Tecan Cavro,_init_,ftdi: None,,b'\x80\x03cftdi_serial\nSerialDeviceOpenException\nq\x00X \x00\x00\x00Error opening FTDI serial deviceq\x01\x85q\x02Rq\x03.'
+2021:08:27:11:09:00.969254,Tecan Cavro,_init_,ftdi: None,,b'\x80\x03cftdi_serial\nSerialDeviceOpenException\nq\x00X \x00\x00\x00Error opening FTDI serial deviceq\x01\x85q\x02Rq\x03.'
+2021:08:27:11:09:01.479492,Tecan Cavro,_init_,ftdi: None,,b'\x80\x03cftdi_serial\nSerialDeviceOpenException\nq\x00X \x00\x00\x00Error opening FTDI serial deviceq\x01\x85q\x02Rq\x03.'
+2021:08:27:11:09:01.990443,Tecan Cavro,_init_,ftdi: None,,b'\x80\x03cftdi_serial\nSerialDeviceOpenException\nq\x00X \x00\x00\x00Error opening FTDI serial deviceq\x01\x85q\x02Rq\x03.'
+2021:08:27:11:09:02.502612,Tecan Cavro,_init_,ftdi: None,,b'\x80\x03cftdi_serial\nSerialDeviceOpenException\nq\x00X \x00\x00\x00Error opening FTDI serial deviceq\x01\x85q\x02Rq\x03.'
+2021:08:27:11:09:03.014447,Tecan Cavro,_init_,ftdi: None,,b'\x80\x03cftdi_serial\nSerialDeviceOpenException\nq\x00X \x00\x00\x00Error opening FTDI serial deviceq\x01\x85q\x02Rq\x03.'
+2021:08:27:11:09:03.525819,Tecan Cavro,_init_,ftdi: None,,b'\x80\x03cftdi_serial\nSerialDeviceOpenException\nq\x00X \x00\x00\x00Error opening FTDI serial deviceq\x01\x85q\x02Rq\x03.'
+2021:08:27:11:09:04.037734,Tecan Cavro,_init_,ftdi: None,,b'\x80\x03cftdi_serial\nSerialDeviceOpenException\nq\x00X \x00\x00\x00Error opening FTDI serial deviceq\x01\x85q\x02Rq\x03.'
+2021:08:27:11:09:04.548747,Tecan Cavro,_init_,ftdi: None,,b'\x80\x03cftdi_serial\nSerialDeviceOpenException\nq\x00X \x00\x00\x00Error opening FTDI serial deviceq\x01\x85q\x02Rq\x03.'
+2021:08:27:11:09:05.060596,Tecan Cavro,_init_,ftdi: None,,b'\x80\x03cftdi_serial\nSerialDeviceOpenException\nq\x00X \x00\x00\x00Error opening FTDI serial deviceq\x01\x85q\x02Rq\x03.'
+2021:08:27:11:09:05.573225,Tecan Cavro,_init_,ftdi: None,,b'\x80\x03cftdi_serial\nSerialDeviceOpenException\nq\x00X \x00\x00\x00Error opening FTDI serial deviceq\x01\x85q\x02Rq\x03.'
+2021:08:27:11:09:06.084361,Tecan Cavro,_init_,ftdi: None,,b'\x80\x03cftdi_serial\nSerialDeviceOpenException\nq\x00X \x00\x00\x00Error opening FTDI serial deviceq\x01\x85q\x02Rq\x03.'
+2021:08:27:11:09:06.596381,Tecan Cavro,_init_,ftdi: None,,b'\x80\x03cftdi_serial\nSerialDeviceOpenException\nq\x00X \x00\x00\x00Error opening FTDI serial deviceq\x01\x85q\x02Rq\x03.'
+2021:08:27:11:09:07.108345,Tecan Cavro,_init_,ftdi: None,,b'\x80\x03cftdi_serial\nSerialDeviceOpenException\nq\x00X \x00\x00\x00Error opening FTDI serial deviceq\x01\x85q\x02Rq\x03.'
+2021:08:27:11:09:07.620198,Tecan Cavro,_init_,ftdi: None,,b'\x80\x03cftdi_serial\nSerialDeviceOpenException\nq\x00X \x00\x00\x00Error opening FTDI serial deviceq\x01\x85q\x02Rq\x03.'
+2021:08:27:11:09:08.131811,Tecan Cavro,_init_,ftdi: None,,b'\x80\x03cftdi_serial\nSerialDeviceOpenException\nq\x00X \x00\x00\x00Error opening FTDI serial deviceq\x01\x85q\x02Rq\x03.'
+2021:08:27:11:09:08.644001,Tecan Cavro,_init_,ftdi: None,,b'\x80\x03cftdi_serial\nSerialDeviceOpenException\nq\x00X \x00\x00\x00Error opening FTDI serial deviceq\x01\x85q\x02Rq\x03.'
+2021:08:27:11:09:09.155275,Tecan Cavro,_init_,ftdi: None,,b'\x80\x03cftdi_serial\nSerialDeviceOpenException\nq\x00X \x00\x00\x00Error opening FTDI serial deviceq\x01\x85q\x02Rq\x03.'
+2021:08:27:11:09:09.667511,Tecan Cavro,_init_,ftdi: None,,b'\x80\x03cftdi_serial\nSerialDeviceOpenException\nq\x00X \x00\x00\x00Error opening FTDI serial deviceq\x01\x85q\x02Rq\x03.'
+2021:08:27:11:09:10.178949,Tecan Cavro,_init_,ftdi: None,,b'\x80\x03cftdi_serial\nSerialDeviceOpenException\nq\x00X \x00\x00\x00Error opening FTDI serial deviceq\x01\x85q\x02Rq\x03.'
+2021:08:27:11:09:10.690457,Tecan Cavro,_init_,ftdi: None,,b'\x80\x03cftdi_serial\nSerialDeviceOpenException\nq\x00X \x00\x00\x00Error opening FTDI serial deviceq\x01\x85q\x02Rq\x03.'
+2021:08:27:11:09:11.203215,Tecan Cavro,_init_,ftdi: None,,b'\x80\x03cftdi_serial\nSerialDeviceOpenException\nq\x00X \x00\x00\x00Error opening FTDI serial deviceq\x01\x85q\x02Rq\x03.'
+2021:08:27:11:09:11.714556,Tecan Cavro,_init_,ftdi: None,,b'\x80\x03cftdi_serial\nSerialDeviceOpenException\nq\x00X \x00\x00\x00Error opening FTDI serial deviceq\x01\x85q\x02Rq\x03.'
+2021:08:27:11:09:12.226843,Tecan Cavro,_init_,ftdi: None,,b'\x80\x03cftdi_serial\nSerialDeviceOpenException\nq\x00X \x00\x00\x00Error opening FTDI serial deviceq\x01\x85q\x02Rq\x03.'
+2021:08:27:11:09:12.738782,Tecan Cavro,_init_,ftdi: None,,b'\x80\x03cftdi_serial\nSerialDeviceOpenException\nq\x00X \x00\x00\x00Error opening FTDI serial deviceq\x01\x85q\x02Rq\x03.'
+2021:08:27:11:09:13.251092,Tecan Cavro,_init_,ftdi: None,,b'\x80\x03cftdi_serial\nSerialDeviceOpenException\nq\x00X \x00\x00\x00Error opening FTDI serial deviceq\x01\x85q\x02Rq\x03.'
+2021:08:27:11:09:13.761775,Tecan Cavro,_init_,ftdi: None,,b'\x80\x03cftdi_serial\nSerialDeviceOpenException\nq\x00X \x00\x00\x00Error opening FTDI serial deviceq\x01\x85q\x02Rq\x03.'
+2021:08:27:11:09:14.273633,Tecan Cavro,_init_,ftdi: None,,b'\x80\x03cftdi_serial\nSerialDeviceOpenException\nq\x00X \x00\x00\x00Error opening FTDI serial deviceq\x01\x85q\x02Rq\x03.'
+2021:08:27:11:09:14.785748,Tecan Cavro,_init_,ftdi: None,,b'\x80\x03cftdi_serial\nSerialDeviceOpenException\nq\x00X \x00\x00\x00Error opening FTDI serial deviceq\x01\x85q\x02Rq\x03.'
+2021:08:27:11:09:15.297288,Tecan Cavro,_init_,ftdi: None,,b'\x80\x03cftdi_serial\nSerialDeviceOpenException\nq\x00X \x00\x00\x00Error opening FTDI serial deviceq\x01\x85q\x02Rq\x03.'
+2021:08:27:11:09:15.808955,Tecan Cavro,_init_,ftdi: None,,b'\x80\x03cftdi_serial\nSerialDeviceOpenException\nq\x00X \x00\x00\x00Error opening FTDI serial deviceq\x01\x85q\x02Rq\x03.'
+2021:08:27:11:09:16.320455,Tecan Cavro,_init_,ftdi: None,,b'\x80\x03cftdi_serial\nSerialDeviceOpenException\nq\x00X \x00\x00\x00Error opening FTDI serial deviceq\x01\x85q\x02Rq\x03.'
+2021:08:27:11:09:16.831957,Tecan Cavro,_init_,ftdi: None,,b'\x80\x03cftdi_serial\nSerialDeviceOpenException\nq\x00X \x00\x00\x00Error opening FTDI serial deviceq\x01\x85q\x02Rq\x03.'
+2021:08:27:11:09:17.344392,Tecan Cavro,_init_,ftdi: None,,b'\x80\x03cftdi_serial\nSerialDeviceOpenException\nq\x00X \x00\x00\x00Error opening FTDI serial deviceq\x01\x85q\x02Rq\x03.'
+2021:08:27:11:09:17.855946,Tecan Cavro,_init_,ftdi: None,,b'\x80\x03cftdi_serial\nSerialDeviceOpenException\nq\x00X \x00\x00\x00Error opening FTDI serial deviceq\x01\x85q\x02Rq\x03.'
+2021:08:27:11:09:18.367658,Tecan Cavro,_init_,ftdi: None,,b'\x80\x03cftdi_serial\nSerialDeviceOpenException\nq\x00X \x00\x00\x00Error opening FTDI serial deviceq\x01\x85q\x02Rq\x03.'
+2021:08:27:11:09:18.879064,Tecan Cavro,_init_,ftdi: None,,b'\x80\x03cftdi_serial\nSerialDeviceOpenException\nq\x00X \x00\x00\x00Error opening FTDI serial deviceq\x01\x85q\x02Rq\x03.'
+2021:08:27:11:09:19.391096,Tecan Cavro,_init_,ftdi: None,,b'\x80\x03cftdi_serial\nSerialDeviceOpenException\nq\x00X \x00\x00\x00Error opening FTDI serial deviceq\x01\x85q\x02Rq\x03.'
+2021:08:27:11:09:19.902461,Tecan Cavro,_init_,ftdi: None,,b'\x80\x03cftdi_serial\nSerialDeviceOpenException\nq\x00X \x00\x00\x00Error opening FTDI serial deviceq\x01\x85q\x02Rq\x03.'
+2021:08:27:11:09:20.414376,Tecan Cavro,_init_,ftdi: None,,b'\x80\x03cftdi_serial\nSerialDeviceOpenException\nq\x00X \x00\x00\x00Error opening FTDI serial deviceq\x01\x85q\x02Rq\x03.'
+2021:08:27:11:09:20.926392,Tecan Cavro,_init_,ftdi: None,,b'\x80\x03cftdi_serial\nSerialDeviceOpenException\nq\x00X \x00\x00\x00Error opening FTDI serial deviceq\x01\x85q\x02Rq\x03.'
+2021:08:27:11:09:21.437915,Tecan Cavro,_init_,ftdi: None,,b'\x80\x03cftdi_serial\nSerialDeviceOpenException\nq\x00X \x00\x00\x00Error opening FTDI serial deviceq\x01\x85q\x02Rq\x03.'
+2021:08:27:11:09:21.949097,Tecan Cavro,_init_,ftdi: None,,b'\x80\x03cftdi_serial\nSerialDeviceOpenException\nq\x00X \x00\x00\x00Error opening FTDI serial deviceq\x01\x85q\x02Rq\x03.'
+2021:08:27:11:09:22.460770,Tecan Cavro,_init_,ftdi: None,,b'\x80\x03cftdi_serial\nSerialDeviceOpenException\nq\x00X \x00\x00\x00Error opening FTDI serial deviceq\x01\x85q\x02Rq\x03.'
+2021:08:27:11:09:22.972579,Tecan Cavro,_init_,ftdi: None,,b'\x80\x03cftdi_serial\nSerialDeviceOpenException\nq\x00X \x00\x00\x00Error opening FTDI serial deviceq\x01\x85q\x02Rq\x03.'
+2021:08:27:11:09:23.484295,Tecan Cavro,_init_,ftdi: None,,b'\x80\x03cftdi_serial\nSerialDeviceOpenException\nq\x00X \x00\x00\x00Error opening FTDI serial deviceq\x01\x85q\x02Rq\x03.'
+2021:08:27:11:09:23.996266,Tecan Cavro,_init_,ftdi: None,,b'\x80\x03cftdi_serial\nSerialDeviceOpenException\nq\x00X \x00\x00\x00Error opening FTDI serial deviceq\x01\x85q\x02Rq\x03.'
+2021:08:27:11:09:24.508599,Tecan Cavro,_init_,ftdi: None,,b'\x80\x03cftdi_serial\nSerialDeviceOpenException\nq\x00X \x00\x00\x00Error opening FTDI serial deviceq\x01\x85q\x02Rq\x03.'
+2021:08:27:11:09:25.020034,Tecan Cavro,_init_,ftdi: None,,b'\x80\x03cftdi_serial\nSerialDeviceOpenException\nq\x00X \x00\x00\x00Error opening FTDI serial deviceq\x01\x85q\x02Rq\x03.'
+2021:08:27:11:09:25.532063,Tecan Cavro,_init_,ftdi: None,,b'\x80\x03cftdi_serial\nSerialDeviceOpenException\nq\x00X \x00\x00\x00Error opening FTDI serial deviceq\x01\x85q\x02Rq\x03.'
+2021:08:27:11:09:26.044107,Tecan Cavro,_init_,ftdi: None,,b'\x80\x03cftdi_serial\nSerialDeviceOpenException\nq\x00X \x00\x00\x00Error opening FTDI serial deviceq\x01\x85q\x02Rq\x03.'
+2021:08:27:11:09:26.555910,Tecan Cavro,_init_,ftdi: None,,b'\x80\x03cftdi_serial\nSerialDeviceOpenException\nq\x00X \x00\x00\x00Error opening FTDI serial deviceq\x01\x85q\x02Rq\x03.'
+2021:08:27:11:09:27.067769,Tecan Cavro,_init_,ftdi: None,,b'\x80\x03cftdi_serial\nSerialDeviceOpenException\nq\x00X \x00\x00\x00Error opening FTDI serial deviceq\x01\x85q\x02Rq\x03.'
+2021:08:27:11:09:27.579022,Tecan Cavro,_init_,ftdi: None,,b'\x80\x03cftdi_serial\nSerialDeviceOpenException\nq\x00X \x00\x00\x00Error opening FTDI serial deviceq\x01\x85q\x02Rq\x03.'
+2021:08:27:11:09:28.090549,Tecan Cavro,_init_,ftdi: None,,b'\x80\x03cftdi_serial\nSerialDeviceOpenException\nq\x00X \x00\x00\x00Error opening FTDI serial deviceq\x01\x85q\x02Rq\x03.'
+2021:08:27:11:14:16.101190,C9,_init_,ftdi: None,,None
+2021:08:27:11:14:16.780434,C9,PING,,None,None
+2021:08:27:11:14:17.210270,C9,BIAS,,None,None
+2021:08:27:11:14:17.599620,C9,SPED,"velocity: 20000, acceleration: 20000",None,None
+2021:08:27:11:14:17.944686,C9,BIAS,bias: 0,None,None
+2021:08:27:11:14:18.309128,C9,HOME,if_needed: 1,None,None
+2021:08:27:11:14:18.661752,C9,CURR,axis: 0,None,None
+2021:08:27:11:14:19.011836,C9,CURR,axis: 0,None,None
+2021:08:27:11:14:19.408254,C9,CURR,axis: 0,None,None
+2021:08:27:11:14:19.831797,C9,CURR,axis: 0,None,None
+2021:08:27:11:14:20.265401,C9,CURR,axis: 0,None,None
+2021:08:27:11:14:20.622593,C9,CURR,axis: 0,None,None
+2021:08:27:11:14:20.969721,C9,CURR,axis: 0,None,None
+2021:08:27:11:14:21.334181,C9,CURR,axis: 0,None,None
+2021:08:27:11:14:21.693577,C9,CURR,axis: 0,None,None
+2021:08:27:11:14:22.054193,C9,CURR,axis: 0,None,None
+2021:08:27:11:14:22.335504,Tecan Cavro,_init_,ftdi: None,,None
+2021:08:27:11:14:22.790146,Magnetic Stirrer,_init_,serial: COM9,,None
+2021:08:27:11:14:23.057088,Magnetic Stirrer,IN_NAME,,None,None
+2021:08:27:11:14:23.236604,Magnetic Stirrer,IN_PV_1,,None,None
+2021:08:27:11:14:23.514230,Magnetic Stirrer,IN_PV_2,,None,None
+2021:08:27:11:14:23.744617,Magnetic Stirrer,IN_SP_1,,None,None
+2021:08:27:11:14:23.942788,Magnetic Stirrer,IN_PV_4,,None,None
+2021:08:27:11:14:24.099581,Magnetic Stirrer,IN_SP_4,,None,None
+2021:08:27:11:14:24.262765,Magnetic Stirrer,STOP_4,,None,None
+2021:08:27:11:14:24.326477,Magnetic Stirrer,STOP_1,,None,None
+2021:08:27:11:14:39.252278,Tecan Cavro,_init_,ftdi: None,,b'\x80\x03cftdi_serial\nSerialDeviceOpenException\nq\x00X \x00\x00\x00Error opening FTDI serial deviceq\x01\x85q\x02Rq\x03.'
+2021:08:27:11:14:39.764397,Tecan Cavro,_init_,ftdi: None,,b'\x80\x03cftdi_serial\nSerialDeviceOpenException\nq\x00X \x00\x00\x00Error opening FTDI serial deviceq\x01\x85q\x02Rq\x03.'
+2021:08:27:11:14:40.275365,Tecan Cavro,_init_,ftdi: None,,b'\x80\x03cftdi_serial\nSerialDeviceOpenException\nq\x00X \x00\x00\x00Error opening FTDI serial deviceq\x01\x85q\x02Rq\x03.'
+2021:08:27:11:14:40.787170,Tecan Cavro,_init_,ftdi: None,,b'\x80\x03cftdi_serial\nSerialDeviceOpenException\nq\x00X \x00\x00\x00Error opening FTDI serial deviceq\x01\x85q\x02Rq\x03.'
+2021:08:27:11:14:41.298419,Tecan Cavro,_init_,ftdi: None,,b'\x80\x03cftdi_serial\nSerialDeviceOpenException\nq\x00X \x00\x00\x00Error opening FTDI serial deviceq\x01\x85q\x02Rq\x03.'
+2021:08:27:11:14:41.810095,Tecan Cavro,_init_,ftdi: None,,b'\x80\x03cftdi_serial\nSerialDeviceOpenException\nq\x00X \x00\x00\x00Error opening FTDI serial deviceq\x01\x85q\x02Rq\x03.'
+2021:08:27:11:14:42.322455,Tecan Cavro,_init_,ftdi: None,,b'\x80\x03cftdi_serial\nSerialDeviceOpenException\nq\x00X \x00\x00\x00Error opening FTDI serial deviceq\x01\x85q\x02Rq\x03.'
+2021:08:27:11:14:42.833744,Tecan Cavro,_init_,ftdi: None,,b'\x80\x03cftdi_serial\nSerialDeviceOpenException\nq\x00X \x00\x00\x00Error opening FTDI serial deviceq\x01\x85q\x02Rq\x03.'
+2021:08:27:11:14:43.345370,Tecan Cavro,_init_,ftdi: None,,b'\x80\x03cftdi_serial\nSerialDeviceOpenException\nq\x00X \x00\x00\x00Error opening FTDI serial deviceq\x01\x85q\x02Rq\x03.'
+2021:08:27:11:14:43.857469,Tecan Cavro,_init_,ftdi: None,,b'\x80\x03cftdi_serial\nSerialDeviceOpenException\nq\x00X \x00\x00\x00Error opening FTDI serial deviceq\x01\x85q\x02Rq\x03.'
+2021:08:27:11:14:44.368476,Tecan Cavro,_init_,ftdi: None,,b'\x80\x03cftdi_serial\nSerialDeviceOpenException\nq\x00X \x00\x00\x00Error opening FTDI serial deviceq\x01\x85q\x02Rq\x03.'
+2021:08:27:11:14:44.880418,Tecan Cavro,_init_,ftdi: None,,b'\x80\x03cftdi_serial\nSerialDeviceOpenException\nq\x00X \x00\x00\x00Error opening FTDI serial deviceq\x01\x85q\x02Rq\x03.'
+2021:08:27:11:14:45.392407,Tecan Cavro,_init_,ftdi: None,,b'\x80\x03cftdi_serial\nSerialDeviceOpenException\nq\x00X \x00\x00\x00Error opening FTDI serial deviceq\x01\x85q\x02Rq\x03.'
+2021:08:27:11:14:45.904532,Tecan Cavro,_init_,ftdi: None,,b'\x80\x03cftdi_serial\nSerialDeviceOpenException\nq\x00X \x00\x00\x00Error opening FTDI serial deviceq\x01\x85q\x02Rq\x03.'
+2021:08:27:11:14:46.416058,Tecan Cavro,_init_,ftdi: None,,b'\x80\x03cftdi_serial\nSerialDeviceOpenException\nq\x00X \x00\x00\x00Error opening FTDI serial deviceq\x01\x85q\x02Rq\x03.'
+2021:08:27:11:14:46.927061,Tecan Cavro,_init_,ftdi: None,,b'\x80\x03cftdi_serial\nSerialDeviceOpenException\nq\x00X \x00\x00\x00Error opening FTDI serial deviceq\x01\x85q\x02Rq\x03.'
+2021:08:27:11:14:47.438410,Tecan Cavro,_init_,ftdi: None,,b'\x80\x03cftdi_serial\nSerialDeviceOpenException\nq\x00X \x00\x00\x00Error opening FTDI serial deviceq\x01\x85q\x02Rq\x03.'
+2021:08:27:11:14:47.950186,Tecan Cavro,_init_,ftdi: None,,b'\x80\x03cftdi_serial\nSerialDeviceOpenException\nq\x00X \x00\x00\x00Error opening FTDI serial deviceq\x01\x85q\x02Rq\x03.'
+2021:08:27:11:14:48.462018,Tecan Cavro,_init_,ftdi: None,,b'\x80\x03cftdi_serial\nSerialDeviceOpenException\nq\x00X \x00\x00\x00Error opening FTDI serial deviceq\x01\x85q\x02Rq\x03.'
+2021:08:27:11:14:48.974312,Tecan Cavro,_init_,ftdi: None,,b'\x80\x03cftdi_serial\nSerialDeviceOpenException\nq\x00X \x00\x00\x00Error opening FTDI serial deviceq\x01\x85q\x02Rq\x03.'
+2021:08:27:11:14:49.485932,Tecan Cavro,_init_,ftdi: None,,b'\x80\x03cftdi_serial\nSerialDeviceOpenException\nq\x00X \x00\x00\x00Error opening FTDI serial deviceq\x01\x85q\x02Rq\x03.'
+2021:08:27:11:14:49.998743,Tecan Cavro,_init_,ftdi: None,,b'\x80\x03cftdi_serial\nSerialDeviceOpenException\nq\x00X \x00\x00\x00Error opening FTDI serial deviceq\x01\x85q\x02Rq\x03.'
+2021:08:27:11:14:50.509906,Tecan Cavro,_init_,ftdi: None,,b'\x80\x03cftdi_serial\nSerialDeviceOpenException\nq\x00X \x00\x00\x00Error opening FTDI serial deviceq\x01\x85q\x02Rq\x03.'
+2021:08:27:11:14:51.021359,Tecan Cavro,_init_,ftdi: None,,b'\x80\x03cftdi_serial\nSerialDeviceOpenException\nq\x00X \x00\x00\x00Error opening FTDI serial deviceq\x01\x85q\x02Rq\x03.'
+2021:08:27:11:14:51.533595,Tecan Cavro,_init_,ftdi: None,,b'\x80\x03cftdi_serial\nSerialDeviceOpenException\nq\x00X \x00\x00\x00Error opening FTDI serial deviceq\x01\x85q\x02Rq\x03.'
+2021:08:27:11:14:52.043989,Tecan Cavro,_init_,ftdi: None,,b'\x80\x03cftdi_serial\nSerialDeviceOpenException\nq\x00X \x00\x00\x00Error opening FTDI serial deviceq\x01\x85q\x02Rq\x03.'
+2021:08:27:11:14:52.556075,Tecan Cavro,_init_,ftdi: None,,b'\x80\x03cftdi_serial\nSerialDeviceOpenException\nq\x00X \x00\x00\x00Error opening FTDI serial deviceq\x01\x85q\x02Rq\x03.'
+2021:08:27:11:14:53.067707,Tecan Cavro,_init_,ftdi: None,,b'\x80\x03cftdi_serial\nSerialDeviceOpenException\nq\x00X \x00\x00\x00Error opening FTDI serial deviceq\x01\x85q\x02Rq\x03.'
+2021:08:27:11:14:53.580154,Tecan Cavro,_init_,ftdi: None,,b'\x80\x03cftdi_serial\nSerialDeviceOpenException\nq\x00X \x00\x00\x00Error opening FTDI serial deviceq\x01\x85q\x02Rq\x03.'
+2021:08:27:11:14:54.091772,Tecan Cavro,_init_,ftdi: None,,b'\x80\x03cftdi_serial\nSerialDeviceOpenException\nq\x00X \x00\x00\x00Error opening FTDI serial deviceq\x01\x85q\x02Rq\x03.'
+2021:08:27:11:14:54.602860,Tecan Cavro,_init_,ftdi: None,,b'\x80\x03cftdi_serial\nSerialDeviceOpenException\nq\x00X \x00\x00\x00Error opening FTDI serial deviceq\x01\x85q\x02Rq\x03.'
+2021:08:27:11:14:55.114611,Tecan Cavro,_init_,ftdi: None,,b'\x80\x03cftdi_serial\nSerialDeviceOpenException\nq\x00X \x00\x00\x00Error opening FTDI serial deviceq\x01\x85q\x02Rq\x03.'
+2021:08:27:11:14:55.626393,Tecan Cavro,_init_,ftdi: None,,b'\x80\x03cftdi_serial\nSerialDeviceOpenException\nq\x00X \x00\x00\x00Error opening FTDI serial deviceq\x01\x85q\x02Rq\x03.'
+2021:08:27:11:14:56.137913,Tecan Cavro,_init_,ftdi: None,,b'\x80\x03cftdi_serial\nSerialDeviceOpenException\nq\x00X \x00\x00\x00Error opening FTDI serial deviceq\x01\x85q\x02Rq\x03.'
+2021:08:27:11:14:56.649005,Tecan Cavro,_init_,ftdi: None,,b'\x80\x03cftdi_serial\nSerialDeviceOpenException\nq\x00X \x00\x00\x00Error opening FTDI serial deviceq\x01\x85q\x02Rq\x03.'
+2021:08:27:11:14:57.160224,Tecan Cavro,_init_,ftdi: None,,b'\x80\x03cftdi_serial\nSerialDeviceOpenException\nq\x00X \x00\x00\x00Error opening FTDI serial deviceq\x01\x85q\x02Rq\x03.'
+2021:08:27:11:14:57.672268,Tecan Cavro,_init_,ftdi: None,,b'\x80\x03cftdi_serial\nSerialDeviceOpenException\nq\x00X \x00\x00\x00Error opening FTDI serial deviceq\x01\x85q\x02Rq\x03.'
+2021:08:27:11:14:58.184404,Tecan Cavro,_init_,ftdi: None,,b'\x80\x03cftdi_serial\nSerialDeviceOpenException\nq\x00X \x00\x00\x00Error opening FTDI serial deviceq\x01\x85q\x02Rq\x03.'
+2021:08:27:11:14:58.696064,Tecan Cavro,_init_,ftdi: None,,b'\x80\x03cftdi_serial\nSerialDeviceOpenException\nq\x00X \x00\x00\x00Error opening FTDI serial deviceq\x01\x85q\x02Rq\x03.'
+2021:08:27:11:14:59.207050,Tecan Cavro,_init_,ftdi: None,,b'\x80\x03cftdi_serial\nSerialDeviceOpenException\nq\x00X \x00\x00\x00Error opening FTDI serial deviceq\x01\x85q\x02Rq\x03.'
+2021:08:27:11:14:59.718441,Tecan Cavro,_init_,ftdi: None,,b'\x80\x03cftdi_serial\nSerialDeviceOpenException\nq\x00X \x00\x00\x00Error opening FTDI serial deviceq\x01\x85q\x02Rq\x03.'
+2021:08:27:11:15:00.231070,Tecan Cavro,_init_,ftdi: None,,b'\x80\x03cftdi_serial\nSerialDeviceOpenException\nq\x00X \x00\x00\x00Error opening FTDI serial deviceq\x01\x85q\x02Rq\x03.'
+2021:08:27:11:15:00.742786,Tecan Cavro,_init_,ftdi: None,,b'\x80\x03cftdi_serial\nSerialDeviceOpenException\nq\x00X \x00\x00\x00Error opening FTDI serial deviceq\x01\x85q\x02Rq\x03.'
+2021:08:27:11:15:01.254159,Tecan Cavro,_init_,ftdi: None,,b'\x80\x03cftdi_serial\nSerialDeviceOpenException\nq\x00X \x00\x00\x00Error opening FTDI serial deviceq\x01\x85q\x02Rq\x03.'
+2021:08:27:11:15:01.765283,Tecan Cavro,_init_,ftdi: None,,b'\x80\x03cftdi_serial\nSerialDeviceOpenException\nq\x00X \x00\x00\x00Error opening FTDI serial deviceq\x01\x85q\x02Rq\x03.'
+2021:08:27:11:15:02.277169,Tecan Cavro,_init_,ftdi: None,,b'\x80\x03cftdi_serial\nSerialDeviceOpenException\nq\x00X \x00\x00\x00Error opening FTDI serial deviceq\x01\x85q\x02Rq\x03.'
+2021:08:27:11:15:02.788583,Tecan Cavro,_init_,ftdi: None,,b'\x80\x03cftdi_serial\nSerialDeviceOpenException\nq\x00X \x00\x00\x00Error opening FTDI serial deviceq\x01\x85q\x02Rq\x03.'
+2021:08:27:11:15:03.300500,Tecan Cavro,_init_,ftdi: None,,b'\x80\x03cftdi_serial\nSerialDeviceOpenException\nq\x00X \x00\x00\x00Error opening FTDI serial deviceq\x01\x85q\x02Rq\x03.'
+2021:08:27:11:15:03.811617,Tecan Cavro,_init_,ftdi: None,,b'\x80\x03cftdi_serial\nSerialDeviceOpenException\nq\x00X \x00\x00\x00Error opening FTDI serial deviceq\x01\x85q\x02Rq\x03.'
+2021:08:27:11:15:04.324903,Tecan Cavro,_init_,ftdi: None,,b'\x80\x03cftdi_serial\nSerialDeviceOpenException\nq\x00X \x00\x00\x00Error opening FTDI serial deviceq\x01\x85q\x02Rq\x03.'
+2021:08:27:11:15:04.836084,Tecan Cavro,_init_,ftdi: None,,b'\x80\x03cftdi_serial\nSerialDeviceOpenException\nq\x00X \x00\x00\x00Error opening FTDI serial deviceq\x01\x85q\x02Rq\x03.'
+2021:08:27:11:15:05.348122,Tecan Cavro,_init_,ftdi: None,,b'\x80\x03cftdi_serial\nSerialDeviceOpenException\nq\x00X \x00\x00\x00Error opening FTDI serial deviceq\x01\x85q\x02Rq\x03.'
+2021:08:27:11:15:05.860041,Tecan Cavro,_init_,ftdi: None,,b'\x80\x03cftdi_serial\nSerialDeviceOpenException\nq\x00X \x00\x00\x00Error opening FTDI serial deviceq\x01\x85q\x02Rq\x03.'
+2021:08:27:11:15:06.371041,Tecan Cavro,_init_,ftdi: None,,b'\x80\x03cftdi_serial\nSerialDeviceOpenException\nq\x00X \x00\x00\x00Error opening FTDI serial deviceq\x01\x85q\x02Rq\x03.'
+2021:08:27:11:15:06.882919,Tecan Cavro,_init_,ftdi: None,,b'\x80\x03cftdi_serial\nSerialDeviceOpenException\nq\x00X \x00\x00\x00Error opening FTDI serial deviceq\x01\x85q\x02Rq\x03.'
+2021:08:27:11:15:07.394416,Tecan Cavro,_init_,ftdi: None,,b'\x80\x03cftdi_serial\nSerialDeviceOpenException\nq\x00X \x00\x00\x00Error opening FTDI serial deviceq\x01\x85q\x02Rq\x03.'
+2021:08:27:11:15:07.905624,Tecan Cavro,_init_,ftdi: None,,b'\x80\x03cftdi_serial\nSerialDeviceOpenException\nq\x00X \x00\x00\x00Error opening FTDI serial deviceq\x01\x85q\x02Rq\x03.'
+2021:08:27:11:15:08.417771,Tecan Cavro,_init_,ftdi: None,,b'\x80\x03cftdi_serial\nSerialDeviceOpenException\nq\x00X \x00\x00\x00Error opening FTDI serial deviceq\x01\x85q\x02Rq\x03.'
+2021:08:27:11:15:08.929356,Tecan Cavro,_init_,ftdi: None,,b'\x80\x03cftdi_serial\nSerialDeviceOpenException\nq\x00X \x00\x00\x00Error opening FTDI serial deviceq\x01\x85q\x02Rq\x03.'
+2021:08:27:11:21:29.869109,Tecan Cavro,_init_,ftdi: None,,b'\x80\x03cftdi_serial\nSerialDeviceOpenException\nq\x00X \x00\x00\x00Error opening FTDI serial deviceq\x01\x85q\x02Rq\x03.'
+2021:08:27:11:21:30.380741,Tecan Cavro,_init_,ftdi: None,,b'\x80\x03cftdi_serial\nSerialDeviceOpenException\nq\x00X \x00\x00\x00Error opening FTDI serial deviceq\x01\x85q\x02Rq\x03.'
+2021:08:27:11:21:30.892438,Tecan Cavro,_init_,ftdi: None,,b'\x80\x03cftdi_serial\nSerialDeviceOpenException\nq\x00X \x00\x00\x00Error opening FTDI serial deviceq\x01\x85q\x02Rq\x03.'
+2021:08:27:11:21:31.404257,Tecan Cavro,_init_,ftdi: None,,b'\x80\x03cftdi_serial\nSerialDeviceOpenException\nq\x00X \x00\x00\x00Error opening FTDI serial deviceq\x01\x85q\x02Rq\x03.'
+2021:08:27:11:21:31.931902,Tecan Cavro,_init_,ftdi: None,,b'\x80\x03cftdi_serial\nSerialDeviceOpenException\nq\x00X \x00\x00\x00Error opening FTDI serial deviceq\x01\x85q\x02Rq\x03.'
+2021:08:27:11:21:32.460586,Tecan Cavro,_init_,ftdi: None,,b'\x80\x03cftdi_serial\nSerialDeviceOpenException\nq\x00X \x00\x00\x00Error opening FTDI serial deviceq\x01\x85q\x02Rq\x03.'
+2021:08:27:11:21:32.972410,Tecan Cavro,_init_,ftdi: None,,b'\x80\x03cftdi_serial\nSerialDeviceOpenException\nq\x00X \x00\x00\x00Error opening FTDI serial deviceq\x01\x85q\x02Rq\x03.'
+2021:08:27:11:21:33.499288,Tecan Cavro,_init_,ftdi: None,,b'\x80\x03cftdi_serial\nSerialDeviceOpenException\nq\x00X \x00\x00\x00Error opening FTDI serial deviceq\x01\x85q\x02Rq\x03.'
+2021:08:27:11:21:34.026599,Tecan Cavro,_init_,ftdi: None,,b'\x80\x03cftdi_serial\nSerialDeviceOpenException\nq\x00X \x00\x00\x00Error opening FTDI serial deviceq\x01\x85q\x02Rq\x03.'
+2021:08:27:11:21:34.538501,Tecan Cavro,_init_,ftdi: None,,b'\x80\x03cftdi_serial\nSerialDeviceOpenException\nq\x00X \x00\x00\x00Error opening FTDI serial deviceq\x01\x85q\x02Rq\x03.'
+2021:08:27:11:21:35.066421,Tecan Cavro,_init_,ftdi: None,,b'\x80\x03cftdi_serial\nSerialDeviceOpenException\nq\x00X \x00\x00\x00Error opening FTDI serial deviceq\x01\x85q\x02Rq\x03.'
+2021:08:27:11:21:35.577499,Tecan Cavro,_init_,ftdi: None,,b'\x80\x03cftdi_serial\nSerialDeviceOpenException\nq\x00X \x00\x00\x00Error opening FTDI serial deviceq\x01\x85q\x02Rq\x03.'
+2021:08:27:11:21:36.088824,Tecan Cavro,_init_,ftdi: None,,b'\x80\x03cftdi_serial\nSerialDeviceOpenException\nq\x00X \x00\x00\x00Error opening FTDI serial deviceq\x01\x85q\x02Rq\x03.'
+2021:08:27:11:21:36.617979,Tecan Cavro,_init_,ftdi: None,,b'\x80\x03cftdi_serial\nSerialDeviceOpenException\nq\x00X \x00\x00\x00Error opening FTDI serial deviceq\x01\x85q\x02Rq\x03.'
+2021:08:27:11:21:37.145528,Tecan Cavro,_init_,ftdi: None,,b'\x80\x03cftdi_serial\nSerialDeviceOpenException\nq\x00X \x00\x00\x00Error opening FTDI serial deviceq\x01\x85q\x02Rq\x03.'
+2021:08:27:11:21:37.657903,Tecan Cavro,_init_,ftdi: None,,b'\x80\x03cftdi_serial\nSerialDeviceOpenException\nq\x00X \x00\x00\x00Error opening FTDI serial deviceq\x01\x85q\x02Rq\x03.'
+2021:08:27:11:21:38.184422,Tecan Cavro,_init_,ftdi: None,,b'\x80\x03cftdi_serial\nSerialDeviceOpenException\nq\x00X \x00\x00\x00Error opening FTDI serial deviceq\x01\x85q\x02Rq\x03.'
+2021:08:27:11:21:38.712731,Tecan Cavro,_init_,ftdi: None,,b'\x80\x03cftdi_serial\nSerialDeviceOpenException\nq\x00X \x00\x00\x00Error opening FTDI serial deviceq\x01\x85q\x02Rq\x03.'
+2021:08:27:11:21:39.224363,Tecan Cavro,_init_,ftdi: None,,b'\x80\x03cftdi_serial\nSerialDeviceOpenException\nq\x00X \x00\x00\x00Error opening FTDI serial deviceq\x01\x85q\x02Rq\x03.'
+2021:08:27:11:21:39.752164,Tecan Cavro,_init_,ftdi: None,,b'\x80\x03cftdi_serial\nSerialDeviceOpenException\nq\x00X \x00\x00\x00Error opening FTDI serial deviceq\x01\x85q\x02Rq\x03.'
+2021:08:27:11:21:40.279969,Tecan Cavro,_init_,ftdi: None,,b'\x80\x03cftdi_serial\nSerialDeviceOpenException\nq\x00X \x00\x00\x00Error opening FTDI serial deviceq\x01\x85q\x02Rq\x03.'
+2021:08:27:11:21:40.806926,Tecan Cavro,_init_,ftdi: None,,b'\x80\x03cftdi_serial\nSerialDeviceOpenException\nq\x00X \x00\x00\x00Error opening FTDI serial deviceq\x01\x85q\x02Rq\x03.'
+2021:08:27:11:21:41.318728,Tecan Cavro,_init_,ftdi: None,,b'\x80\x03cftdi_serial\nSerialDeviceOpenException\nq\x00X \x00\x00\x00Error opening FTDI serial deviceq\x01\x85q\x02Rq\x03.'
+2021:08:27:11:21:41.846317,Tecan Cavro,_init_,ftdi: None,,b'\x80\x03cftdi_serial\nSerialDeviceOpenException\nq\x00X \x00\x00\x00Error opening FTDI serial deviceq\x01\x85q\x02Rq\x03.'
+2021:08:27:11:21:42.357880,Tecan Cavro,_init_,ftdi: None,,b'\x80\x03cftdi_serial\nSerialDeviceOpenException\nq\x00X \x00\x00\x00Error opening FTDI serial deviceq\x01\x85q\x02Rq\x03.'
+2021:08:27:11:21:42.870381,Tecan Cavro,_init_,ftdi: None,,b'\x80\x03cftdi_serial\nSerialDeviceOpenException\nq\x00X \x00\x00\x00Error opening FTDI serial deviceq\x01\x85q\x02Rq\x03.'
+2021:08:27:11:21:43.381698,Tecan Cavro,_init_,ftdi: None,,b'\x80\x03cftdi_serial\nSerialDeviceOpenException\nq\x00X \x00\x00\x00Error opening FTDI serial deviceq\x01\x85q\x02Rq\x03.'
+2021:08:27:11:21:43.893651,Tecan Cavro,_init_,ftdi: None,,b'\x80\x03cftdi_serial\nSerialDeviceOpenException\nq\x00X \x00\x00\x00Error opening FTDI serial deviceq\x01\x85q\x02Rq\x03.'
+2021:08:27:11:21:44.406421,Tecan Cavro,_init_,ftdi: None,,b'\x80\x03cftdi_serial\nSerialDeviceOpenException\nq\x00X \x00\x00\x00Error opening FTDI serial deviceq\x01\x85q\x02Rq\x03.'
+2021:08:27:11:21:44.918054,Tecan Cavro,_init_,ftdi: None,,b'\x80\x03cftdi_serial\nSerialDeviceOpenException\nq\x00X \x00\x00\x00Error opening FTDI serial deviceq\x01\x85q\x02Rq\x03.'
+2021:08:27:11:21:45.430086,Tecan Cavro,_init_,ftdi: None,,b'\x80\x03cftdi_serial\nSerialDeviceOpenException\nq\x00X \x00\x00\x00Error opening FTDI serial deviceq\x01\x85q\x02Rq\x03.'
+2021:08:27:11:21:45.941168,Tecan Cavro,_init_,ftdi: None,,b'\x80\x03cftdi_serial\nSerialDeviceOpenException\nq\x00X \x00\x00\x00Error opening FTDI serial deviceq\x01\x85q\x02Rq\x03.'
+2021:08:27:11:21:46.453486,Tecan Cavro,_init_,ftdi: None,,b'\x80\x03cftdi_serial\nSerialDeviceOpenException\nq\x00X \x00\x00\x00Error opening FTDI serial deviceq\x01\x85q\x02Rq\x03.'
+2021:08:27:11:21:46.964434,Tecan Cavro,_init_,ftdi: None,,b'\x80\x03cftdi_serial\nSerialDeviceOpenException\nq\x00X \x00\x00\x00Error opening FTDI serial deviceq\x01\x85q\x02Rq\x03.'
+2021:08:27:11:21:47.476277,Tecan Cavro,_init_,ftdi: None,,b'\x80\x03cftdi_serial\nSerialDeviceOpenException\nq\x00X \x00\x00\x00Error opening FTDI serial deviceq\x01\x85q\x02Rq\x03.'
+2021:08:27:11:21:47.987722,Tecan Cavro,_init_,ftdi: None,,b'\x80\x03cftdi_serial\nSerialDeviceOpenException\nq\x00X \x00\x00\x00Error opening FTDI serial deviceq\x01\x85q\x02Rq\x03.'
+2021:08:27:11:21:48.515617,Tecan Cavro,_init_,ftdi: None,,b'\x80\x03cftdi_serial\nSerialDeviceOpenException\nq\x00X \x00\x00\x00Error opening FTDI serial deviceq\x01\x85q\x02Rq\x03.'
+2021:08:27:11:22:07.575759,Tecan Cavro,_init_,ftdi: None,,b'\x80\x03cftdi_serial\nSerialDeviceOpenException\nq\x00X \x00\x00\x00Error opening FTDI serial deviceq\x01\x85q\x02Rq\x03.'
+2021:08:27:11:22:08.086749,Tecan Cavro,_init_,ftdi: None,,b'\x80\x03cftdi_serial\nSerialDeviceOpenException\nq\x00X \x00\x00\x00Error opening FTDI serial deviceq\x01\x85q\x02Rq\x03.'
+2021:08:27:11:22:08.599060,Tecan Cavro,_init_,ftdi: None,,b'\x80\x03cftdi_serial\nSerialDeviceOpenException\nq\x00X \x00\x00\x00Error opening FTDI serial deviceq\x01\x85q\x02Rq\x03.'
+2021:08:27:11:22:09.109985,Tecan Cavro,_init_,ftdi: None,,b'\x80\x03cftdi_serial\nSerialDeviceOpenException\nq\x00X \x00\x00\x00Error opening FTDI serial deviceq\x01\x85q\x02Rq\x03.'
+2021:08:27:11:22:09.637945,Tecan Cavro,_init_,ftdi: None,,b'\x80\x03cftdi_serial\nSerialDeviceOpenException\nq\x00X \x00\x00\x00Error opening FTDI serial deviceq\x01\x85q\x02Rq\x03.'
+2021:08:27:11:22:10.165890,Tecan Cavro,_init_,ftdi: None,,b'\x80\x03cftdi_serial\nSerialDeviceOpenException\nq\x00X \x00\x00\x00Error opening FTDI serial deviceq\x01\x85q\x02Rq\x03.'
+2021:08:27:11:22:10.692742,Tecan Cavro,_init_,ftdi: None,,b'\x80\x03cftdi_serial\nSerialDeviceOpenException\nq\x00X \x00\x00\x00Error opening FTDI serial deviceq\x01\x85q\x02Rq\x03.'
+2021:08:27:11:22:11.220121,Tecan Cavro,_init_,ftdi: None,,b'\x80\x03cftdi_serial\nSerialDeviceOpenException\nq\x00X \x00\x00\x00Error opening FTDI serial deviceq\x01\x85q\x02Rq\x03.'
+2021:08:27:11:22:11.747564,Tecan Cavro,_init_,ftdi: None,,b'\x80\x03cftdi_serial\nSerialDeviceOpenException\nq\x00X \x00\x00\x00Error opening FTDI serial deviceq\x01\x85q\x02Rq\x03.'
+2021:08:27:11:22:12.259893,Tecan Cavro,_init_,ftdi: None,,b'\x80\x03cftdi_serial\nSerialDeviceOpenException\nq\x00X \x00\x00\x00Error opening FTDI serial deviceq\x01\x85q\x02Rq\x03.'
+2021:08:27:11:22:12.771299,Tecan Cavro,_init_,ftdi: None,,b'\x80\x03cftdi_serial\nSerialDeviceOpenException\nq\x00X \x00\x00\x00Error opening FTDI serial deviceq\x01\x85q\x02Rq\x03.'
+2021:08:27:11:22:13.284145,Tecan Cavro,_init_,ftdi: None,,b'\x80\x03cftdi_serial\nSerialDeviceOpenException\nq\x00X \x00\x00\x00Error opening FTDI serial deviceq\x01\x85q\x02Rq\x03.'
+2021:08:27:11:22:13.794877,Tecan Cavro,_init_,ftdi: None,,b'\x80\x03cftdi_serial\nSerialDeviceOpenException\nq\x00X \x00\x00\x00Error opening FTDI serial deviceq\x01\x85q\x02Rq\x03.'
+2021:08:27:11:22:14.323810,Tecan Cavro,_init_,ftdi: None,,b'\x80\x03cftdi_serial\nSerialDeviceOpenException\nq\x00X \x00\x00\x00Error opening FTDI serial deviceq\x01\x85q\x02Rq\x03.'
+2021:08:27:11:22:14.834549,Tecan Cavro,_init_,ftdi: None,,b'\x80\x03cftdi_serial\nSerialDeviceOpenException\nq\x00X \x00\x00\x00Error opening FTDI serial deviceq\x01\x85q\x02Rq\x03.'
+2021:08:27:11:22:15.362002,Tecan Cavro,_init_,ftdi: None,,b'\x80\x03cftdi_serial\nSerialDeviceOpenException\nq\x00X \x00\x00\x00Error opening FTDI serial deviceq\x01\x85q\x02Rq\x03.'
+2021:08:27:11:22:15.873847,Tecan Cavro,_init_,ftdi: None,,b'\x80\x03cftdi_serial\nSerialDeviceOpenException\nq\x00X \x00\x00\x00Error opening FTDI serial deviceq\x01\x85q\x02Rq\x03.'
+2021:08:27:11:22:16.400899,Tecan Cavro,_init_,ftdi: None,,b'\x80\x03cftdi_serial\nSerialDeviceOpenException\nq\x00X \x00\x00\x00Error opening FTDI serial deviceq\x01\x85q\x02Rq\x03.'
+2021:08:27:11:22:16.912859,Tecan Cavro,_init_,ftdi: None,,b'\x80\x03cftdi_serial\nSerialDeviceOpenException\nq\x00X \x00\x00\x00Error opening FTDI serial deviceq\x01\x85q\x02Rq\x03.'
+2021:08:27:11:22:17.424689,Tecan Cavro,_init_,ftdi: None,,b'\x80\x03cftdi_serial\nSerialDeviceOpenException\nq\x00X \x00\x00\x00Error opening FTDI serial deviceq\x01\x85q\x02Rq\x03.'
+2021:08:27:11:22:17.952117,Tecan Cavro,_init_,ftdi: None,,b'\x80\x03cftdi_serial\nSerialDeviceOpenException\nq\x00X \x00\x00\x00Error opening FTDI serial deviceq\x01\x85q\x02Rq\x03.'
+2021:08:27:11:22:18.480327,Tecan Cavro,_init_,ftdi: None,,b'\x80\x03cftdi_serial\nSerialDeviceOpenException\nq\x00X \x00\x00\x00Error opening FTDI serial deviceq\x01\x85q\x02Rq\x03.'
+2021:08:27:11:22:18.992141,Tecan Cavro,_init_,ftdi: None,,b'\x80\x03cftdi_serial\nSerialDeviceOpenException\nq\x00X \x00\x00\x00Error opening FTDI serial deviceq\x01\x85q\x02Rq\x03.'
+2021:08:27:11:22:19.519274,Tecan Cavro,_init_,ftdi: None,,b'\x80\x03cftdi_serial\nSerialDeviceOpenException\nq\x00X \x00\x00\x00Error opening FTDI serial deviceq\x01\x85q\x02Rq\x03.'
+2021:08:27:11:22:20.033084,Tecan Cavro,_init_,ftdi: None,,b'\x80\x03cftdi_serial\nSerialDeviceOpenException\nq\x00X \x00\x00\x00Error opening FTDI serial deviceq\x01\x85q\x02Rq\x03.'
+2021:08:27:11:22:20.544705,Tecan Cavro,_init_,ftdi: None,,b'\x80\x03cftdi_serial\nSerialDeviceOpenException\nq\x00X \x00\x00\x00Error opening FTDI serial deviceq\x01\x85q\x02Rq\x03.'
+2021:08:27:11:22:21.072220,Tecan Cavro,_init_,ftdi: None,,b'\x80\x03cftdi_serial\nSerialDeviceOpenException\nq\x00X \x00\x00\x00Error opening FTDI serial deviceq\x01\x85q\x02Rq\x03.'
+2021:08:27:11:22:21.583703,Tecan Cavro,_init_,ftdi: None,,b'\x80\x03cftdi_serial\nSerialDeviceOpenException\nq\x00X \x00\x00\x00Error opening FTDI serial deviceq\x01\x85q\x02Rq\x03.'
+2021:08:27:11:22:22.095460,Tecan Cavro,_init_,ftdi: None,,b'\x80\x03cftdi_serial\nSerialDeviceOpenException\nq\x00X \x00\x00\x00Error opening FTDI serial deviceq\x01\x85q\x02Rq\x03.'

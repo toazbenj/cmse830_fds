@@ -1,0 +1,129 @@
+Timestamp,Module,Method_Name,Arguments,Responses,Exceptions
+2021:10:15:13:14:46.492948,C9,_init_,ftdi: None,,None
+2021:10:15:13:14:46.905406,C9,PING,,None,None
+2021:10:15:13:14:47.096115,C9,BIAS,,None,None
+2021:10:15:13:14:47.224089,C9,SPED,"velocity: 20000, acceleration: 20000",None,None
+2021:10:15:13:14:47.335910,C9,BIAS,bias: 0,None,None
+2021:10:15:13:14:47.432676,C9,HOME,if_needed: 1,None,None
+2021:10:15:13:14:47.555391,C9,SPED,,None,None
+2021:10:15:13:14:47.668430,C9,BIAS,,None,None
+2021:10:15:13:14:47.780194,C9,SPED,"velocity: 40000, acceleration: 100000",None,None
+2021:10:15:13:14:47.888123,C9,BIAS,bias: 2,None,None
+2021:10:15:13:14:47.985184,C9,POS,"axes: 1,units: 1",None,None
+2021:10:15:13:14:48.092833,C9,POS,"axes: 2,units: 1",None,None
+2021:10:15:13:14:48.206739,C9,POS,"axes: 0,units: 1",None,None
+2021:10:15:13:14:48.320558,C9,POS,C: 1,None,None
+2021:10:15:13:14:49.396324,C9,JLEN,length_offset: 0,None,None
+2021:10:15:13:14:50.009641,C9,ARM,"X: -179955, Y: 262700, Z: 300000, gripper: 125113, elbow_bias: 2",None,None
+2021:10:15:13:14:50.250002,C9,POS,"axes: 1,units: 1",None,None
+2021:10:15:13:14:50.368906,C9,POS,"axes: 2,units: 1",None,None
+2021:10:15:13:14:50.508537,C9,POS,"axes: 0,units: 1",None,None
+2021:10:15:13:14:50.616250,C9,POS,C: 1,None,None
+2021:10:15:13:14:50.761984,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:15:13:14:50.889716,C9,ARM,"X: -176752, Y: 253638, Z: 300000, gripper: 125113, elbow_bias: 2",None,None
+2021:10:15:13:14:51.210405,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:15:13:14:51.323131,C9,ARM,"X: -171596, Y: 244966, Z: 300000, gripper: 125113, elbow_bias: 2",None,None
+2021:10:15:13:14:51.627441,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:15:13:14:51.743089,C9,ARM,"X: -162533, Y: 239419, Z: 300000, gripper: 125113, elbow_bias: 2",None,None
+2021:10:15:13:14:52.053259,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:15:13:14:52.170944,C9,ARM,"X: -153236, Y: 235200, Z: 300000, gripper: 125113, elbow_bias: 2",None,None
+2021:10:15:13:14:52.472342,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:15:13:14:52.587305,C9,ARM,"X: -143861, Y: 231137, Z: 300000, gripper: 125113, elbow_bias: 2",None,None
+2021:10:15:13:14:52.892489,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:15:13:14:53.015403,C9,ARM,"X: -134564, Y: 227230, Z: 300000, gripper: 125113, elbow_bias: 2",None,None
+2021:10:15:13:14:53.321826,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:15:13:14:53.438511,C9,ARM,"X: -125268, Y: 223324, Z: 300000, gripper: 125113, elbow_bias: 2",None,None
+2021:10:15:13:14:53.753962,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:15:13:14:53.884610,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:15:13:14:54.006413,C9,ARM,"X: -116127, Y: 218792, Z: 300000, gripper: 125113, elbow_bias: 2",None,None
+2021:10:15:13:14:54.315559,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:15:13:14:54.427456,C9,ARM,"X: -106986, Y: 214339, Z: 300000, gripper: 125113, elbow_bias: 2",None,None
+2021:10:15:13:14:54.729843,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:15:13:14:54.849640,C9,ARM,"X: -97846, Y: 209729, Z: 300000, gripper: 125113, elbow_bias: 2",None,None
+2021:10:15:13:14:55.138026,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:15:13:14:55.257732,C9,ARM,"X: -88705, Y: 205119, Z: 300000, gripper: 125113, elbow_bias: 2",None,None
+2021:10:15:13:14:55.563993,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:15:13:14:55.725853,C9,ARM,"X: -79564, Y: 200275, Z: 300000, gripper: 125113, elbow_bias: 2",None,None
+2021:10:15:13:14:56.450058,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:15:13:14:56.564754,C9,ARM,"X: -70033, Y: 196134, Z: 300000, gripper: 125113, elbow_bias: 2",None,None
+2021:10:15:13:14:56.864508,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:15:13:14:57.003141,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:15:13:14:57.145825,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:15:13:14:57.256808,C9,ARM,"X: -60033, Y: 194494, Z: 300000, gripper: 125113, elbow_bias: 2",None,None
+2021:10:15:13:14:57.560079,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:15:13:14:57.673136,C9,ARM,"X: -59486, Y: 194494, Z: 300000, gripper: 125113, elbow_bias: 2",None,None
+2021:10:15:13:14:58.396970,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:15:13:14:58.554944,C9,ARM,"X: -58861, Y: 194494, Z: 300000, gripper: 125113, elbow_bias: 2",None,None
+2021:10:15:13:14:58.792309,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:15:13:14:58.903013,C9,ARM,"X: -58235, Y: 194494, Z: 300000, gripper: 125113, elbow_bias: 2",None,None
+2021:10:15:13:14:59.639084,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:15:13:14:59.757046,C9,ARM,"X: -57610, Y: 194494, Z: 300000, gripper: 125113, elbow_bias: 2",None,None
+2021:10:15:13:14:59.995520,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:15:13:15:00.152405,C9,ARM,"X: -57063, Y: 194494, Z: 300000, gripper: 125113, elbow_bias: 2",None,None
+2021:10:15:13:15:22.055589,C9,_init_,ftdi: None,,None
+2021:10:15:13:15:22.808096,C9,PING,,None,None
+2021:10:15:13:15:23.174463,C9,BIAS,,None,None
+2021:10:15:13:15:23.511894,C9,SPED,"velocity: 20000, acceleration: 20000",None,None
+2021:10:15:13:15:23.796521,C9,BIAS,bias: 0,None,None
+2021:10:15:13:15:24.058471,C9,HOME,if_needed: 1,None,None
+2021:10:15:13:15:24.325779,C9,CURR,axis: 0,None,None
+2021:10:15:13:15:24.776350,C9,CURR,axis: 0,None,None
+2021:10:15:13:15:25.213771,C9,CURR,axis: 0,None,None
+2021:10:15:13:15:25.639850,C9,CURR,axis: 0,None,None
+2021:10:15:13:15:26.104232,C9,CURR,axis: 0,None,None
+2021:10:15:13:15:26.543763,C9,CURR,axis: 0,None,None
+2021:10:15:13:15:26.836312,C9,CURR,axis: 0,None,None
+2021:10:15:13:15:27.259507,C9,CURR,axis: 0,None,None
+2021:10:15:13:15:27.694249,C9,CURR,axis: 0,None,None
+2021:10:15:13:15:28.121348,C9,CURR,axis: 0,None,None
+2021:10:15:13:15:28.510232,Tecan Cavro,_init_,ftdi: None,,None
+2021:10:15:13:15:28.945031,Magnetic Stirrer,_init_,serial: COM9,,None
+2021:10:15:13:15:29.153615,Magnetic Stirrer,IN_NAME,,None,None
+2021:10:15:13:15:29.281343,Magnetic Stirrer,IN_PV_1,,None,None
+2021:10:15:13:15:29.412363,Magnetic Stirrer,IN_PV_2,,None,None
+2021:10:15:13:15:29.538283,Magnetic Stirrer,IN_SP_1,,None,None
+2021:10:15:13:15:29.658548,Magnetic Stirrer,IN_PV_4,,None,None
+2021:10:15:13:15:29.795125,Magnetic Stirrer,IN_SP_4,,None,None
+2021:10:15:13:15:29.922190,Magnetic Stirrer,STOP_4,,None,None
+2021:10:15:13:15:29.976048,Magnetic Stirrer,STOP_1,,None,None
+2021:10:15:13:15:43.679439,ArduinoAugmentedQuantos,_init_,"logging_level: 10, address: 13, serial_port: None, tcp_port: None, perfect_counts: 8700",,None
+2021:10:15:13:15:43.725361,ArduinoAugmentedQuantos,set_home_direction,direction: 0,None,None
+2021:10:15:13:15:45.051655,UR3Arm,_init_,"host: 192.168.254.88, default_velocity: 250, max_velocity: 500, position_units: Units.MILLIMETERS, default_joint_velocity: 20.0, max_joint_velocity: 180.0, gripper_default_velocity: 0.5, gripper_default_force: 0.5, gripper_id: 1, gripper_base_port: 63352, gripper_connect: True, connect: True",,None
+2021:10:15:13:15:51.358632,ArduinoAugmentedQuantos,lock_dosing_pin_position,,None,None
+2021:10:15:13:16:07.542136,ArduinoAugmentedQuantos,unlock_dosing_pin_position,,None,None
+2021:10:15:13:16:10.695929,ArduinoAugmentedQuantos,lock_dosing_pin_position,,None,None
+2021:10:15:13:16:26.818045,ArduinoAugmentedQuantos,unlock_dosing_pin_position,,None,None
+2021:10:15:13:16:28.851270,ArduinoAugmentedQuantos,home_z_stage,,None,None
+2021:10:15:13:16:37.003539,ArduinoAugmentedQuantos,move_z_stage,"steps: 3000, speed: 400",None,None
+2021:10:15:13:16:42.407140,ArduinoAugmentedQuantos,front_door_position,open,,None
+2021:10:15:13:16:43.019821,ArduinoAugmentedQuantos,unlock_dosing_pin_position,,None,None
+2021:10:15:13:16:43.193499,UR3Arm,move_joints,"velocity: 60, joint_positions: [-262.2513869387633, -89.6793362905978, -106.6906694018607, 197.42646335759426, -170.54852948174175, 721.9970653510417], acceleration: None, relative: False, wait: True, timeout: None",None,None
+2021:10:15:13:16:43.417176,UR3Arm,open_gripper,"position: 0, force: None, velocity: None, wait: True, timeout: None",None,None
+2021:10:15:13:16:46.811227,UR3Arm,move_joints,"velocity: 60, joint_positions: [-228.49844987201453, -76.00634942136446, -45.661563129962765, 124.4705627192901, -131.90193945959726, 722.9002076046141], acceleration: None, relative: False, wait: True, timeout: None",None,None
+2021:10:15:13:16:49.734202,UR3Arm,move_joints,"velocity: 60, joint_positions: [-190.48292834804423, -47.285895735081084, -102.0669865035989, 145.10603952275935, -131.9327982542674, 723.6064764855502], acceleration: None, relative: False, wait: True, timeout: None",None,None
+2021:10:15:13:16:54.452760,UR3Arm,move_joints,"velocity: 60, joint_positions: [-70.4596477240486, -24.067022821459577, -97.97712387010863, 126.18917491824871, -108.0798105781019, 723.5066737613979], acceleration: None, relative: False, wait: True, timeout: None",None,None
+2021:10:15:13:16:59.366523,UR3Arm,move_joints,"velocity: 60, joint_positions: [-71.08633124077559, -38.10281567902566, -118.99077458754314, 156.31896983787252, 15.454710016122872, 723.39515043263], acceleration: None, relative: False, wait: True, timeout: None",None,None
+2021:10:15:13:17:01.888223,UR3Arm,move_joints,"velocity: 60, joint_positions: [-52.58897685508715, -82.11512035086213, -88.96985288328933, 169.82006816645332, 40.87197493676136, 723.4591766259097], acceleration: None, relative: False, wait: True, timeout: None",None,None
+2021:10:15:13:17:03.795750,UR3Arm,move_joints,"velocity: 60, joint_positions: [-33.13588775921715, -104.79054607544806, -85.94743953404533, 188.94984342777158, 56.366136125530225, 720.1899339004397], acceleration: None, relative: False, wait: True, timeout: None",None,None
+2021:10:15:13:17:07.003283,UR3Arm,move_joints,"velocity: 60, joint_positions: [-55.13721115139219, -142.08217683042378, -18.5129681981311, 160.49259791134384, 34.78034778208043, 720.1424914064648], acceleration: None, relative: False, wait: True, timeout: None",None,None
+2021:10:15:13:17:08.611682,UR3Arm,move_to_location,"velocity: 80, location: Location(x=-147.6, y=-399.1, z=282.8, rx=90.0, ry=-1.324, rz=-90.0), frame: None, acceleration: None, relative: False, wait: True, timeout: None",None,None
+2021:10:15:13:17:09.054524,UR3Arm,open_gripper,"velocity: 0, position: 0.5, force: None, wait: True, timeout: None",None,None
+2021:10:15:13:17:10.417305,UR3Arm,move_to_location,"velocity: 20, location: Location(x=-147.6, y=-399.1, z=286.8, rx=90.0, ry=-1.324, rz=-90.0), frame: None, acceleration: None, relative: False, wait: True, timeout: None",None,None
+2021:10:15:13:17:12.538124,UR3Arm,move_joints,"velocity: 10, joint_positions: [-55.13721115139219, -142.08217683042378, -18.5129681981311, 160.49259791134384, 34.78034778208043, 720.1424914064648], acceleration: None, relative: False, wait: True, timeout: None",None,None
+2021:10:15:13:17:14.939396,UR3Arm,move_joints,"velocity: 60, joint_positions: [-44.61525009347418, -120.567900567584, -58.76612799608931, 179.32580635890014, 45.39312303520292, 720.035230115739], acceleration: None, relative: False, wait: True, timeout: None",None,None
+2021:10:15:13:17:16.950097,UR3Arm,move_joints,"velocity: 60, joint_positions: [-33.13588775921715, -104.79054607544806, -85.94743953404533, 188.94984342777158, 56.366136125530225, 720.1899339004397], acceleration: None, relative: False, wait: True, timeout: None",None,None
+2021:10:15:13:17:18.862708,UR3Arm,move_joints,"velocity: 60, joint_positions: [-52.58897685508715, -82.11512035086213, -88.96985288328933, 169.82006816645332, 40.87197493676136, 723.4591766259097], acceleration: None, relative: False, wait: True, timeout: None",None,None
+2021:10:15:13:17:21.361110,UR3Arm,move_joints,"velocity: 60, joint_positions: [-71.08633124077559, -38.10281567902566, -118.99077458754314, 156.31896983787252, 15.454710016122872, 723.39515043263], acceleration: None, relative: False, wait: True, timeout: None",None,None
+2021:10:15:13:17:26.294997,UR3Arm,move_joints,"velocity: 60, joint_positions: [-70.4596477240486, -24.067022821459577, -97.97712387010863, 126.18917491824871, -108.0798105781019, 723.5066737613979], acceleration: None, relative: False, wait: True, timeout: None",None,None
+2021:10:15:13:17:31.111080,UR3Arm,move_joints,"velocity: 60, joint_positions: [-190.48292834804423, -47.285895735081084, -102.0669865035989, 145.10603952275935, -131.9327982542674, 723.6064764855502], acceleration: None, relative: False, wait: True, timeout: None",None,None
+2021:10:15:13:17:34.017767,UR3Arm,move_joints,"velocity: 60, joint_positions: [-228.49844987201453, -76.00634942136446, -45.661563129962765, 124.4705627192901, -131.90193945959726, 722.9002076046141], acceleration: None, relative: False, wait: True, timeout: None",None,None
+2021:10:15:13:17:37.446025,UR3Arm,move_joints,"velocity: 60, joint_positions: [-262.2513869387633, -89.6793362905978, -106.6906694018607, 197.42646335759426, -170.54852948174175, 721.9970653510417], acceleration: None, relative: False, wait: True, timeout: None",None,None
+2021:10:15:13:17:41.853285,UR3Arm,move_to_location,"velocity: 80, location: Location(x=-222.2, y=253.5, z=365.8, rx=90.0, ry=0.0004479, rz=-90.0), frame: None, acceleration: None, relative: False, wait: True, timeout: None",None,None
+2021:10:15:13:17:44.271987,UR3Arm,move_to_location,"velocity: 80, location: Location(x=-277.2, y=253.5, z=365.8, rx=90.0, ry=0.0004479, rz=-90.0), frame: None, acceleration: None, relative: False, wait: True, timeout: None",None,None
+2021:10:15:13:17:45.870232,UR3Arm,move_to_location,"velocity: 80, location: Location(x=-297.2, y=253.5, z=365.8, rx=90.0, ry=0.0004479, rz=-90.0), frame: None, acceleration: None, relative: False, wait: True, timeout: None",None,None
+2021:10:15:13:17:46.773493,UR3Arm,move_to_location,"velocity: 80, location: Location(x=-297.2, y=253.5, z=361.8, rx=90.0, ry=0.0004479, rz=-90.0), frame: None, acceleration: None, relative: False, wait: True, timeout: None",None,None
+2021:10:15:13:17:47.214607,UR3Arm,open_gripper,"position: 0, force: None, velocity: None, wait: True, timeout: None",None,None
+2021:10:15:13:17:48.077705,UR3Arm,move_to_location,"velocity: 80, location: Location(x=-297.2, y=253.5, z=365.8, rx=90.0, ry=0.0004479, rz=-90.0), frame: None, acceleration: None, relative: False, wait: True, timeout: None",None,None
+2021:10:15:13:17:49.685563,UR3Arm,move_to_location,"velocity: 80, location: Location(x=-277.2, y=253.5, z=365.8, rx=90.0, ry=0.0004479, rz=-90.0), frame: None, acceleration: None, relative: False, wait: True, timeout: None",None,None
+2021:10:15:13:17:52.103757,UR3Arm,move_to_location,"velocity: 80, location: Location(x=-222.2, y=253.5, z=365.8, rx=90.0, ry=0.0004479, rz=-90.0), frame: None, acceleration: None, relative: False, wait: True, timeout: None",None,None
+2021:10:15:13:17:54.003629,UR3Arm,move_to_location,"location: Location(x=-224.1, y=301.1, z=277.0, rx=90.0, ry=0.0, rz=-90.0), frame: None, velocity: None, acceleration: None, relative: False, wait: True, timeout: None",None,None

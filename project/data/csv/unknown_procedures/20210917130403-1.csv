@@ -1,0 +1,79 @@
+Timestamp,Module,Method_Name,Arguments,Responses,Exceptions
+2021:09:17:13:05:15.786227,C9,_init_,ftdi: None,,None
+2021:09:17:13:05:17.080112,C9,PING,,None,None
+2021:09:17:13:05:20.364407,C9,PING,,None,None
+2021:09:17:13:05:24.454896,C9,PING,,None,None
+2021:09:17:13:05:29.236550,C9,PING,,None,None
+2021:09:17:13:05:34.908162,C9,PING,,None,None
+2021:09:17:13:05:41.696176,C9,PING,,None,None
+2021:09:17:13:06:15.968837,C9,_init_,ftdi: None,,None
+2021:09:17:13:06:17.198796,C9,PING,,None,None
+2021:09:17:13:06:20.492820,C9,PING,,None,None
+2021:09:17:13:06:24.537134,C9,PING,,None,None
+2021:09:17:13:06:29.302850,C9,PING,,None,None
+2021:09:17:13:06:34.966294,C9,PING,,None,None
+2021:09:17:13:06:41.769498,C9,PING,,None,None
+2021:09:17:13:11:46.420088,Tecan Cavro,_init_,ftdi: None,,None
+2021:09:17:13:11:47.429092,Magnetic Stirrer,_init_,serial: COM16,,"could not open port 'COM16': FileNotFoundError(2, 'The system cannot find the file specified.', None, 2)"
+2021:09:17:13:13:10.396242,Tecan Cavro,_init_,ftdi: None,,None
+2021:09:17:13:13:11.412466,Magnetic Stirrer,_init_,serial: COM11,,None
+2021:09:17:13:13:12.046499,Magnetic Stirrer,IN_NAME,,None,None
+2021:09:17:13:13:12.458199,Magnetic Stirrer,IN_PV_1,,None,None
+2021:09:17:13:13:12.827301,Magnetic Stirrer,IN_PV_2,,None,None
+2021:09:17:13:13:13.194711,Magnetic Stirrer,IN_SP_1,,None,None
+2021:09:17:13:13:13.580493,Magnetic Stirrer,IN_PV_4,,None,None
+2021:09:17:13:13:13.961558,Magnetic Stirrer,IN_SP_4,,None,None
+2021:09:17:13:13:14.383473,Magnetic Stirrer,STOP_4,,None,None
+2021:09:17:13:13:14.547992,Magnetic Stirrer,STOP_1,,None,None
+2021:09:17:13:13:32.463779,UR3Arm,_init_,"host: 192.168.254.88, default_velocity: 250, max_velocity: 500, position_units: Units.MILLIMETERS, default_joint_velocity: 20.0, max_joint_velocity: 180.0, gripper_default_velocity: 0.5, gripper_default_force: 0.5, gripper_id: 1, gripper_base_port: 63352, gripper_connect: True, connect: True",,None
+2021:09:17:13:14:37.531999,Tecan Cavro,_init_,ftdi: None,,None
+2021:09:17:13:14:38.508581,Magnetic Stirrer,_init_,serial: COM11,,None
+2021:09:17:13:14:39.134247,Magnetic Stirrer,IN_NAME,,None,None
+2021:09:17:13:14:39.552410,Magnetic Stirrer,IN_PV_1,,None,None
+2021:09:17:13:14:39.924585,Magnetic Stirrer,IN_PV_2,,None,None
+2021:09:17:13:14:40.305138,Magnetic Stirrer,IN_SP_1,,None,None
+2021:09:17:13:14:40.685234,Magnetic Stirrer,IN_PV_4,,None,None
+2021:09:17:13:14:41.100793,Magnetic Stirrer,IN_SP_4,,None,None
+2021:09:17:13:14:41.506880,Magnetic Stirrer,STOP_4,,None,None
+2021:09:17:13:14:41.668659,Magnetic Stirrer,STOP_1,,None,None
+2021:09:17:13:15:06.348875,UR3Arm,_init_,"host: 192.168.254.88, default_velocity: 250, max_velocity: 500, position_units: Units.MILLIMETERS, default_joint_velocity: 20.0, max_joint_velocity: 180.0, gripper_default_velocity: 0.5, gripper_default_force: 0.5, gripper_id: 1, gripper_base_port: 63352, gripper_connect: True, connect: True",,None
+2021:09:17:13:21:47.935607,Tecan Cavro,_init_,ftdi: None,,None
+2021:09:17:13:21:48.899097,Magnetic Stirrer,_init_,serial: COM11,,None
+2021:09:17:13:21:49.508863,Magnetic Stirrer,IN_NAME,,None,None
+2021:09:17:13:21:49.897821,Magnetic Stirrer,IN_PV_1,,None,None
+2021:09:17:13:21:50.259467,Magnetic Stirrer,IN_PV_2,,None,None
+2021:09:17:13:21:50.620755,Magnetic Stirrer,IN_SP_1,,None,None
+2021:09:17:13:21:50.980053,Magnetic Stirrer,IN_PV_4,,None,None
+2021:09:17:13:21:51.344419,Magnetic Stirrer,IN_SP_4,,None,None
+2021:09:17:13:21:51.759078,Magnetic Stirrer,STOP_4,,None,None
+2021:09:17:13:21:51.941583,Magnetic Stirrer,STOP_1,,None,None
+2021:09:17:13:22:11.460385,UR3Arm,_init_,"host: 192.168.254.88, default_velocity: 250, max_velocity: 500, position_units: Units.MILLIMETERS, default_joint_velocity: 20.0, max_joint_velocity: 180.0, gripper_default_velocity: 0.5, gripper_default_force: 0.5, gripper_id: 1, gripper_base_port: 63352, gripper_connect: True, connect: True",,None
+2021:09:17:13:22:53.719345,UR3Arm,move_joints,"velocity: 60, joint_positions: [-262.2513869387633, -89.6793362905978, -106.6906694018607, 197.42646335759426, -170.54852948174175, 721.9970653510417], acceleration: None, relative: False, wait: True, timeout: None",None,None
+2021:09:17:13:22:53.946906,UR3Arm,open_gripper,"position: 0, force: None, velocity: None, wait: True, timeout: None",None,None
+2021:09:17:13:22:55.947705,UR3Arm,move_joints,"velocity: 60, joint_positions: [-228.49844987201453, -76.00634942136446, -45.661563129962765, 124.4705627192901, -131.90193945959726, 722.9002076046141], acceleration: None, relative: False, wait: True, timeout: None",None,None
+2021:09:17:13:22:57.761273,UR3Arm,move_joints,"velocity: 60, joint_positions: [-190.48292834804423, -47.285895735081084, -102.0669865035989, 145.10603952275935, -131.9327982542674, 723.6064764855502], acceleration: None, relative: False, wait: True, timeout: None",None,None
+2021:09:17:13:23:00.590214,UR3Arm,move_joints,"velocity: 60, joint_positions: [-70.4596477240486, -24.067022821459577, -97.97712387010863, 126.18917491824871, -108.0798105781019, 723.5066737613979], acceleration: None, relative: False, wait: True, timeout: None",None,None
+2021:09:17:13:23:03.504282,UR3Arm,move_joints,"velocity: 60, joint_positions: [-71.08633124077559, -38.10281567902566, -118.99077458754314, 156.31896983787252, 15.454710016122872, 723.39515043263], acceleration: None, relative: False, wait: True, timeout: None",None,None
+2021:09:17:13:23:05.112416,UR3Arm,move_joints,"velocity: 60, joint_positions: [-52.58897685508715, -82.11512035086213, -88.96985288328933, 169.82006816645332, 40.87197493676136, 723.4591766259097], acceleration: None, relative: False, wait: True, timeout: None",None,None
+2021:09:17:13:23:06.329472,UR3Arm,move_joints,"velocity: 60, joint_positions: [-33.13588775921715, -104.79054607544806, -85.94743953404533, 188.94984342777158, 56.366136125530225, 720.1899339004397], acceleration: None, relative: False, wait: True, timeout: None",None,None
+2021:09:17:13:23:08.336715,UR3Arm,move_joints,"velocity: 60, joint_positions: [-55.13721115139219, -142.08217683042378, -18.5129681981311, 160.49259791134384, 34.78034778208043, 720.1424914064648], acceleration: None, relative: False, wait: True, timeout: None",None,None
+2021:09:17:13:23:09.441407,UR3Arm,move_to_location,"velocity: 80, location: Location(x=-147.6, y=-399.1, z=282.8, rx=90.0, ry=-1.324, rz=-90.0), frame: None, acceleration: None, relative: False, wait: True, timeout: None",None,None
+2021:09:17:13:23:09.678839,UR3Arm,open_gripper,"velocity: 0, position: 0.5, force: None, wait: True, timeout: None",None,None
+2021:09:17:13:23:10.653149,UR3Arm,move_to_location,"velocity: 20, location: Location(x=-147.6, y=-399.1, z=286.8, rx=90.0, ry=-1.324, rz=-90.0), frame: None, acceleration: None, relative: False, wait: True, timeout: None",None,None
+2021:09:17:13:23:12.057849,UR3Arm,move_joints,"velocity: 10, joint_positions: [-55.13721115139219, -142.08217683042378, -18.5129681981311, 160.49259791134384, 34.78034778208043, 720.1424914064648], acceleration: None, relative: False, wait: True, timeout: None",None,None
+2021:09:17:13:23:13.574342,UR3Arm,move_joints,"velocity: 60, joint_positions: [-44.61525009347418, -120.567900567584, -58.76612799608931, 179.32580635890014, 45.39312303520292, 720.035230115739], acceleration: None, relative: False, wait: True, timeout: None",None,None
+2021:09:17:13:23:14.883723,UR3Arm,move_joints,"velocity: 60, joint_positions: [-33.13588775921715, -104.79054607544806, -85.94743953404533, 188.94984342777158, 56.366136125530225, 720.1899339004397], acceleration: None, relative: False, wait: True, timeout: None",None,None
+2021:09:17:13:23:16.086807,UR3Arm,move_joints,"velocity: 60, joint_positions: [-52.58897685508715, -82.11512035086213, -88.96985288328933, 169.82006816645332, 40.87197493676136, 723.4591766259097], acceleration: None, relative: False, wait: True, timeout: None",None,None
+2021:09:17:13:23:17.708780,UR3Arm,move_joints,"velocity: 60, joint_positions: [-71.08633124077559, -38.10281567902566, -118.99077458754314, 156.31896983787252, 15.454710016122872, 723.39515043263], acceleration: None, relative: False, wait: True, timeout: None",None,None
+2021:09:17:13:23:20.618959,UR3Arm,move_joints,"velocity: 60, joint_positions: [-70.4596477240486, -24.067022821459577, -97.97712387010863, 126.18917491824871, -108.0798105781019, 723.5066737613979], acceleration: None, relative: False, wait: True, timeout: None",None,None
+2021:09:17:13:23:23.428966,UR3Arm,move_joints,"velocity: 60, joint_positions: [-190.48292834804423, -47.285895735081084, -102.0669865035989, 145.10603952275935, -131.9327982542674, 723.6064764855502], acceleration: None, relative: False, wait: True, timeout: None",None,None
+2021:09:17:13:23:25.240281,UR3Arm,move_joints,"velocity: 60, joint_positions: [-228.49844987201453, -76.00634942136446, -45.661563129962765, 124.4705627192901, -131.90193945959726, 722.9002076046141], acceleration: None, relative: False, wait: True, timeout: None",None,None
+2021:09:17:13:23:27.248641,UR3Arm,move_joints,"velocity: 60, joint_positions: [-262.2513869387633, -89.6793362905978, -106.6906694018607, 197.42646335759426, -170.54852948174175, 721.9970653510417], acceleration: None, relative: False, wait: True, timeout: None",None,None
+2021:09:17:13:23:29.861038,UR3Arm,move_to_location,"velocity: 80, location: Location(x=-222.2, y=253.5, z=365.8, rx=90.0, ry=0.0004479, rz=-90.0), frame: None, acceleration: None, relative: False, wait: True, timeout: None",None,None
+2021:09:17:13:23:31.375822,UR3Arm,move_to_location,"velocity: 80, location: Location(x=-277.2, y=253.5, z=365.8, rx=90.0, ry=0.0004479, rz=-90.0), frame: None, acceleration: None, relative: False, wait: True, timeout: None",None,None
+2021:09:17:13:23:32.383598,UR3Arm,move_to_location,"velocity: 80, location: Location(x=-297.2, y=253.5, z=365.8, rx=90.0, ry=0.0004479, rz=-90.0), frame: None, acceleration: None, relative: False, wait: True, timeout: None",None,None
+2021:09:17:13:23:33.077954,UR3Arm,move_to_location,"velocity: 80, location: Location(x=-297.2, y=253.5, z=361.8, rx=90.0, ry=0.0004479, rz=-90.0), frame: None, acceleration: None, relative: False, wait: True, timeout: None",None,None
+2021:09:17:13:23:33.317633,UR3Arm,open_gripper,"position: 0, force: None, velocity: None, wait: True, timeout: None",None,None
+2021:09:17:13:23:33.992257,UR3Arm,move_to_location,"velocity: 80, location: Location(x=-297.2, y=253.5, z=365.8, rx=90.0, ry=0.0004479, rz=-90.0), frame: None, acceleration: None, relative: False, wait: True, timeout: None",None,None
+2021:09:17:13:23:34.986808,UR3Arm,move_to_location,"velocity: 80, location: Location(x=-277.2, y=253.5, z=365.8, rx=90.0, ry=0.0004479, rz=-90.0), frame: None, acceleration: None, relative: False, wait: True, timeout: None",None,None
+2021:09:17:13:23:36.499401,UR3Arm,move_to_location,"velocity: 80, location: Location(x=-222.2, y=253.5, z=365.8, rx=90.0, ry=0.0004479, rz=-90.0), frame: None, acceleration: None, relative: False, wait: True, timeout: None",None,None

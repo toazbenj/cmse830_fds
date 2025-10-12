@@ -1,0 +1,37 @@
+Timestamp,Module,Method_Name,Arguments,Responses,Exceptions
+2021:09:24:12:34:27.257214,C9,_init_,ftdi: None,,None
+2021:09:24:12:34:28.544606,C9,PING,,None,None
+2021:09:24:12:34:29.494819,C9,BIAS,,None,None
+2021:09:24:12:34:30.431021,C9,SPED,"velocity: 20000, acceleration: 20000",None,None
+2021:09:24:12:34:31.302213,C9,BIAS,bias: 0,None,None
+2021:09:24:12:34:32.178363,C9,HOME,if_needed: 1,None,None
+2021:09:24:12:34:33.083069,C9,CURR,axis: 0,None,None
+2021:09:24:12:34:33.948208,C9,CURR,axis: 0,None,None
+2021:09:24:12:34:34.847652,C9,CURR,axis: 0,None,None
+2021:09:24:12:34:35.747694,C9,CURR,axis: 0,None,None
+2021:09:24:12:34:36.636464,C9,CURR,axis: 0,None,None
+2021:09:24:12:34:37.593203,C9,CURR,axis: 0,None,None
+2021:09:24:12:34:38.517303,C9,CURR,axis: 0,None,None
+2021:09:24:12:34:39.404895,C9,CURR,axis: 0,None,None
+2021:09:24:12:34:40.324252,C9,CURR,axis: 0,None,None
+2021:09:24:12:34:41.230817,C9,CURR,axis: 0,None,None
+2021:09:24:12:34:41.873124,Tecan Cavro,_init_,ftdi: None,,None
+2021:09:24:12:34:42.579345,Magnetic Stirrer,_init_,serial: COM16,,"could not open port 'COM16': FileNotFoundError(2, 'The system cannot find the file specified.', None, 2)"
+2021:09:24:12:35:37.878166,C9,_init_,ftdi: None,,None
+2021:09:24:12:35:39.176029,C9,PING,,None,None
+2021:09:24:12:35:40.151365,C9,BIAS,,None,None
+2021:09:24:12:35:41.067642,C9,SPED,"velocity: 20000, acceleration: 20000",None,None
+2021:09:24:12:35:41.925418,C9,BIAS,bias: 0,None,None
+2021:09:24:12:35:42.803765,C9,HOME,if_needed: 1,None,None
+2021:09:24:12:35:43.815274,C9,CURR,axis: 0,None,None
+2021:09:24:12:35:44.830310,C9,CURR,axis: 0,None,None
+2021:09:24:12:35:45.829645,C9,CURR,axis: 0,None,None
+2021:09:24:12:35:46.759486,C9,CURR,axis: 0,None,None
+2021:09:24:12:35:47.615245,C9,CURR,axis: 0,None,None
+2021:09:24:12:35:48.481919,C9,CURR,axis: 0,None,None
+2021:09:24:12:35:49.386555,C9,CURR,axis: 0,None,None
+2021:09:24:12:35:50.308159,C9,CURR,axis: 0,None,None
+2021:09:24:12:35:51.169352,C9,CURR,axis: 0,None,None
+2021:09:24:12:35:52.031331,C9,CURR,axis: 0,None,None
+2021:09:24:12:35:52.697794,Tecan Cavro,_init_,ftdi: None,,None
+2021:09:24:12:35:53.387387,Magnetic Stirrer,_init_,serial: COM16,,"could not open port 'COM16': FileNotFoundError(2, 'The system cannot find the file specified.', None, 2)"

@@ -1,0 +1,2118 @@
+Timestamp,Module,Method_Name,Arguments,Responses,Exceptions
+2021:10:18:13:09:48.770444,C9,_init_,ftdi: None,,None
+2021:10:18:13:09:49.181168,C9,PING,,None,None
+2021:10:18:13:09:49.346101,C9,BIAS,,None,None
+2021:10:18:13:09:49.474145,C9,SPED,"velocity: 20000, acceleration: 20000",None,None
+2021:10:18:13:09:49.578882,C9,BIAS,bias: 0,None,None
+2021:10:18:13:09:49.672202,C9,HOME,if_needed: 1,None,None
+2021:10:18:13:09:49.804047,C9,SPED,,None,None
+2021:10:18:13:09:49.932528,C9,BIAS,,None,None
+2021:10:18:13:09:50.033007,C9,SPED,"velocity: 40000, acceleration: 100000",None,None
+2021:10:18:13:09:50.170111,C9,BIAS,bias: 2,None,None
+2021:10:18:13:09:50.281218,C9,POS,"axes: 1,units: 1",None,None
+2021:10:18:13:09:50.399619,C9,POS,"axes: 2,units: 1",None,None
+2021:10:18:13:09:50.511048,C9,POS,"axes: 0,units: 1",None,None
+2021:10:18:13:09:50.618756,C9,POS,C: 1,None,None
+2021:10:18:13:09:51.681454,C9,JLEN,length_offset: 0,None,None
+2021:10:18:13:09:53.289787,C9,POS,"axes: 1,units: 1",None,None
+2021:10:18:13:09:54.993779,C9,POS,"axes: 2,units: 1",None,None
+2021:10:18:13:09:56.679215,C9,POS,"axes: 0,units: 1",None,None
+2021:10:18:13:09:58.374847,C9,POS,C: 1,None,None
+2021:10:18:13:10:22.250146,C9,ARM,"X: 233800, Y: 205900, Z: 285149, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:10:22.504861,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:18:13:10:24.644490,C9,ARM,"X: 233800, Y: 205900, Z: 285149, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:10:24.886389,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:18:13:10:26.064071,C9,ARM,"X: 233800, Y: 205900, Z: 285149, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:10:26.301333,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:18:13:10:27.656202,C9,ARM,"X: 233800, Y: 205900, Z: 284276, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:10:27.904665,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:18:13:10:28.431924,C9,ARM,"X: 233800, Y: 205900, Z: 282768, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:10:28.685531,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:18:13:10:29.092723,C9,ARM,"X: 233800, Y: 205900, Z: 281022, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:10:29.354088,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:18:13:10:29.701177,C9,ARM,"X: 233800, Y: 205900, Z: 281022, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:10:29.944566,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:18:13:10:30.622619,C9,ARM,"X: 233800, Y: 205900, Z: 281022, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:10:30.841770,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:18:13:10:31.435475,C9,ARM,"X: 233800, Y: 205900, Z: 281022, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:10:31.670512,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:18:13:10:32.392851,C9,ARM,"X: 233800, Y: 205900, Z: 279673, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:10:32.639942,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:18:13:10:33.728149,C9,ARM,"X: 233800, Y: 205900, Z: 277450, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:10:33.966355,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:18:13:10:34.094579,C9,ARM,"X: 233800, Y: 205900, Z: 267530, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:10:34.390999,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:18:13:10:34.509275,C9,ARM,"X: 233800, Y: 205900, Z: 257610, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:10:34.808563,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:18:13:10:34.941405,C9,ARM,"X: 233800, Y: 205900, Z: 247689, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:10:35.243023,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:18:13:10:35.363623,C9,ARM,"X: 233800, Y: 205900, Z: 237769, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:10:35.669555,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:18:13:10:35.787844,C9,ARM,"X: 233800, Y: 205900, Z: 227849, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:10:36.098681,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:18:13:10:36.220424,C9,ARM,"X: 233800, Y: 205900, Z: 217928, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:10:36.519552,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:18:13:10:36.633464,C9,ARM,"X: 233800, Y: 205900, Z: 208008, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:10:36.930063,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:18:13:10:37.057932,C9,ARM,"X: 233800, Y: 205900, Z: 198088, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:10:37.358620,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:18:13:10:37.492393,C9,ARM,"X: 233800, Y: 205900, Z: 188247, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:10:37.784619,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:18:13:10:37.897440,C9,ARM,"X: 233800, Y: 205900, Z: 178326, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:10:38.207796,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:18:13:10:38.334956,C9,ARM,"X: 233800, Y: 205900, Z: 168406, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:10:38.633698,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:18:13:10:44.355875,C9,ARM,"X: 233800, Y: 205900, Z: 169031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:10:44.582037,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:18:13:10:44.699697,C9,ARM,"X: 233800, Y: 205900, Z: 179031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:10:45.004858,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:18:13:10:45.126652,C9,ARM,"X: 233800, Y: 205900, Z: 189031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:10:45.438929,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:18:13:10:45.555738,C9,ARM,"X: 233800, Y: 205900, Z: 199031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:10:45.852552,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:18:13:10:45.971933,C9,ARM,"X: 233800, Y: 205900, Z: 209031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:10:46.260635,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:18:13:10:46.374891,C9,ARM,"X: 233800, Y: 205900, Z: 219031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:10:46.676629,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:18:13:10:46.803150,C9,ARM,"X: 233800, Y: 205900, Z: 229031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:10:47.097502,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:18:13:10:47.216711,C9,ARM,"X: 233800, Y: 205900, Z: 239031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:10:47.511551,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:18:13:10:47.669593,C9,ARM,"X: 233800, Y: 205900, Z: 249031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:10:47.976972,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:18:13:10:48.140134,C9,ARM,"X: 233800, Y: 205900, Z: 259031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:10:48.431906,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:18:13:10:48.549307,C9,ARM,"X: 233800, Y: 205900, Z: 269031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:10:48.857206,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:18:13:10:48.973785,C9,ARM,"X: 233800, Y: 205900, Z: 279031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:10:49.273724,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:18:13:10:49.395166,C9,ARM,"X: 233800, Y: 205900, Z: 289031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:10:49.681626,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:18:13:10:49.809525,C9,ARM,"X: 233800, Y: 205900, Z: 299031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:10:50.098675,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:18:13:10:50.212233,C9,ARM,"X: 233800, Y: 205900, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:10:50.499894,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:18:13:11:19.911305,C9,ARM,"X: 233800, Y: 205900, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:11:20.141896,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:18:13:11:20.261398,C9,ARM,"X: 233800, Y: 205353, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:11:20.990187,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:18:13:11:21.110654,C9,ARM,"X: 223880, Y: 205908, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:11:21.404792,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:18:13:11:21.552829,C9,ARM,"X: 213880, Y: 205908, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:11:21.834688,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:18:13:11:21.961431,C9,ARM,"X: 203880, Y: 205908, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:11:22.231637,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:18:13:11:22.357322,C9,ARM,"X: 193881, Y: 205908, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:11:22.627466,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:18:13:11:22.744670,C9,ARM,"X: 183881, Y: 205908, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:11:23.008165,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:18:13:11:23.133591,C9,ARM,"X: 173881, Y: 205908, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:11:23.397721,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:18:13:11:23.524492,C9,ARM,"X: 163881, Y: 205908, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:11:23.776650,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:18:13:11:23.900787,C9,ARM,"X: 153882, Y: 205908, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:11:24.158332,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:18:13:11:24.276626,C9,ARM,"X: 143882, Y: 205908, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:11:24.536277,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:18:13:11:24.656112,C9,ARM,"X: 133882, Y: 205908, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:11:24.914871,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:18:13:11:25.040701,C9,ARM,"X: 123883, Y: 205908, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:11:25.285172,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:18:13:11:25.408848,C9,ARM,"X: 113883, Y: 205908, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:11:25.671125,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:18:13:11:25.788891,C9,ARM,"X: 103883, Y: 205908, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:11:26.055471,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:18:13:11:26.213493,C9,ARM,"X: 93884, Y: 205908, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:11:26.466630,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:18:13:11:26.587567,C9,ARM,"X: 83884, Y: 205908, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:11:26.841062,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:18:13:11:26.967811,C9,ARM,"X: 73884, Y: 205908, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:11:27.215819,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:18:13:11:27.343347,C9,ARM,"X: 63885, Y: 205908, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:11:27.602341,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:18:13:11:27.715070,C9,ARM,"X: 53885, Y: 205908, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:11:27.983748,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:18:13:11:28.125680,C9,ARM,"X: 43885, Y: 205908, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:11:28.394255,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:18:13:11:28.523533,C9,ARM,"X: 33885, Y: 205908, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:11:28.798858,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:18:13:11:28.922922,C9,ARM,"X: 23886, Y: 205908, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:11:29.187440,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:18:13:11:29.304782,C9,ARM,"X: 13886, Y: 205908, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:11:29.582839,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:18:13:11:29.696711,C9,ARM,"X: 3886, Y: 205908, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:11:29.982583,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:18:13:11:30.105496,C9,ARM,"X: -6113, Y: 205908, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:11:30.393951,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:18:13:11:30.528827,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:18:13:11:30.661959,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:18:13:11:30.800875,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:18:13:11:30.920246,C9,ARM,"X: -16113, Y: 205908, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:11:31.202903,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:18:13:11:31.363672,C9,ARM,"X: -26113, Y: 205908, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:11:31.645013,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:18:13:11:31.772987,C9,ARM,"X: -36112, Y: 205908, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:11:32.076896,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:18:13:11:32.210111,C9,ARM,"X: -46112, Y: 205908, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:11:32.508211,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:18:13:11:32.645431,C9,ARM,"X: -56112, Y: 205908, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:11:32.933478,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:18:13:11:33.063388,C9,ARM,"X: -66111, Y: 205908, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:11:33.364640,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:18:13:11:33.482632,C9,ARM,"X: -76111, Y: 205908, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:11:33.802891,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:18:13:11:33.923341,C9,ARM,"X: -86111, Y: 205908, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:11:34.224701,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:18:13:11:34.380896,C9,ARM,"X: -96111, Y: 205908, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:11:34.692816,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:18:13:11:34.815043,C9,ARM,"X: -106110, Y: 205908, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:11:35.111138,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:18:13:11:35.242034,C9,ARM,"X: -116110, Y: 205908, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:11:35.546286,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:18:13:11:35.678697,C9,ARM,"X: -126110, Y: 205908, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:11:35.989634,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:18:13:11:36.112418,C9,ARM,"X: -136109, Y: 205908, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:11:36.426967,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:18:13:11:36.562200,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:18:13:11:36.733452,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:18:13:11:36.855971,C9,ARM,"X: -146109, Y: 205908, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:11:37.161926,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:18:13:11:37.275076,C9,ARM,"X: -156109, Y: 205908, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:11:37.586240,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:18:13:11:37.721902,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:18:13:11:37.857755,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:18:13:11:38.027857,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:18:13:11:38.154741,C9,ARM,"X: -166108, Y: 205908, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:11:38.895326,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:18:13:11:39.055436,C9,ARM,"X: -176108, Y: 205908, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:11:39.787239,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:18:13:11:39.902465,C9,ARM,"X: -186108, Y: 205908, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:11:40.210577,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:18:13:11:40.340672,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:18:13:11:40.468998,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:18:13:11:40.607018,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:18:13:11:40.769090,C9,ARM,"X: -196108, Y: 205908, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:11:41.071398,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:18:13:11:41.233181,C9,ARM,"X: -206107, Y: 205908, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:11:41.547465,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:18:13:11:41.674150,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:18:13:11:41.818608,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:18:13:11:41.932624,C9,ARM,"X: -216107, Y: 205908, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:11:42.234952,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:18:13:11:42.360789,C9,ARM,"X: -226107, Y: 205908, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:11:42.680625,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:18:13:11:42.802772,C9,ARM,"X: -236106, Y: 205908, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:11:43.126552,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:18:13:11:43.247220,C9,ARM,"X: -246106, Y: 205908, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:11:43.572601,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:18:13:11:43.687444,C9,ARM,"X: -256106, Y: 205908, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:11:44.033925,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:18:13:11:44.164336,C9,ARM,"X: -266105, Y: 205908, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:11:44.544806,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:18:13:11:44.665865,C9,ARM,"X: -276105, Y: 205908, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:11:44.881629,C9,ARM,"X: -276105, Y: 205908, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:11:45.081241,C9,ARM,"X: -276105, Y: 205908, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:11:45.286979,C9,ARM,"X: -276105, Y: 205908, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:11:45.483832,C9,ARM,"X: -276105, Y: 205908, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:11:45.695550,C9,ARM,"X: -276105, Y: 205908, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:11:45.899971,C9,ARM,"X: -276105, Y: 205908, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:11:46.108519,C9,ARM,"X: -276105, Y: 205908, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:11:47.240777,C9,ARM,"X: -266105, Y: 205908, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:11:47.476838,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:18:13:11:47.596333,C9,ARM,"X: -256105, Y: 204892, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:11:47.978299,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:18:13:11:48.095817,C9,ARM,"X: -246105, Y: 203876, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:11:48.446682,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:18:13:11:48.568721,C9,ARM,"X: -236105, Y: 203876, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:11:48.900203,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:18:13:12:24.570374,C9,ARM,"X: -236105, Y: 203876, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:12:24.808913,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:18:13:12:24.966552,C9,ARM,"X: -226105, Y: 202001, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:12:25.283592,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:18:13:12:25.407014,C9,ARM,"X: -216105, Y: 200360, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:12:25.728380,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:18:13:12:25.859854,C9,ARM,"X: -206105, Y: 198719, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:12:26.175968,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:18:13:12:26.288726,C9,ARM,"X: -196105, Y: 197078, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:12:26.610200,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:18:13:12:26.734224,C9,ARM,"X: -186105, Y: 195359, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:12:27.033665,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:18:13:12:27.192035,C9,ARM,"X: -176105, Y: 193640, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:12:27.500227,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:18:13:12:27.651003,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:18:13:12:27.777992,C9,ARM,"X: -166105, Y: 191687, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:12:28.095119,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:18:13:12:28.224596,C9,ARM,"X: -156105, Y: 189733, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:12:28.543652,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:18:13:12:28.662256,C9,ARM,"X: -146105, Y: 187780, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:12:28.975409,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:18:13:12:29.106365,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:18:13:12:29.237017,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:18:13:12:29.374299,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:18:13:12:29.491887,C9,ARM,"X: -136105, Y: 185905, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:12:30.221227,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:18:13:12:30.343059,C9,ARM,"X: -126105, Y: 184029, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:12:30.653394,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:18:13:12:30.775813,C9,ARM,"X: -116105, Y: 182154, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:12:31.081832,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:18:13:12:31.223449,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:18:13:12:31.397019,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:18:13:12:31.517552,C9,ARM,"X: -106105, Y: 180279, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:12:31.824813,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:18:13:12:31.967600,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:18:13:12:32.102267,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:18:13:12:32.223422,C9,ARM,"X: -96105, Y: 178403, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:12:32.545390,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:18:13:12:32.674332,C9,ARM,"X: -86105, Y: 176528, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:12:32.983474,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:18:13:12:33.143323,C9,ARM,"X: -76105, Y: 174653, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:12:33.450176,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:18:13:12:33.575147,C9,ARM,"X: -66105, Y: 172699, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:12:33.881946,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:18:13:12:34.000429,C9,ARM,"X: -56105, Y: 170746, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:12:34.323226,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:18:13:12:34.441970,C9,ARM,"X: -46105, Y: 168871, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:12:34.767316,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:18:13:12:34.894913,C9,ARM,"X: -36105, Y: 166917, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:12:35.231519,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:18:13:12:35.348138,C9,ARM,"X: -26105, Y: 164964, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:12:35.674477,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:18:13:12:35.793141,C9,ARM,"X: -16105, Y: 163088, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:12:36.116778,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:18:13:12:36.251058,C9,ARM,"X: -6105, Y: 161135, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:12:36.584690,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:18:13:12:36.723274,C9,ARM,"X: 3895, Y: 159182, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:12:37.030179,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:18:13:12:37.145746,C9,ARM,"X: 13895, Y: 157228, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:12:37.454910,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:18:13:12:37.578727,C9,ARM,"X: 23895, Y: 155353, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:12:37.885983,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:18:13:12:38.016131,C9,ARM,"X: 33895, Y: 153399, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:12:38.325588,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:18:13:12:38.446876,C9,ARM,"X: 43895, Y: 151446, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:12:38.766838,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:18:13:12:38.882759,C9,ARM,"X: 53895, Y: 149493, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:12:39.178970,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:18:13:12:39.305263,C9,ARM,"X: 63895, Y: 147539, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:12:39.588625,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:18:13:12:39.723835,C9,ARM,"X: 73895, Y: 145586, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:12:40.031352,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:18:13:12:40.164091,C9,ARM,"X: 83895, Y: 143632, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:12:40.444885,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:18:13:12:40.564178,C9,ARM,"X: 93895, Y: 141757, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:12:40.852924,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:18:13:12:40.976947,C9,ARM,"X: 103895, Y: 139882, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:12:41.255137,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:18:13:12:41.390879,C9,ARM,"X: 113895, Y: 138006, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:12:41.663444,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:18:13:12:41.791016,C9,ARM,"X: 123895, Y: 136131, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:12:42.057425,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:18:13:12:42.190479,C9,ARM,"X: 133895, Y: 134256, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:12:42.453909,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:18:13:12:42.572030,C9,ARM,"X: 143895, Y: 132380, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:12:42.818590,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:18:13:12:42.944251,C9,ARM,"X: 153895, Y: 130505, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:12:43.194066,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:18:13:12:43.311147,C9,ARM,"X: 163895, Y: 128630, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:12:43.563492,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:18:13:12:43.694323,C9,ARM,"X: 173895, Y: 126754, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:12:43.947603,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:18:13:12:44.061792,C9,ARM,"X: 183895, Y: 124879, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:12:44.320093,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:18:13:12:44.442253,C9,ARM,"X: 193895, Y: 123004, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:12:44.695387,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:18:13:12:45.259678,C9,ARM,"X: 194520, Y: 123004, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:12:45.497751,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:18:13:12:45.611249,C9,ARM,"X: 204520, Y: 123004, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:12:45.885947,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:18:13:12:46.014017,C9,ARM,"X: 214520, Y: 123004, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:12:46.292110,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:18:13:12:46.413483,C9,ARM,"X: 224520, Y: 123004, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:12:46.686641,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:18:13:12:46.807586,C9,ARM,"X: 234520, Y: 123004, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:12:47.094218,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:18:13:12:47.213326,C9,ARM,"X: 244520, Y: 123004, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:12:47.499209,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:18:13:12:47.614106,C9,ARM,"X: 254520, Y: 123004, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:12:47.895632,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:18:13:12:48.014356,C9,ARM,"X: 264520, Y: 123004, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:12:48.295509,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:18:13:12:48.414464,C9,ARM,"X: 274520, Y: 123004, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:12:48.704422,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:18:13:12:48.821425,C9,ARM,"X: 284520, Y: 123004, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:12:49.142205,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:18:13:12:49.259103,C9,ARM,"X: 294520, Y: 123004, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:12:49.576818,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:18:13:12:49.694041,C9,ARM,"X: 304520, Y: 123004, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:12:50.029160,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:18:13:12:50.151765,C9,ARM,"X: 314520, Y: 123004, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:12:50.551719,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:18:13:12:50.678434,C9,ARM,"X: 324520, Y: 123004, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:12:50.880129,C9,ARM,"X: 324520, Y: 123004, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:12:51.096134,C9,ARM,"X: 324520, Y: 123004, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:12:51.288985,C9,ARM,"X: 324520, Y: 123004, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:12:51.490433,C9,ARM,"X: 324520, Y: 123004, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:12:51.687461,C9,ARM,"X: 315223, Y: 122300, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:12:51.934101,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:18:13:12:53.538244,C9,ARM,"X: 315771, Y: 122300, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:12:53.798662,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:18:13:12:53.915267,C9,ARM,"X: 316552, Y: 122300, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:12:54.152387,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:18:13:12:54.271731,C9,ARM,"X: 317334, Y: 122300, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:12:54.537352,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:18:13:12:54.655545,C9,ARM,"X: 327334, Y: 123253, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:12:54.858492,C9,ARM,"X: 327334, Y: 123174, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:12:55.059034,C9,ARM,"X: 327334, Y: 123174, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:12:55.277963,C9,ARM,"X: 327334, Y: 123094, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:12:56.850464,C9,ARM,"X: 317959, Y: 122856, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:12:57.044426,C9,ARM,"X: 327334, Y: 123650, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:12:57.251333,C9,ARM,"X: 327334, Y: 123729, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:12:57.458872,C9,ARM,"X: 327334, Y: 123729, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:12:57.653945,C9,ARM,"X: 327334, Y: 123491, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:12:57.846511,C9,ARM,"X: 327334, Y: 123570, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:12:58.041338,C9,ARM,"X: 327334, Y: 123570, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:12:58.249011,C9,ARM,"X: 327334, Y: 123570, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:13:33.182102,C9,ARM,"X: 317334, Y: 122300, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:13:33.422433,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:18:13:13:33.542331,C9,ARM,"X: 307334, Y: 120660, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:13:33.977602,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:18:13:13:34.148136,C9,ARM,"X: 297334, Y: 119019, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:13:34.499090,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:18:13:13:34.630636,C9,ARM,"X: 287335, Y: 117378, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:13:34.950595,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:18:13:13:35.079548,C9,ARM,"X: 277335, Y: 115737, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:13:35.418489,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:18:13:13:35.579520,C9,ARM,"X: 267335, Y: 114096, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:13:35.866097,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:18:13:13:36.004528,C9,ARM,"X: 257335, Y: 112455, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:13:36.299126,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:18:13:13:36.414166,C9,ARM,"X: 247336, Y: 110814, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:13:36.714694,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:18:13:13:36.872835,C9,ARM,"X: 237336, Y: 109173, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:13:37.154110,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:18:13:13:37.274371,C9,ARM,"X: 227336, Y: 107532, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:13:37.549092,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:18:13:13:37.683369,C9,ARM,"X: 217337, Y: 105891, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:13:37.968415,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:18:13:13:38.097072,C9,ARM,"X: 207337, Y: 104250, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:13:38.373809,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:18:13:13:38.489517,C9,ARM,"X: 197337, Y: 102531, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:13:38.756301,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:18:13:13:38.881333,C9,ARM,"X: 187338, Y: 100890, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:13:39.165213,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:18:13:13:39.279979,C9,ARM,"X: 177338, Y: 98937, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:13:39.556164,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:18:13:13:39.669470,C9,ARM,"X: 167338, Y: 98233, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:13:39.921951,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:18:13:13:40.030464,C9,ARM,"X: 157339, Y: 97530, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:13:40.294484,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:18:13:13:40.460475,C9,ARM,"X: 147339, Y: 97530, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:13:40.717911,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:18:13:13:40.835095,C9,ARM,"X: 137339, Y: 97530, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:13:41.089477,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:18:13:13:41.203857,C9,ARM,"X: 127339, Y: 97530, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:13:41.479121,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:18:13:13:41.599695,C9,ARM,"X: 117340, Y: 97530, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:13:41.853973,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:18:13:13:41.968354,C9,ARM,"X: 107340, Y: 97530, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:13:42.220539,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:18:13:13:42.335323,C9,ARM,"X: 97340, Y: 97530, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:13:42.587789,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:18:13:13:42.707525,C9,ARM,"X: 87341, Y: 97530, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:13:42.980567,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:18:13:13:43.092482,C9,ARM,"X: 77341, Y: 97530, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:13:43.370081,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:18:13:13:43.500059,C9,ARM,"X: 67341, Y: 96983, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:13:43.792216,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:18:13:13:43.909295,C9,ARM,"X: 57342, Y: 96436, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:13:44.216767,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:18:13:13:44.335069,C9,ARM,"X: 47342, Y: 96436, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:13:44.666377,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:18:13:13:44.806669,C9,ARM,"X: 37342, Y: 96436, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:13:45.134485,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:18:13:13:45.265380,C9,ARM,"X: 27342, Y: 96436, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:13:45.604900,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:18:13:13:45.723399,C9,ARM,"X: 17343, Y: 96436, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:13:46.059708,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:18:13:13:46.187200,C9,ARM,"X: 7343, Y: 96436, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:13:46.534552,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:18:13:13:46.661210,C9,ARM,"X: -2657, Y: 96436, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:13:47.012385,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:18:13:13:47.152639,C9,ARM,"X: -12656, Y: 96436, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:13:47.503001,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:18:13:13:47.635405,C9,ARM,"X: -22656, Y: 96436, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:13:47.988081,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:18:13:13:48.118112,C9,ARM,"X: -32656, Y: 96436, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:13:48.461845,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:18:13:13:48.577936,C9,ARM,"X: -42655, Y: 96436, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:13:48.937047,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:18:13:13:49.052874,C9,ARM,"X: -52655, Y: 96436, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:13:49.411195,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:18:13:13:49.531292,C9,ARM,"X: -62655, Y: 96436, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:13:49.887296,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:18:13:13:50.010394,C9,ARM,"X: -72654, Y: 96436, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:13:50.349123,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:18:13:13:50.466520,C9,ARM,"X: -82654, Y: 96436, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:13:50.795713,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:18:13:13:50.913616,C9,ARM,"X: -92654, Y: 96436, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:13:51.232296,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:18:13:13:51.390440,C9,ARM,"X: -102654, Y: 96436, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:13:51.713462,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:18:13:13:51.834988,C9,ARM,"X: -112653, Y: 96436, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:13:52.158773,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:18:13:13:52.274784,C9,ARM,"X: -122653, Y: 96436, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:13:52.578760,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:18:13:13:52.711888,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:18:13:13:52.840155,C9,ARM,"X: -132653, Y: 96436, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:13:53.149315,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:18:13:13:53.282009,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:18:13:13:53.425500,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:18:13:13:53.545607,C9,ARM,"X: -142652, Y: 95888, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:13:53.860893,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:18:13:13:53.976526,C9,ARM,"X: -152652, Y: 95888, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:13:54.295172,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:18:13:13:54.417638,C9,ARM,"X: -162652, Y: 95888, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:13:54.711739,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:18:13:13:54.836160,C9,ARM,"X: -172651, Y: 95888, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:13:55.116873,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:18:13:13:55.243094,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:18:13:13:55.375755,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:18:13:13:55.511822,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:18:13:13:55.637434,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:18:13:13:55.761213,C9,ARM,"X: -182651, Y: 95888, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:13:56.057820,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:18:13:13:56.186046,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:18:13:13:56.316082,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:18:13:13:56.425257,C9,ARM,"X: -192651, Y: 95888, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:13:56.722991,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:18:13:13:56.841770,C9,ARM,"X: -202651, Y: 95341, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:13:57.144248,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:18:13:13:57.279399,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:18:13:13:57.455765,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:18:13:13:57.580066,C9,ARM,"X: -212650, Y: 95341, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:13:57.869928,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:18:13:13:58.024241,C9,ARM,"X: -222650, Y: 95341, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:13:58.322275,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:18:13:13:58.442513,C9,ARM,"X: -232650, Y: 95341, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:13:58.742439,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:18:13:13:58.867730,C9,ARM,"X: -242649, Y: 95341, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:13:59.185101,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:18:13:13:59.325181,C9,ARM,"X: -252649, Y: 95341, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:13:59.628599,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:18:13:13:59.755990,C9,ARM,"X: -262649, Y: 95341, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:14:00.059497,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:18:13:14:00.191940,C9,ARM,"X: -272648, Y: 95341, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:14:00.488752,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:18:13:14:00.621164,C9,ARM,"X: -282648, Y: 95341, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:14:00.925435,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:18:13:14:01.046145,C9,ARM,"X: -292648, Y: 95341, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:14:01.369689,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:18:13:14:01.488504,C9,ARM,"X: -302647, Y: 95341, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:14:01.805066,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:18:13:14:01.971191,C9,ARM,"X: -312647, Y: 95341, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:14:02.324420,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:18:13:14:02.440044,C9,ARM,"X: -322647, Y: 95341, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:14:02.826963,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:18:13:14:02.935936,C9,ARM,"X: -332647, Y: 95341, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:14:03.137470,C9,ARM,"X: -332647, Y: 95341, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:14:03.333833,C9,ARM,"X: -332647, Y: 95341, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:14:03.521011,C9,ARM,"X: -332647, Y: 95341, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:14:03.714114,C9,ARM,"X: -332647, Y: 95341, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:14:03.913276,C9,ARM,"X: -332647, Y: 95341, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:14:04.118410,C9,ARM,"X: -332647, Y: 94247, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:14:07.109324,C9,ARM,"X: -322647, Y: 95341, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:14:07.337534,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:18:13:14:07.455287,C9,ARM,"X: -312647, Y: 95341, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:14:07.855394,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:18:13:14:07.975192,C9,ARM,"X: -302647, Y: 95341, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:14:08.315863,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:18:13:14:08.431355,C9,ARM,"X: -292647, Y: 95341, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:14:08.764965,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:18:13:14:08.885021,C9,ARM,"X: -282647, Y: 95341, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:14:09.201346,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:18:13:14:09.314117,C9,ARM,"X: -272647, Y: 95341, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:14:09.622745,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:18:13:14:09.737777,C9,ARM,"X: -262647, Y: 95341, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:14:10.037707,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:18:13:14:10.149359,C9,ARM,"X: -252647, Y: 95341, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:14:10.455940,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:18:13:14:10.579920,C9,ARM,"X: -242647, Y: 95341, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:14:10.880297,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:18:13:14:10.997257,C9,ARM,"X: -232647, Y: 95341, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:14:11.290625,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:18:13:14:11.411371,C9,ARM,"X: -222647, Y: 95341, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:14:11.719656,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:18:13:14:11.877444,C9,ARM,"X: -212647, Y: 95341, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:14:12.171397,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:18:13:14:12.289370,C9,ARM,"X: -202647, Y: 95341, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:14:12.586219,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:18:13:14:12.705975,C9,ARM,"X: -192647, Y: 95341, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:14:13.006512,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:18:13:14:13.140070,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:18:13:14:13.271444,C9,ARM,"X: -182647, Y: 95341, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:14:13.562745,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:18:13:14:13.695991,C9,ARM,"X: -172647, Y: 95341, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:14:13.993848,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:18:13:14:14.127000,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:18:13:14:14.259103,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:18:13:14:14.375337,C9,ARM,"X: -162647, Y: 95341, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:14:14.665425,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:18:13:14:14.787467,C9,ARM,"X: -152647, Y: 95341, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:14:15.516480,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:18:13:14:15.642441,C9,ARM,"X: -142647, Y: 95341, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:14:15.945310,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:18:13:14:16.068979,C9,ARM,"X: -132647, Y: 95341, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:14:16.365233,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:18:13:14:16.501186,C9,ARM,"X: -122647, Y: 95341, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:14:16.802973,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:18:13:14:16.917019,C9,ARM,"X: -112647, Y: 95341, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:14:17.221975,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:18:13:14:17.343804,C9,ARM,"X: -102647, Y: 95341, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:14:17.670205,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:18:13:14:17.823881,C9,ARM,"X: -92647, Y: 95341, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:14:18.150584,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:18:13:14:18.273009,C9,ARM,"X: -82647, Y: 95341, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:14:18.609610,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:18:13:14:18.724154,C9,ARM,"X: -72647, Y: 95341, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:14:19.058856,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:18:13:14:19.188979,C9,ARM,"X: -62647, Y: 95341, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:14:19.528772,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:18:13:14:19.655021,C9,ARM,"X: -52647, Y: 95341, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:14:19.992972,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:18:13:14:20.113381,C9,ARM,"X: -42647, Y: 95341, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:14:20.449763,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:18:13:14:20.569170,C9,ARM,"X: -32647, Y: 95341, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:14:20.905017,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:18:13:14:21.024948,C9,ARM,"X: -22647, Y: 95341, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:14:21.379166,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:18:13:14:21.519675,C9,ARM,"X: -12647, Y: 95341, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:14:21.879859,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:18:13:14:22.001516,C9,ARM,"X: -2647, Y: 95341, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:14:22.359511,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:18:13:14:22.483281,C9,ARM,"X: 7353, Y: 95341, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:14:22.826508,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:18:13:14:22.942923,C9,ARM,"X: 17353, Y: 95341, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:14:23.307003,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:18:13:14:23.425920,C9,ARM,"X: 27353, Y: 95341, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:14:23.780887,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:18:13:14:23.910300,C9,ARM,"X: 37353, Y: 95341, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:14:24.268244,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:18:13:14:24.393823,C9,ARM,"X: 47353, Y: 95341, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:14:24.729088,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:18:13:14:24.844784,C9,ARM,"X: 57353, Y: 95341, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:14:25.156663,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:18:13:14:25.278510,C9,ARM,"X: 67353, Y: 95341, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:14:25.581071,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:18:13:14:25.693041,C9,ARM,"X: 77353, Y: 95341, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:14:25.986337,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:18:13:14:26.149663,C9,ARM,"X: 87353, Y: 95341, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:14:26.428996,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:18:13:14:26.541952,C9,ARM,"X: 97353, Y: 95341, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:14:26.799871,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:18:13:14:26.919943,C9,ARM,"X: 107353, Y: 95341, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:14:27.182854,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:18:13:14:27.299230,C9,ARM,"X: 117353, Y: 95341, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:14:27.542067,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:18:13:14:27.658508,C9,ARM,"X: 127353, Y: 95341, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:14:27.920113,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:18:13:14:28.076697,C9,ARM,"X: 137353, Y: 95341, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:14:28.336797,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:18:13:14:28.453864,C9,ARM,"X: 147353, Y: 95341, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:14:28.711135,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:18:13:14:28.826112,C9,ARM,"X: 157353, Y: 95341, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:14:29.072306,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:18:13:14:29.195033,C9,ARM,"X: 167353, Y: 95341, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:14:29.463031,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:18:13:14:29.578028,C9,ARM,"X: 177353, Y: 95341, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:14:29.845242,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:18:13:14:29.988755,C9,ARM,"X: 187353, Y: 95341, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:14:30.251442,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:18:13:14:30.364493,C9,ARM,"X: 197353, Y: 95341, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:14:30.626700,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:18:13:14:30.754557,C9,ARM,"X: 207353, Y: 95341, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:14:31.006261,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:18:13:14:31.127780,C9,ARM,"X: 217353, Y: 95341, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:14:31.394631,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:18:13:14:31.521974,C9,ARM,"X: 227353, Y: 95341, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:14:31.791301,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:18:13:14:31.917873,C9,ARM,"X: 237353, Y: 95341, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:14:32.188886,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:18:13:14:32.305046,C9,ARM,"X: 247353, Y: 95341, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:14:32.578663,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:18:13:14:32.695912,C9,ARM,"X: 257353, Y: 95341, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:14:32.984389,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:18:13:14:33.117053,C9,ARM,"X: 267353, Y: 95341, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:14:33.407056,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:18:13:14:33.575538,C9,ARM,"X: 277353, Y: 95341, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:14:33.872504,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:18:13:14:33.989934,C9,ARM,"X: 287353, Y: 95341, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:14:34.290487,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:18:13:14:34.414276,C9,ARM,"X: 297353, Y: 95341, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:14:34.721589,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:18:13:14:34.841194,C9,ARM,"X: 307353, Y: 95341, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:14:35.162902,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:18:13:14:35.279537,C9,ARM,"X: 317353, Y: 95341, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:14:35.622251,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:18:13:14:35.743844,C9,ARM,"X: 327353, Y: 95341, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:14:35.943988,C9,ARM,"X: 327353, Y: 95341, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:14:36.143685,C9,ARM,"X: 327353, Y: 95341, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:14:36.345634,C9,ARM,"X: 327353, Y: 95341, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:14:36.543106,C9,ARM,"X: 327353, Y: 95341, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:14:36.744943,C9,ARM,"X: 327353, Y: 95341, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:14:36.939379,C9,ARM,"X: 321650, Y: 100738, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:14:37.285272,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:18:13:14:38.491345,C9,ARM,"X: 322198, Y: 100738, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:14:38.728574,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:18:13:14:54.285310,C9,ARM,"X: 322745, Y: 100738, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:14:54.526909,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:18:13:14:59.318956,C9,ARM,"X: 322745, Y: 100738, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:14:59.557021,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:18:13:15:06.437700,C9,ARM,"X: 322189, Y: 100738, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:15:06.679784,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:18:13:15:06.793663,C9,ARM,"X: 312428, Y: 102166, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:15:07.184719,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:18:13:15:07.302803,C9,ARM,"X: 302666, Y: 103833, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:15:07.638954,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:18:13:15:07.758828,C9,ARM,"X: 292746, Y: 104547, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:15:08.072013,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:18:13:15:08.188888,C9,ARM,"X: 282746, Y: 105341, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:15:08.490408,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:18:13:15:08.599124,C9,ARM,"X: 272746, Y: 106056, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:15:08.889348,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:18:13:15:09.014379,C9,ARM,"X: 262826, Y: 106690, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:15:09.312642,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:18:13:15:09.437982,C9,ARM,"X: 252826, Y: 108040, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:15:09.717096,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:18:13:15:09.856991,C9,ARM,"X: 242906, Y: 109468, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:15:10.120279,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:18:13:15:10.241460,C9,ARM,"X: 232906, Y: 111214, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:15:10.520213,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:18:13:15:10.645767,C9,ARM,"X: 222906, Y: 112563, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:15:10.921969,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:18:13:15:11.040223,C9,ARM,"X: 212907, Y: 113912, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:15:11.294544,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:18:13:15:11.419345,C9,ARM,"X: 202907, Y: 115341, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:15:11.678959,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:18:13:15:11.820041,C9,ARM,"X: 192987, Y: 116769, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:15:12.068930,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:18:13:15:12.197196,C9,ARM,"X: 183066, Y: 118119, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:15:12.449331,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:18:13:15:12.564213,C9,ARM,"X: 173067, Y: 119547, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:15:12.819782,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:18:13:15:12.932952,C9,ARM,"X: 163067, Y: 121055, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:15:13.191525,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:18:13:15:13.302325,C9,ARM,"X: 153147, Y: 122484, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:15:13.559573,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:18:13:15:13.676546,C9,ARM,"X: 143226, Y: 123912, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:15:13.911447,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:18:13:15:14.032092,C9,ARM,"X: 133227, Y: 125341, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:15:14.284014,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:18:13:15:14.436640,C9,ARM,"X: 123227, Y: 126769, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:15:14.674528,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:18:13:15:14.786292,C9,ARM,"X: 113227, Y: 128198, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:15:15.043010,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:18:13:15:15.153293,C9,ARM,"X: 103227, Y: 129626, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:15:15.423404,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:18:13:15:15.538347,C9,ARM,"X: 93307, Y: 131055, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:15:15.834002,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:18:13:15:15.965362,C9,ARM,"X: 83307, Y: 132483, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:15:16.231000,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:18:13:15:16.343354,C9,ARM,"X: 73308, Y: 133912, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:15:16.623849,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:18:13:15:16.740544,C9,ARM,"X: 63308, Y: 135340, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:15:17.036313,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:18:13:15:17.152805,C9,ARM,"X: 53388, Y: 136769, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:15:17.462125,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:18:13:15:17.578998,C9,ARM,"X: 43388, Y: 138197, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:15:17.873260,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:18:13:15:18.011568,C9,ARM,"X: 33388, Y: 139547, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:15:18.316987,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:18:13:15:18.437110,C9,ARM,"X: 23389, Y: 140975, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:15:18.752993,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:18:13:15:18.864497,C9,ARM,"X: 13468, Y: 142404, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:15:19.185641,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:18:13:15:19.321328,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:18:13:15:19.461385,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:18:13:15:19.578890,C9,ARM,"X: 3469, Y: 143832, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:15:19.885820,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:18:13:15:20.004991,C9,ARM,"X: -6531, Y: 145261, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:15:20.325174,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:18:13:15:20.437713,C9,ARM,"X: -16531, Y: 146689, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:15:20.753709,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:18:13:15:20.866529,C9,ARM,"X: -26451, Y: 148118, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:15:21.184641,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:18:13:15:21.301087,C9,ARM,"X: -36451, Y: 149467, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:15:21.622184,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:18:13:15:21.785736,C9,ARM,"X: -46371, Y: 150975, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:15:22.091942,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:18:13:15:22.209636,C9,ARM,"X: -56292, Y: 152483, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:15:22.528474,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:18:13:15:22.639238,C9,ARM,"X: -66291, Y: 153991, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:15:22.952100,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:18:13:15:23.066327,C9,ARM,"X: -76212, Y: 155498, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:15:23.377324,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:18:13:15:23.520327,C9,ARM,"X: -86211, Y: 157006, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:15:23.829506,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:18:13:15:23.963724,C9,ARM,"X: -96211, Y: 158435, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:15:24.291616,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:18:13:15:24.423688,C9,ARM,"X: -106211, Y: 159863, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:15:24.727411,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:18:13:15:24.841418,C9,ARM,"X: -116210, Y: 161371, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:15:25.139607,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:18:13:15:25.270070,C9,ARM,"X: -126210, Y: 162879, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:15:25.570703,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:18:13:15:25.711466,C9,ARM,"X: -136210, Y: 164387, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:15:26.016860,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:18:13:15:26.159389,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:18:13:15:26.290485,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:18:13:15:26.420673,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:18:13:15:26.546792,C9,ARM,"X: -146209, Y: 165815, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:15:27.285768,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:18:13:15:27.414572,C9,ARM,"X: -156130, Y: 167323, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:15:28.139533,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:18:13:15:28.260131,C9,ARM,"X: -166130, Y: 168831, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:15:28.554328,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:18:13:15:28.669232,C9,ARM,"X: -176129, Y: 170260, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:15:28.989423,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:18:13:15:29.108419,C9,ARM,"X: -186129, Y: 171688, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:15:29.408079,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:18:13:15:29.537344,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:18:13:15:29.671092,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:18:13:15:29.806632,C9,ARM,"X: -196129, Y: 173117, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:15:30.213452,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:18:13:15:30.333283,C9,ARM,"X: -206049, Y: 174545, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:15:30.637385,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:18:13:15:30.749108,C9,ARM,"X: -216049, Y: 175974, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:15:31.061804,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:18:13:15:31.186669,C9,ARM,"X: -225969, Y: 177402, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:15:31.492546,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:18:13:15:31.642601,C9,ARM,"X: -235969, Y: 178831, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:15:31.957561,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:18:13:15:32.071926,C9,ARM,"X: -245968, Y: 180259, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:15:32.394788,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:18:13:15:32.507551,C9,ARM,"X: -255968, Y: 181688, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:15:32.833860,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:18:13:15:32.949741,C9,ARM,"X: -265968, Y: 183116, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:15:33.279163,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:18:13:15:33.393153,C9,ARM,"X: -275967, Y: 184545, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:15:33.755033,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:18:13:15:33.875453,C9,ARM,"X: -285967, Y: 185974, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:15:34.072388,C9,ARM,"X: -285967, Y: 185974, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:15:34.274833,C9,ARM,"X: -285967, Y: 185974, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:15:34.480611,C9,ARM,"X: -285967, Y: 185974, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:15:34.689510,C9,ARM,"X: -285967, Y: 186053, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:15:34.905696,C9,ARM,"X: -285967, Y: 185974, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:15:35.105897,C9,ARM,"X: -285967, Y: 185974, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:15:35.787635,C9,ARM,"X: -275420, Y: 184545, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:15:36.039734,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:18:13:15:36.154407,C9,ARM,"X: -265420, Y: 183920, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:15:36.532054,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:18:13:15:36.646789,C9,ARM,"X: -255420, Y: 183373, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:15:36.992333,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:18:13:15:37.151459,C9,ARM,"X: -245420, Y: 182669, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:15:37.495515,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:18:13:15:37.613821,C9,ARM,"X: -235420, Y: 182044, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:15:37.925228,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:18:13:15:38.050747,C9,ARM,"X: -225420, Y: 182044, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:15:38.354652,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:18:13:15:38.475363,C9,ARM,"X: -215420, Y: 182044, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:15:38.782077,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:18:13:15:38.897062,C9,ARM,"X: -205420, Y: 182044, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:15:39.190142,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:18:13:15:39.331695,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:18:13:15:39.457487,C9,ARM,"X: -195420, Y: 182044, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:15:39.744422,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:18:13:15:39.880932,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:18:13:15:40.017743,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:18:13:15:40.182542,C9,ARM,"X: -185420, Y: 182044, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:15:40.500961,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:18:13:15:40.632690,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:18:13:15:40.773895,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:18:13:15:40.912413,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:18:13:15:41.052573,C9,ARM,"X: -175420, Y: 182044, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:15:41.349473,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:18:13:15:41.490558,C9,ARM,"X: -165420, Y: 182044, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:15:41.788188,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:18:13:15:41.920630,C9,ARM,"X: -155420, Y: 182044, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:15:42.223763,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:18:13:15:42.353414,C9,ARM,"X: -145420, Y: 182044, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:15:42.645369,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:18:13:15:42.773225,C9,ARM,"X: -135420, Y: 182044, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:15:43.079165,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:18:13:15:43.200504,C9,ARM,"X: -125420, Y: 182044, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:15:43.503433,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:18:13:15:43.681801,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:18:13:15:43.805503,C9,ARM,"X: -115420, Y: 182044, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:15:44.105581,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:18:13:15:44.224696,C9,ARM,"X: -105420, Y: 182044, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:15:44.546385,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:18:13:15:44.666852,C9,ARM,"X: -95420, Y: 182044, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:15:44.978313,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:18:13:15:45.094955,C9,ARM,"X: -85420, Y: 182044, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:15:45.412153,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:18:13:15:45.536654,C9,ARM,"X: -75420, Y: 182044, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:15:45.830784,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:18:13:15:45.958206,C9,ARM,"X: -65420, Y: 182044, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:15:46.267813,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:18:13:15:46.397467,C9,ARM,"X: -55420, Y: 182044, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:15:46.699490,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:18:13:15:46.854503,C9,ARM,"X: -45420, Y: 182044, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:15:47.169948,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:18:13:15:47.291058,C9,ARM,"X: -35420, Y: 182044, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:15:47.591882,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:18:13:15:47.716946,C9,ARM,"X: -25420, Y: 182044, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:15:48.035657,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:18:13:15:48.155930,C9,ARM,"X: -15420, Y: 182044, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:15:48.452741,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:18:13:15:48.571261,C9,ARM,"X: -5420, Y: 182044, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:15:48.869074,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:18:13:15:48.985246,C9,ARM,"X: 4580, Y: 182044, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:15:49.292773,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:18:13:15:49.409312,C9,ARM,"X: 14580, Y: 182044, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:15:49.719153,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:18:13:15:49.841836,C9,ARM,"X: 24580, Y: 182044, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:15:50.132226,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:18:13:15:50.252090,C9,ARM,"X: 34580, Y: 182044, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:15:50.536042,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:18:13:15:50.654783,C9,ARM,"X: 44580, Y: 182044, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:15:50.927439,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:18:13:15:51.050296,C9,ARM,"X: 54580, Y: 182044, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:15:51.324545,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:18:13:15:51.467165,C9,ARM,"X: 64580, Y: 182044, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:15:51.732587,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:18:13:15:51.862774,C9,ARM,"X: 74580, Y: 182044, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:15:52.126373,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:18:13:15:52.247303,C9,ARM,"X: 84580, Y: 182044, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:15:52.513207,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:18:13:15:52.639679,C9,ARM,"X: 94580, Y: 182044, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:15:52.922082,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:18:13:15:53.078945,C9,ARM,"X: 104580, Y: 182044, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:15:53.319169,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:18:13:15:53.465536,C9,ARM,"X: 114580, Y: 182044, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:15:53.707932,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:18:13:15:53.837706,C9,ARM,"X: 124580, Y: 182044, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:15:54.092152,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:18:13:15:54.226021,C9,ARM,"X: 134580, Y: 182044, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:15:54.478262,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:18:13:15:54.605214,C9,ARM,"X: 144580, Y: 182044, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:15:54.835970,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:18:13:15:54.948158,C9,ARM,"X: 154580, Y: 182044, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:15:55.206423,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:18:13:15:55.344178,C9,ARM,"X: 164580, Y: 182044, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:15:55.607345,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:18:13:15:55.746012,C9,ARM,"X: 174580, Y: 182044, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:15:56.478668,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:18:13:15:56.592657,C9,ARM,"X: 184580, Y: 182044, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:15:56.867935,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:18:13:15:56.978167,C9,ARM,"X: 194580, Y: 182044, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:15:57.237088,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:18:13:15:57.369084,C9,ARM,"X: 204580, Y: 182044, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:15:57.625701,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:18:13:15:57.763707,C9,ARM,"X: 214580, Y: 182044, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:15:58.038432,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:18:13:15:58.202896,C9,ARM,"X: 224580, Y: 182044, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:15:58.476531,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:18:13:15:58.591524,C9,ARM,"X: 234580, Y: 182044, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:15:58.884386,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:18:13:15:59.009665,C9,ARM,"X: 244580, Y: 182044, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:15:59.318360,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:18:13:15:59.439147,C9,ARM,"X: 254580, Y: 182044, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:15:59.748001,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:18:13:15:59.867314,C9,ARM,"X: 264580, Y: 182044, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:16:00.188889,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:18:13:16:00.321587,C9,ARM,"X: 274580, Y: 182044, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:16:00.659730,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:18:13:16:00.771317,C9,ARM,"X: 284580, Y: 182044, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:16:01.152062,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:18:13:16:01.268172,C9,ARM,"X: 294580, Y: 182044, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:16:01.471089,C9,ARM,"X: 294580, Y: 182044, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:16:01.664054,C9,ARM,"X: 294580, Y: 182044, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:16:01.859396,C9,ARM,"X: 294580, Y: 182044, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:16:02.061822,C9,ARM,"X: 294580, Y: 182044, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:16:02.259584,C9,ARM,"X: 294580, Y: 182044, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:16:02.465843,C9,ARM,"X: 289970, Y: 182044, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:16:12.332151,C9,ARM,"X: 284580, Y: 182044, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:16:12.556111,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:18:13:16:12.670704,C9,ARM,"X: 274580, Y: 181340, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:16:13.068556,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:18:13:16:13.187734,C9,ARM,"X: 264580, Y: 181340, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:16:13.508062,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:18:13:16:13.627588,C9,ARM,"X: 254581, Y: 181975, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:16:13.939451,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:18:13:16:14.056374,C9,ARM,"X: 244581, Y: 182610, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:16:14.350025,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:18:13:16:14.470138,C9,ARM,"X: 234581, Y: 183245, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:16:14.750247,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:18:13:16:14.906959,C9,ARM,"X: 224582, Y: 183879, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:16:15.196852,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:18:13:16:15.358004,C9,ARM,"X: 214582, Y: 184435, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:16:15.624863,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:18:13:16:15.739169,C9,ARM,"X: 204582, Y: 185070, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:16:15.998476,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:18:13:16:16.117319,C9,ARM,"X: 194582, Y: 185704, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:16:16.386905,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:18:13:16:16.511636,C9,ARM,"X: 184583, Y: 186260, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:16:16.764361,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:18:13:16:16.880863,C9,ARM,"X: 174583, Y: 186895, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:16:17.129253,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:18:13:16:17.258296,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:18:13:16:17.388413,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:18:13:16:17.555566,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:18:13:16:17.670853,C9,ARM,"X: 164583, Y: 187529, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:16:17.922161,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:18:13:16:18.038421,C9,ARM,"X: 154584, Y: 188164, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:16:18.282082,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:18:13:16:18.400462,C9,ARM,"X: 144584, Y: 188799, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:16:18.631041,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:18:13:16:18.751137,C9,ARM,"X: 134584, Y: 189434, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:16:18.989588,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:18:13:16:19.112535,C9,ARM,"X: 124585, Y: 190068, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:16:19.365802,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:18:13:16:19.492346,C9,ARM,"X: 114585, Y: 190703, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:16:19.739449,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:18:13:16:19.854895,C9,ARM,"X: 104585, Y: 191338, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:16:20.085185,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:18:13:16:20.208934,C9,ARM,"X: 94586, Y: 192052, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:16:20.449692,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:18:13:16:20.566306,C9,ARM,"X: 84586, Y: 192767, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:16:20.820314,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:18:13:16:20.934617,C9,ARM,"X: 74586, Y: 193481, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:16:21.213832,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:18:13:16:21.333036,C9,ARM,"X: 64586, Y: 194116, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:16:21.606543,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:18:13:16:21.719827,C9,ARM,"X: 54587, Y: 194751, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:16:21.992436,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:18:13:16:22.108445,C9,ARM,"X: 44587, Y: 195385, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:16:22.388680,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:18:13:16:22.501222,C9,ARM,"X: 34587, Y: 196020, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:16:22.787304,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:18:13:16:22.901233,C9,ARM,"X: 24588, Y: 196735, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:16:23.187861,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:18:13:16:23.307262,C9,ARM,"X: 14588, Y: 197369, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:16:23.592842,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:18:13:16:23.724757,C9,ARM,"X: 4588, Y: 198004, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:16:24.003452,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:18:13:16:24.136872,C9,ARM,"X: -5411, Y: 198639, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:16:24.418439,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:18:13:16:24.534735,C9,ARM,"X: -15411, Y: 199274, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:16:24.826752,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:18:13:16:24.985051,C9,ARM,"X: -25411, Y: 199908, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:16:25.292070,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:18:13:16:25.428560,C9,ARM,"X: -35411, Y: 200543, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:16:25.733594,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:18:13:16:25.868525,C9,ARM,"X: -45410, Y: 201178, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:16:26.156456,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:18:13:16:26.293441,C9,ARM,"X: -55410, Y: 201813, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:16:26.596096,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:18:13:16:26.715518,C9,ARM,"X: -65410, Y: 202448, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:16:27.005614,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:18:13:16:27.127548,C9,ARM,"X: -75409, Y: 203162, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:16:27.431789,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:18:13:16:27.613779,C9,ARM,"X: -85409, Y: 203797, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:16:27.919990,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:18:13:16:28.050372,C9,ARM,"X: -95409, Y: 204431, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:16:28.357440,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:18:13:16:28.474878,C9,ARM,"X: -105408, Y: 205146, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:16:28.762375,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:18:13:16:28.897642,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:18:13:16:29.004375,C9,ARM,"X: -115408, Y: 205781, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:16:29.319768,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:18:13:16:29.455843,C9,ARM,"X: -125408, Y: 206415, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:16:29.757812,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:18:13:16:29.896426,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:18:13:16:30.024431,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:18:13:16:30.161633,C9,ARM,"X: -135407, Y: 207130, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:16:30.468453,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:18:13:16:30.611261,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:18:13:16:30.744000,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:18:13:16:30.877640,C9,ARM,"X: -145407, Y: 207765, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:16:31.188422,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:18:13:16:31.306340,C9,ARM,"X: -155407, Y: 208399, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:16:32.030732,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:18:13:16:32.178839,C9,ARM,"X: -165407, Y: 209034, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:16:32.477297,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:18:13:16:32.614343,C9,ARM,"X: -175406, Y: 209669, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:16:32.918260,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:18:13:16:33.105058,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:18:13:16:33.234118,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:18:13:16:33.368062,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:18:13:16:33.489814,C9,ARM,"X: -185406, Y: 210304, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:16:33.790843,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:18:13:16:33.915351,C9,ARM,"X: -195406, Y: 210938, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:16:34.228560,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:18:13:16:34.360813,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:18:13:16:34.477025,C9,ARM,"X: -205405, Y: 211573, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:16:34.789786,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:18:13:16:34.905313,C9,ARM,"X: -215405, Y: 212208, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:16:35.226173,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:18:13:16:35.344491,C9,ARM,"X: -225405, Y: 212843, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:16:35.663503,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:18:13:16:35.782185,C9,ARM,"X: -235404, Y: 213478, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:16:36.102530,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:18:13:16:36.218154,C9,ARM,"X: -245404, Y: 214112, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:16:36.564182,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:18:13:16:36.680981,C9,ARM,"X: -255404, Y: 214747, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:16:37.057411,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:18:13:16:37.170222,C9,ARM,"X: -265403, Y: 215382, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:16:37.382305,C9,ARM,"X: -265403, Y: 215382, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:16:37.587666,C9,ARM,"X: -265403, Y: 215382, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:16:37.797130,C9,ARM,"X: -265403, Y: 215461, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:16:38.004906,C9,ARM,"X: -265403, Y: 215382, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:16:38.209043,C9,ARM,"X: -265403, Y: 215382, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:16:38.411500,C9,ARM,"X: -265403, Y: 215382, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:16:38.611867,C9,ARM,"X: -265403, Y: 215382, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:16:38.832351,C9,ARM,"X: -265403, Y: 215382, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:16:39.037204,C9,ARM,"X: -262784, Y: 209044, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:16:39.335185,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:18:13:16:41.246056,C9,ARM,"X: -262784, Y: 209044, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:16:41.476757,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:18:13:16:41.599585,C9,ARM,"X: -272705, Y: 210393, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:16:41.809292,C9,ARM,"X: -272625, Y: 210393, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:16:42.019055,C9,ARM,"X: -272625, Y: 210393, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:16:42.222620,C9,ARM,"X: -272625, Y: 210393, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:16:42.410228,C9,ARM,"X: -268419, Y: 208497, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:16:42.783501,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:18:13:16:42.899202,C9,ARM,"X: -258419, Y: 206543, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:16:43.320077,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:18:13:16:43.442545,C9,ARM,"X: -248419, Y: 206543, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:16:43.782890,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:18:13:16:43.900857,C9,ARM,"X: -238419, Y: 206543, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:16:44.234211,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:18:13:16:44.356265,C9,ARM,"X: -228419, Y: 205996, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:16:44.690492,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:18:13:16:44.804192,C9,ARM,"X: -218419, Y: 205449, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:16:45.137113,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:18:13:16:45.256693,C9,ARM,"X: -208419, Y: 205449, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:16:45.580083,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:18:13:16:45.707429,C9,ARM,"X: -198419, Y: 205449, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:16:46.034047,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:18:13:16:46.165006,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:18:13:16:46.280820,C9,ARM,"X: -188419, Y: 205449, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:16:46.591193,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:18:13:16:46.773187,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:18:13:16:46.895353,C9,ARM,"X: -178419, Y: 205449, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:16:47.194396,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:18:13:16:47.306053,C9,ARM,"X: -168419, Y: 204902, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:16:47.607153,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:18:13:16:47.736210,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:18:13:16:47.866710,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:18:13:16:48.009997,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:18:13:16:48.124167,C9,ARM,"X: -158419, Y: 204902, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:16:48.417075,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:18:13:16:48.531766,C9,ARM,"X: -148419, Y: 204902, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:16:48.847847,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:18:13:16:48.980295,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:18:13:16:49.112233,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:18:13:16:49.253262,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:18:13:16:49.369847,C9,ARM,"X: -138419, Y: 204902, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:16:49.675713,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:18:13:16:49.811121,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:18:13:16:49.951800,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:18:13:16:50.084264,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:18:13:16:50.202418,C9,ARM,"X: -128419, Y: 204902, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:16:50.507477,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:18:13:16:50.621771,C9,ARM,"X: -118419, Y: 204902, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:16:50.910042,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:18:13:16:51.046045,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:18:13:16:51.160506,C9,ARM,"X: -108419, Y: 204902, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:16:51.460097,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:18:13:16:51.576132,C9,ARM,"X: -98419, Y: 204902, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:16:51.884375,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:18:13:16:52.002661,C9,ARM,"X: -88419, Y: 204902, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:16:52.305964,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:18:13:16:52.420334,C9,ARM,"X: -78419, Y: 204902, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:16:52.717896,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:18:13:16:52.845409,C9,ARM,"X: -68419, Y: 204902, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:16:53.151834,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:18:13:16:53.267756,C9,ARM,"X: -58419, Y: 204902, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:16:53.589082,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:18:13:16:53.702955,C9,ARM,"X: -48419, Y: 204902, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:16:54.003312,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:18:13:16:54.125589,C9,ARM,"X: -38419, Y: 204902, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:16:54.418486,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:18:13:16:54.546578,C9,ARM,"X: -28419, Y: 204902, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:16:54.856498,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:18:13:16:54.981537,C9,ARM,"X: -18419, Y: 204902, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:16:55.285799,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:18:13:16:55.419798,C9,ARM,"X: -8419, Y: 204902, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:16:55.716119,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:18:13:16:55.829322,C9,ARM,"X: 1581, Y: 204902, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:16:56.126334,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:18:13:16:56.251605,C9,ARM,"X: 11581, Y: 204902, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:16:56.524321,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:18:13:16:56.653125,C9,ARM,"X: 21581, Y: 204902, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:16:56.930596,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:18:13:16:57.056405,C9,ARM,"X: 31581, Y: 204902, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:16:57.330679,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:18:13:16:57.451935,C9,ARM,"X: 41581, Y: 204355, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:16:57.745725,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:18:13:16:57.874475,C9,ARM,"X: 51581, Y: 204355, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:16:58.147158,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:18:13:16:58.268528,C9,ARM,"X: 61581, Y: 204355, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:16:58.534626,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:18:13:16:58.648750,C9,ARM,"X: 71581, Y: 204355, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:16:58.908396,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:18:13:16:59.028454,C9,ARM,"X: 81581, Y: 204355, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:16:59.289548,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:18:13:16:59.459019,C9,ARM,"X: 91581, Y: 204355, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:16:59.719131,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:18:13:16:59.835036,C9,ARM,"X: 101581, Y: 204355, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:17:00.080347,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:18:13:17:00.232403,C9,ARM,"X: 111581, Y: 204355, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:17:00.474110,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:18:13:17:00.590795,C9,ARM,"X: 121581, Y: 204355, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:17:00.845498,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:18:13:17:00.964324,C9,ARM,"X: 131581, Y: 204355, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:17:01.210040,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:18:13:17:01.349183,C9,ARM,"X: 141581, Y: 204355, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:17:01.587345,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:18:13:17:01.708033,C9,ARM,"X: 151581, Y: 203807, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:17:01.941546,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:18:13:17:02.071579,C9,ARM,"X: 161581, Y: 203807, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:17:02.343327,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:18:13:17:02.468014,C9,ARM,"X: 171581, Y: 203807, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:17:02.732266,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:18:13:17:02.855655,C9,ARM,"X: 181581, Y: 203807, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:17:03.114167,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:18:13:17:03.234252,C9,ARM,"X: 191581, Y: 203807, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:17:03.510456,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:18:13:17:03.641621,C9,ARM,"X: 201581, Y: 203807, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:17:03.908898,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:18:13:17:04.022890,C9,ARM,"X: 211581, Y: 203807, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:17:04.300204,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:18:13:17:04.434397,C9,ARM,"X: 221581, Y: 203807, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:17:04.720740,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:18:13:17:04.864748,C9,ARM,"X: 231581, Y: 203807, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:17:05.169665,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:18:13:17:05.289378,C9,ARM,"X: 241581, Y: 203807, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:17:05.590174,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:18:13:17:05.745375,C9,ARM,"X: 251581, Y: 203807, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:17:06.067807,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:18:13:17:06.184460,C9,ARM,"X: 261581, Y: 203807, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:17:06.524867,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:18:13:17:06.640786,C9,ARM,"X: 271581, Y: 203807, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:17:07.040658,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:18:13:17:07.152638,C9,ARM,"X: 281581, Y: 203807, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:17:07.354553,C9,ARM,"X: 281581, Y: 203260, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:17:07.558005,C9,ARM,"X: 281581, Y: 203807, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:17:07.769702,C9,ARM,"X: 281581, Y: 203260, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:17:07.984687,C9,ARM,"X: 281581, Y: 203807, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:17:08.169780,C9,ARM,"X: 281581, Y: 203807, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:17:26.307093,C9,ARM,"X: 270946, Y: 203807, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:17:26.552856,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:18:13:17:26.676531,C9,ARM,"X: 260946, Y: 204522, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:17:27.064777,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:18:13:17:27.181066,C9,ARM,"X: 250947, Y: 205316, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:17:27.506320,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:18:13:17:27.635996,C9,ARM,"X: 240947, Y: 206109, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:17:27.948495,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:18:13:17:28.107690,C9,ARM,"X: 230947, Y: 206903, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:17:28.397423,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:18:13:17:28.559199,C9,ARM,"X: 220948, Y: 207935, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:17:28.842269,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:18:13:17:28.966308,C9,ARM,"X: 210948, Y: 209046, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:17:29.240183,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:18:13:17:29.379394,C9,ARM,"X: 200948, Y: 210237, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:17:29.653284,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:18:13:17:29.771095,C9,ARM,"X: 190948, Y: 211427, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:17:30.024211,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:18:13:17:30.156019,C9,ARM,"X: 180949, Y: 212538, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:17:30.406657,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:18:13:17:30.530992,C9,ARM,"X: 170949, Y: 213649, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:17:30.793536,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:18:13:17:30.917260,C9,ARM,"X: 160949, Y: 214760, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:17:31.176895,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:18:13:17:31.297279,C9,ARM,"X: 150950, Y: 215872, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:17:31.548680,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:18:13:17:31.668363,C9,ARM,"X: 140950, Y: 216983, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:17:31.915650,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:18:13:17:32.075884,C9,ARM,"X: 130950, Y: 218015, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:17:32.324139,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:18:13:17:32.442383,C9,ARM,"X: 120951, Y: 219205, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:17:32.686409,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:18:13:17:32.806739,C9,ARM,"X: 110951, Y: 220396, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:17:33.047496,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:18:13:17:33.183871,C9,ARM,"X: 100951, Y: 221507, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:17:33.431800,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:18:13:17:33.545834,C9,ARM,"X: 90951, Y: 222618, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:17:33.799707,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:18:13:17:33.917877,C9,ARM,"X: 80952, Y: 223808, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:17:34.173655,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:18:13:17:34.299181,C9,ARM,"X: 70952, Y: 224999, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:17:34.558765,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:18:13:17:34.693050,C9,ARM,"X: 60952, Y: 226110, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:17:34.957267,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:18:13:17:35.077350,C9,ARM,"X: 50953, Y: 227300, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:17:35.350299,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:18:13:17:35.472258,C9,ARM,"X: 40953, Y: 228650, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:17:35.765813,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:18:13:17:35.892929,C9,ARM,"X: 30953, Y: 229919, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:17:36.177605,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:18:13:17:36.312194,C9,ARM,"X: 20954, Y: 231269, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:17:36.593942,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:18:13:17:36.716610,C9,ARM,"X: 10954, Y: 232618, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:17:36.986106,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:18:13:17:37.141165,C9,ARM,"X: 954, Y: 233967, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:17:37.428611,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:18:13:17:37.551592,C9,ARM,"X: -9045, Y: 235316, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:17:37.848136,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:18:13:17:38.003898,C9,ARM,"X: -19045, Y: 236665, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:17:38.295862,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:18:13:17:38.451239,C9,ARM,"X: -29045, Y: 238015, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:17:38.743092,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:18:13:17:38.907875,C9,ARM,"X: -39045, Y: 239364, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:17:39.216992,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:18:13:17:39.342845,C9,ARM,"X: -49044, Y: 240713, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:17:39.647276,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:18:13:17:39.783706,C9,ARM,"X: -59044, Y: 242062, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:17:40.066721,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:18:13:17:40.181418,C9,ARM,"X: -69044, Y: 243411, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:17:40.472430,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:18:13:17:40.591162,C9,ARM,"X: -79043, Y: 244760, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:17:40.898438,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:18:13:17:41.024348,C9,ARM,"X: -89043, Y: 246030, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:17:41.324710,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:18:13:17:41.465281,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:18:13:17:41.584557,C9,ARM,"X: -99043, Y: 247379, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:17:41.880849,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:18:13:17:42.014664,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:18:13:17:42.147700,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:18:13:17:42.270396,C9,ARM,"X: -109042, Y: 248649, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:17:42.572913,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:18:13:17:42.727050,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:18:13:17:42.866428,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:18:13:17:42.988031,C9,ARM,"X: -119042, Y: 249840, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:17:43.288627,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:18:13:17:43.415724,C9,ARM,"X: -129042, Y: 251030, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:17:44.139732,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:18:13:17:44.267902,C9,ARM,"X: -139041, Y: 252221, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:17:45.003046,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:18:13:17:45.117251,C9,ARM,"X: -149041, Y: 253570, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:17:45.446920,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:18:13:17:45.589639,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:18:13:17:45.738724,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:18:13:17:45.863414,C9,ARM,"X: -159041, Y: 254840, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:17:46.167930,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:18:13:17:46.317262,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:18:13:17:46.444947,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:18:13:17:46.574277,C9,ARM,"X: -169041, Y: 256189, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:17:46.881011,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:18:13:17:47.010801,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:18:13:17:47.164373,C9,ARM,"X: -179040, Y: 257618, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:17:47.482285,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:18:13:17:47.603872,C9,ARM,"X: -189040, Y: 258808, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:17:47.922400,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:18:13:17:48.036555,C9,ARM,"X: -199040, Y: 260237, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:17:48.369571,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:18:13:17:48.492839,C9,ARM,"X: -209039, Y: 261427, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:17:48.864593,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:18:13:17:48.992203,C9,ARM,"X: -219039, Y: 262618, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:17:49.203023,C9,ARM,"X: -219039, Y: 262618, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:17:49.417006,C9,ARM,"X: -219039, Y: 262618, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:17:49.622779,C9,ARM,"X: -219039, Y: 262618, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:17:49.830729,C9,ARM,"X: -219039, Y: 262618, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:17:50.029285,C9,ARM,"X: -219039, Y: 262618, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:17:50.223878,C9,ARM,"X: -219039, Y: 262697, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:17:50.424470,C9,ARM,"X: -219039, Y: 262697, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:17:50.623556,C9,ARM,"X: -219039, Y: 262618, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:17:50.832472,C9,ARM,"X: -219039, Y: 262618, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:17:51.038399,C9,ARM,"X: -219039, Y: 262697, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:17:51.246207,C9,ARM,"X: -219039, Y: 262776, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:17:51.725463,C9,ARM,"X: -209039, Y: 261427, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:17:51.948337,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:18:13:17:52.071213,C9,ARM,"X: -199039, Y: 261427, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:17:52.434913,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:18:13:17:52.555063,C9,ARM,"X: -189039, Y: 261427, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:17:52.899759,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:18:13:17:53.028139,C9,ARM,"X: -179039, Y: 261427, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:17:53.348561,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:18:13:17:53.463661,C9,ARM,"X: -169039, Y: 261427, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:17:53.785948,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:18:13:17:53.898274,C9,ARM,"X: -159039, Y: 261427, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:17:54.218659,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:18:13:17:54.332221,C9,ARM,"X: -149039, Y: 261427, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:17:54.645084,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:18:13:17:54.783487,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:18:13:17:54.920002,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:18:13:17:55.059403,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:18:13:17:55.185491,C9,ARM,"X: -139039, Y: 261427, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:17:55.500203,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:18:13:17:55.615898,C9,ARM,"X: -129039, Y: 261427, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:17:55.914045,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:18:13:17:56.041087,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:18:13:17:56.181415,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:18:13:17:56.318500,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:18:13:17:56.479736,C9,ARM,"X: -119039, Y: 261427, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:17:56.779799,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:18:13:17:56.912920,C9,ARM,"X: -109039, Y: 261427, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:17:57.208184,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:18:13:17:57.339759,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:18:13:17:57.477414,C9,ARM,"X: -99039, Y: 261427, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:17:57.777961,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:18:13:17:57.901214,C9,ARM,"X: -89039, Y: 261427, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:17:58.196704,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:18:13:17:58.325565,C9,ARM,"X: -79039, Y: 261427, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:17:58.624722,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:18:13:17:58.749471,C9,ARM,"X: -69039, Y: 261427, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:17:59.043921,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:18:13:17:59.168910,C9,ARM,"X: -59039, Y: 261427, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:17:59.451598,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:18:13:17:59.579743,C9,ARM,"X: -49039, Y: 261427, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:17:59.878634,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:18:13:17:59.993288,C9,ARM,"X: -39039, Y: 261427, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:18:00.293986,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:18:13:18:00.416447,C9,ARM,"X: -29039, Y: 261427, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:18:00.701362,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:18:13:18:00.867153,C9,ARM,"X: -19039, Y: 261427, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:18:01.158418,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:18:13:18:01.278097,C9,ARM,"X: -9039, Y: 261427, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:18:01.572652,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:18:13:18:01.683301,C9,ARM,"X: 961, Y: 261427, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:18:01.965357,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:18:13:18:02.079884,C9,ARM,"X: 10961, Y: 261427, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:18:02.357146,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:18:13:18:02.474255,C9,ARM,"X: 20961, Y: 261427, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:18:02.738418,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:18:13:18:02.863332,C9,ARM,"X: 30961, Y: 261427, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:18:03.127700,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:18:13:18:03.262792,C9,ARM,"X: 40961, Y: 261427, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:18:03.517419,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:18:13:18:03.638320,C9,ARM,"X: 50961, Y: 261427, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:18:03.899228,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:18:13:18:04.025890,C9,ARM,"X: 60961, Y: 261427, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:18:04.280925,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:18:13:18:04.405469,C9,ARM,"X: 70961, Y: 261427, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:18:04.654574,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:18:13:18:04.789539,C9,ARM,"X: 80961, Y: 261427, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:18:05.036948,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:18:13:18:05.154312,C9,ARM,"X: 90961, Y: 261427, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:18:05.405461,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:18:13:18:05.548318,C9,ARM,"X: 100961, Y: 261427, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:18:05.798224,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:18:13:18:05.920623,C9,ARM,"X: 110961, Y: 261427, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:18:06.179320,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:18:13:18:06.304015,C9,ARM,"X: 120961, Y: 261427, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:18:06.553223,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:18:13:18:06.716264,C9,ARM,"X: 130961, Y: 261427, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:18:06.958903,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:18:13:18:07.091891,C9,ARM,"X: 140961, Y: 261427, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:18:07.348332,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:18:13:18:07.472171,C9,ARM,"X: 150961, Y: 261427, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:18:07.743902,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:18:13:18:07.880361,C9,ARM,"X: 160961, Y: 261427, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:18:08.139926,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:18:13:18:08.288237,C9,ARM,"X: 170961, Y: 261427, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:18:08.572698,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:18:13:18:08.696589,C9,ARM,"X: 180961, Y: 261427, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:18:09.005027,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:18:13:18:09.123190,C9,ARM,"X: 190961, Y: 261427, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:18:09.424096,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:18:13:18:09.549244,C9,ARM,"X: 200961, Y: 261427, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:18:09.884550,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:18:13:18:10.010993,C9,ARM,"X: 210961, Y: 261427, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:18:10.381964,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:18:13:18:10.508965,C9,ARM,"X: 220961, Y: 261427, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:18:10.720750,C9,ARM,"X: 220961, Y: 261427, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:18:10.927748,C9,ARM,"X: 220961, Y: 261427, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:18:11.127551,C9,ARM,"X: 220961, Y: 261427, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:18:11.340143,C9,ARM,"X: 220961, Y: 261427, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:18:11.551803,C9,ARM,"X: 220961, Y: 261427, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:18:11.753239,C9,ARM,"X: 220961, Y: 261427, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:18:11.981003,C9,ARM,"X: 220961, Y: 261427, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:18:12.186620,C9,ARM,"X: 220961, Y: 261427, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:18:17.247052,C9,ARM,"X: 210961, Y: 261427, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:18:17.478697,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:18:13:18:17.614672,C9,ARM,"X: 201040, Y: 262776, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:18:17.942687,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:18:13:18:18.063364,C9,ARM,"X: 191120, Y: 264205, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:18:18.359267,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:18:13:18:18.483334,C9,ARM,"X: 181200, Y: 265871, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:18:18.756344,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:18:13:18:18.874589,C9,ARM,"X: 171359, Y: 267617, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:18:19.144772,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:18:13:18:19.265610,C9,ARM,"X: 161438, Y: 269284, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:18:19.524427,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:18:13:18:19.650129,C9,ARM,"X: 151597, Y: 270950, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:18:19.902256,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:18:13:18:20.028005,C9,ARM,"X: 141677, Y: 272617, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:18:20.283629,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:18:13:18:20.399262,C9,ARM,"X: 131836, Y: 274283, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:18:20.647829,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:18:13:18:20.771124,C9,ARM,"X: 121995, Y: 275950, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:18:21.023254,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:18:13:18:21.139982,C9,ARM,"X: 112075, Y: 277617, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:18:21.395642,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:18:13:18:21.527357,C9,ARM,"X: 102154, Y: 279363, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:18:21.765120,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:18:13:18:21.880854,C9,ARM,"X: 92234, Y: 281029, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:18:22.109527,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:18:13:18:22.228588,C9,ARM,"X: 82313, Y: 282775, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:18:22.480098,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:18:13:18:22.613429,C9,ARM,"X: 72393, Y: 284442, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:18:22.854649,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:18:13:18:22.990446,C9,ARM,"X: 62473, Y: 286187, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:18:23.254698,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:18:13:18:23.379448,C9,ARM,"X: 52552, Y: 287854, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:18:23.643805,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:18:13:18:23.773644,C9,ARM,"X: 42632, Y: 289521, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:18:24.046905,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:18:13:18:24.182965,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:18:13:18:24.315655,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:18:13:18:24.426235,C9,ARM,"X: 32712, Y: 291902, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:18:24.723614,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:18:13:18:24.841106,C9,ARM,"X: 22871, Y: 294124, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:18:25.125484,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:18:13:18:25.244219,C9,ARM,"X: 12950, Y: 296346, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:18:25.539649,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:18:13:18:25.663362,C9,ARM,"X: 3109, Y: 298568, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:18:25.952814,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:18:13:18:26.078481,C9,ARM,"X: -6811, Y: 300791, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:18:26.361873,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:18:13:18:26.483945,C9,ARM,"X: -16731, Y: 303092, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:18:26.770963,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:18:13:18:26.932737,C9,ARM,"X: -26572, Y: 305315, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:18:27.221634,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:18:13:18:27.361671,C9,ARM,"X: -36413, Y: 307537, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:18:27.651078,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:18:13:18:27.771277,C9,ARM,"X: -46334, Y: 309442, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:18:28.069669,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:18:13:18:28.223813,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:18:13:18:28.355839,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:18:13:18:28.479253,C9,ARM,"X: -56175, Y: 311346, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:18:28.778590,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:18:13:18:28.902319,C9,ARM,"X: -66016, Y: 313251, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:18:29.216551,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:18:13:18:29.385181,C9,ARM,"X: -75857, Y: 315155, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:18:29.697093,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:18:13:18:29.834458,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:18:13:18:29.964872,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:18:13:18:30.095079,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:18:13:18:30.225707,C9,ARM,"X: -85698, Y: 317060, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:18:30.540273,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:18:13:18:30.670012,C9,ARM,"X: -95539, Y: 318965, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:18:30.997779,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:18:13:18:31.137682,C9,ARM,"X: -105380, Y: 320869, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:18:31.499948,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:18:13:18:31.617940,C9,ARM,"X: -115221, Y: 322774, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:18:31.821190,C9,ARM,"X: -115221, Y: 322774, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:18:32.039044,C9,ARM,"X: -115300, Y: 322853, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:18:32.238909,C9,ARM,"X: -115221, Y: 322853, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:18:32.458529,C9,ARM,"X: -115221, Y: 322853, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:18:32.659799,C9,ARM,"X: -115221, Y: 322853, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:18:32.873027,C9,ARM,"X: -115300, Y: 322853, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:18:33.067063,C9,ARM,"X: -112681, Y: 316494, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:18:33.337054,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:18:13:18:33.862466,C9,ARM,"X: -116173, Y: 316494, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:18:34.135730,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:18:13:18:34.253883,C9,ARM,"X: -126014, Y: 317605, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:18:34.458597,C9,ARM,"X: -126093, Y: 317684, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:18:34.680973,C9,ARM,"X: -126093, Y: 317684, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:18:34.879366,C9,ARM,"X: -126093, Y: 317684, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:18:35.081178,C9,ARM,"X: -126014, Y: 317684, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:18:35.277157,C9,ARM,"X: -126093, Y: 317764, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:18:35.491811,C9,ARM,"X: -126014, Y: 317764, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:18:35.699461,C9,ARM,"X: -126093, Y: 317764, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:18:35.892562,C9,ARM,"X: -126093, Y: 317764, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:18:36.085073,C9,ARM,"X: -126093, Y: 317764, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:18:36.278445,C9,ARM,"X: -126014, Y: 317764, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:18:36.470332,C9,ARM,"X: -126093, Y: 317764, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:18:36.676572,C9,ARM,"X: -126093, Y: 317843, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:18:36.875129,C9,ARM,"X: -126093, Y: 317843, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:18:37.089560,C9,ARM,"X: -126014, Y: 317843, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:18:37.294354,C9,ARM,"X: -126093, Y: 317843, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:18:37.497183,C9,ARM,"X: -126014, Y: 317843, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:18:37.703235,C9,ARM,"X: -119189, Y: 313369, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:18:37.972998,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:18:13:18:38.864852,C9,ARM,"X: -118641, Y: 313369, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:18:39.619065,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:18:13:18:39.756278,C9,ARM,"X: -109032, Y: 317257, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:18:39.985757,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:18:13:18:40.128124,C9,ARM,"X: -99032, Y: 319638, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:18:40.420452,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:18:13:18:40.536374,C9,ARM,"X: -89032, Y: 322257, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:18:40.794181,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:18:13:18:40.946060,C9,ARM,"X: -79032, Y: 324876, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:18:41.212493,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:18:13:18:41.346469,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:18:13:18:41.462395,C9,ARM,"X: -69032, Y: 327416, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:18:41.723250,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:18:13:18:41.839961,C9,ARM,"X: -59032, Y: 329956, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:18:42.089311,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:18:13:18:42.239909,C9,ARM,"X: -49032, Y: 332495, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:18:42.499126,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:18:13:18:42.615922,C9,ARM,"X: -39032, Y: 335035, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:18:42.849298,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:18:13:18:42.962995,C9,ARM,"X: -29032, Y: 337575, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:18:43.236934,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:18:13:18:43.360630,C9,ARM,"X: -19032, Y: 340114, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:18:43.550246,C9,ARM,"X: -19032, Y: 340114, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:18:43.753906,C9,ARM,"X: -19032, Y: 340114, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:18:43.959721,C9,ARM,"X: -19032, Y: 340114, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:18:44.169657,C9,ARM,"X: -19032, Y: 340114, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:18:44.376847,C9,ARM,"X: -19032, Y: 340114, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:18:44.586549,C9,ARM,"X: -19032, Y: 340114, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:18:44.787135,C9,ARM,"X: -19032, Y: 340194, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:18:44.982871,C9,ARM,"X: -19032, Y: 340114, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:18:45.195037,C9,ARM,"X: -19032, Y: 340114, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:18:45.398295,C9,ARM,"X: -19032, Y: 340114, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:18:45.607740,C9,ARM,"X: -19032, Y: 340114, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:18:45.828355,C9,ARM,"X: -19032, Y: 340114, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:18:46.030579,C9,ARM,"X: -19032, Y: 340114, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:18:46.227175,C9,ARM,"X: -19032, Y: 340194, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:18:46.430244,C9,ARM,"X: -19032, Y: 340194, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:18:46.626042,C9,ARM,"X: -19032, Y: 340114, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:18:46.822812,C9,ARM,"X: -19032, Y: 340194, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:18:47.028529,C9,ARM,"X: -19032, Y: 340194, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:18:47.231883,C9,ARM,"X: -19032, Y: 340114, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:18:47.434890,C9,ARM,"X: -19032, Y: 340114, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:18:47.644151,C9,ARM,"X: -19032, Y: 340114, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:18:47.844236,C9,ARM,"X: -19032, Y: 340114, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:18:48.038859,C9,ARM,"X: -19032, Y: 340194, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:18:48.243284,C9,ARM,"X: -19032, Y: 340114, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:18:48.452563,C9,ARM,"X: -19032, Y: 340114, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:18:48.646757,C9,ARM,"X: -19032, Y: 340114, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:18:48.862684,C9,ARM,"X: -19032, Y: 340114, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:18:49.057534,C9,ARM,"X: -19032, Y: 340194, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:18:49.253082,C9,ARM,"X: -19032, Y: 340273, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:18:49.468666,C9,ARM,"X: -19032, Y: 340273, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:18:49.664587,C9,ARM,"X: -22626, Y: 340353, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:18:50.343037,C9,ARM,"X: -29032, Y: 337575, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:18:50.588291,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:18:13:18:59.224822,C9,ARM,"X: -29032, Y: 337028, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:18:59.482585,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:18:13:18:59.598458,C9,ARM,"X: -29032, Y: 336480, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:18:59.845787,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:18:13:18:59.986421,C9,ARM,"X: -29032, Y: 335933, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:19:00.240316,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:18:13:19:00.370584,C9,ARM,"X: -29032, Y: 335386, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:19:00.608850,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:18:13:19:00.763040,C9,ARM,"X: -29032, Y: 335386, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:19:00.990408,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:18:13:19:01.211550,C9,ARM,"X: -29032, Y: 335386, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:19:01.452528,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:18:13:19:01.797583,C9,ARM,"X: -29032, Y: 335386, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:19:02.034330,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:18:13:19:02.214864,C9,ARM,"X: -29032, Y: 334839, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:19:02.459967,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:18:13:19:02.756689,C9,ARM,"X: -29032, Y: 334839, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:19:03.002527,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:18:13:19:03.186529,C9,ARM,"X: -29032, Y: 334292, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:19:03.444599,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:18:13:19:03.865508,C9,ARM,"X: -29032, Y: 334292, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:19:04.104358,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:18:13:19:04.456427,C9,ARM,"X: -29032, Y: 334292, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:19:04.697854,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:18:13:19:04.896801,C9,ARM,"X: -29032, Y: 333745, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:19:05.142543,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:18:13:19:05.355899,C9,ARM,"X: -29032, Y: 333745, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:19:05.591150,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:18:13:19:05.762879,C9,ARM,"X: -29032, Y: 333745, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:19:05.998487,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:18:13:19:06.415564,C9,ARM,"X: -29032, Y: 333745, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:19:06.656243,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:18:13:19:06.820093,C9,ARM,"X: -29032, Y: 333745, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:19:07.068614,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:18:13:19:07.215470,C9,ARM,"X: -29032, Y: 333745, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:19:07.455425,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:18:13:19:07.783220,C9,ARM,"X: -28407, Y: 333745, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:19:08.514947,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:18:13:19:08.634742,C9,ARM,"X: -27860, Y: 333745, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:19:09.364713,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:18:13:19:09.492431,C9,ARM,"X: -27234, Y: 333745, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:19:09.734823,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:18:13:19:09.856846,C9,ARM,"X: -26687, Y: 333745, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:19:10.586701,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:18:13:19:10.700159,C9,ARM,"X: -26140, Y: 333745, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:19:10.941410,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:18:13:19:11.072933,C9,ARM,"X: -25593, Y: 333745, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:19:11.800266,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:18:13:19:11.937383,C9,ARM,"X: -24967, Y: 333745, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:19:12.680633,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:18:13:19:12.814693,C9,ARM,"X: -24342, Y: 333745, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:19:13.051454,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:18:13:19:13.191250,C9,ARM,"X: -23717, Y: 333745, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:19:13.935024,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:18:13:19:14.074969,C9,ARM,"X: -23091, Y: 333745, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:19:14.814377,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:18:13:19:14.937093,C9,ARM,"X: -22466, Y: 333745, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:19:15.686450,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:18:13:19:15.819644,C9,ARM,"X: -21841, Y: 333745, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:19:16.558334,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:18:13:19:16.689184,C9,ARM,"X: -21294, Y: 333745, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:19:16.923205,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:18:13:19:17.094742,C9,ARM,"X: -20668, Y: 333745, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:19:17.833269,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:18:13:19:17.974890,C9,ARM,"X: -20043, Y: 333745, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:19:18.700478,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:18:13:19:18.825576,C9,ARM,"X: -19418, Y: 333745, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:19:19.560114,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:18:13:19:19.684987,C9,ARM,"X: -18792, Y: 333745, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:19:19.924218,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:18:13:19:20.043894,C9,ARM,"X: -18245, Y: 333745, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:19:20.774844,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:18:13:19:20.938834,C9,ARM,"X: -17620, Y: 333745, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:19:21.664310,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:18:13:19:21.798395,C9,ARM,"X: -16995, Y: 333745, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:19:22.531612,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:18:13:19:22.653374,C9,ARM,"X: -16369, Y: 333745, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:19:23.391989,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:18:13:19:23.509128,C9,ARM,"X: -15822, Y: 333745, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:19:24.253975,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:18:13:19:24.381583,C9,ARM,"X: -15197, Y: 333745, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:19:25.138732,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:18:13:19:25.261408,C9,ARM,"X: -14650, Y: 333745, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:19:25.495051,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:18:13:19:25.633838,C9,ARM,"X: -14024, Y: 333745, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:19:26.376351,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:18:13:19:26.509703,C9,ARM,"X: -13399, Y: 333745, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:19:27.263377,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:18:13:19:27.406217,C9,ARM,"X: -12774, Y: 333745, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:19:28.142120,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:18:13:19:28.266412,C9,ARM,"X: -12148, Y: 333745, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:19:28.988827,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:18:13:19:29.122884,C9,ARM,"X: -11601, Y: 333745, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:19:29.857643,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:18:13:19:29.976383,C9,ARM,"X: -10976, Y: 333745, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:19:30.700586,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:18:13:19:30.826869,C9,ARM,"X: -10429, Y: 333745, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:19:31.553209,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:18:13:19:31.676174,C9,ARM,"X: -9804, Y: 333745, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:19:32.421660,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:18:13:19:32.538679,C9,ARM,"X: -9256, Y: 333745, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:19:33.273058,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:18:13:19:33.391171,C9,ARM,"X: -8631, Y: 333745, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:19:34.114273,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:18:13:19:34.246961,C9,ARM,"X: -8006, Y: 333745, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:19:34.967163,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:18:13:19:35.085942,C9,ARM,"X: -7459, Y: 333745, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:19:35.817896,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:18:13:19:35.933192,C9,ARM,"X: -6833, Y: 333745, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:19:36.675723,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:18:13:19:36.799967,C9,ARM,"X: -6286, Y: 333745, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:19:37.535302,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:18:13:19:37.696002,C9,ARM,"X: -5661, Y: 333745, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:19:38.435142,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:18:13:19:38.561286,C9,ARM,"X: -5035, Y: 333745, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:19:39.285009,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:18:13:19:39.404049,C9,ARM,"X: -4410, Y: 333745, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:19:40.141563,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:18:13:19:40.267004,C9,ARM,"X: -3785, Y: 333745, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:19:40.996982,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:18:13:19:41.114435,C9,ARM,"X: -3160, Y: 333745, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:19:41.844468,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:18:13:19:41.966746,C9,ARM,"X: -2534, Y: 333745, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:19:42.694006,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:18:13:19:42.813794,C9,ARM,"X: -1987, Y: 333745, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:19:43.557158,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:18:13:19:43.668911,C9,ARM,"X: -1362, Y: 333745, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:19:44.406440,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:18:13:19:44.537961,C9,ARM,"X: -736, Y: 333745, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:19:45.272402,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:18:13:19:45.397500,C9,ARM,"X: -189, Y: 333745, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:19:46.119136,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:18:13:19:46.241325,C9,ARM,"X: 436, Y: 333745, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:19:46.972916,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:18:13:19:47.096222,C9,ARM,"X: 983, Y: 333745, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:19:47.837634,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:18:13:19:47.957142,C9,ARM,"X: 1609, Y: 333745, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:19:48.705382,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:18:13:19:48.828136,C9,ARM,"X: 2156, Y: 333745, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:19:49.563791,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:18:13:19:49.685143,C9,ARM,"X: 2781, Y: 333745, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:19:49.931800,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:18:13:19:50.047366,C9,ARM,"X: 3406, Y: 333745, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:19:50.777710,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:18:13:19:50.940637,C9,ARM,"X: 4032, Y: 333745, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:19:51.667844,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:18:13:19:51.783821,C9,ARM,"X: 4657, Y: 333745, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:19:52.524629,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:18:13:19:52.647550,C9,ARM,"X: 5282, Y: 333745, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:19:52.881907,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:18:13:19:53.006275,C9,ARM,"X: 5829, Y: 333745, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:19:53.718920,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:18:13:19:53.845124,C9,ARM,"X: 6455, Y: 333745, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:19:54.580957,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:18:13:19:54.705582,C9,ARM,"X: 7080, Y: 333745, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:19:55.456115,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:18:13:19:55.570926,C9,ARM,"X: 7627, Y: 333745, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:19:55.819499,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:18:13:19:55.943497,C9,ARM,"X: 8253, Y: 333745, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:19:56.675604,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:18:13:19:56.794612,C9,ARM,"X: 8878, Y: 333745, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:19:57.520860,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:18:13:19:57.642778,C9,ARM,"X: 9503, Y: 333745, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:19:57.884401,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:18:13:19:58.013929,C9,ARM,"X: 10050, Y: 333745, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:19:58.745582,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:18:13:19:58.865931,C9,ARM,"X: 10597, Y: 333745, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:19:59.602065,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:18:13:19:59.718032,C9,ARM,"X: 11223, Y: 333745, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:20:00.451619,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:18:13:20:00.565592,C9,ARM,"X: 11848, Y: 333745, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:20:00.818395,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:18:13:20:00.940786,C9,ARM,"X: 12473, Y: 333745, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:20:01.673790,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:18:13:20:01.797049,C9,ARM,"X: 13021, Y: 333745, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:20:02.520115,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:18:13:20:02.638941,C9,ARM,"X: 13646, Y: 333745, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:20:02.889488,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:18:13:20:03.011827,C9,ARM,"X: 14271, Y: 333745, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:20:03.737646,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:18:13:20:03.861653,C9,ARM,"X: 14896, Y: 333745, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:20:04.111362,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:18:13:20:04.230146,C9,ARM,"X: 15522, Y: 333745, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:20:04.954715,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:18:13:20:05.070597,C9,ARM,"X: 16069, Y: 333745, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:20:05.315080,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:18:13:20:05.432777,C9,ARM,"X: 16694, Y: 333745, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:20:06.157190,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:18:13:20:06.272223,C9,ARM,"X: 17241, Y: 333745, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:20:07.001807,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:18:13:20:07.119341,C9,ARM,"X: 17789, Y: 333745, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:20:07.367627,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:18:13:20:07.495889,C9,ARM,"X: 18414, Y: 333745, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:20:08.233144,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:18:13:20:08.353509,C9,ARM,"X: 18961, Y: 333745, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:20:09.090143,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:18:13:20:09.219504,C9,ARM,"X: 19508, Y: 333745, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:20:09.452844,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:18:13:20:09.579264,C9,ARM,"X: 20134, Y: 333745, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:20:10.329200,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:18:13:20:10.453857,C9,ARM,"X: 20681, Y: 333745, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:20:10.685979,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:18:13:20:10.816779,C9,ARM,"X: 21228, Y: 333745, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:20:11.546146,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:18:13:20:11.673261,C9,ARM,"X: 21853, Y: 333745, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:20:11.897179,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:18:13:20:12.030314,C9,ARM,"X: 22400, Y: 333745, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:20:12.762692,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:18:13:20:12.903331,C9,ARM,"X: 22948, Y: 333745, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:20:13.152294,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:18:13:20:13.316284,C9,ARM,"X: 23573, Y: 333745, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:20:14.045211,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:18:13:20:14.157303,C9,ARM,"X: 24198, Y: 333745, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:20:14.402041,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:18:13:20:14.526482,C9,ARM,"X: 24824, Y: 333745, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:20:15.254416,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:18:13:20:15.388804,C9,ARM,"X: 25371, Y: 333745, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:20:15.648024,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:18:13:20:15.807310,C9,ARM,"X: 25918, Y: 333745, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:20:16.531896,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:18:13:20:16.646831,C9,ARM,"X: 26543, Y: 333745, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:20:16.895561,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:18:13:20:17.052418,C9,ARM,"X: 27090, Y: 333745, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:20:17.311320,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:18:13:20:17.472364,C9,ARM,"X: 27638, Y: 333745, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:20:18.205843,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:18:13:20:18.321532,C9,ARM,"X: 28263, Y: 333745, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:20:18.558102,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:18:13:20:18.674635,C9,ARM,"X: 28810, Y: 333745, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:20:19.418789,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:18:13:20:19.537474,C9,ARM,"X: 29357, Y: 333745, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:20:19.789889,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:18:13:20:19.911118,C9,ARM,"X: 29983, Y: 333745, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:20:20.160192,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:18:13:20:20.291973,C9,ARM,"X: 30608, Y: 333745, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:20:21.027275,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:18:13:20:21.166354,C9,ARM,"X: 31155, Y: 333745, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:20:21.432024,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:18:13:20:21.576323,C9,ARM,"X: 31780, Y: 333745, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:20:21.834973,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:18:13:20:21.963632,C9,ARM,"X: 32406, Y: 333745, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:20:22.208063,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:18:13:20:22.341207,C9,ARM,"X: 32953, Y: 333745, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:20:23.072599,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:18:13:20:23.191727,C9,ARM,"X: 33578, Y: 333745, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:20:23.437064,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:18:13:20:23.580909,C9,ARM,"X: 34125, Y: 333745, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:20:23.821067,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:18:13:20:23.957384,C9,ARM,"X: 34672, Y: 333745, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:20:24.692679,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:18:13:20:24.819180,C9,ARM,"X: 35298, Y: 333745, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:20:25.060504,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:18:13:20:25.181488,C9,ARM,"X: 35923, Y: 333745, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:20:25.422322,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:18:13:20:25.539998,C9,ARM,"X: 36470, Y: 333745, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:20:25.783836,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:18:13:20:25.897730,C9,ARM,"X: 37096, Y: 333745, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:20:26.131400,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:18:13:20:26.250240,C9,ARM,"X: 37721, Y: 333745, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:20:26.508697,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:18:13:20:26.629616,C9,ARM,"X: 38268, Y: 333745, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:20:27.381702,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:18:13:20:27.501697,C9,ARM,"X: 38893, Y: 333745, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:20:27.745957,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:18:13:20:27.867421,C9,ARM,"X: 39519, Y: 333745, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:20:28.106867,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:18:13:20:28.230142,C9,ARM,"X: 40066, Y: 333745, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:20:28.957165,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:18:13:20:29.079217,C9,ARM,"X: 40613, Y: 333745, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:20:29.328426,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:18:13:20:29.444831,C9,ARM,"X: 41238, Y: 333745, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:20:29.681794,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:18:13:20:29.810197,C9,ARM,"X: 41786, Y: 333745, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:20:30.047651,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:18:13:20:30.183141,C9,ARM,"X: 42411, Y: 333745, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:20:30.436806,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:18:13:20:30.557707,C9,ARM,"X: 42958, Y: 333745, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:20:30.789356,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:18:13:20:30.928303,C9,ARM,"X: 43505, Y: 333745, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:20:31.175454,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:18:13:20:31.332559,C9,ARM,"X: 44131, Y: 333745, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:20:31.577494,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:18:13:20:31.730689,C9,ARM,"X: 44756, Y: 333745, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:20:31.987487,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:18:13:20:32.102040,C9,ARM,"X: 45303, Y: 333745, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:20:32.345526,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:18:13:20:32.480572,C9,ARM,"X: 45928, Y: 333745, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:20:32.724304,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:18:13:20:32.838459,C9,ARM,"X: 46554, Y: 333745, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:20:33.561102,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:18:13:20:33.686631,C9,ARM,"X: 47101, Y: 333745, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:20:34.409925,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:18:13:20:34.534601,C9,ARM,"X: 47648, Y: 333745, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:20:34.781984,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:18:13:20:34.904076,C9,ARM,"X: 48195, Y: 333745, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:20:35.152377,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:18:13:20:35.276687,C9,ARM,"X: 48820, Y: 333745, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:20:36.015929,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:18:13:20:36.137118,C9,ARM,"X: 49446, Y: 333745, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:20:36.375908,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:18:13:20:36.495367,C9,ARM,"X: 49993, Y: 333745, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:20:36.748615,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:18:13:20:36.862036,C9,ARM,"X: 50540, Y: 333745, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:20:37.115816,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:18:13:20:37.234750,C9,ARM,"X: 51087, Y: 333745, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:20:37.486765,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:18:13:20:37.603748,C9,ARM,"X: 51634, Y: 333745, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:20:37.854309,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:18:13:20:37.973428,C9,ARM,"X: 52182, Y: 333745, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:20:38.201830,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:18:13:20:38.317518,C9,ARM,"X: 52807, Y: 333745, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:20:38.563615,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:18:13:20:38.693267,C9,ARM,"X: 53354, Y: 333745, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:20:38.933606,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:18:13:20:39.054700,C9,ARM,"X: 53979, Y: 333745, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:20:39.316203,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:18:13:20:39.429051,C9,ARM,"X: 54605, Y: 333745, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:20:39.664779,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:18:13:20:39.787821,C9,ARM,"X: 55152, Y: 333745, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:20:40.038601,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:18:13:20:40.158473,C9,ARM,"X: 55777, Y: 333745, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:20:40.404352,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:18:13:20:40.520042,C9,ARM,"X: 56324, Y: 333745, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:20:40.759361,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:18:13:20:40.874483,C9,ARM,"X: 56950, Y: 333745, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:20:41.124776,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:18:13:20:41.281675,C9,ARM,"X: 57497, Y: 333745, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:20:41.521428,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:18:13:20:41.681589,C9,ARM,"X: 58044, Y: 333745, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:20:41.919030,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:18:13:20:42.036778,C9,ARM,"X: 58669, Y: 333745, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:20:42.287789,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:18:13:20:42.405871,C9,ARM,"X: 59217, Y: 333745, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:20:42.639573,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:18:13:20:42.763762,C9,ARM,"X: 59842, Y: 333745, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:20:43.011605,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:18:13:20:43.163311,C9,ARM,"X: 60467, Y: 333745, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:20:43.416883,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:18:13:20:43.536666,C9,ARM,"X: 61014, Y: 333745, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:20:43.774211,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:18:13:20:43.887732,C9,ARM,"X: 61640, Y: 333745, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:20:44.123951,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:18:13:20:44.240280,C9,ARM,"X: 62265, Y: 333745, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:20:44.483589,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:18:13:20:44.601688,C9,ARM,"X: 62890, Y: 333745, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:20:44.864160,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:18:13:20:45.020834,C9,ARM,"X: 63516, Y: 333745, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:20:45.281555,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:18:13:20:45.413777,C9,ARM,"X: 64141, Y: 333745, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:20:45.643774,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:18:13:20:45.769441,C9,ARM,"X: 64688, Y: 333745, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:20:46.013097,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:18:13:20:46.133252,C9,ARM,"X: 65235, Y: 333745, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:20:46.379938,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:18:13:20:46.501690,C9,ARM,"X: 65782, Y: 333745, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:20:46.741130,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:18:13:20:46.859573,C9,ARM,"X: 66408, Y: 333745, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:20:47.104250,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:18:13:20:47.267365,C9,ARM,"X: 66955, Y: 333745, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:20:47.504456,C9,MVNG,"axes: 1,2,3,0",None,None
+2021:10:18:13:20:47.633021,C9,ARM,"X: 67580, Y: 333745, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:20:47.831272,C9,ARM,"X: 67502, Y: 333745, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:20:48.031793,C9,ARM,"X: 67580, Y: 333745, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:20:48.231572,C9,ARM,"X: 67580, Y: 333745, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:20:48.423637,C9,ARM,"X: 67502, Y: 333745, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:20:48.619659,C9,ARM,"X: 67580, Y: 333745, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:20:48.814908,C9,ARM,"X: 67502, Y: 333745, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:20:49.022402,C9,ARM,"X: 67502, Y: 333745, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:20:49.226322,C9,ARM,"X: 67502, Y: 333745, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:20:49.442097,C9,ARM,"X: 67580, Y: 333745, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:20:49.666958,C9,ARM,"X: 67502, Y: 333745, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:20:49.889521,C9,ARM,"X: 67502, Y: 333745, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:20:50.091450,C9,ARM,"X: 67580, Y: 333745, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:20:50.305323,C9,ARM,"X: 67502, Y: 333745, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:20:50.518067,C9,ARM,"X: 67502, Y: 333745, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:20:50.726935,C9,ARM,"X: 67502, Y: 333745, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:20:50.923344,C9,ARM,"X: 67502, Y: 333745, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:20:51.113704,C9,ARM,"X: 67580, Y: 333745, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:20:51.309633,C9,ARM,"X: 67502, Y: 333745, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:20:51.518258,C9,ARM,"X: 67580, Y: 333745, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:20:51.723351,C9,ARM,"X: 67502, Y: 333745, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:20:51.920343,C9,ARM,"X: 67580, Y: 333745, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:20:52.131356,C9,ARM,"X: 67502, Y: 333745, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:20:52.327295,C9,ARM,"X: 67502, Y: 333745, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:20:52.519012,C9,ARM,"X: 67580, Y: 333745, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:20:52.707767,C9,ARM,"X: 67580, Y: 333745, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:20:52.905609,C9,ARM,"X: 67580, Y: 333745, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:20:53.104545,C9,ARM,"X: 67580, Y: 333745, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:20:53.307235,C9,ARM,"X: 67502, Y: 333745, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:20:53.514687,C9,ARM,"X: 67580, Y: 333745, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:20:53.705580,C9,ARM,"X: 67502, Y: 333745, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:20:53.900488,C9,ARM,"X: 67580, Y: 333745, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:20:54.107652,C9,ARM,"X: 67580, Y: 333745, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:20:54.323213,C9,ARM,"X: 67580, Y: 333745, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:20:54.525590,C9,ARM,"X: 67580, Y: 333745, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:20:54.726547,C9,ARM,"X: 67502, Y: 333745, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:20:54.932829,C9,ARM,"X: 67580, Y: 333745, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:20:55.135381,C9,ARM,"X: 67580, Y: 333745, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:20:55.343167,C9,ARM,"X: 67580, Y: 333745, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:20:55.539371,C9,ARM,"X: 67502, Y: 333745, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:20:55.740559,C9,ARM,"X: 67580, Y: 333745, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:20:55.958326,C9,ARM,"X: 67502, Y: 333745, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:20:56.159822,C9,ARM,"X: 67502, Y: 333745, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:20:56.379377,C9,ARM,"X: 67502, Y: 333745, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:20:56.583204,C9,ARM,"X: 67580, Y: 333745, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:20:56.777048,C9,ARM,"X: 67580, Y: 333745, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:20:56.973126,C9,ARM,"X: 67580, Y: 333745, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:20:57.184764,C9,ARM,"X: 67502, Y: 333745, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:20:57.390185,C9,ARM,"X: 67580, Y: 333745, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:20:57.591505,C9,ARM,"X: 67502, Y: 333745, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:20:57.779669,C9,ARM,"X: 67580, Y: 333745, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:20:57.987200,C9,ARM,"X: 67580, Y: 333745, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:20:58.184497,C9,ARM,"X: 67580, Y: 333745, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:20:58.390518,C9,ARM,"X: 67502, Y: 333745, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:20:58.589948,C9,ARM,"X: 67580, Y: 333745, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:20:58.814313,C9,ARM,"X: 67502, Y: 333745, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:20:59.018805,C9,ARM,"X: 67502, Y: 333745, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:20:59.230369,C9,ARM,"X: 67502, Y: 333745, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:20:59.434284,C9,ARM,"X: 67502, Y: 333745, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:20:59.641673,C9,ARM,"X: 67580, Y: 333745, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:20:59.845991,C9,ARM,"X: 67502, Y: 333745, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:21:00.032759,C9,ARM,"X: 67580, Y: 333745, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:21:00.245454,C9,ARM,"X: 67502, Y: 333745, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:21:00.436677,C9,ARM,"X: 67580, Y: 333745, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:21:00.629353,C9,ARM,"X: 67580, Y: 333745, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:21:00.819897,C9,ARM,"X: 67502, Y: 333745, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:21:01.017046,C9,ARM,"X: 67580, Y: 333745, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:21:01.228394,C9,ARM,"X: 67502, Y: 333745, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:21:01.434696,C9,ARM,"X: 67580, Y: 333745, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:21:01.640261,C9,ARM,"X: 67502, Y: 333745, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:21:01.848760,C9,ARM,"X: 67502, Y: 333745, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:21:02.054448,C9,ARM,"X: 67580, Y: 333745, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:21:02.248945,C9,ARM,"X: 67580, Y: 333745, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:21:02.451433,C9,ARM,"X: 67502, Y: 333745, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:21:02.655544,C9,ARM,"X: 67580, Y: 333745, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:21:02.860809,C9,ARM,"X: 67502, Y: 333745, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:21:03.066938,C9,ARM,"X: 67502, Y: 333745, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:21:03.267697,C9,ARM,"X: 67580, Y: 333745, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:21:03.472442,C9,ARM,"X: 67580, Y: 333745, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:21:03.675100,C9,ARM,"X: 67580, Y: 333745, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:21:03.881391,C9,ARM,"X: 67580, Y: 333745, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:21:04.079377,C9,ARM,"X: 67580, Y: 333745, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:21:04.284492,C9,ARM,"X: 67580, Y: 333745, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:21:04.481502,C9,ARM,"X: 67502, Y: 333745, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:21:04.681465,C9,ARM,"X: 67580, Y: 333745, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:21:04.888757,C9,ARM,"X: 67502, Y: 333745, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:21:05.092232,C9,ARM,"X: 67580, Y: 333745, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:21:05.284972,C9,ARM,"X: 67580, Y: 333745, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:21:05.482863,C9,ARM,"X: 67502, Y: 333745, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:21:05.685115,C9,ARM,"X: 67502, Y: 333745, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:21:05.870836,C9,ARM,"X: 67580, Y: 333745, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:21:06.071919,C9,ARM,"X: 67580, Y: 333745, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:21:06.282096,C9,ARM,"X: 67580, Y: 333745, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:21:06.500915,C9,ARM,"X: 67580, Y: 333745, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:21:06.696567,C9,ARM,"X: 67502, Y: 333745, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:21:06.913735,C9,ARM,"X: 67502, Y: 333745, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:21:07.115146,C9,ARM,"X: 67502, Y: 333745, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:21:07.317898,C9,ARM,"X: 67580, Y: 333745, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:21:07.530444,C9,ARM,"X: 67580, Y: 333745, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:21:07.731711,C9,ARM,"X: 67580, Y: 333745, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:21:07.924042,C9,ARM,"X: 67580, Y: 333745, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:21:08.120517,C9,ARM,"X: 67580, Y: 333745, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:21:08.325789,C9,ARM,"X: 67580, Y: 333745, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:21:08.530041,C9,ARM,"X: 67502, Y: 333745, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:21:08.729256,C9,ARM,"X: 67502, Y: 333745, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:21:08.922223,C9,ARM,"X: 67502, Y: 333745, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:21:09.127705,C9,ARM,"X: 67580, Y: 333745, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:21:09.333726,C9,ARM,"X: 67580, Y: 333745, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:21:09.565102,C9,ARM,"X: 67580, Y: 333745, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:21:09.763742,C9,ARM,"X: 67502, Y: 333745, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:21:09.980532,C9,ARM,"X: 67502, Y: 333745, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:21:10.181655,C9,ARM,"X: 67580, Y: 333745, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:21:10.391982,C9,ARM,"X: 67580, Y: 333745, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:21:10.591577,C9,ARM,"X: 67580, Y: 333745, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:21:10.796049,C9,ARM,"X: 67502, Y: 333745, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:21:10.996520,C9,ARM,"X: 67580, Y: 333745, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:21:11.210217,C9,ARM,"X: 67502, Y: 333745, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:21:11.415763,C9,ARM,"X: 67502, Y: 333745, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:21:11.622536,C9,ARM,"X: 67502, Y: 333745, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:21:11.841542,C9,ARM,"X: 67580, Y: 333745, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:21:12.027735,C9,ARM,"X: 67502, Y: 333745, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:21:12.231057,C9,ARM,"X: 67580, Y: 333745, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:21:12.435719,C9,ARM,"X: 67502, Y: 333745, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:21:12.638141,C9,ARM,"X: 67502, Y: 333745, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:21:12.838392,C9,ARM,"X: 67580, Y: 333745, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:21:13.039153,C9,ARM,"X: 67580, Y: 333745, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:21:13.229299,C9,ARM,"X: 67580, Y: 333745, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:21:13.432344,C9,ARM,"X: 67580, Y: 333745, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:21:13.635430,C9,ARM,"X: 67502, Y: 333745, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:21:13.844289,C9,ARM,"X: 67580, Y: 333745, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:21:14.055216,C9,ARM,"X: 67580, Y: 333745, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:21:14.260133,C9,ARM,"X: 67580, Y: 333745, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:21:14.463534,C9,ARM,"X: 67502, Y: 333745, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:21:14.656763,C9,ARM,"X: 67502, Y: 333745, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:21:14.852241,C9,ARM,"X: 67502, Y: 333745, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:21:15.053084,C9,ARM,"X: 67580, Y: 333745, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:21:15.253233,C9,ARM,"X: 67502, Y: 333745, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:21:15.474665,C9,ARM,"X: 67580, Y: 333745, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:21:15.694103,C9,ARM,"X: 67502, Y: 333745, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:21:15.887764,C9,ARM,"X: 67502, Y: 333745, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:21:16.094072,C9,ARM,"X: 67580, Y: 333745, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:21:16.290066,C9,ARM,"X: 67502, Y: 333745, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:21:16.496542,C9,ARM,"X: 67580, Y: 333745, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:21:16.689032,C9,ARM,"X: 67580, Y: 333745, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:21:16.916386,C9,ARM,"X: 67502, Y: 333745, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:21:17.118198,C9,ARM,"X: 67580, Y: 333745, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:21:17.317785,C9,ARM,"X: 67580, Y: 333745, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:21:17.514577,C9,ARM,"X: 67502, Y: 333745, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:21:17.723607,C9,ARM,"X: 67580, Y: 333745, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:21:17.925882,C9,ARM,"X: 67580, Y: 333745, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:21:18.122967,C9,ARM,"X: 67580, Y: 333745, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:21:18.329817,C9,ARM,"X: 67580, Y: 333745, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:21:18.539659,C9,ARM,"X: 67580, Y: 333745, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:21:18.742394,C9,ARM,"X: 67502, Y: 333745, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:21:18.955807,C9,ARM,"X: 67580, Y: 333745, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:21:19.159565,C9,ARM,"X: 67580, Y: 333745, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:21:19.363757,C9,ARM,"X: 67502, Y: 333745, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:21:19.582976,C9,ARM,"X: 67502, Y: 333745, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:21:19.775423,C9,ARM,"X: 67502, Y: 333745, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:21:19.967658,C9,ARM,"X: 67580, Y: 333745, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:21:20.158937,C9,ARM,"X: 67502, Y: 333745, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:21:20.372776,C9,ARM,"X: 67580, Y: 333745, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:21:20.580523,C9,ARM,"X: 67580, Y: 333745, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:21:20.783493,C9,ARM,"X: 67502, Y: 333745, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:21:20.993687,C9,ARM,"X: 67580, Y: 333745, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:21:21.197256,C9,ARM,"X: 67580, Y: 333745, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:21:21.399251,C9,ARM,"X: 67502, Y: 333745, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:21:21.599737,C9,ARM,"X: 67580, Y: 333745, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:21:21.804270,C9,ARM,"X: 67580, Y: 333745, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:21:22.006124,C9,ARM,"X: 67502, Y: 333745, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:21:22.210128,C9,ARM,"X: 67580, Y: 333745, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:21:22.416303,C9,ARM,"X: 67502, Y: 333745, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:21:22.626538,C9,ARM,"X: 67580, Y: 333745, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:21:22.827518,C9,ARM,"X: 67502, Y: 333745, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:21:23.030464,C9,ARM,"X: 67502, Y: 333745, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:21:23.236292,C9,ARM,"X: 67580, Y: 333745, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:21:23.439651,C9,ARM,"X: 67502, Y: 333745, Z: 309031, gripper: 102760, elbow_bias: 2",None,None
+2021:10:18:13:21:23.639147,C9,ARM,"X: 67580, Y: 333745, Z: 309031, gripper: 102760, elbow_bias: 2",None,None

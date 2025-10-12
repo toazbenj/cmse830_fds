@@ -1,0 +1,109 @@
+Timestamp,Module,Method_Name,Arguments,Responses,Exceptions
+2021:10:07:14:48:12.995502,C9,_init_,ftdi: None,,None
+2021:10:07:14:48:14.402944,C9,PING,,None,None
+2021:10:07:14:48:15.394881,C9,BIAS,,None,None
+2021:10:07:14:48:16.338400,C9,SPED,"velocity: 20000, acceleration: 20000",None,None
+2021:10:07:14:48:17.267116,C9,BIAS,bias: 0,None,None
+2021:10:07:14:48:18.207189,C9,HOME,if_needed: 1,None,None
+2021:10:07:14:48:19.181830,C9,CURR,axis: 0,None,None
+2021:10:07:14:48:20.109356,C9,CURR,axis: 0,None,None
+2021:10:07:14:48:21.026848,C9,CURR,axis: 0,None,None
+2021:10:07:14:48:21.942832,C9,CURR,axis: 0,None,None
+2021:10:07:14:48:22.857077,C9,CURR,axis: 0,None,None
+2021:10:07:14:48:23.793743,C9,CURR,axis: 0,None,None
+2021:10:07:14:48:24.701558,C9,CURR,axis: 0,None,None
+2021:10:07:14:48:25.592306,C9,CURR,axis: 0,None,None
+2021:10:07:14:48:26.493463,C9,CURR,axis: 0,None,None
+2021:10:07:14:48:27.410037,C9,CURR,axis: 0,None,None
+2021:10:07:14:48:28.098427,Tecan Cavro,_init_,ftdi: None,,None
+2021:10:07:14:48:28.912247,Magnetic Stirrer,_init_,serial: COM9,,None
+2021:10:07:14:48:29.586795,Magnetic Stirrer,IN_NAME,,None,None
+2021:10:07:14:48:30.020661,Magnetic Stirrer,IN_PV_1,,None,None
+2021:10:07:14:48:30.421595,Magnetic Stirrer,IN_PV_2,,None,None
+2021:10:07:14:48:30.821111,Magnetic Stirrer,IN_SP_1,,None,None
+2021:10:07:14:48:31.218299,Magnetic Stirrer,IN_PV_4,,None,None
+2021:10:07:14:48:31.639257,Magnetic Stirrer,IN_SP_4,,None,None
+2021:10:07:14:48:32.080497,Magnetic Stirrer,STOP_4,,None,None
+2021:10:07:14:48:32.257019,Magnetic Stirrer,STOP_1,,None,None
+2021:10:07:14:48:47.407682,UR3Arm,_init_,"host: 192.168.254.88, default_velocity: 250, max_velocity: 500, position_units: Units.MILLIMETERS, default_joint_velocity: 20.0, max_joint_velocity: 180.0, gripper_default_velocity: 0.5, gripper_default_force: 0.5, gripper_id: 1, gripper_base_port: 63352, gripper_connect: True, connect: True",,None
+2021:10:07:14:56:36.133093,C9,_init_,ftdi: None,,None
+2021:10:07:14:56:37.488466,C9,PING,,None,None
+2021:10:07:14:56:38.492983,C9,BIAS,,None,None
+2021:10:07:14:56:39.461244,C9,SPED,"velocity: 20000, acceleration: 20000",None,None
+2021:10:07:14:56:40.399732,C9,BIAS,bias: 0,None,None
+2021:10:07:14:56:41.345415,C9,HOME,if_needed: 1,None,None
+2021:10:07:14:56:42.273677,C9,CURR,axis: 0,None,None
+2021:10:07:14:56:43.214524,C9,CURR,axis: 0,None,None
+2021:10:07:14:56:44.139405,C9,CURR,axis: 0,None,None
+2021:10:07:14:56:45.102996,C9,CURR,axis: 0,None,None
+2021:10:07:14:56:46.004365,C9,CURR,axis: 0,None,None
+2021:10:07:14:56:46.932346,C9,CURR,axis: 0,None,None
+2021:10:07:14:56:47.881009,C9,CURR,axis: 0,None,None
+2021:10:07:14:56:48.808676,C9,CURR,axis: 0,None,None
+2021:10:07:14:56:49.747839,C9,CURR,axis: 0,None,None
+2021:10:07:14:56:50.682550,C9,CURR,axis: 0,None,None
+2021:10:07:14:56:51.374198,Tecan Cavro,_init_,ftdi: None,,None
+2021:10:07:14:56:52.212396,Magnetic Stirrer,_init_,serial: COM9,,None
+2021:10:07:14:56:52.918576,Magnetic Stirrer,IN_NAME,,None,None
+2021:10:07:14:56:53.433702,Magnetic Stirrer,IN_PV_1,,None,None
+2021:10:07:14:56:53.885379,Magnetic Stirrer,IN_PV_2,,None,None
+2021:10:07:14:56:54.296277,Magnetic Stirrer,IN_SP_1,,None,None
+2021:10:07:14:56:54.769485,Magnetic Stirrer,IN_PV_4,,None,None
+2021:10:07:14:56:55.188733,Magnetic Stirrer,IN_SP_4,,None,None
+2021:10:07:14:56:55.686091,Magnetic Stirrer,STOP_4,,None,None
+2021:10:07:14:56:55.852702,Magnetic Stirrer,STOP_1,,None,None
+2021:10:07:14:57:11.179664,UR3Arm,_init_,"host: 192.168.254.88, default_velocity: 250, max_velocity: 500, position_units: Units.MILLIMETERS, default_joint_velocity: 20.0, max_joint_velocity: 180.0, gripper_default_velocity: 0.5, gripper_default_force: 0.5, gripper_id: 1, gripper_base_port: 63352, gripper_connect: True, connect: True",,None
+2021:10:07:15:01:58.425230,C9,_init_,ftdi: None,,None
+2021:10:07:15:01:59.791027,C9,PING,,None,None
+2021:10:07:15:02:00.827129,C9,BIAS,,None,None
+2021:10:07:15:02:01.775678,C9,SPED,"velocity: 20000, acceleration: 20000",None,None
+2021:10:07:15:02:02.718428,C9,BIAS,bias: 0,None,None
+2021:10:07:15:02:03.672097,C9,HOME,if_needed: 1,None,None
+2021:10:07:15:02:04.614239,C9,CURR,axis: 0,None,None
+2021:10:07:15:02:05.531328,C9,CURR,axis: 0,None,None
+2021:10:07:15:02:06.440573,C9,CURR,axis: 0,None,None
+2021:10:07:15:02:07.360554,C9,CURR,axis: 0,None,None
+2021:10:07:15:02:08.271889,C9,CURR,axis: 0,None,None
+2021:10:07:15:02:09.202679,C9,CURR,axis: 0,None,None
+2021:10:07:15:02:10.134956,C9,CURR,axis: 0,None,None
+2021:10:07:15:02:11.062509,C9,CURR,axis: 0,None,None
+2021:10:07:15:02:11.983801,C9,CURR,axis: 0,None,None
+2021:10:07:15:02:12.892065,C9,CURR,axis: 0,None,None
+2021:10:07:15:02:13.574238,Tecan Cavro,_init_,ftdi: None,,None
+2021:10:07:15:02:14.381624,Magnetic Stirrer,_init_,serial: COM9,,None
+2021:10:07:15:02:15.080125,Magnetic Stirrer,IN_NAME,,None,None
+2021:10:07:15:02:15.502217,Magnetic Stirrer,IN_PV_1,,None,None
+2021:10:07:15:02:15.905581,Magnetic Stirrer,IN_PV_2,,None,None
+2021:10:07:15:02:16.303057,Magnetic Stirrer,IN_SP_1,,None,None
+2021:10:07:15:02:16.704011,Magnetic Stirrer,IN_PV_4,,None,None
+2021:10:07:15:02:17.108449,Magnetic Stirrer,IN_SP_4,,None,None
+2021:10:07:15:02:17.548624,Magnetic Stirrer,STOP_4,,None,None
+2021:10:07:15:02:17.724442,Magnetic Stirrer,STOP_1,,None,None
+2021:10:07:15:02:32.725849,UR3Arm,_init_,"host: 192.168.254.88, default_velocity: 250, max_velocity: 500, position_units: Units.MILLIMETERS, default_joint_velocity: 20.0, max_joint_velocity: 180.0, gripper_default_velocity: 0.5, gripper_default_force: 0.5, gripper_id: 1, gripper_base_port: 63352, gripper_connect: True, connect: True",,None
+2021:10:07:15:08:34.344360,C9,_init_,ftdi: None,,None
+2021:10:07:15:08:35.675621,C9,PING,,None,None
+2021:10:07:15:08:36.665078,C9,BIAS,,None,None
+2021:10:07:15:08:37.565644,C9,SPED,"velocity: 20000, acceleration: 20000",None,None
+2021:10:07:15:08:38.455387,C9,BIAS,bias: 0,None,None
+2021:10:07:15:08:39.341433,C9,HOME,if_needed: 1,None,None
+2021:10:07:15:08:40.225779,C9,CURR,axis: 0,None,None
+2021:10:07:15:08:41.128349,C9,CURR,axis: 0,None,None
+2021:10:07:15:08:42.036995,C9,CURR,axis: 0,None,None
+2021:10:07:15:08:42.914424,C9,CURR,axis: 0,None,None
+2021:10:07:15:08:43.816485,C9,CURR,axis: 0,None,None
+2021:10:07:15:08:44.707761,C9,CURR,axis: 0,None,None
+2021:10:07:15:08:45.569145,C9,CURR,axis: 0,None,None
+2021:10:07:15:08:46.447500,C9,CURR,axis: 0,None,None
+2021:10:07:15:08:47.334481,C9,CURR,axis: 0,None,None
+2021:10:07:15:08:48.234069,C9,CURR,axis: 0,None,None
+2021:10:07:15:08:48.872587,Tecan Cavro,_init_,ftdi: None,,None
+2021:10:07:15:08:49.672995,Magnetic Stirrer,_init_,serial: COM9,,None
+2021:10:07:15:08:50.326568,Magnetic Stirrer,IN_NAME,,None,None
+2021:10:07:15:08:50.738790,Magnetic Stirrer,IN_PV_1,,None,None
+2021:10:07:15:08:51.129747,Magnetic Stirrer,IN_PV_2,,None,None
+2021:10:07:15:08:51.515255,Magnetic Stirrer,IN_SP_1,,None,None
+2021:10:07:15:08:51.903284,Magnetic Stirrer,IN_PV_4,,None,None
+2021:10:07:15:08:52.296865,Magnetic Stirrer,IN_SP_4,,None,None
+2021:10:07:15:08:52.724717,Magnetic Stirrer,STOP_4,,None,None
+2021:10:07:15:08:52.898256,Magnetic Stirrer,STOP_1,,None,None
+2021:10:07:15:09:07.800108,UR3Arm,_init_,"host: 192.168.254.88, default_velocity: 250, max_velocity: 500, position_units: Units.MILLIMETERS, default_joint_velocity: 20.0, max_joint_velocity: 180.0, gripper_default_velocity: 0.5, gripper_default_force: 0.5, gripper_id: 1, gripper_base_port: 63352, gripper_connect: True, connect: True",,None
