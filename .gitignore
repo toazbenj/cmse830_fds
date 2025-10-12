@@ -2,3 +2,5 @@ project\data\AURSAD.pkl
 project\data\aursad.feather
 hw
 ICA
+project\data\aursad.feather
+*.feather
