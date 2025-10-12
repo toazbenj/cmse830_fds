@@ -4,3 +4,4 @@ hw
 ICA
 project\data\aursad.feather
 *.feather
+.git ignore
