@@ -50,6 +50,8 @@ df_cobots.fillna({'Robot_ProtectiveStop': 0}, inplace=True)
 
 
 st.title("Robot Performance Analysis and Failure Prediction")
+st.title("By Ben Toaz")
+
 st.set_page_config(page_title="Robot Joint Monitoring", layout="wide")
 
 # https://plotly.com/python/time-series/
