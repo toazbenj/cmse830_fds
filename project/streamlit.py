@@ -9,7 +9,7 @@ import plotly.graph_objects as go
 
 # Data Cleaning Steps
 
-df_cobots = pd.read_excel("data/cobot_dataset.xlsx")
+df_cobots = pd.read_excel("project/data/cobot_dataset.xlsx")
 
 # redundant
 df_cobots.drop(columns=['Num'], inplace=True)
