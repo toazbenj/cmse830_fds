@@ -44,6 +44,8 @@ cols_interpolate = [col for col in df_cobots.columns if col != 'Robot_Protective
 df_cobots[cols_interpolate] = df_cobots[cols_interpolate].interpolate(method='linear')
 df_cobots.fillna({'Robot_ProtectiveStop': 0}, inplace=True)
 
+# Make it match Protective Stop type
+df_cobots['grip_lost'] = df_cobots['grip_lost'].astype(int)
 # ====================================================================================================================
 
 # Visuals
@@ -53,6 +55,68 @@ st.title("Robot Performance Analysis and Failure Prediction")
 st.title("By Ben Toaz")
 
 st.set_page_config(page_title="Robot Joint Monitoring", layout="wide")
+
+# Histograms of Joint Features
+
+from plotly.subplots import make_subplots
+import plotly.graph_objects as go
+import plotly.express as px
+
+st.header("Joint Feature Distributions")
+
+feature_type_lst = ["Current", "Speed", "Temperature"]
+unit = ["A", "m/s", "Degrees C"]
+colors = px.colors.qualitative.Dark24
+
+fig = make_subplots(
+    rows=3, cols=1,
+    subplot_titles=[f'{feature} Distribution' for feature in feature_type_lst],
+    horizontal_spacing=0.1
+)
+
+# Loop through each feature type
+for feat_idx, (feature_type, unit_label) in enumerate(zip(feature_type_lst, unit)):
+    row = feat_idx + 1  
+    
+    # Add histogram for each joint (J0-J5)
+    for joint_idx in range(6):
+        col_name = f"{feature_type}_J{joint_idx}"
+        
+        fig.add_trace(
+            go.Histogram(
+                x=df_cobots[col_name],
+                name=f'Joint {joint_idx}',
+                marker=dict(color=colors[joint_idx]),
+                opacity=0.7,
+                legendgroup=f'joint{joint_idx}',  # Group by joint for legend
+                showlegend=(feat_idx == 0)  # Only show legend once (on first subplot)
+            ),
+            row=row, col=1
+        )
+    
+    fig.update_xaxes(title_text=f"{feature_type} ({unit_label})", row=row, col=1)
+
+fig.update_yaxes(title_text="Count", row=1, col=1)
+
+# Update layout
+fig.update_layout(
+    height=1000,
+   #  title_text="Joint Feature Distributions",
+    barmode='overlay',  
+    showlegend=True,
+    legend=dict(
+        title="Joints",
+        orientation="v",
+        yanchor="top",
+        y=1,
+        xanchor="left",
+        x=1.02
+    )
+)
+
+# fig.show()
+
+st.plotly_chart(fig, use_container_width=True)
 
 # https://plotly.com/python/time-series/
 #  Claude Sonnet 4.5, 10-11-25
@@ -96,6 +160,29 @@ for feature_type, unit in zip(feature_type_lst, unit):
 
    # Display in Streamlit
    st.plotly_chart(fig, use_container_width=True)
+
+# Failure Events Heatmap
+
+import seaborn as sns
+import matplotlib.pyplot as plt
+
+st.header("Failure Events")
+# Transpose so time is on y-axis and features on x-axis
+df_failures = df_cobots[['Robot_ProtectiveStop', 'grip_lost']].T
+
+# for black background
+plt.style.use('dark_background')
+fig, ax = plt.subplots(figsize=(18, 4))
+fig.patch.set_facecolor('#0E1117')
+ax.set_facecolor('#0E1117')
+
+sns.heatmap(df_failures, cmap='magma', cbar_kws={"label": "Failure Events"})
+plt.xlabel('Time Index')
+plt.title('Failures Over Time Heatmap')
+plt.tight_layout()
+# plt.show()
+
+st.pyplot(plt)
 
 
 # Correlation Heatmap
@@ -163,3 +250,69 @@ fig.update_layout(
 )
 
 st.plotly_chart(fig, use_container_width=True)
+
+# Correlations by feature type
+
+st.header("Cross-Feature Correlation Analysis")
+
+from plotly.subplots import make_subplots
+import plotly.graph_objects as go
+import numpy as np
+from itertools import combinations
+
+feature_pairs = list(combinations(feature_type_lst, 2))
+
+fig = make_subplots(
+    rows=1, cols=3,
+    subplot_titles=[f'{pair[0]} vs {pair[1]}' for pair in feature_pairs],
+    horizontal_spacing=0.125
+)
+
+for pair_idx, (feat1, feat2) in enumerate(feature_pairs):
+    cols = []
+    for joint_idx in range(6):
+        cols.append(f"{feat1}_J{joint_idx}")
+    for joint_idx in range(6):
+        cols.append(f"{feat2}_J{joint_idx}")
+    
+    df_corr = df_cobots[cols].corr().round(2)
+    
+    # Mask upper triangle
+    mask = np.zeros_like(df_corr, dtype=bool)
+    mask[np.triu_indices_from(mask)] = True
+    
+    # Apply mask and drop empty rows/cols
+    df_corr_viz = df_corr.mask(mask).dropna(how='all').dropna(axis='columns', how='all')
+
+    # Create text array with blanks instead of nan
+    text_values = df_corr_viz.values.astype(str)
+    text_values[text_values == 'nan'] = ''
+    
+    col = pair_idx + 1  # 1, 2, or 3
+    
+    fig.add_trace(
+        go.Heatmap(
+            z=df_corr_viz.values,
+            x=df_corr_viz.columns,
+            y=df_corr_viz.index,
+            colorscale='Viridis',
+            zmid=0,
+            text=text_values,
+            texttemplate='%{text}',
+            textfont={"size": 8},
+            showscale=(pair_idx == 2)
+        ),
+        row=1, col=col
+    )
+    
+    fig.update_xaxes(tickangle=-45, row=1, col=col)
+
+fig.update_layout(
+    height=450,
+   #  title_text="Cross-Feature Correlation Analysis",
+    showlegend=False
+)
+
+# fig.show()
+st.plotly_chart(fig, use_container_width=True)
+
