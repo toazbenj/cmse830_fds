@@ -5,3 +5,4 @@ ICA
 project\data\aursad.feather
 *.feather
 .git ignore
+project/__pycache__
