@@ -59,8 +59,6 @@ def data_cleaning():
 
 
 def missingness_heatmap(df_cobots):
-    # plt.style.use('dark_background')
-
     fig, ax = plt.subplots(figsize=(16, 8))
     fig.patch.set_facecolor('#0E1117')
     ax.set_facecolor('#0E1117')
