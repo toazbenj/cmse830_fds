@@ -13,6 +13,7 @@ warnings.filterwarnings("ignore", category=UserWarning, module='matplotlib')
 # Data Cleaning Steps
 def data_cleaning():
     df_cobots = pd.read_excel("project/data/cobot_dataset.xlsx")
+    df_cobots_original = df_cobots.copy()
 
     # redundant
     df_cobots.drop(columns=['Num'], inplace=True)
@@ -41,6 +42,7 @@ def data_cleaning():
         df_cobots['hour'] * 3600 + df_cobots['minute'] * 60 + df_cobots['second']
     )
     df_cobots = df_cobots.sort_values('time')
+    df_cobots['time'] =  df_cobots['time'] - df_cobots['time'].iloc[0]
 
     # Imputation
     cols_interpolate = [col for col in df_cobots.columns if col != 'Robot_ProtectiveStop']
@@ -50,11 +52,170 @@ def data_cleaning():
     # Make it match Protective Stop type
     df_cobots['grip_lost'] = df_cobots['grip_lost'].astype(int)
 
-    return df_cobots
+    return df_cobots, df_cobots_original
 
 # ====================================================================================================================
+# Processing Steps
+# def missingness_heatmap(df_cobots):
+#     # plt.style.use('dark_background')
+#     fig, ax = plt.subplots(figsize=(16, 8))
+#     # fig.patch.set_facecolor('#0E1117')
+#     # ax.set_facecolor('#0E1117')
 
-# Visuals
+#     cols = []
+#     feature_type_lst = ["Current", "Speed", "Temperature"]
+#     for feature_type in feature_type_lst:
+#         cols += [f"{feature_type}_J{i}" for i in range(1, 6)]
+
+#     df_subset = df_cobots[cols]
+
+
+#     sns.heatmap(df_subset.isna(), cbar=False, cmap='viridis', yticklabels=False)
+#     plt.xlabel('Features')
+#     # plt.title('Missing Values Heatmap')
+#     plt.tight_layout()
+
+#     return fig
+
+
+def missingness_heatmap(df_cobots):
+    # plt.style.use('dark_background')
+
+    fig, ax = plt.subplots(figsize=(16, 8))
+    fig.patch.set_facecolor('#0E1117')
+    ax.set_facecolor('#0E1117')
+
+    feature_type_lst = ["Current", "Speed", "Temperature"]
+    cols = [f"{ft}_J{i}" for ft in feature_type_lst for i in range(1, 6)]
+    df_subset = df_cobots[cols]
+
+    sns.heatmap(
+        df_subset.isna(),
+        cbar=True,
+        cmap='viridis',
+        yticklabels=False, 
+        ax=ax
+    )
+
+    # Rotate and fit labels nicely
+    ax.set_xlabel('Features', fontsize=12)
+    ax.set_ylabel('Row Index', fontsize=12)
+    # ax.set_title('Missing Values Heatmap', fontsize=14, pad=12)
+
+    # Improve label rotation for readability
+    plt.xticks(rotation=45, ha='right')
+    plt.yticks(rotation=0)
+
+    plt.tight_layout()
+
+    return fig
+
+def interpolation_example(df_cobots, df_cobots_original, feature_type='Current'):
+    colors = px.colors.qualitative.Dark24
+    feature = f"{feature_type}_J2"
+
+    fig = make_subplots(
+        rows=2, cols=1, shared_xaxes=True,
+        subplot_titles=(f'Original {feature}', f'Interpolated {feature}'),
+        vertical_spacing=0.1
+    )
+
+    # Plot original and interpolated data
+    fig.add_trace(
+        go.Scatter(
+            x=df_cobots['time'],
+            y=df_cobots_original[feature],
+            name=f"Original {feature}",
+            mode='lines',
+            line=dict(color=colors[1])
+        ),
+        row=1, col=1
+    )
+
+    fig.add_trace(
+        go.Scatter(
+            x=df_cobots['time'],
+            y=df_cobots[feature],
+            name=f"Interpolated {feature}",
+            mode='lines',
+            line=dict(color=colors[0])
+        ),
+        row=2, col=1
+    )
+
+    # Detect missing segments
+    mask = df_cobots_original[feature].isna()
+    time_col = df_cobots['time']
+
+    if mask.any():
+        missing_groups = np.split(np.where(mask)[0], np.where(np.diff(np.where(mask)[0]) > 1)[0] + 1)
+        for group in missing_groups:
+            if len(group) == 0:
+                continue
+
+            # Identify preceding and following indices (if valid)
+            prev_idx = group[0] - 1 if group[0] > 0 else None
+            next_idx = group[-1] + 1 if group[-1] < len(df_cobots) - 1 else None
+
+            highlight_points = []
+            if prev_idx is not None:
+                highlight_points.append(prev_idx)
+            if next_idx is not None:
+                highlight_points.append(next_idx)
+
+            # Add large dots at edge points
+            for idx in highlight_points:
+                # Original plot
+                fig.add_trace(
+                    go.Scatter(
+                        x=[time_col.iloc[idx]],
+                        y=[df_cobots_original[feature].iloc[idx]],
+                        mode='markers',
+                        marker=dict(color='yellow', size=6, symbol='circle'),
+                        name='Gap Edge',
+                        showlegend=False
+                    ),
+                    row=1, col=1
+                )
+                # Interpolated plot
+                fig.add_trace(
+                    go.Scatter(
+                        x=[time_col.iloc[idx]],
+                        y=[df_cobots[feature].iloc[idx]],
+                        mode='markers',
+                        marker=dict(color='yellow', size=6, symbol='circle'),
+                        name='Gap Edge',
+                        showlegend=False
+                    ),
+                    row=2, col=1
+                )
+
+    # Zoom range
+    zoom_range = [25800, 26100]
+    fig.update_xaxes(range=zoom_range, row=1, col=1)
+    fig.update_xaxes(range=zoom_range, row=2, col=1)
+
+    # Range slider
+    fig.update_xaxes(rangeslider_visible=True, row=2, col=1)
+
+    # Labels and layout
+    fig.update_xaxes(title_text="Time (s)", row=2, col=1)
+    fig.update_yaxes(title_text=f'Original {feature}', row=1, col=1)
+    fig.update_yaxes(title_text=f'Interpolated {feature}', row=2, col=1)
+    fig.update_layout(
+        height=800,
+        showlegend=True,
+        title_text=f"",
+        title_x=0.5
+    )
+
+    return fig
+
+
+
+# ====================================================================================================================
+# EDA Plots
+
 def histogram_plots(df_cobots):
     feature_type_lst = ["Current", "Speed", "Temperature"]
     unit = ["A", "m/s", "Degrees C"]
@@ -156,12 +317,12 @@ def failure_events_heatmap(df_cobots):
     df_failures = df_cobots[['Robot_ProtectiveStop', 'grip_lost']].T
 
     # for black background
-    plt.style.use('dark_background')
+    # plt.style.use('dark_background')
     fig, ax = plt.subplots(figsize=(18, 4))
     fig.patch.set_facecolor('#0E1117')
     ax.set_facecolor('#0E1117')
 
-    sns.heatmap(df_failures, cmap='magma', cbar_kws={"label": "Failure Events"})
+    sns.heatmap(df_failures, cmap='viridis', cbar_kws={"label": "Failure Events"})
     plt.xlabel('Time Index')
     plt.title('Failures Over Time Heatmap')
     plt.tight_layout()
