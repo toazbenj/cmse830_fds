@@ -56,26 +56,6 @@ def data_cleaning():
 
 # ====================================================================================================================
 # Processing Steps
-# def missingness_heatmap(df_cobots):
-#     # plt.style.use('dark_background')
-#     fig, ax = plt.subplots(figsize=(16, 8))
-#     # fig.patch.set_facecolor('#0E1117')
-#     # ax.set_facecolor('#0E1117')
-
-#     cols = []
-#     feature_type_lst = ["Current", "Speed", "Temperature"]
-#     for feature_type in feature_type_lst:
-#         cols += [f"{feature_type}_J{i}" for i in range(1, 6)]
-
-#     df_subset = df_cobots[cols]
-
-
-#     sns.heatmap(df_subset.isna(), cbar=False, cmap='viridis', yticklabels=False)
-#     plt.xlabel('Features')
-#     # plt.title('Missing Values Heatmap')
-#     plt.tight_layout()
-
-#     return fig
 
 
 def missingness_heatmap(df_cobots):
@@ -110,6 +90,7 @@ def missingness_heatmap(df_cobots):
 
     return fig
 
+# Made with ChatGPT-5 Code GPT, 10-15-25
 def interpolation_example(df_cobots, df_cobots_original, feature_type='Current'):
     colors = px.colors.qualitative.Dark24
     feature = f"{feature_type}_J2"
