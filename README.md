@@ -31,4 +31,31 @@ The AURSAD dataset is 6 GB in its original form, so I had to do some compression
 
 ### Streamlit
 
-My app contains visualizations of the time series data and corrlation matrices for the robot joint features. You can view it here: [Robostats](https://robotstats.streamlit.app/).
+My app contains visualizations of the time series data and corrlation matrices for the robot joint features. You can view it here: [Robostats](https://robotstats.streamlit.app/). 
+
+## Installation
+
+1. **Clone the Repository**:
+
+   ```bash
+   git clone https://github.com/toazbenj/cmse830_fds.git
+   ```
+
+2. **Navigate to the Project Directory**:
+
+   ```bash
+   cd ~/cmse_fds
+   ```
+
+3. **Install Required Dependencies**:
+
+   ```bash
+   pip install -r requirements.txt
+   ```
+   
+4. **Run the app locally**:
+
+   ```bash
+   cd ~/cmse_fds
+   streamlit run project/streamlit.py
+   ```
