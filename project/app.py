@@ -18,7 +18,17 @@ def intro_text():
    In this project, I chose three major datasets who use the UR3 in their experiments but gather different types of data about the robot.
    Since all of the data was gathered using the same hardware, I plan to use each dataset to fill in the missing features of the other 
    datasets in order to gather a more complete picture of how well the robot performed and what caused it to fail 
-   (both because of hardware faults and at the given research task). </p>
+   (both because of hardware faults and at the given research task).
+
+   See the datasets here:
+
+   [CobotOps](https://archive.ics.uci.edu/dataset/963/ur3+cobotops)
+
+   [AURSAD](https://zenodo.org/records/4559556)
+
+   [RAD](https://github.com/ubc-systopia/dsn-2022-rad-artifact/tree/main)
+   
+   Note for the midterrm project I will only be working with the first two.</p>
    """
 
 def data_collection_text():
