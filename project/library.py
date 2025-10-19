@@ -379,15 +379,15 @@ def failure_events_heatmap(df_cobots):
 # Correlation Heatmap
 # Scaled using Cloud Sonnet 4.5, 10-11-25
 
-def joint_correlation_heatmaps(df_cobots):
+def joint_correlation_heatmaps(df, is_cobotops=True):
     feature_type_lst = ["Current", "Speed", "Temperature"]
 
     # Create 2x3 subplots
     fig = make_subplots(
-        rows=2, cols=3,
+        rows=3, cols=2,
         subplot_titles=[f'Joint {i}' for i in range(6)],
-        vertical_spacing=0.225,
-        horizontal_spacing=0.125
+        vertical_spacing=0.125,
+        horizontal_spacing=0.3
     )
 
     # Loop through joints 0-5
@@ -396,11 +396,14 @@ def joint_correlation_heatmaps(df_cobots):
         cols = []
         for feature_type in feature_type_lst:
             cols.append(f"{feature_type}_J{joint_idx}")
-        
-        cols += ['Robot_ProtectiveStop', 'grip_lost', 'cycle', 'Tool_current']
+
+        if is_cobotops:
+            cols += ['Robot_ProtectiveStop', 'grip_lost', 'cycle', 'Tool_current']
+        else:
+            cols +=  ["Normal operation", "Damaged screw", "Extra assembly component", "Missing screw", "Damaged thread samples", "Screw Loosening"]
         
         # Calculate correlation
-        df_corr = df_cobots[cols].corr().round(2)
+        df_corr = df[cols].corr().round(2)
         
         # Mask upper triangle
         mask = np.zeros_like(df_corr, dtype=bool)
@@ -414,8 +417,8 @@ def joint_correlation_heatmaps(df_cobots):
         text_values[text_values == 'nan'] = ''
         
         # Calculate position in grid
-        row = (joint_idx // 3) + 1  # 1 or 2
-        col = (joint_idx % 3) + 1   # 1, 2, or 3
+        col = (joint_idx // 3) + 1  # 1 or 2
+        row = (joint_idx % 3) + 1   # 1, 2, or 3
         
         # Add heatmap to subplot
         fig.add_trace(
@@ -428,7 +431,7 @@ def joint_correlation_heatmaps(df_cobots):
                 text=text_values,
                 texttemplate='%{text}',
                 textfont={"size": 8},
-                showscale=(joint_idx == 5)  # Only show colorbar on last plot
+                showscale=False  # Only show colorbar on last plot
             ),
             row=row, col=col
         )
@@ -437,8 +440,10 @@ def joint_correlation_heatmaps(df_cobots):
         fig.update_xaxes(tickangle=-45, row=row, col=col)
 
     fig.update_layout(
-        height=800,
-        showlegend=False
+        height=1800,
+        width=1400,
+        showlegend=False,
+        margin=dict(l=175, b=150) 
     )
     return fig
 
@@ -496,6 +501,7 @@ def feature_correlation_heatmaps(df_cobots):
     fig.update_layout(
         height=450,
     #  title_text="Cross-Feature Correlation Analysis",
+        margin=dict(b=100),
         showlegend=False
     )
 
@@ -503,65 +509,38 @@ def feature_correlation_heatmaps(df_cobots):
 
 
 # Adapted from example Penguins app with ChatGPT-5 Code GPT, 10-19-25
-def stolen_plots(df):
-    st.header("Scatter Plots")
 
-    # ---- Preprocessing: combine Temperature, Speed, Current across all joints ----
-    def melt_features(df, base_features=["Temperature", "Speed", "Current"]):
-        """
-        Combine all joint-specific columns for the given features into a single long-format DataFrame.
-        Example: Temperature_J1, Temperature_J2 -> 'Temperature' + 'Joint' columns.
-        """
-        melted = []
-        for feat in base_features:
-            cols = [c for c in df.columns if feat.lower() in c.lower()]
-            if not cols:
-                continue
+# ---- Preprocessing: combine Temperature, Speed, Current across all joints ----
+def melt_features(df, base_features=["Temperature", "Speed", "Current"]):
+    """
+    Combine all joint-specific columns for the given features into a single long-format DataFrame.
+    Example: Temperature_J1, Temperature_J2 -> 'Temperature' + 'Joint' columns.
+    """
+    melted = []
+    for feat in base_features:
+        cols = [c for c in df.columns if feat.lower() in c.lower()]
+        if not cols:
+            continue
 
-            temp = df[cols + [col for col in df.columns if col not in cols]].copy()
-            temp_melt = temp.melt(
-                id_vars=[col for col in df.columns if col not in cols],
-                value_vars=cols,
-                var_name="Joint",
-                value_name=feat
-            )
-            temp_melt["Joint"] = temp_melt["Joint"].str.extract(r'(\d+)').fillna("Global")
-            melted.append(temp_melt)
+        temp = df[cols + [col for col in df.columns if col not in cols]].copy()
+        temp_melt = temp.melt(
+            id_vars=[col for col in df.columns if col not in cols],
+            value_vars=cols,
+            var_name="Joint",
+            value_name=feat
+        )
+        temp_melt["Joint"] = temp_melt["Joint"].str.extract(r'(\d+)').fillna("Global")
+        melted.append(temp_melt)
 
-        # merge all melted frames on common identifiers
-        if not melted:
-            return df
+    # merge all melted frames on common identifiers
+    if not melted:
+        return df
 
-        # Reduce with successive merges on id_vars + Joint
-        df_long = melted[0]
-        for m in melted[1:]:
-            merge_cols = [c for c in df_long.columns if c in m.columns and c not in base_features]
-            df_long = pd.merge(df_long, m, on=merge_cols, how="outer")
+    # Reduce with successive merges on id_vars + Joint
+    df_long = melted[0]
+    for m in melted[1:]:
+        merge_cols = [c for c in df_long.columns if c in m.columns and c not in base_features]
+        df_long = pd.merge(df_long, m, on=merge_cols, how="outer")
 
-        return df_long
+    return df_long
 
-    df = melt_features(df)
-
-    df
-
-    numeric_cols = df.select_dtypes(include=[np.number]).columns.tolist()
-
-    # ---- 3D Scatter ----
-    st.subheader("3D Scatter Plot")
-    col1, col2, col3 = st.columns(3)
-    with col1:
-        x_3d = st.selectbox("Select X-axis (3D):", numeric_cols, index=0, key='x3d')
-    with col2:
-        y_3d = st.selectbox("Select Y-axis (3D):", numeric_cols, index=1, key='y3d')
-    with col3:
-        z_3d = st.selectbox("Select Z-axis (3D):", numeric_cols, index=2, key='z3d')
-
-    small_lst = ['grip_lost','Robot_ProtectiveStop', 'Temperature', 'Speed', 'Current']
-    color_3d = st.selectbox("Color by (3D):", small_lst, key='color3d')
-
-    fig = px.scatter_3d(df, x=x_3d, y=y_3d, z=z_3d, color=color_3d,
-                        title=f'3D Scatter Plot: {x_3d} vs {y_3d} vs {z_3d}',
-                        opacity=0.7, hover_data=df[['grip_lost','Robot_ProtectiveStop']], color_continuous_scale='Viridis')
-    fig.update_traces(marker=dict(size=5))
-    fig.update_layout(height=700)
-    st.plotly_chart(fig, use_container_width=True)

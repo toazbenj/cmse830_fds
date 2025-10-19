@@ -185,7 +185,29 @@ elif page_idx == 2:
    
    if option == "Scatter Plot":
       
-      stolen_plots(df_cobots)
+      st.header("Scatter Plots")
+      st.subheader("3D Scatter Plot")
+      numeric_cols = df_cobots.select_dtypes(include=[np.number]).columns.tolist()
+
+      col1, col2, col3 = st.columns(3)
+      with col1:
+         x_3d = st.selectbox("Select X-axis (3D):", numeric_cols, index=0, key='x3d')
+      with col2:
+         y_3d = st.selectbox("Select Y-axis (3D):", numeric_cols, index=1, key='y3d')
+      with col3:
+         z_3d = st.selectbox("Select Z-axis (3D):", numeric_cols, index=2, key='z3d')
+
+      small_lst = ['grip_lost','Robot_ProtectiveStop', 'Temperature', 'Speed', 'Current']
+      color_3d = st.selectbox("Color by (3D):", small_lst, key='color3d')
+
+      df = melt_features(df_cobots)
+
+      fig = px.scatter_3d(df, x=x_3d, y=y_3d, z=z_3d, color=color_3d,
+                           title=f'3D Scatter Plot: {x_3d} vs {y_3d} vs {z_3d}',
+                           opacity=0.7, hover_data=df[['grip_lost','Robot_ProtectiveStop']], color_continuous_scale='Viridis')
+      fig.update_traces(marker=dict(size=5))
+      fig.update_layout(height=700)
+      st.plotly_chart(fig, use_container_width=True)
 
    if option == "Histogram":
       st.header("Joint Feature Distributions")
@@ -199,10 +221,10 @@ elif page_idx == 2:
       "Select a feature:",
          ("Current", "Speed", "Temperature"),
       )
-
+      
       error = st.radio(
          "Select an error type:",
-         ["Grip Lost", "Emergency Stop"],
+         ["grip_lost", "Robot_ProtectiveStop"],
          horizontal=True
       )
       fig_lst = time_series_plots(df_cobots, error, feature)
