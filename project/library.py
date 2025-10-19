@@ -26,7 +26,7 @@ def data_cleaning():
     df_cobots.rename(columns={'cycle ': 'cycle'}, inplace=True)
 
     # Encoding timestamps
-
+    
     # Convert to datetime
     df_cobots['Timestamp'] = df_cobots['Timestamp'].astype(str).str.strip('"').str.strip("'").str.strip()
     df_cobots['Timestamp'] = pd.to_datetime(df_cobots['Timestamp'], format='mixed', utc=True)
@@ -43,6 +43,9 @@ def data_cleaning():
         df_cobots['hour'] * 3600 + df_cobots['minute'] * 60 + df_cobots['second']
     )
     df_cobots = df_cobots.sort_values('time')
+
+    df_cycle_issues = df_cobots.copy()
+
     df_cobots['time'] =  df_cobots['time'] - df_cobots['time'].iloc[0]
 
     # Fix time discontinuity
@@ -52,6 +55,7 @@ def data_cleaning():
     df_cobots.drop(columns=['hour', 'minute', 'second'], inplace=True)
 
     # Imputation
+    df_gaps = df_cobots.copy()
     cols_interpolate = [col for col in df_cobots.columns if col != 'Robot_ProtectiveStop']
     df_cobots[cols_interpolate] = df_cobots[cols_interpolate].interpolate(method='linear')
     df_cobots.fillna({'Robot_ProtectiveStop': 0}, inplace=True)
@@ -59,7 +63,7 @@ def data_cleaning():
     # Make it match Protective Stop type
     df_cobots['grip_lost'] = df_cobots['grip_lost'].astype(int)
 
-    return df_cobots, df_cobots_original
+    return df_cobots, df_cobots_original, df_cycle_issues, df_gaps
 
 # ====================================================================================================================
 # Processing Steps
@@ -79,17 +83,27 @@ def missingness_heatmap(df_cobots):
         cbar=True,
         cmap='viridis',
         yticklabels=False, 
-        ax=ax
+        ax=ax,
     )
 
     # Rotate and fit labels nicely
-    ax.set_xlabel('Features', fontsize=12)
-    ax.set_ylabel('Row Index', fontsize=12)
+    ax.set_xlabel('Features', fontsize=12, color='white')
+    ax.set_ylabel('Row Index', fontsize=12, color='white')
     # ax.set_title('Missing Values Heatmap', fontsize=14, pad=12)
 
     # Improve label rotation for readability
-    plt.xticks(rotation=45, ha='right')
-    plt.yticks(rotation=0)
+    plt.xticks(rotation=45, ha='right', color='white')
+    plt.yticks(rotation=0, color='white')
+
+    # After plt.xticks()
+    for label in ax.get_xticklabels():
+        label.set_color('white')
+    for label in ax.get_yticklabels():
+        label.set_color('white')
+
+    cbar = ax.collections[0].colorbar
+    cbar.ax.tick_params(colors='white')
+    cbar.set_label('Missing Data', color='white')
 
     plt.tight_layout()
 
@@ -177,7 +191,7 @@ def interpolation_example(df_cobots, df_cobots_original, feature_type='Current')
                 )
 
     # Zoom range
-    zoom_range = [25800, 26100]
+    zoom_range = [6700, 6900]
     fig.update_xaxes(range=zoom_range, row=1, col=1)
     fig.update_xaxes(range=zoom_range, row=2, col=1)
 
@@ -221,11 +235,17 @@ def histogram_plots(df_cobots):
         for joint_idx in range(6):
             col_name = f"{feature_type}_J{joint_idx}"
             
+            # Avoid black color for last joint
+            if joint_idx != 5:
+                color = colors[joint_idx] 
+            else:
+                color = colors[6]
+
             fig.add_trace(
                 go.Histogram(
                     x=df_cobots[col_name],
                     name=f'Joint {joint_idx}',
-                    marker=dict(color=colors[joint_idx]),
+                    marker=dict(color=color),
                     opacity=0.7,
                     legendgroup=f'joint{joint_idx}',  # Group by joint for legend
                     showlegend=(feat_idx == 0)  # Only show legend once (on first subplot)
@@ -257,32 +277,71 @@ def histogram_plots(df_cobots):
 # https://plotly.com/python/time-series/
 #  Claude Sonnet 4.5, 10-11-25
 
-def time_series_plots(df_cobots):
+def time_series_plots(df_cobots, error, feature_type):
     # Define column groups
     feature_type_lst = ["Current", "Speed", "Temperature"]
-    unit = ["A", "m/s", "Degrees C"]
+    unit_lst = ["A", "m/s", "Degrees C"]
     colors = px.colors.qualitative.Dark24
+
+    unit = unit_lst[feature_type_lst.index(feature_type)]
 
     fig_lst = []
 
-    for feature_type, unit in zip(feature_type_lst, unit):
-        cols1 = [f"{feature_type}_J{i}" for i in range(0, 3)]
-        cols2 = [f"{feature_type}_J{i}" for i in range(3, 6)]
+    # for feature_type, unit in zip(feature_type_lst, unit):
+    cols1 = [f"{feature_type}_J{i}" for i in range(0, 3)]
+    cols2 = [f"{feature_type}_J{i}" for i in range(3, 6)]
 
-        # Create subplots
-        fig = make_subplots(rows=2, cols=1, shared_xaxes=True, 
-                            subplot_titles=(f'{feature_type} Joints 0-2', f'{feature_type} Joints 3-5'),
-                            vertical_spacing=0.1)
+    # Create subplots
+    fig = make_subplots(rows=2, cols=1, shared_xaxes=True, 
+                        subplot_titles=(f'{feature_type} Joints 0-2', f'{feature_type} Joints 3-5'),
+                        vertical_spacing=0.1)
 
-        # Add current traces to first subplot
-        for i, col in enumerate(cols1):
-            fig.add_trace(go.Scatter(x=df_cobots['time'], y=df_cobots[col],
-                                    name=col, mode='lines', line=dict(color=colors[i])), row=1, col=1)
+    # Add current traces to first subplot
+    for i, col in enumerate(cols1):
+        fig.add_trace(go.Scatter(x=df_cobots['time'], y=df_cobots[col],
+                                name=col, mode='lines', line=dict(color=colors[i])), row=1, col=1)
 
-        # Add speed traces to second subplot
-        for i, col in enumerate(cols2):
-            fig.add_trace(go.Scatter(x=df_cobots['time'], y=df_cobots[col], 
-                                    name=col, mode='lines', line=dict(color=colors[i+3])), row=2, col=1)
+    # Add speed traces to second subplot
+    for i, col in enumerate(cols2):
+        # Avoid black color for last joint
+        if i != len(cols2) - 1:
+            color = colors[i + 3] 
+        else:
+            color = colors[6]
+        fig.add_trace(go.Scatter(x=df_cobots['time'], y=df_cobots[col], 
+                                name=col, mode='lines', line=dict(color=color)), row=2, col=1)
+
+    # Add yellow dots where grip_lost is True
+    if error == "Grip Lost":
+        feature_name = 'grip_lost'
+    else:
+        feature_name = 'Robot_ProtectiveStop'
+
+    if feature_name in df_cobots.columns:
+        df_flag = df_cobots[df_cobots[feature_name] == True]
+        
+        if not df_flag.empty:
+            # Add markers to subplot 1 (for each joint in cols1)
+            for i, col in enumerate(cols1):
+                fig.add_trace(go.Scatter(
+                    x=df_flag['time'], 
+                    y=df_flag[col],
+                    mode='markers',
+                    marker=dict(color='yellow', size=6, symbol='circle'),
+                    name=error,
+                    showlegend=(i == 0)  # Only show legend for first occurrence
+                ), row=1, col=1)
+            
+            # Add markers to subplot 2 (for each joint in cols2)
+            for i, col in enumerate(cols2):
+                fig.add_trace(go.Scatter(
+                    x=df_flag['time'], 
+                    y=df_flag[col],
+                    mode='markers',
+                    marker=dict(color='yellow', size=6, symbol='circle'),
+                    name=error,
+                    showlegend=False  
+                ), row=2, col=1)
 
         # Add rangeslider to bottom subplot only
         fig.update_xaxes(rangeslider_visible=True, row=2, col=1)
@@ -297,6 +356,7 @@ def time_series_plots(df_cobots):
 
     return fig_lst
 
+
 # Failure Events Heatmap
 def failure_events_heatmap(df_cobots):
     # Transpose so time is on y-axis and features on x-axis
@@ -309,7 +369,7 @@ def failure_events_heatmap(df_cobots):
     ax.set_facecolor('#0E1117')
 
     sns.heatmap(df_failures, cmap='viridis', cbar_kws={"label": "Failure Events"})
-    plt.xlabel('Time Index')
+    plt.xlabel('Time Index', color='white')
     plt.title('Failures Over Time Heatmap')
     plt.tight_layout()
 
@@ -496,11 +556,12 @@ def stolen_plots(df):
     with col3:
         z_3d = st.selectbox("Select Z-axis (3D):", numeric_cols, index=2, key='z3d')
 
-    color_3d = st.selectbox("Color by (3D):", ['Temperature', 'Speed', 'Current'], key='color3d')
+    small_lst = ['grip_lost','Robot_ProtectiveStop', 'Temperature', 'Speed', 'Current']
+    color_3d = st.selectbox("Color by (3D):", small_lst, key='color3d')
 
     fig = px.scatter_3d(df, x=x_3d, y=y_3d, z=z_3d, color=color_3d,
                         title=f'3D Scatter Plot: {x_3d} vs {y_3d} vs {z_3d}',
-                        opacity=0.7, hover_data=df.columns, color_continuous_scale='Viridis')
+                        opacity=0.7, hover_data=df[['grip_lost','Robot_ProtectiveStop']], color_continuous_scale='Viridis')
     fig.update_traces(marker=dict(size=5))
     fig.update_layout(height=700)
     st.plotly_chart(fig, use_container_width=True)
