@@ -7,6 +7,7 @@ import seaborn as sns
 import matplotlib.pyplot as plt
 from itertools import combinations
 import warnings
+import streamlit as st
 
 warnings.filterwarnings("ignore", category=UserWarning, module='matplotlib')
 
@@ -43,6 +44,12 @@ def data_cleaning():
     )
     df_cobots = df_cobots.sort_values('time')
     df_cobots['time'] =  df_cobots['time'] - df_cobots['time'].iloc[0]
+
+    # Fix time discontinuity
+    idx = (df_cobots['time'] == 21752).idxmax()
+    df_cobots.loc[idx:, 'time'] = df_cobots.loc[idx:, 'time'] - 21752 + 2938 + 1
+    
+    df_cobots.drop(columns=['hour', 'minute', 'second'], inplace=True)
 
     # Imputation
     cols_interpolate = [col for col in df_cobots.columns if col != 'Robot_ProtectiveStop']
@@ -433,3 +440,67 @@ def feature_correlation_heatmaps(df_cobots):
     )
 
     return fig
+
+
+# Adapted from example Penguins app with ChatGPT-5 Code GPT, 10-19-25
+def stolen_plots(df):
+    st.header("Scatter Plots")
+
+    # ---- Preprocessing: combine Temperature, Speed, Current across all joints ----
+    def melt_features(df, base_features=["Temperature", "Speed", "Current"]):
+        """
+        Combine all joint-specific columns for the given features into a single long-format DataFrame.
+        Example: Temperature_J1, Temperature_J2 -> 'Temperature' + 'Joint' columns.
+        """
+        melted = []
+        for feat in base_features:
+            cols = [c for c in df.columns if feat.lower() in c.lower()]
+            if not cols:
+                continue
+
+            temp = df[cols + [col for col in df.columns if col not in cols]].copy()
+            temp_melt = temp.melt(
+                id_vars=[col for col in df.columns if col not in cols],
+                value_vars=cols,
+                var_name="Joint",
+                value_name=feat
+            )
+            temp_melt["Joint"] = temp_melt["Joint"].str.extract(r'(\d+)').fillna("Global")
+            melted.append(temp_melt)
+
+        # merge all melted frames on common identifiers
+        if not melted:
+            return df
+
+        # Reduce with successive merges on id_vars + Joint
+        df_long = melted[0]
+        for m in melted[1:]:
+            merge_cols = [c for c in df_long.columns if c in m.columns and c not in base_features]
+            df_long = pd.merge(df_long, m, on=merge_cols, how="outer")
+
+        return df_long
+
+    df = melt_features(df)
+
+    df
+
+    numeric_cols = df.select_dtypes(include=[np.number]).columns.tolist()
+
+    # ---- 3D Scatter ----
+    st.subheader("3D Scatter Plot")
+    col1, col2, col3 = st.columns(3)
+    with col1:
+        x_3d = st.selectbox("Select X-axis (3D):", numeric_cols, index=0, key='x3d')
+    with col2:
+        y_3d = st.selectbox("Select Y-axis (3D):", numeric_cols, index=1, key='y3d')
+    with col3:
+        z_3d = st.selectbox("Select Z-axis (3D):", numeric_cols, index=2, key='z3d')
+
+    color_3d = st.selectbox("Color by (3D):", ['Temperature', 'Speed', 'Current'], key='color3d')
+
+    fig = px.scatter_3d(df, x=x_3d, y=y_3d, z=z_3d, color=color_3d,
+                        title=f'3D Scatter Plot: {x_3d} vs {y_3d} vs {z_3d}',
+                        opacity=0.7, hover_data=df.columns, color_continuous_scale='Viridis')
+    fig.update_traces(marker=dict(size=5))
+    fig.update_layout(height=700)
+    st.plotly_chart(fig, use_container_width=True)

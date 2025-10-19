@@ -10,7 +10,6 @@ page_idx = ["Intro", "Data Processing", "EDA"].index(page)
 
 st.set_page_config(page_title="Robot Joint Monitoring", layout="wide")
 
-
 def intro_text():
    return """
    <p>\n\n\nThe Universal Robot 3 is one of the most common lab robots for use in university research. 
@@ -99,7 +98,6 @@ elif page_idx == 2:
    st.title("Exploratory Data Analysis (EDA)")
    st.markdown(eda_text(), unsafe_allow_html=True)
 
-
    option = st.selectbox(
       "Select a graphic:",
       ("Histogram", "Time Series", "Correlation Heatmaps"),
@@ -109,6 +107,8 @@ elif page_idx == 2:
       st.header("Joint Feature Distributions")
       fig = histogram_plots(df_cobots)
       st.plotly_chart(fig, use_container_width=True)
+
+      stolen_plots(df_cobots)
 
    if option == "Time Series":
       st.header("Time Series Data")
