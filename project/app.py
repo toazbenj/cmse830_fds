@@ -115,10 +115,9 @@ elif page_idx == 1:
    st.title("Data Processing")
    st.markdown(data_collection_text(), unsafe_allow_html=True)
 
-   st.header("Raw Data Samples")
+   st.header(f"{df_name} Raw Data Samples")
 
    st.dataframe(df.head(10), use_container_width=True)
-
 
    # Generated with Claude Sonnet 4.5 10-19-25
    st.header(f"{df_name} Dataset Overview")
