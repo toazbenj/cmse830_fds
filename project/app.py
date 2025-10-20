@@ -36,7 +36,7 @@ def eda_text():
    CobotOps contains joint temperature, current and speed, while AURSAD also includes voltages, joint rotations, and robot link positions. 
    RAD only includes the position of the end effector tool, meaning I will have to rebuild these other features using inverse kinematics and models from the other datasets.
    
-   Note that the AURSAD dataset is 6 GB total, with millions of entries. Streamlit cannot handle this volume, so I have downsampled down to about 0.5 GB for the web app.
+   Note that the AURSAD dataset is 6 GB total, with millions of entries. Streamlit cannot handle this volume, so I have downsampled significantly for the web app.
    As a result, the AURSAD data is not as complete or representative as it would be if viewed locally.</p>
    """
 
