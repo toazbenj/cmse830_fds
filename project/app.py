@@ -8,7 +8,7 @@ def intro_text():
    boosting reproducibility and easy comparison across different types of results. \n
    In this project, I chose three major datasets who use the UR3 in their experiments but gather different types of data about the robot.
    Since all of the data was gathered using the same hardware, I plan to use each dataset to fill in the missing features of the other 
-   datasets in order to gather a more complete picture of how well the robot performed and what caused it to fail 
+   datasets in order to gain a more complete picture of how well the robot performed and what caused it to fail 
    (both because of hardware faults and at the given research task).
 
    See the datasets here:
@@ -19,7 +19,7 @@ def intro_text():
 
    [RAD](https://github.com/ubc-systopia/dsn-2022-rad-artifact/tree/main)
    
-   Note for the midterrm project I will only be working with the first two.</p>
+   Note for the midterm project I will only be working with the first two. Also, view this app in dark mode if you are a cool person. Use the settings drop down in the upper right.</p>
    """
 
 def data_collection_text():
@@ -60,7 +60,7 @@ def imputation_text():
    We can fix this easily with a nearest neighbor method or simply interpolating between the proceeding and following readings in time.
    Measurements are very stable so this won't affect the overall statistics by much.
 
-   Managing the down time gap also introduces a visible discontinuity in the temperature data,
+   Managing the down time gap also introduces a visible discontinuity in the temperature data
    because the a heat energy in the robot changes over time regardless of whether it is in operation or not. 
    We will leave this in for now, but will probably have to deal with it when we start building predictive models.</p>
    """
@@ -176,7 +176,7 @@ elif page_idx == 1:
    st.pyplot(fig, clear_figure=True)
 
    st.markdown("Missingness occurs infrequently in CobotOps, and when it does, it happens across most of the features. " \
-   "This suggests that it is MCAR, which doesn't require too advanced techniques to fix. The AURSAD dataset doesn't have any missingness. Lucky.")
+   "This suggests that it is missing completely at random, which doesn't require too advanced techniques to fix. The AURSAD dataset doesn't have any missingness. Lucky.")
 
    st.header("Imputation of Time Series Data - Pre and Post Interpolation Example")
    st.markdown(imputation_text(), unsafe_allow_html=True)
