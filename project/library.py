@@ -74,9 +74,9 @@ def aursad_data():
     feather_files = sorted(glob.glob(os.path.join(data_path, "part_*.feather")))
 
     # Load and concatenate
-    num_files = len(feather_files)//20
+    num_files = len(feather_files)//5
     df_aursad = pd.concat([pd.read_feather(f) for f in feather_files[:num_files]], ignore_index=True)
-    df_aursad = df_aursad.iloc[::100]
+    df_aursad = df_aursad.iloc[::300]
 
     df_aursad = df_aursad.rename(columns={'timestamp': 'time'})
     df_aursad['time'] =  df_aursad['time'] - df_aursad['time'].iloc[0]
