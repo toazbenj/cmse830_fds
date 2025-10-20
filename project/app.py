@@ -88,7 +88,7 @@ else:
 
    # hover_data  = []
    # small_lst = ["Damaged screw", "Extra assembly component", "Missing screw", "Damaged thread samples", 'Temperature', 'Speed', 'Current']
-   small_lst = ["Damaged screw", "Extra assembly component", "Missing screw", 'Temperature', 'Speed', 'Current']
+   small_lst = ["Damaged screw", "Extra assembly component", "Missing screw"]
 
 st.set_page_config(page_title="Robot Joint Monitoring", layout="wide")
 
