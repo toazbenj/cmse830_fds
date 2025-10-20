@@ -1,15 +1,6 @@
 import streamlit as st
 from library import *
 
-
-df_cobots, df_cobots_original, df_cycle_issue, df_gaps = data_cleaning()
-
-# Sidebar page selector
-page = st.sidebar.radio("Select Page", ["Intro", "Data Processing", "EDA"])
-page_idx = ["Intro", "Data Processing", "EDA"].index(page)
-
-st.set_page_config(page_title="Robot Joint Monitoring", layout="wide")
-
 def intro_text():
    return """
    <p>\n\n\nThe Universal Robot 3 is one of the most common lab robots for use in university research. 
@@ -43,7 +34,10 @@ def eda_text():
    return """
    <p>The data itself is almost entirely time series data of features like temperature, current, speed, and position of the various robot joints, as well as binary flags indicating various failure states. 
    CobotOps contains joint temperature, current and speed, while AURSAD also includes voltages, joint rotations, and robot link positions. 
-   RAD only includes the position of the end effector tool, meaning I will have to rebuild these other features using inverse kinematics and models from the other datasets.</p>
+   RAD only includes the position of the end effector tool, meaning I will have to rebuild these other features using inverse kinematics and models from the other datasets.
+   
+   Note that the AURSAD dataset is 6 GB total, with millions of entries. Streamlit cannot handle this volume, so I have downsampled down to about 0.5 GB for the web app.
+   As a result, the AURSAD data is not as complete or representative as it would be if viewed locally.</p>
    """
 
 def cycle_time_text():
@@ -70,6 +64,33 @@ def imputation_text():
    because the a heat energy in the robot changes over time regardless of whether it is in operation or not. 
    We will leave this in for now, but will probably have to deal with it when we start building predictive models.</p>
    """
+
+
+# Main
+df_cobots, df_cobots_original, df_cycle_issue, df_gaps = cobots_data()
+df_aursad = aursad_data()
+
+# Sidebar page selector
+page = st.sidebar.radio("Select Page", ["Intro", "Data Processing", "EDA"])
+page_idx = ["Intro", "Data Processing", "EDA"].index(page)
+
+df_name = st.sidebar.radio("Select Dataset", ["CobotOps", "AURSAD"])
+
+if df_name == "CobotOps":
+   df = df_cobots
+   hover_data = ['grip_lost','Robot_ProtectiveStop']
+   small_lst = ['grip_lost','Robot_ProtectiveStop', 'Temperature', 'Speed', 'Current']
+
+else:
+   df = df_aursad
+   # hover_data  = ["Damaged screw", "Extra assembly component", "Missing screw", "Damaged thread samples"]
+   hover_data  = ["Damaged screw", "Extra assembly component", "Missing screw"]
+
+   # hover_data  = []
+   # small_lst = ["Damaged screw", "Extra assembly component", "Missing screw", "Damaged thread samples", 'Temperature', 'Speed', 'Current']
+   small_lst = ["Damaged screw", "Extra assembly component", "Missing screw", 'Temperature', 'Speed', 'Current']
+
+st.set_page_config(page_title="Robot Joint Monitoring", layout="wide")
 
 if page_idx == 0:
    st.title("Robot Performance Analysis and Failure Prediction")
@@ -182,12 +203,12 @@ elif page_idx == 2:
       "Select a graphic:",
       ('Scatter Plot', "Histogram", "Time Series", "Correlation Heatmaps"),
    )
-   
+
    if option == "Scatter Plot":
       
       st.header("Scatter Plots")
       st.subheader("3D Scatter Plot")
-      numeric_cols = df_cobots.select_dtypes(include=[np.number]).columns.tolist()
+      numeric_cols = df.select_dtypes(include=[np.number]).columns.tolist()
 
       col1, col2, col3 = st.columns(3)
       with col1:
@@ -197,21 +218,22 @@ elif page_idx == 2:
       with col3:
          z_3d = st.selectbox("Select Z-axis (3D):", numeric_cols, index=2, key='z3d')
 
-      small_lst = ['grip_lost','Robot_ProtectiveStop', 'Temperature', 'Speed', 'Current']
       color_3d = st.selectbox("Color by (3D):", small_lst, key='color3d')
 
-      df = melt_features(df_cobots)
+      df_melted = melt_features(df)
 
-      fig = px.scatter_3d(df, x=x_3d, y=y_3d, z=z_3d, color=color_3d,
+      fig = px.scatter_3d(df_melted, x=x_3d, y=y_3d, z=z_3d, color=color_3d,
                            title=f'3D Scatter Plot: {x_3d} vs {y_3d} vs {z_3d}',
-                           opacity=0.7, hover_data=df[['grip_lost','Robot_ProtectiveStop']], color_continuous_scale='Viridis')
+                           opacity=0.7, 
+                           hover_data=df[hover_data],
+                             color_continuous_scale='Viridis')
       fig.update_traces(marker=dict(size=5))
       fig.update_layout(height=700)
       st.plotly_chart(fig, use_container_width=True)
 
    if option == "Histogram":
       st.header("Joint Feature Distributions")
-      fig = histogram_plots(df_cobots)
+      fig = histogram_plots(df)
       st.plotly_chart(fig, use_container_width=True)
 
    if option == "Time Series":
@@ -224,19 +246,21 @@ elif page_idx == 2:
       
       error = st.radio(
          "Select an error type:",
-         ["grip_lost", "Robot_ProtectiveStop"],
+         hover_data,
          horizontal=True
       )
-      fig_lst = time_series_plots(df_cobots, error, feature)
+      fig_lst = time_series_plots(df, error, feature)
 
       for fig in fig_lst:
          st.plotly_chart(fig, use_container_width=True)
 
    if option == "Correlation Heatmaps":
       st.header("Correlations by Robot Joint")
-      fig = joint_correlation_heatmaps(df_cobots)
+
+      is_cobotops = "CobotOps" == df_name
+      fig = joint_correlation_heatmaps(df, is_cobotops)
       st.plotly_chart(fig, use_container_width=True)
 
       st.header("Cross-Feature Correlations")
-      fig = feature_correlation_heatmaps(df_cobots)
+      fig = feature_correlation_heatmaps(df)
       st.plotly_chart(fig, use_container_width=True)

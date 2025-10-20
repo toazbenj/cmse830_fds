@@ -8,11 +8,13 @@ import matplotlib.pyplot as plt
 from itertools import combinations
 import warnings
 import streamlit as st
+import glob
+import os
 
 warnings.filterwarnings("ignore", category=UserWarning, module='matplotlib')
 
 # Data Cleaning Steps
-def data_cleaning():
+def cobots_data():
     df_cobots = pd.read_excel("project/data/cobot_dataset.xlsx")
     df_cobots_original = df_cobots.copy()
 
@@ -65,6 +67,35 @@ def data_cleaning():
 
     return df_cobots, df_cobots_original, df_cycle_issues, df_gaps
 
+def aursad_data():
+    data_path = "project/data/aursad"
+
+    # Get all feather files, sorted in order (important for time series)
+    feather_files = sorted(glob.glob(os.path.join(data_path, "part_*.feather")))
+
+    # Load and concatenate
+    num_files = len(feather_files)//10
+    df_aursad = pd.concat([pd.read_feather(f) for f in feather_files[:num_files]], ignore_index=True)
+    df_aursad = df_aursad.iloc[::100]
+
+    df_aursad = df_aursad.rename(columns={'timestamp': 'time'})
+    df_aursad['time'] =  df_aursad['time'] - df_aursad['time'].iloc[0]
+
+    # Renaming to match CobotOps
+    for i in range(6):
+        df_aursad = df_aursad.rename(columns={f'actual_current_{i}': f'Current_J{i}'})
+        df_aursad = df_aursad.rename(columns={f'actual_TCP_speed_{i}': f'Speed_J{i}'})
+        df_aursad = df_aursad.rename(columns={f'joint_temperatures_{i}': f'Temperature_J{i}'})
+
+    # Encode labels for screwing failures
+    df_aursad = pd.get_dummies(df_aursad, columns=['label'], prefix='label')
+    label_names = ["Normal operation", "Damaged screw", "Extra assembly component", "Missing screw", "Damaged thread samples", "Screw Loosening"]
+
+    for i, label in enumerate(label_names):
+        df_aursad = df_aursad.rename(columns={f'label_{i}': label})
+    df_aursad.head()
+
+    return df_aursad
 # ====================================================================================================================
 # Processing Steps
 
@@ -312,13 +343,8 @@ def time_series_plots(df_cobots, error, feature_type):
                                 name=col, mode='lines', line=dict(color=color)), row=2, col=1)
 
     # Add yellow dots where grip_lost is True
-    if error == "Grip Lost":
-        feature_name = 'grip_lost'
-    else:
-        feature_name = 'Robot_ProtectiveStop'
-
-    if feature_name in df_cobots.columns:
-        df_flag = df_cobots[df_cobots[feature_name] == True]
+    if error in df_cobots.columns:
+        df_flag = df_cobots[df_cobots[error] == True]
         
         if not df_flag.empty:
             # Add markers to subplot 1 (for each joint in cols1)
@@ -355,7 +381,6 @@ def time_series_plots(df_cobots, error, feature_type):
         fig_lst.append(fig)
 
     return fig_lst
-
 
 # Failure Events Heatmap
 def failure_events_heatmap(df_cobots):
@@ -400,8 +425,9 @@ def joint_correlation_heatmaps(df, is_cobotops=True):
         if is_cobotops:
             cols += ['Robot_ProtectiveStop', 'grip_lost', 'cycle', 'Tool_current']
         else:
-            cols +=  ["Normal operation", "Damaged screw", "Extra assembly component", "Missing screw", "Damaged thread samples", "Screw Loosening"]
-        
+            # cols +=  ["Normal operation", "Damaged screw", "Extra assembly component", "Missing screw", "Damaged thread samples", "Screw Loosening"]
+            cols +=  ["Normal operation", "Damaged screw", "Extra assembly component", "Missing screw", "Screw Loosening"]
+
         # Calculate correlation
         df_corr = df[cols].corr().round(2)
         
