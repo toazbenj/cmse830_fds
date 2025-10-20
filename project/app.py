@@ -116,25 +116,26 @@ elif page_idx == 1:
    st.markdown(data_collection_text(), unsafe_allow_html=True)
 
    st.header("Raw Data Samples")
-   # st.subheader("CobotOps Sample Data")
-   st.dataframe(df_cobots.head(10), use_container_width=True)
 
-   # Generated with Claude Sonnect 4.5 10-19-25
-   st.header("Dataset Overview")
+   st.dataframe(df.head(10), use_container_width=True)
+
+
+   # Generated with Claude Sonnet 4.5 10-19-25
+   st.header(f"{df_name} Dataset Overview")
    # Summary metrics
    col1, col2, col3, col4 = st.columns(4)
-   col1.metric("Total Rows", f"{len(df_cobots_original):,}")
-   col2.metric("Total Columns", len(df_cobots_original.columns))
-   col3.metric("Memory Usage", f"{df_cobots_original.memory_usage(deep=True).sum() / 1024**2:.2f} MB")
-   col4.metric("Missing Values", f"{df_cobots_original.isnull().sum().sum():,}")
+   col1.metric("Total Rows", f"{len(df):,}")
+   col2.metric("Total Columns", len(df.columns))
+   col3.metric("Memory Usage", f"{df.memory_usage(deep=True).sum() / 1024**2:.2f} MB")
+   col4.metric("Missing Values", f"{df.isnull().sum().sum():,}")
    # Detailed info table
    st.write("**Column Details:**")
    info_df = pd.DataFrame({
-      'Column': df_cobots_original.columns,
-      'Type': df_cobots_original.dtypes.astype(str),
-      'Non-Null': df_cobots_original.count().values,
-      'Null': df_cobots_original.isnull().sum().values,
-      'Null %': (df_cobots_original.isnull().sum() / len(df_cobots_original) * 100).round(2).astype(str) + '%'
+      'Column': df.columns,
+      'Type': df.dtypes.astype(str),
+      'Non-Null': df.count().values,
+      'Null': df.isnull().sum().values,
+      'Null %': (df.isnull().sum() / len(df_cobots_original) * 100).round(2).astype(str) + '%'
    })
    st.dataframe(
       info_df,
@@ -175,8 +176,8 @@ elif page_idx == 1:
    fig = missingness_heatmap(df_cobots_original)
    st.pyplot(fig, clear_figure=True)
 
-   st.markdown("Missingness occurs infrequently, and when it does, it happens across most of the features. " \
-   "This suggests that it is MCAR, which doesn't require too advanced techniques to fix.")
+   st.markdown("Missingness occurs infrequently in CobotOps, and when it does, it happens across most of the features. " \
+   "This suggests that it is MCAR, which doesn't require too advanced techniques to fix. The AURSAD dataset doesn't have any missingness. Lucky.")
 
    st.header("Imputation of Time Series Data - Pre and Post Interpolation Example")
    st.markdown(imputation_text(), unsafe_allow_html=True)
