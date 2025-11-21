@@ -14,6 +14,7 @@ import os
 warnings.filterwarnings("ignore", category=UserWarning, module='matplotlib')
 
 # Data Cleaning Steps
+@st.cache_data
 def cobots_data():
     df_cobots = pd.read_excel("project/data/cobot_dataset.xlsx")
     df_cobots_original = df_cobots.copy()
@@ -67,6 +68,7 @@ def cobots_data():
 
     return df_cobots, df_cobots_original, df_cycle_issues, df_gaps
 
+@st.cache_data
 def aursad_data():
     data_path = "project/data/aursad"
 
@@ -99,7 +101,7 @@ def aursad_data():
 # ====================================================================================================================
 # Processing Steps
 
-
+@st.cache_data
 def missingness_heatmap(df_cobots):
     fig, ax = plt.subplots(figsize=(16, 8))
     fig.patch.set_facecolor('#0E1117')
@@ -141,6 +143,7 @@ def missingness_heatmap(df_cobots):
     return fig
 
 # Made with ChatGPT-5 Code GPT, 10-15-25
+@st.cache_data
 def interpolation_example(df_cobots, df_cobots_original, feature_type='Current'):
     colors = px.colors.qualitative.Dark24
     feature = f"{feature_type}_J2"
@@ -247,6 +250,7 @@ def interpolation_example(df_cobots, df_cobots_original, feature_type='Current')
 # ====================================================================================================================
 # EDA Plots
 
+@st.cache_data
 def histogram_plots(df_cobots):
     feature_type_lst = ["Current", "Speed", "Temperature"]
     unit = ["A", "m/s", "Degrees C"]
@@ -308,6 +312,7 @@ def histogram_plots(df_cobots):
 # https://plotly.com/python/time-series/
 #  Claude Sonnet 4.5, 10-11-25
 
+@st.cache_data
 def time_series_plots(df_cobots, error, feature_type):
     # Define column groups
     feature_type_lst = ["Current", "Speed", "Temperature"]
@@ -383,6 +388,7 @@ def time_series_plots(df_cobots, error, feature_type):
     return fig_lst
 
 # Failure Events Heatmap
+@st.cache_data
 def failure_events_heatmap(df_cobots):
     # Transpose so time is on y-axis and features on x-axis
     df_failures = df_cobots[['Robot_ProtectiveStop', 'grip_lost']].T
@@ -403,7 +409,7 @@ def failure_events_heatmap(df_cobots):
 
 # Correlation Heatmap
 # Scaled using Cloud Sonnet 4.5, 10-11-25
-
+@st.cache_data
 def joint_correlation_heatmaps(df, is_cobotops=True):
     feature_type_lst = ["Current", "Speed", "Temperature"]
 
@@ -473,6 +479,7 @@ def joint_correlation_heatmaps(df, is_cobotops=True):
     )
     return fig
 
+@st.cache_data
 def feature_correlation_heatmaps(df_cobots):
     # Correlations by feature type
     feature_type_lst = ["Current", "Speed", "Temperature"]
