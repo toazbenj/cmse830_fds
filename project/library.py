@@ -68,6 +68,50 @@ def cobots_data():
 
     return df_cobots, df_cobots_original, df_cycle_issues, df_gaps
 
+# Code GPT 5.1 11-21-25
+def rebase_time_gaps(df, time_col='time', gap_threshold=2.0, reset_gap=0.01):
+    """
+    Rebases timestamps when gaps exceed a threshold.
+    
+    Parameters:
+        df : pd.DataFrame
+            Must contain a numeric or datetime time column.
+        time_col : str
+            Name of the time column.
+        gap_threshold : float
+            Threshold (in seconds) for gap detection.
+        reset_gap : float
+            Gap to insert after rebasing (in seconds).
+    Returns:
+        pd.DataFrame with continuous time column.
+    """
+    df = df.copy()
+    
+    # Convert to numeric seconds if datetime
+    if not pd.api.types.is_numeric_dtype(df[time_col]):
+        df[time_col] = pd.to_datetime(df[time_col])
+        df[time_col] = (df[time_col] - df[time_col].iloc[0]).dt.total_seconds()
+    
+    # Sort by time
+    df = df.sort_values(time_col).reset_index(drop=True)
+    
+    # Detect large gaps
+    time_vals = df[time_col].to_numpy()
+    gaps = np.diff(time_vals)
+    
+    # Keep track of total offset applied
+    offset = 0.0
+    adjusted_times = [time_vals[0]]
+    
+    for i, gap in enumerate(gaps, start=1):
+        if gap > gap_threshold:
+            # Increase offset by the size of the gap minus desired reset gap
+            offset += (gap - reset_gap)
+        adjusted_times.append(time_vals[i] - offset)
+    
+    df[time_col] = adjusted_times
+    return df
+
 @st.cache_data
 def aursad_data():
     data_path = "project/data/aursad"
@@ -75,14 +119,19 @@ def aursad_data():
     # Get all feather files, sorted in order (important for time series)
     feather_files = sorted(glob.glob(os.path.join(data_path, "part_*.feather")))
 
-    # Load and concatenate
-    num_files = len(feather_files)//10
-    df_aursad = pd.concat([pd.read_feather(f) for f in feather_files[:num_files]], ignore_index=True)
-    df_aursad = df_aursad.iloc[::300]
+        # Load and concatenate
+    start = 2
+    stop = 6
+    df_aursad = pd.concat([pd.read_feather(f) for f in feather_files[start:stop]], ignore_index=True)
 
     df_aursad = df_aursad.rename(columns={'timestamp': 'time'})
-    df_aursad['time'] =  df_aursad['time'] - df_aursad['time'].iloc[0]
+    df_aursad['time'] = df_aursad['time'] - df_aursad['time'].min()
+    df_aursad = df_aursad.sort_values('time').reset_index(drop=True)
+    df_aursad = rebase_time_gaps(df_aursad, time_col='time', gap_threshold=2.0, reset_gap=0.01)
 
+    # Downsample
+    df_aursad = df_aursad.iloc[::200]
+    
     # Renaming to match CobotOps
     for i in range(6):
         df_aursad = df_aursad.rename(columns={f'actual_current_{i}': f'Current_J{i}'})
@@ -98,6 +147,7 @@ def aursad_data():
     df_aursad.head()
 
     return df_aursad
+
 # ====================================================================================================================
 # Processing Steps
 
@@ -374,16 +424,16 @@ def time_series_plots(df_cobots, error, feature_type):
                     showlegend=False  
                 ), row=2, col=1)
 
-        # Add rangeslider to bottom subplot only
-        fig.update_xaxes(rangeslider_visible=True, row=2, col=1)
+    # Add rangeslider to bottom subplot only
+    fig.update_xaxes(rangeslider_visible=True, row=2, col=1)
 
-        fig.update_xaxes(title_text="Time (s)", row=2, col=1, rangeslider_visible=True)
-        fig.update_yaxes(title_text=f"{feature_type} ({unit})", row=1, col=1)
-        fig.update_yaxes(title_text=f"{feature_type} ({unit})", row=2, col=1)
+    fig.update_xaxes(title_text="Time (s)", row=2, col=1, rangeslider_visible=True)
+    fig.update_yaxes(title_text=f"{feature_type} ({unit})", row=1, col=1)
+    fig.update_yaxes(title_text=f"{feature_type} ({unit})", row=2, col=1)
 
-        # Update layout
-        fig.update_layout(height=800)
-        fig_lst.append(fig)
+    # Update layout
+    fig.update_layout(height=800)
+    fig_lst.append(fig)
 
     return fig_lst
 
