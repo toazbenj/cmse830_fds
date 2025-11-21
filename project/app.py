@@ -137,8 +137,14 @@ elif page_idx == 2:
 
    option = st.selectbox(
       "Select a graphic:",
-      ('Scatter Plot', "Histogram", "Time Series", "Correlation Heatmaps"),
+      ('Stats', 'Scatter Plot', "Histogram", "Time Series", "Correlation Heatmaps"),
    )
+
+   if option == "Stats":
+      st.header("Statistical Summary")
+      summary = detailed_summary(df)
+      st.dataframe(summary)
+
 
    if option == "Scatter Plot":
       

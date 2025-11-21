@@ -301,6 +301,32 @@ def interpolation_example(df_cobots, df_cobots_original, feature_type='Current')
 # EDA Plots
 
 @st.cache_data
+# Code GPT 5.1 11-25-25
+def detailed_summary(df):
+    summary = pd.DataFrame(index=df.columns)
+
+    summary["Data Type"] = df.dtypes
+    summary["Unique Values"] = df.nunique()
+
+    numeric_cols = df.select_dtypes(include=np.number).columns
+    for col in numeric_cols:
+        summary.loc[col, "Mean"] = df[col].mean()
+        summary.loc[col, "Median"] = df[col].median()
+        summary.loc[col, "Std Dev"] = df[col].std()
+        summary.loc[col, "Variance"] = df[col].var()
+        summary.loc[col, "Min"] = df[col].min()
+        summary.loc[col, "Max"] = df[col].max()
+        summary.loc[col, "Skewness"] = df[col].skew()
+        summary.loc[col, "Kurtosis"] = df[col].kurt()
+        summary.loc[col, "25%"] = df[col].quantile(0.25)
+        summary.loc[col, "75%"] = df[col].quantile(0.75)
+        summary.loc[col, "IQR"] = summary.loc[col, "75%"] - summary.loc[col, "25%"]
+
+    # Round numeric columns neatly
+    summary = summary.round(3)
+    return summary
+
+@st.cache_data
 def histogram_plots(df_cobots):
     feature_type_lst = ["Current", "Speed", "Temperature"]
     unit = ["A", "m/s", "Degrees C"]
