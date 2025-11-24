@@ -653,3 +653,122 @@ def melt_features(df, base_features=["Temperature", "Speed", "Current"]):
 
     return df_long
 
+
+# RAD Dataset Add Ons
+
+@st.cache_data
+def histogram_plots_rad(df_cobots, feature_type_lst=["Current", "Speed", "Temperature"], unit=["A", "m/s", "Degrees C"]):
+
+    colors = px.colors.qualitative.Dark24
+
+    fig = make_subplots(
+        rows=3, cols=1,
+        subplot_titles=[f'{feature} Distribution' for feature in feature_type_lst],
+        horizontal_spacing=0.1
+    )
+
+    # Loop through each feature type
+    for feat_idx, (feature_type, unit_label) in enumerate(zip(feature_type_lst, unit)):
+        row = feat_idx + 1  
+        
+        fig.add_trace(
+            go.Histogram(
+                x=df_cobots[feature_type],
+                marker=dict(color=colors[feat_idx]),
+                opacity=0.7,
+            ),
+            row=row, col=1
+        )
+        
+        fig.update_xaxes(title_text=f"{feature_type} ({unit_label})", row=row, col=1)
+
+    fig.update_yaxes(title_text="Count", row=1, col=1)
+
+    fig.update_layout(
+        height=1000,
+        barmode='overlay',  
+        showlegend=False,
+
+    )
+    return fig
+
+@st.cache_data
+def feature_correlation_heatmap_rad(df):
+    # Calculate correlation
+    df_corr = df.drop(columns=['time']).corr().round(2)
+
+    # Mask upper triangle
+    mask = np.zeros_like(df_corr, dtype=bool)
+    mask[np.triu_indices_from(mask)] = True
+
+    # Apply mask and drop empty rows/cols
+    df_corr_viz = df_corr.mask(mask).dropna(how='all').dropna(axis='columns', how='all')
+
+    # Create text array with blanks instead of nan
+    text_values = df_corr_viz.values.astype(str)
+    text_values[text_values == 'nan'] = ''
+
+    # Add heatmap to subplot
+    fig =  go.Heatmap(
+            z=df_corr_viz.values,
+            x=df_corr_viz.columns,
+            y=df_corr_viz.index,
+            colorscale='Viridis',
+            zmid=0,
+            text=text_values,
+            texttemplate='%{text}',
+            textfont={"size": 8},
+        )
+
+    fig = go.Figure(data=fig)
+    fig.update_layout(
+        height=400,
+        width=425,
+        title_text="Correlation Analysis",
+        showlegend=False
+    )
+
+    return fig
+
+
+
+@st.cache_data
+def time_series_plots_rad(df, error=None):
+    # Define axis list and colors
+    feature_type_lst = ["x", "y", "z"]
+    colors = px.colors.qualitative.Dark24[:3]
+
+    # Create 3 subplots for X, Y, Z
+    fig = make_subplots(
+        rows=3, cols=1,
+        shared_xaxes=True,
+        subplot_titles=("X Position", "Y Position", "Z Position"),
+        vertical_spacing=0.08
+    )
+
+    # Loop over X, Y, Z
+    for idx, feature_type in enumerate(feature_type_lst, start=1):
+        if feature_type in df.columns:
+            fig.add_trace(
+                go.Scatter(
+                    x=df['time'],
+                    y=df[feature_type],
+                    name=feature_type.upper(),
+                    mode='lines',
+                    line=dict(color=colors[idx - 1], width=2)
+                ),
+                row=idx, col=1
+            )
+
+    # Update axes and layout
+    fig.update_xaxes(title_text="Time (s)", row=3, col=1, rangeslider_visible=True)
+    for i, feature_type in enumerate(feature_type_lst, start=1):
+        fig.update_yaxes(title_text=f"{feature_type} (pos)", row=i, col=1)
+
+    fig.update_layout(
+        height=900,
+        title_text="Position Time Series (X, Y, Z)",
+        legend=dict(orientation="h", yanchor="bottom", y=1.02, xanchor="right", x=1)
+    )
+
+    return fig

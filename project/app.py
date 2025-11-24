@@ -1,14 +1,15 @@
 import streamlit as st
 from library import *
 from text import *
+from animation import *
 
 # Main
 df_cobots, df_cobots_original, df_cycle_issue, df_gaps = cobots_data()
 df_aursad = aursad_data()
 
 # Sidebar page selector
-page = st.sidebar.radio("Select Page", ["Intro", "Data Processing", "EDA"])
-page_idx = ["Intro", "Data Processing", "EDA"].index(page)
+page = st.sidebar.radio("Select Page", ["Intro", "Data Processing", "EDA", 'Animation'])
+page_idx = ["Intro", "Data Processing", "EDA", 'Animation'].index(page)
 
 df_name = st.sidebar.radio("Select Dataset", ["CobotOps", "AURSAD"])
 
@@ -206,3 +207,137 @@ elif page_idx == 2:
       st.header("Cross-Feature Correlations")
       fig = feature_correlation_heatmaps(df)
       st.plotly_chart(fig, use_container_width=True)
+
+elif page_idx == 3:
+
+   # --- Page setup ---
+   st.set_page_config(layout="wide")
+   st.title("Robot Movement Animation")
+
+   # --- Data prep ---
+   df_angles = df[['actual_q_0', 'actual_q_1', 'actual_q_2', 'actual_q_3', 'actual_q_4', 'actual_q_5']]
+   animation_sequence = df_angles.values.tolist()
+   robot_chain = get_robot_chain()
+
+   # --- Session state ---
+   if 'frame_index' not in st.session_state:
+      st.session_state.frame_index = 0
+   if 'playing' not in st.session_state:
+      st.session_state.playing = False
+
+   # === MAIN LAYOUT ===
+   # ==========================================================
+   # LEFT COLUMN — Controls
+   # ==========================================================
+   left_col, right_col = st.columns([1, 3])
+   with left_col:
+      st.markdown("### Controls")
+      st.markdown("---")
+      c1, c2, c3 = st.columns(3)
+      with c1:
+         if st.button("⏮ Reset"):
+               st.session_state.frame_index = 0
+               st.session_state.playing = False
+               st.rerun()
+      with c2:
+         if st.button("▶ Play" if not st.session_state.playing else "⏸ Pause"):
+               st.session_state.playing = not st.session_state.playing
+               st.rerun()
+      with c3:
+         if st.button("Step ⏭"):
+               st.session_state.frame_index = (st.session_state.frame_index + 1) % len(animation_sequence)
+               st.rerun()
+
+      speed = st.slider("Speed (fps)", 1, 30, 30, key="speed")
+      frame = st.slider("Frame", 0, len(animation_sequence)-1, st.session_state.frame_index, key="frame_slider")
+      if frame != st.session_state.frame_index:
+         st.session_state.frame_index = frame
+         st.session_state.playing = False
+
+      view_option = st.selectbox("Camera View", ["Isometric", "Front", "Side"], index=0)
+
+   # ==========================================================
+   # RIGHT COLUMN — 3D Plot + Readouts
+   # ==========================================================
+   with right_col:
+
+
+      # --- Forward kinematics ---
+      angles = animation_sequence[st.session_state.frame_index]
+      frame_matrices = robot_chain.forward_kinematics([0.0] + angles, full_kinematics=True)
+      x, y, z = zip(*[m[:3, 3] for m in frame_matrices])
+
+      # --- Camera presets ---
+      camera_presets = {
+         "Isometric": dict(x=1.5, y=1.5, z=1.2),
+         "Front": dict(x=0.0, y=2.5, z=0.5),
+         "Side": dict(x=2.5, y=0.0, z=0.5),
+         "Top": dict(x=0.0, y=0.0, z=3.0)
+      }
+
+      if "camera_eye" not in st.session_state:
+         st.session_state.camera_eye = camera_presets["Isometric"]
+      if "last_view_option" not in st.session_state:
+         st.session_state.last_view_option = "Isometric"
+
+      if view_option != st.session_state.last_view_option:
+         st.session_state.camera_eye = camera_presets[view_option]
+         st.session_state.last_view_option = view_option
+
+      camera_eye = st.session_state.camera_eye
+
+      # --- Build 3D plot ---
+      fig = animation_plot(x, y, z, animation_sequence, robot_chain)
+      fig.update_layout(
+         autosize=False,
+         width=750,             # fixed width
+         height=450,
+         margin=dict(l=0, r=0, t=0, b=0),
+         legend=dict(
+            x=0.98, y=0.02, xanchor='left', yanchor='top',
+         ),
+         scene=dict(
+            aspectmode='cube',
+            xaxis=dict(title='X', range=[-0.5, 0.5]),
+            yaxis=dict(title='Y', range=[-0.5, 0.5]),
+            zaxis=dict(title='Z', range=[0, 0.7]),
+            camera=dict(
+                  eye=camera_eye,
+                  center=dict(x=0, y=0, z=0.2),
+                  up=dict(x=0, y=0, z=1)
+            )
+         ),
+         uirevision='static_scene'  # <— prevents re-layout across reruns
+      )
+
+      st.plotly_chart(fig, use_container_width=False, key="animation_plot")
+
+
+      # st.markdown("<div style='width:650px; margin:auto;'>", unsafe_allow_html=True)
+      # st.plotly_chart(fig,  key="animation_plot")
+      # st.markdown("</div>", unsafe_allow_html=True)
+
+      # --- Readouts ---
+      st.markdown("### Robot State")
+      # cols = st.columns([0.05]*9)
+      # cols[0].metric("X", f"{x[-1]:.3f}")
+      # cols[1].metric("Y", f"{y[-1]:.3f}")
+      # cols[2].metric("Z", f"{z[-1]:.3f}")
+      # for i, (col, angle) in enumerate(zip(cols[3:], angles)):
+      #    col.metric(f"θ{i}", f"{angle:.3f}")
+      cols = st.columns([1, 1, 1] + [1] * len(angles))
+
+      cols[0].markdown(f"<small><b>X:</b> {x[-1]:.3f}</small>", unsafe_allow_html=True)
+      cols[1].markdown(f"<small><b>Y:</b> {y[-1]:.3f}</small>", unsafe_allow_html=True)
+      cols[2].markdown(f"<small><b>Z:</b> {z[-1]:.3f}</small>", unsafe_allow_html=True)
+
+      for i, (col, angle) in enumerate(zip(cols[3:], angles)):
+         col.markdown(f"<small><b>θ{i}:</b> {angle:.3f}</small>", unsafe_allow_html=True)
+
+   # ==========================================================
+   # AUTO-PLAY LOOP
+   # ==========================================================
+   if st.session_state.playing:
+      time.sleep(1.0 / speed)
+      st.session_state.frame_index = (st.session_state.frame_index + 1) % len(animation_sequence)
+      st.rerun()
