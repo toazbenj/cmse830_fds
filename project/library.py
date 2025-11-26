@@ -13,17 +13,37 @@ import os
 
 warnings.filterwarnings("ignore", category=UserWarning, module='matplotlib')
 
+
+@st.cache_data
+def load_aursad_data():
+    df_aursad = pd.read_feather('project/data/aursad/aursad.feather')
+    return df_aursad
+
+@st.cache_data
+def load_cobotops_data():
+    
+    df_cobots = pd.read_feather('project/data/cobotops/cobotops.feather')
+    df_cobots_original = pd.read_feather('project/data/cobotops/cobotops_original.feather')
+    df_cycle_issue = pd.read_feather('project/data/cobotops/cobotops_cycle_issues.feather')
+    df_gaps = pd.read_feather('project/data/cobotops/cobotops_gaps.feather')
+    return df_cobots, df_cobots_original, df_cycle_issue, df_gaps
+
+@st.cache_data
+def load_rad_data():
+    df_rad = pd.read_feather('project/data/rad/rad.feather')
+    return df_rad
+
 # Data Cleaning Steps
 @st.cache_data
 def cobots_data():
-    df_cobots = pd.read_excel("project/data/cobot_dataset.xlsx")
+    df_cobots = pd.read_excel("project/data/cobotops/cobot_dataset.xlsx")
     df_cobots_original = df_cobots.copy()
 
     # redundant
     df_cobots.drop(columns=['Num'], inplace=True)
 
     # miss named
-    df_cobots.rename(columns={'Temperature_T0': 'Temperature_J0'}, inplace=True)
+    df_cobots.rename(columns={'Temperature_T0': 'Temperature0'}, inplace=True)
 
     # extra space
     df_cobots.rename(columns={'cycle ': 'cycle'}, inplace=True)
@@ -65,6 +85,11 @@ def cobots_data():
 
     # Make it match Protective Stop type
     df_cobots['grip_lost'] = df_cobots['grip_lost'].astype(int)
+
+    df_cobots.to_feather('project/data/cobotops/cobotops.feather')
+    df_cobots_original.to_feather('project/data/cobotops/cobotops_original.feather')
+    df_cycle_issues.to_feather('project/data/cobotops/cobotops_cycle_issues.feather')
+    df_gaps.to_feather('project/data/cobotops/cobotops_gaps.feather')
 
     return df_cobots, df_cobots_original, df_cycle_issues, df_gaps
 
@@ -134,9 +159,9 @@ def aursad_data():
     
     # Renaming to match CobotOps
     for i in range(6):
-        df_aursad = df_aursad.rename(columns={f'actual_current_{i}': f'Current_J{i}'})
-        df_aursad = df_aursad.rename(columns={f'actual_TCP_speed_{i}': f'Speed_J{i}'})
-        df_aursad = df_aursad.rename(columns={f'joint_temperatures_{i}': f'Temperature_J{i}'})
+        df_aursad = df_aursad.rename(columns={f'actual_current_{i}': f'Current{i}'})
+        df_aursad = df_aursad.rename(columns={f'actual_TCP_speed_{i}': f'Speed{i}'})
+        df_aursad = df_aursad.rename(columns={f'joint_temperatures_{i}': f'Temperature{i}'})
 
     # Encode labels for screwing failures
     df_aursad = pd.get_dummies(df_aursad, columns=['label'], prefix='label')
@@ -145,6 +170,8 @@ def aursad_data():
     for i, label in enumerate(label_names):
         df_aursad = df_aursad.rename(columns={f'label_{i}': label})
     df_aursad.head()
+
+    df_aursad.to_feather('project/data/aursad/aursad.feather')
 
     return df_aursad
 
@@ -158,7 +185,7 @@ def missingness_heatmap(df_cobots):
     ax.set_facecolor('#0E1117')
 
     feature_type_lst = ["Current", "Speed", "Temperature"]
-    cols = [f"{ft}_J{i}" for ft in feature_type_lst for i in range(1, 6)]
+    cols = [f"{ft}{i}" for ft in feature_type_lst for i in range(1, 6)]
     df_subset = df_cobots[cols]
 
     sns.heatmap(
@@ -196,7 +223,7 @@ def missingness_heatmap(df_cobots):
 @st.cache_data
 def interpolation_example(df_cobots, df_cobots_original, feature_type='Current'):
     colors = px.colors.qualitative.Dark24
-    feature = f"{feature_type}_J2"
+    feature = f"{feature_type}2"
 
     fig = make_subplots(
         rows=2, cols=1, shared_xaxes=True,
@@ -327,141 +354,151 @@ def detailed_summary(df):
     return summary
 
 @st.cache_data
-def histogram_plots(df_cobots):
-    feature_type_lst = ["Current", "Speed", "Temperature"]
-    unit = ["A", "m/s", "Degrees C"]
-    colors = px.colors.qualitative.Dark24
+def histogram_plots(df, df_name):
 
-    fig = make_subplots(
-        rows=3, cols=1,
-        subplot_titles=[f'{feature} Distribution' for feature in feature_type_lst],
-        horizontal_spacing=0.1
-    )
+    if df_name != "RAD":
 
-    # Loop through each feature type
-    for feat_idx, (feature_type, unit_label) in enumerate(zip(feature_type_lst, unit)):
-        row = feat_idx + 1  
-        
-        # Add histogram for each joint (J0-J5)
-        for joint_idx in range(6):
-            col_name = f"{feature_type}_J{joint_idx}"
-            
-            # Avoid black color for last joint
-            if joint_idx != 5:
-                color = colors[joint_idx] 
-            else:
-                color = colors[6]
+        feature_type_lst = ["Current", "Speed", "Temperature"]
+        unit = ["A", "m/s", "Degrees C"]
+        colors = px.colors.qualitative.Dark24
 
-            fig.add_trace(
-                go.Histogram(
-                    x=df_cobots[col_name],
-                    name=f'Joint {joint_idx}',
-                    marker=dict(color=color),
-                    opacity=0.7,
-                    legendgroup=f'joint{joint_idx}',  # Group by joint for legend
-                    showlegend=(feat_idx == 0)  # Only show legend once (on first subplot)
-                ),
-                row=row, col=1
-            )
-        
-        fig.update_xaxes(title_text=f"{feature_type} ({unit_label})", row=row, col=1)
-
-    fig.update_yaxes(title_text="Count", row=1, col=1)
-
-    # Update layout
-    fig.update_layout(
-        height=1000,
-    #  title_text="Joint Feature Distributions",
-        barmode='overlay',  
-        showlegend=True,
-        legend=dict(
-            title="Joints",
-            orientation="v",
-            yanchor="top",
-            y=1,
-            xanchor="left",
-            x=1.02
+        fig = make_subplots(
+            rows=3, cols=1,
+            subplot_titles=[f'{feature} Distribution' for feature in feature_type_lst],
+            horizontal_spacing=0.1
         )
-    )
-    return fig
+
+        # Loop through each feature type
+        for feat_idx, (feature_type, unit_label) in enumerate(zip(feature_type_lst, unit)):
+            row = feat_idx + 1  
+            
+            # Add histogram for each joint (J0-J5)
+            for joint_idx in range(6):
+                col_name = f"{feature_type}{joint_idx}"
+                
+                # Avoid black color for last joint
+                if joint_idx != 5:
+                    color = colors[joint_idx] 
+                else:
+                    color = colors[6]
+
+                fig.add_trace(
+                    go.Histogram(
+                        x=df[col_name],
+                        name=f'Joint {joint_idx}',
+                        marker=dict(color=color),
+                        opacity=0.7,
+                        legendgroup=f'joint{joint_idx}',  # Group by joint for legend
+                        showlegend=(feat_idx == 0)  # Only show legend once (on first subplot)
+                    ),
+                    row=row, col=1
+                )
+            
+            fig.update_xaxes(title_text=f"{feature_type} ({unit_label})", row=row, col=1)
+
+        fig.update_yaxes(title_text="Count", row=1, col=1)
+
+        # Update layout
+        fig.update_layout(
+            height=1000,
+        #  title_text="Joint Feature Distributions",
+            barmode='overlay',  
+            showlegend=True,
+            legend=dict(
+                title="Joints",
+                orientation="v",
+                yanchor="top",
+                y=1,
+                xanchor="left",
+                x=1.02
+            )
+        )
+        return fig
+    
+    else:
+        return histogram_plots_rad(df)
 
 # https://plotly.com/python/time-series/
 #  Claude Sonnet 4.5, 10-11-25
 
 @st.cache_data
-def time_series_plots(df_cobots, error, feature_type):
-    # Define column groups
-    feature_type_lst = ["Current", "Speed", "Temperature"]
-    unit_lst = ["A", "m/s", "Degrees C"]
-    colors = px.colors.qualitative.Dark24
+def time_series_plots(df_cobots, error, feature_type, df_name, feature_type_lst=["Current", "Speed", "Temperature"], 
+                      unit_lst = ["A", "m/s", "Degrees C"]):
+    if df_name != "RAD":
 
-    unit = unit_lst[feature_type_lst.index(feature_type)]
+        # Define column groups
+        colors = px.colors.qualitative.Dark24
 
-    fig_lst = []
+        unit = unit_lst[feature_type_lst.index(feature_type)]
 
-    # for feature_type, unit in zip(feature_type_lst, unit):
-    cols1 = [f"{feature_type}_J{i}" for i in range(0, 3)]
-    cols2 = [f"{feature_type}_J{i}" for i in range(3, 6)]
+        fig_lst = []
 
-    # Create subplots
-    fig = make_subplots(rows=2, cols=1, shared_xaxes=True, 
-                        subplot_titles=(f'{feature_type} Joints 0-2', f'{feature_type} Joints 3-5'),
-                        vertical_spacing=0.1)
+        # for feature_type, unit in zip(feature_type_lst, unit):
+        cols1 = [f"{feature_type}{i}" for i in range(0, 3)]
+        cols2 = [f"{feature_type}{i}" for i in range(3, 6)]
 
-    # Add current traces to first subplot
-    for i, col in enumerate(cols1):
-        fig.add_trace(go.Scatter(x=df_cobots['time'], y=df_cobots[col],
-                                name=col, mode='lines', line=dict(color=colors[i])), row=1, col=1)
+        # Create subplots
+        fig = make_subplots(rows=2, cols=1, shared_xaxes=True, 
+                            subplot_titles=(f'{feature_type} Joints 0-2', f'{feature_type} Joints 3-5'),
+                            vertical_spacing=0.1)
 
-    # Add speed traces to second subplot
-    for i, col in enumerate(cols2):
-        # Avoid black color for last joint
-        if i != len(cols2) - 1:
-            color = colors[i + 3] 
-        else:
-            color = colors[6]
-        fig.add_trace(go.Scatter(x=df_cobots['time'], y=df_cobots[col], 
-                                name=col, mode='lines', line=dict(color=color)), row=2, col=1)
+        # Add current traces to first subplot
+        for i, col in enumerate(cols1):
+            fig.add_trace(go.Scatter(x=df_cobots['time'], y=df_cobots[col],
+                                    name=col, mode='lines', line=dict(color=colors[i])), row=1, col=1)
 
-    # Add yellow dots where grip_lost is True
-    if error in df_cobots.columns:
-        df_flag = df_cobots[df_cobots[error] == True]
-        
-        if not df_flag.empty:
-            # Add markers to subplot 1 (for each joint in cols1)
-            for i, col in enumerate(cols1):
-                fig.add_trace(go.Scatter(
-                    x=df_flag['time'], 
-                    y=df_flag[col],
-                    mode='markers',
-                    marker=dict(color='yellow', size=6, symbol='circle'),
-                    name=error,
-                    showlegend=(i == 0)  # Only show legend for first occurrence
-                ), row=1, col=1)
+        # Add speed traces to second subplot
+        for i, col in enumerate(cols2):
+            # Avoid black color for last joint
+            if i != len(cols2) - 1:
+                color = colors[i + 3] 
+            else:
+                color = colors[6]
+            fig.add_trace(go.Scatter(x=df_cobots['time'], y=df_cobots[col], 
+                                    name=col, mode='lines', line=dict(color=color)), row=2, col=1)
+
+        # Add yellow dots where grip_lost is True
+        if error in df_cobots.columns:
+            df_flag = df_cobots[df_cobots[error] == True]
             
-            # Add markers to subplot 2 (for each joint in cols2)
-            for i, col in enumerate(cols2):
-                fig.add_trace(go.Scatter(
-                    x=df_flag['time'], 
-                    y=df_flag[col],
-                    mode='markers',
-                    marker=dict(color='yellow', size=6, symbol='circle'),
-                    name=error,
-                    showlegend=False  
-                ), row=2, col=1)
+            if not df_flag.empty:
+                # Add markers to subplot 1 (for each joint in cols1)
+                for i, col in enumerate(cols1):
+                    fig.add_trace(go.Scatter(
+                        x=df_flag['time'], 
+                        y=df_flag[col],
+                        mode='markers',
+                        marker=dict(color='yellow', size=6, symbol='circle'),
+                        name=error,
+                        showlegend=(i == 0)  # Only show legend for first occurrence
+                    ), row=1, col=1)
+                
+                # Add markers to subplot 2 (for each joint in cols2)
+                for i, col in enumerate(cols2):
+                    fig.add_trace(go.Scatter(
+                        x=df_flag['time'], 
+                        y=df_flag[col],
+                        mode='markers',
+                        marker=dict(color='yellow', size=6, symbol='circle'),
+                        name=error,
+                        showlegend=False  
+                    ), row=2, col=1)
 
-    # Add rangeslider to bottom subplot only
-    fig.update_xaxes(rangeslider_visible=True, row=2, col=1)
+        # Add rangeslider to bottom subplot only
+        fig.update_xaxes(rangeslider_visible=True, row=2, col=1)
 
-    fig.update_xaxes(title_text="Time (s)", row=2, col=1, rangeslider_visible=True)
-    fig.update_yaxes(title_text=f"{feature_type} ({unit})", row=1, col=1)
-    fig.update_yaxes(title_text=f"{feature_type} ({unit})", row=2, col=1)
+        fig.update_xaxes(title_text="Time (s)", row=2, col=1, rangeslider_visible=True)
+        fig.update_yaxes(title_text=f"{feature_type} ({unit})", row=1, col=1)
+        fig.update_yaxes(title_text=f"{feature_type} ({unit})", row=2, col=1)
 
-    # Update layout
-    fig.update_layout(height=800)
-    fig_lst.append(fig)
+        # Update layout
+        fig.update_layout(height=800)
+        fig_lst.append(fig)
 
-    return fig_lst
+        return fig_lst
+    
+    else:
+        return [time_series_plots_rad(df_cobots, error)]
 
 # Failure Events Heatmap
 @st.cache_data
@@ -502,7 +539,7 @@ def joint_correlation_heatmaps(df, is_cobotops=True):
         # Select columns for this joint
         cols = []
         for feature_type in feature_type_lst:
-            cols.append(f"{feature_type}_J{joint_idx}")
+            cols.append(f"{feature_type}{joint_idx}")
 
         if is_cobotops:
             cols += ['Robot_ProtectiveStop', 'grip_lost', 'cycle', 'Tool_current']
@@ -556,65 +593,68 @@ def joint_correlation_heatmaps(df, is_cobotops=True):
     return fig
 
 @st.cache_data
-def feature_correlation_heatmaps(df_cobots):
-    # Correlations by feature type
-    feature_type_lst = ["Current", "Speed", "Temperature"]
+def feature_correlation_heatmaps(df, df_name, feature_type_lst = ["Current", "Speed", "Temperature"]):
 
-    feature_pairs = list(combinations(feature_type_lst, 2))
+    if df_name != "RAD":
+        # Correlations by feature type
+        feature_pairs = list(combinations(feature_type_lst, 2))
 
-    fig = make_subplots(
-        rows=1, cols=3,
-        subplot_titles=[f'{pair[0]} vs {pair[1]}' for pair in feature_pairs],
-        horizontal_spacing=0.125
-    )
-
-    for pair_idx, (feat1, feat2) in enumerate(feature_pairs):
-        cols = []
-        for joint_idx in range(6):
-            cols.append(f"{feat1}_J{joint_idx}")
-        for joint_idx in range(6):
-            cols.append(f"{feat2}_J{joint_idx}")
-        
-        df_corr = df_cobots[cols].corr().round(2)
-        
-        # Mask upper triangle
-        mask = np.zeros_like(df_corr, dtype=bool)
-        mask[np.triu_indices_from(mask)] = True
-        
-        # Apply mask and drop empty rows/cols
-        df_corr_viz = df_corr.mask(mask).dropna(how='all').dropna(axis='columns', how='all')
-
-        # Create text array with blanks instead of nan
-        text_values = df_corr_viz.values.astype(str)
-        text_values[text_values == 'nan'] = ''
-        
-        col = pair_idx + 1  # 1, 2, or 3
-        
-        fig.add_trace(
-            go.Heatmap(
-                z=df_corr_viz.values,
-                x=df_corr_viz.columns,
-                y=df_corr_viz.index,
-                colorscale='Viridis',
-                zmid=0,
-                text=text_values,
-                texttemplate='%{text}',
-                textfont={"size": 8},
-                showscale=(pair_idx == 2)
-            ),
-            row=1, col=col
+        fig = make_subplots(
+            rows=1, cols=3,
+            subplot_titles=[f'{pair[0]} vs {pair[1]}' for pair in feature_pairs],
+            horizontal_spacing=0.125
         )
-        
-        fig.update_xaxes(tickangle=-45, row=1, col=col)
 
-    fig.update_layout(
-        height=450,
-    #  title_text="Cross-Feature Correlation Analysis",
-        margin=dict(b=100),
-        showlegend=False
-    )
+        for pair_idx, (feat1, feat2) in enumerate(feature_pairs):
+            cols = []
+            for joint_idx in range(6):
+                cols.append(f"{feat1}{joint_idx}")
+            for joint_idx in range(6):
+                cols.append(f"{feat2}{joint_idx}")
+            
+            df_corr = df[cols].corr().round(2)
+            
+            # Mask upper triangle
+            mask = np.zeros_like(df_corr, dtype=bool)
+            mask[np.triu_indices_from(mask)] = True
+            
+            # Apply mask and drop empty rows/cols
+            df_corr_viz = df_corr.mask(mask).dropna(how='all').dropna(axis='columns', how='all')
 
-    return fig
+            # Create text array with blanks instead of nan
+            text_values = df_corr_viz.values.astype(str)
+            text_values[text_values == 'nan'] = ''
+            
+            col = pair_idx + 1  # 1, 2, or 3
+            
+            fig.add_trace(
+                go.Heatmap(
+                    z=df_corr_viz.values,
+                    x=df_corr_viz.columns,
+                    y=df_corr_viz.index,
+                    colorscale='Viridis',
+                    zmid=0,
+                    text=text_values,
+                    texttemplate='%{text}',
+                    textfont={"size": 8},
+                    showscale=(pair_idx == 2)
+                ),
+                row=1, col=col
+            )
+            
+            fig.update_xaxes(tickangle=-45, row=1, col=col)
+
+        fig.update_layout(
+            height=450,
+        #  title_text="Cross-Feature Correlation Analysis",
+            margin=dict(b=100),
+            showlegend=False
+        )
+
+        return fig
+    
+    else:
+        return feature_correlation_heatmap_rad(df, feature_type_lst)
 
 
 # Adapted from example Penguins app with ChatGPT-5 Code GPT, 10-19-25
@@ -623,7 +663,7 @@ def feature_correlation_heatmaps(df_cobots):
 def melt_features(df, base_features=["Temperature", "Speed", "Current"]):
     """
     Combine all joint-specific columns for the given features into a single long-format DataFrame.
-    Example: Temperature_J1, Temperature_J2 -> 'Temperature' + 'Joint' columns.
+    Example: Temperature1, Temperature2 -> 'Temperature' + 'Joint' columns.
     """
     melted = []
     for feat in base_features:
@@ -656,8 +696,7 @@ def melt_features(df, base_features=["Temperature", "Speed", "Current"]):
 
 # RAD Dataset Add Ons
 
-@st.cache_data
-def histogram_plots_rad(df_cobots, feature_type_lst=["Current", "Speed", "Temperature"], unit=["A", "m/s", "Degrees C"]):
+def histogram_plots_rad(df, feature_type_lst=["x", "y", "z"], unit=["pos", "pos", "pos"]):
 
     colors = px.colors.qualitative.Dark24
 
@@ -673,7 +712,7 @@ def histogram_plots_rad(df_cobots, feature_type_lst=["Current", "Speed", "Temper
         
         fig.add_trace(
             go.Histogram(
-                x=df_cobots[feature_type],
+                x=df[feature_type],
                 marker=dict(color=colors[feat_idx]),
                 opacity=0.7,
             ),
@@ -692,10 +731,9 @@ def histogram_plots_rad(df_cobots, feature_type_lst=["Current", "Speed", "Temper
     )
     return fig
 
-@st.cache_data
-def feature_correlation_heatmap_rad(df):
+def feature_correlation_heatmap_rad(df, feature_type_lst = ['time', "x", "y", "z"]):
     # Calculate correlation
-    df_corr = df.drop(columns=['time']).corr().round(2)
+    df_corr = df.corr().round(2)
 
     # Mask upper triangle
     mask = np.zeros_like(df_corr, dtype=bool)
@@ -730,9 +768,6 @@ def feature_correlation_heatmap_rad(df):
 
     return fig
 
-
-
-@st.cache_data
 def time_series_plots_rad(df, error=None):
     # Define axis list and colors
     feature_type_lst = ["x", "y", "z"]
@@ -772,3 +807,4 @@ def time_series_plots_rad(df, error=None):
     )
 
     return fig
+

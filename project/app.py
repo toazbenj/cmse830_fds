@@ -4,28 +4,41 @@ from text import *
 from animation import *
 
 # Main
-df_cobots, df_cobots_original, df_cycle_issue, df_gaps = cobots_data()
-df_aursad = aursad_data()
+
+df_cobots, df_cobots_original, df_cycle_issue, df_gaps = load_cobotops_data()
+df_aursad = load_aursad_data()
+df_rad = load_rad_data()
 
 # Sidebar page selector
 page = st.sidebar.radio("Select Page", ["Intro", "Data Processing", "EDA", 'Animation'])
 page_idx = ["Intro", "Data Processing", "EDA", 'Animation'].index(page)
 
-df_name = st.sidebar.radio("Select Dataset", ["CobotOps", "AURSAD"])
+df_name = st.sidebar.radio("Select Dataset", ["CobotOps", "AURSAD", 'RAD'])
 
 if df_name == "CobotOps":
    df = df_cobots
    hover_data = ['grip_lost','Robot_ProtectiveStop']
-   small_lst = ['grip_lost','Robot_ProtectiveStop', 'Temperature', 'Speed', 'Current']
+   color_lst = ['grip_lost','Robot_ProtectiveStop', 'Temperature', 'Speed', 'Current']
+   feature_lst = ['Temperature', 'Speed', 'Current']
+   unit_lst = ["A", "m/s", "Degrees C"]
 
-else:
-   df = df_aursad
+elif df_name == "AURSAD":
+   df = df_aursad 
+
    # hover_data  = ["Damaged screw", "Extra assembly component", "Missing screw", "Damaged thread samples"]
    hover_data  = ["Damaged screw", "Extra assembly component", "Missing screw"]
 
    # hover_data  = []
    # small_lst = ["Damaged screw", "Extra assembly component", "Missing screw", "Damaged thread samples", 'Temperature', 'Speed', 'Current']
-   small_lst = ["Damaged screw", "Extra assembly component", "Missing screw"]
+   color_lst = ["Damaged screw", "Extra assembly component", "Missing screw", 'time']
+   feature_lst = ['Temperature', 'Speed', 'Current', 'q', 'target_q_', 'target_qd_']
+   unit_lst = ["A", "m/s", "Degrees C", "rad", 'rad', "rad/s"]
+else:
+   df = df_rad
+   hover_data = []
+   color_lst = ['time', 'x', 'y', 'z']
+   feature_lst = ['x', 'y', 'z']
+   unit_lst = ['m', 'm', 'm']
 
 st.set_page_config(page_title="Robot Joint Monitoring", layout="wide")
 
@@ -161,7 +174,7 @@ elif page_idx == 2:
       with col3:
          z_3d = st.selectbox("Select Z-axis (3D):", numeric_cols, index=2, key='z3d')
 
-      color_3d = st.selectbox("Color by (3D):", small_lst, key='color3d')
+      color_3d = st.selectbox("Color by (3D):", color_lst, key='color3d')
 
       df_melted = melt_features(df)
 
@@ -175,8 +188,9 @@ elif page_idx == 2:
       st.plotly_chart(fig, use_container_width=True)
 
    if option == "Histogram":
-      st.header("Joint Feature Distributions")
-      fig = histogram_plots(df)
+      st.header("Feature Distributions")
+      fig = histogram_plots(df, df_name)
+
       st.plotly_chart(fig, use_container_width=True)
 
    if option == "Time Series":
@@ -184,7 +198,7 @@ elif page_idx == 2:
       
       feature = st.selectbox(
       "Select a feature:",
-         ("Current", "Speed", "Temperature"),
+         feature_lst,
       )
       
       error = st.radio(
@@ -192,20 +206,26 @@ elif page_idx == 2:
          hover_data,
          horizontal=True
       )
-      fig_lst = time_series_plots(df, error, feature)
+      fig_lst = time_series_plots(df, error, feature, df_name, feature_type_lst=feature_lst, unit_lst =unit_lst)
+
+      print(fig_lst)
 
       for fig in fig_lst:
          st.plotly_chart(fig, use_container_width=True)
 
    if option == "Correlation Heatmaps":
-      st.header("Correlations by Robot Joint")
 
-      is_cobotops = "CobotOps" == df_name
-      fig = joint_correlation_heatmaps(df, is_cobotops)
-      st.plotly_chart(fig, use_container_width=True)
+      if df_name != "RAD":
+         st.header("Correlations by Robot Joint")
+
+         is_cobotops = "CobotOps" == df_name
+         fig = joint_correlation_heatmaps(df, df_name)
+         st.plotly_chart(fig, use_container_width=True)
 
       st.header("Cross-Feature Correlations")
-      fig = feature_correlation_heatmaps(df)
+
+      fig = feature_correlation_heatmaps(df, df_name, feature_lst)
+ 
       st.plotly_chart(fig, use_container_width=True)
 
 elif page_idx == 3:
@@ -215,7 +235,7 @@ elif page_idx == 3:
    st.title("Robot Movement Animation")
 
    # --- Data prep ---
-   df_angles = df[['actual_q_0', 'actual_q_1', 'actual_q_2', 'actual_q_3', 'actual_q_4', 'actual_q_5']]
+   df_angles = df[['q0', 'q1', 'q2', 'q3', 'q4', 'q5']]
    animation_sequence = df_angles.values.tolist()
    robot_chain = get_robot_chain()
 
@@ -260,8 +280,6 @@ elif page_idx == 3:
    # RIGHT COLUMN — 3D Plot + Readouts
    # ==========================================================
    with right_col:
-
-
       # --- Forward kinematics ---
       angles = animation_sequence[st.session_state.frame_index]
       frame_matrices = robot_chain.forward_kinematics([0.0] + angles, full_kinematics=True)
@@ -300,7 +318,7 @@ elif page_idx == 3:
             aspectmode='cube',
             xaxis=dict(title='X', range=[-0.5, 0.5]),
             yaxis=dict(title='Y', range=[-0.5, 0.5]),
-            zaxis=dict(title='Z', range=[0, 0.7]),
+            zaxis=dict(title='Z', range=[0.0, 0.7]),
             camera=dict(
                   eye=camera_eye,
                   center=dict(x=0, y=0, z=0.2),
