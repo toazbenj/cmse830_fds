@@ -1,6 +1,15 @@
-project\data\AURSAD.pkl
-project\data\aursad.feather
+project\data\aursad\AURSAD.pkl
+project\data\aursad\aursad.feather
+project\data\aursad\aursad_training.feather
+project/data/aursad/aursad_training.feather
+project/preprocessing/predicted_joint_angles_and_speeds.feather
+project/preprocessing/predicted_joint_angles.feather
+project/preprocessing/pred_speed.feather
+project/preprocessing/predicted_joint_angles_and_speeds.feather
+project/preprocessing/predicted_joint_current_temp_speed.feather
 hw
 ICA
 .git ignore
 project/__pycache__
+.venv
+venv

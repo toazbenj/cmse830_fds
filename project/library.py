@@ -22,7 +22,7 @@ def load_aursad_data():
 @st.cache_data
 def load_cobotops_data():
     
-    df_cobots = pd.read_feather('project/data/cobotops/cobotops.feather')
+    df_cobots = pd.read_feather('project/data/cobotops/cobotops_added_q.feather')
     df_cobots_original = pd.read_feather('project/data/cobotops/cobotops_original.feather')
     df_cycle_issue = pd.read_feather('project/data/cobotops/cobotops_cycle_issues.feather')
     df_gaps = pd.read_feather('project/data/cobotops/cobotops_gaps.feather')
@@ -160,7 +160,7 @@ def aursad_data():
     # Renaming to match CobotOps
     for i in range(6):
         df_aursad = df_aursad.rename(columns={f'actual_current_{i}': f'Current{i}'})
-        df_aursad = df_aursad.rename(columns={f'actual_TCP_speed_{i}': f'Speed{i}'})
+        df_aursad = df_aursad.rename(columns={f'actual_qd_{i}': f'Speed{i}'})
         df_aursad = df_aursad.rename(columns={f'joint_temperatures_{i}': f'Temperature{i}'})
 
     # Encode labels for screwing failures
