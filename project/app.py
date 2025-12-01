@@ -2,11 +2,14 @@ import streamlit as st
 from library import *
 from text import *
 from animation import *
+from streamlit_autorefresh import st_autorefresh
 
 # Main
 df_cobots, df_cobots_original, df_cycle_issue, df_gaps = load_cobotops_data()
 df_aursad = load_aursad_data()
 df_rad = load_rad_data()
+
+st.set_page_config(page_title="Robostats", layout="wide")
 
 # Sidebar page selector
 page_lst = ["Intro", "Data Processing", "EDA", 'Inverse Kinematics', 'Animation', 'LSTM', 'Error Prediction']
@@ -15,11 +18,12 @@ page_idx = page_lst.index(page)
 
 df_name = st.sidebar.radio("Select Dataset", ["CobotOps", "AURSAD", 'RAD'])
 
+
 if df_name == "CobotOps":
    df = df_cobots
    hover_data = ['grip_lost','Robot_ProtectiveStop']
    color_lst = ['grip_lost','Robot_ProtectiveStop', 'Temperature', 'Speed', 'Current']
-   feature_lst = ['Temperature', 'Speed', 'Current']
+   feature_lst = ['Temperature', 'Speed', 'Current', 'x', 'y', 'z']
    unit_lst = ["A", "m/s", "Degrees C"]
 
 elif df_name == "AURSAD":
@@ -31,7 +35,7 @@ elif df_name == "AURSAD":
    # hover_data  = []
    # small_lst = ["Damaged screw", "Extra assembly component", "Missing screw", "Damaged thread samples", 'Temperature', 'Speed', 'Current']
    color_lst = ["Damaged screw", "Extra assembly component", "Missing screw", 'time']
-   feature_lst = ['Temperature', 'Speed', 'Current', 'q', 'target_q_', 'target_qd_']
+   feature_lst = ['Temperature', 'Speed', 'Current', 'q', 'target_q_', 'target_qd_', 'x', 'y', 'z']
    unit_lst = ["A", "m/s", "Degrees C", "rad", 'rad', "rad/s"]
 else:
    df = df_rad
@@ -40,7 +44,7 @@ else:
    feature_lst = ['x', 'y', 'z']
    unit_lst = ['m', 'm', 'm']
 
-st.set_page_config(page_title="Robot Joint Monitoring", layout="wide")
+
 
 if page_idx == 0:
    st.title("Robot Performance Analysis and Failure Prediction")
@@ -316,7 +320,9 @@ elif page_idx == 4:
       camera_eye = st.session_state.camera_eye
 
       # --- Build 3D plot ---
-      fig = animation_plot(x, y, z, animation_sequence, robot_chain)
+      trajectory = df[['x', 'y', 'z']].to_numpy() 
+
+      fig = animation_plot(x, y, z, trajectory, st.session_state.frame_index )
       fig.update_layout(
          autosize=False,
          width=750,             # fixed width
@@ -371,6 +377,12 @@ elif page_idx == 4:
       st.session_state.frame_index = (st.session_state.frame_index + 1) % len(animation_sequence)
       st.rerun()
 
+   # ==========================================================
+   # AUTO-PLAY LOOP (works both locally and on Streamlit Cloud)
+   # ==========================================================
+   # if st.session_state.playing:
+   #    count = st_autorefresh(interval=int(1000 / speed), key="frame_autorefresh")
+   #    st.session_state.frame_index = (st.session_state.frame_index + 1) % len(animation_sequence)
 
 elif page_idx == 5:
    pass

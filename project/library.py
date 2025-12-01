@@ -30,7 +30,7 @@ def load_cobotops_data():
 
 @st.cache_data
 def load_rad_data():
-    df_rad = pd.read_feather('project/data/rad/rad.feather')
+    df_rad = pd.read_feather('project/data/rad/rad_current_speed_temp.feather')
     return df_rad
 
 # Data Cleaning Steps
