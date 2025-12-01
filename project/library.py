@@ -808,3 +808,60 @@ def time_series_plots_rad(df, error=None):
 
     return fig
 
+
+def time_series_inv_kin(df):
+    feature_type_lst = ["x", "y", "z"]
+    colors = px.colors.qualitative.Dark24[:3]
+
+    # Create subplots for X, Y, Z
+    fig = make_subplots(
+        rows=3, cols=1,
+        shared_xaxes=True,
+        subplot_titles=("X Position", "Y Position", "Z Position"),
+        vertical_spacing=0.08
+    )
+
+    # Loop through each axis
+    for idx, feature_type in enumerate(feature_type_lst, start=1):
+        color = colors[idx - 1]
+
+        # Plot original position
+        if feature_type in df.columns:
+            fig.add_trace(
+                go.Scatter(
+                    x=df['time'],
+                    y=df[feature_type],
+                    name=f"{feature_type.upper()} (true)",
+                    mode='lines',
+                    line=dict(color=color, width=2),
+                ),
+                row=idx, col=1
+            )
+
+        # Plot reconstructed / predicted position
+        hat_col = f"{feature_type}_hat"
+        # if hat_col in df.columns:
+        fig.add_trace(
+            go.Scatter(
+                x=df['time'],
+                y=df[hat_col],
+                name=f"{feature_type.upper()} (pred)",
+                mode='lines',
+                line=dict(color=color, width=2, dash='dash')
+            ),
+            row=idx, col=1
+        )
+
+    # Axis titles
+    fig.update_xaxes(title_text="Time (s)", row=3, col=1, rangeslider_visible=True)
+    for i, feature_type in enumerate(feature_type_lst, start=1):
+        fig.update_yaxes(title_text=f"{feature_type.upper()} (m)", row=i, col=1)
+
+    # Layout
+    fig.update_layout(
+        height=900,
+        title_text="Position Time Series: Actual vs. Forward-Kinematics Reconstruction",
+        legend=dict(orientation="h", yanchor="bottom", y=1.02, xanchor="right", x=1)
+    )
+
+    return fig

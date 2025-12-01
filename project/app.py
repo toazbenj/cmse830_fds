@@ -4,14 +4,14 @@ from text import *
 from animation import *
 
 # Main
-
 df_cobots, df_cobots_original, df_cycle_issue, df_gaps = load_cobotops_data()
 df_aursad = load_aursad_data()
 df_rad = load_rad_data()
 
 # Sidebar page selector
-page = st.sidebar.radio("Select Page", ["Intro", "Data Processing", "EDA", 'Animation'])
-page_idx = ["Intro", "Data Processing", "EDA", 'Animation'].index(page)
+page_lst = ["Intro", "Data Processing", "EDA", 'Inverse Kinematics', 'Animation', 'LSTM', 'Error Prediction']
+page = st.sidebar.radio("Select Page", page_lst)
+page_idx = page_lst.index(page)
 
 df_name = st.sidebar.radio("Select Dataset", ["CobotOps", "AURSAD", 'RAD'])
 
@@ -229,6 +229,17 @@ elif page_idx == 2:
       st.plotly_chart(fig, use_container_width=True)
 
 elif page_idx == 3:
+   st.title("Inverse Kinematic Feature Engineering")
+   st.header("Intro to Robot Movement")
+   st.markdown(kinematic_text(), unsafe_allow_html=True)
+
+   st.image('project/media/robot_schematic.png')
+
+   st.markdown(inverse_kinematic_text(), unsafe_allow_html=True)
+   fig = time_series_inv_kin(df_rad)
+   st.plotly_chart(fig, use_container_width=True)
+
+elif page_idx == 4:
 
    # --- Page setup ---
    st.set_page_config(layout="wide")
@@ -359,3 +370,11 @@ elif page_idx == 3:
       time.sleep(1.0 / speed)
       st.session_state.frame_index = (st.session_state.frame_index + 1) % len(animation_sequence)
       st.rerun()
+
+
+elif page_idx == 5:
+   pass
+
+elif page_idx == 6:
+
+   pass

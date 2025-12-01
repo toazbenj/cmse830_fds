@@ -62,3 +62,22 @@ def imputation_text():
    We will leave this in for now, but will probably have to deal with it when we start building predictive models.</p>
    """
 
+def kinematic_text():
+   return """
+   <p>Kinematics is the mathematics behind how a robot moves through space. 
+   Give some inputs, such as the rotations of the robot joints, the end effector, or the tip of the robot, will end up in a given xyz position.
+   If you gave the robot the correct rotations, this poisition will be in the spot that you want.</p>
+   """
+
+def inverse_kinematic_text():
+   return """
+   <p>We can also do this in reverse. 
+   Given the robot end point is in a position in space, we can calculate the most likely rotations of the joints and determine the configuration of the robot.
+   The RAD dataset only had the xyz position of the robot's end effector, but I wanted to know what was happening with each of the robot's joints. 
+   To find the rotations, I used a library called Ikpy, which allows you to define your robot limbs and dimensions.
+   Ikpy also has a built-in optimizer to do the inverse kinematics for you.
+   I used this to reconstruct the missing joint angles in the dataset.
+   
+   After finding the most likely rotations, if we perform the forward kinematics on these, we receive the original positions with only a slight error introduced.
+   With this done, we can visualize the positions and movements of the entire robot on the Animation page</p>
+   """
