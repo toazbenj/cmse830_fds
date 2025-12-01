@@ -2,7 +2,6 @@ import streamlit as st
 from library import *
 from text import *
 from animation import *
-from streamlit_autorefresh import st_autorefresh
 
 # Main
 df_cobots, df_cobots_original, df_cycle_issue, df_gaps = load_cobotops_data()
@@ -23,7 +22,7 @@ if df_name == "CobotOps":
    df = df_cobots
    hover_data = ['grip_lost','Robot_ProtectiveStop']
    color_lst = ['grip_lost','Robot_ProtectiveStop', 'Temperature', 'Speed', 'Current']
-   feature_lst = ['Temperature', 'Speed', 'Current', 'x', 'y', 'z']
+   feature_lst = ['Temperature', 'Speed', 'Current']
    unit_lst = ["A", "m/s", "Degrees C"]
 
 elif df_name == "AURSAD":
@@ -35,7 +34,7 @@ elif df_name == "AURSAD":
    # hover_data  = []
    # small_lst = ["Damaged screw", "Extra assembly component", "Missing screw", "Damaged thread samples", 'Temperature', 'Speed', 'Current']
    color_lst = ["Damaged screw", "Extra assembly component", "Missing screw", 'time']
-   feature_lst = ['Temperature', 'Speed', 'Current', 'q', 'target_q_', 'target_qd_', 'x', 'y', 'z']
+   feature_lst = ['Temperature', 'Speed', 'Current', 'q', 'target_q_', 'target_qd_']
    unit_lst = ["A", "m/s", "Degrees C", "rad", 'rad', "rad/s"]
 else:
    df = df_rad
