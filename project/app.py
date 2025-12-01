@@ -52,7 +52,7 @@ if page_idx == 0:
       st.markdown(intro_text(), unsafe_allow_html=True)
 
    with col3:
-      st.image("project/media/ur3.png", use_container_width=True)
+      st.image("project/media/ur3.png", width='stretch')
 
    st.header("Example UR3 Operation")
 
@@ -67,7 +67,7 @@ elif page_idx == 1:
 
    st.header(f"{df_name} Raw Data Samples")
 
-   st.dataframe(df.head(10), use_container_width=True)
+   st.dataframe(df.head(10), width='stretch')
 
    # Generated with Claude Sonnet 4.5 10-19-25
    st.header(f"{df_name} Dataset Overview")
@@ -88,7 +88,7 @@ elif page_idx == 1:
    })
    st.dataframe(
       info_df,
-      use_container_width=True,
+      width='stretch',
       hide_index=True,
       column_config={
          "Column": st.column_config.TextColumn("Column Name", width="medium"),
@@ -109,7 +109,7 @@ elif page_idx == 1:
         opacity=0.7,
         hover_data=['cycle', 'time']
     )
-   st.plotly_chart(fig, use_container_width=True)
+   st.plotly_chart(fig, width='stretch')
    st.markdown(cycle_time_text2(), unsafe_allow_html=True)
    fig = px.scatter(
         df_cobots,
@@ -119,7 +119,7 @@ elif page_idx == 1:
         opacity=0.7,
         hover_data=['cycle', 'time']
     )
-   st.plotly_chart(fig, use_container_width=True, key="cycle_time_fixed")
+   st.plotly_chart(fig, width='stretch', key="cycle_time_fixed")
 
    st.header("Missingness")
    fig = missingness_heatmap(df_cobots_original)
@@ -137,7 +137,7 @@ elif page_idx == 1:
    fig = interpolation_example(df_cobots, df_gaps, option)
    st.plotly_chart(
     fig,
-    use_container_width=True,
+    width='stretch',
     config={
         "displayModeBar": True,     # show toolbar
         "scrollZoom": True,         # enable zoom with scroll
@@ -185,13 +185,13 @@ elif page_idx == 2:
                              color_continuous_scale='Viridis')
       fig.update_traces(marker=dict(size=5))
       fig.update_layout(height=700)
-      st.plotly_chart(fig, use_container_width=True)
+      st.plotly_chart(fig, width='stretch')
 
    if option == "Histogram":
       st.header("Feature Distributions")
       fig = histogram_plots(df, df_name)
 
-      st.plotly_chart(fig, use_container_width=True)
+      st.plotly_chart(fig, width='stretch')
 
    if option == "Time Series":
       st.header("Time Series Data")
@@ -211,7 +211,7 @@ elif page_idx == 2:
       print(fig_lst)
 
       for fig in fig_lst:
-         st.plotly_chart(fig, use_container_width=True)
+         st.plotly_chart(fig, width='stretch')
 
    if option == "Correlation Heatmaps":
 
@@ -220,13 +220,13 @@ elif page_idx == 2:
 
          is_cobotops = "CobotOps" == df_name
          fig = joint_correlation_heatmaps(df, df_name)
-         st.plotly_chart(fig, use_container_width=True)
+         st.plotly_chart(fig, width='stretch')
 
       st.header("Cross-Feature Correlations")
 
       fig = feature_correlation_heatmaps(df, df_name, feature_lst)
  
-      st.plotly_chart(fig, use_container_width=True)
+      st.plotly_chart(fig, width='stretch')
 
 elif page_idx == 3:
    st.title("Inverse Kinematic Feature Engineering")
@@ -237,7 +237,7 @@ elif page_idx == 3:
 
    st.markdown(inverse_kinematic_text(), unsafe_allow_html=True)
    fig = time_series_inv_kin(df_rad)
-   st.plotly_chart(fig, use_container_width=True)
+   st.plotly_chart(fig, width='stretch')
 
 elif page_idx == 4:
 
