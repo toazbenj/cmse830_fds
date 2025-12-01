@@ -24,6 +24,7 @@ if df_name == "CobotOps":
    color_lst = ['grip_lost','Robot_ProtectiveStop', 'Temperature', 'Speed', 'Current']
    feature_lst = ['Temperature', 'Speed', 'Current']
    unit_lst = ["A", "m/s", "Degrees C"]
+   st.session_state.frame_index  = 0
 
 elif df_name == "AURSAD":
    df = df_aursad 
@@ -36,12 +37,15 @@ elif df_name == "AURSAD":
    color_lst = ["Damaged screw", "Extra assembly component", "Missing screw", 'time']
    feature_lst = ['Temperature', 'Speed', 'Current', 'q', 'target_q_', 'target_qd_']
    unit_lst = ["A", "m/s", "Degrees C", "rad", 'rad', "rad/s"]
+   st.session_state.frame_index  = 0
+
 else:
    df = df_rad
    hover_data = []
    color_lst = ['time', 'x', 'y', 'z']
    feature_lst = ['x', 'y', 'z']
    unit_lst = ['m', 'm', 'm']
+   st.session_state.frame_index  = 0
 
 
 
@@ -375,13 +379,6 @@ elif page_idx == 4:
       time.sleep(1.0 / speed)
       st.session_state.frame_index = (st.session_state.frame_index + 1) % len(animation_sequence)
       st.rerun()
-
-   # ==========================================================
-   # AUTO-PLAY LOOP (works both locally and on Streamlit Cloud)
-   # ==========================================================
-   # if st.session_state.playing:
-   #    count = st_autorefresh(interval=int(1000 / speed), key="frame_autorefresh")
-   #    st.session_state.frame_index = (st.session_state.frame_index + 1) % len(animation_sequence)
 
 elif page_idx == 5:
    pass
