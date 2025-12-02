@@ -2,7 +2,6 @@ import streamlit as st
 from library import *
 from text import *
 from animation import *
-from streamlit_autorefresh import st_autorefresh
 
 # Main
 df_cobots, df_cobots_original, df_cycle_issue, df_gaps = load_cobotops_data()
