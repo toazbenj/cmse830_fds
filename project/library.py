@@ -17,7 +17,8 @@ warnings.filterwarnings("ignore", category=UserWarning, module='matplotlib')
 @st.cache_data
 def load_aursad_data():
     df_aursad = pd.read_feather('project/data/aursad/aursad.feather')
-    return df_aursad
+    df_pred_q = pd.read_feather('project/data/predictions/predicted_joint_angles_light.feather')
+    return df_aursad, df_pred_q
 
 @st.cache_data
 def load_cobotops_data():

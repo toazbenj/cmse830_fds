@@ -5,9 +5,8 @@ from animation import *
 
 # Main
 df_cobots, df_cobots_original, df_cycle_issue, df_gaps = load_cobotops_data()
-df_aursad = load_aursad_data()
+df_aursad, df_pred_q = load_aursad_data()
 df_rad = load_rad_data()
-df_pred_q = pd.read_feather('project/data/predictions/predicted_joint_angles_light.feather')
 
 st.set_page_config(page_title="Robostats", layout="wide")
 
