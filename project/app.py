@@ -8,6 +8,7 @@ from streamlit_autorefresh import st_autorefresh
 df_cobots, df_cobots_original, df_cycle_issue, df_gaps = load_cobotops_data()
 df_aursad = load_aursad_data()
 df_rad = load_rad_data()
+df_pred_q = pd.read_feather('project/data/predictions/predicted_joint_angles_light.feather')
 
 st.set_page_config(page_title="Robostats", layout="wide")
 
@@ -414,8 +415,6 @@ elif page_idx == 5:
 
    st.markdown(q_training_text(), unsafe_allow_html=True)
 
-
-   df_pred_q = pd.read_feather('project/data/predictions/predicted_joint_angles_light.feather')
    fig = time_series_prediction_plot(df_pred_q, [f'q{i}' for i in range(6)], 'rad', 'Actual vs. Predicted Joint Angles')
    st.plotly_chart(fig, use_container_width=False)
 
