@@ -2,6 +2,7 @@ import streamlit as st
 from library import *
 from text import *
 from animation import *
+from streamlit_autorefresh import st_autorefresh
 
 # Main
 df_cobots, df_cobots_original, df_cycle_issue, df_gaps = load_cobotops_data()
@@ -11,12 +12,18 @@ df_rad = load_rad_data()
 st.set_page_config(page_title="Robostats", layout="wide")
 
 # Sidebar page selector
-page_lst = ["Intro", "Data Processing", "EDA", 'Inverse Kinematics', 'Animation', 'LSTM', 'Error Prediction']
+page_lst = ["Intro", "Data Processing", "EDA", 'Inverse Kinematics', 'Animation', 'Reconstruction', 'Error Prediction']
+
 page = st.sidebar.radio("Select Page", page_lst)
 page_idx = page_lst.index(page)
 
-df_name = st.sidebar.radio("Select Dataset", ["CobotOps", "AURSAD", 'RAD'])
+pages_with_dataset = ["EDA", "Animation", "Error Prediction"]
+is_data_set_selectable = page in pages_with_dataset
 
+if is_data_set_selectable:
+   df_name = st.sidebar.radio("Select Dataset", ["CobotOps", "AURSAD", 'RAD'])
+else:
+   df_name = 'CobotOps'
 
 if df_name == "CobotOps":
    df = df_cobots
@@ -24,7 +31,6 @@ if df_name == "CobotOps":
    color_lst = ['grip_lost','Robot_ProtectiveStop', 'Temperature', 'Speed', 'Current']
    feature_lst = ['Temperature', 'Speed', 'Current']
    unit_lst = ["A", "m/s", "Degrees C"]
-   st.session_state.frame_index  = 0
 
 elif df_name == "AURSAD":
    df = df_aursad 
@@ -37,19 +43,18 @@ elif df_name == "AURSAD":
    color_lst = ["Damaged screw", "Extra assembly component", "Missing screw", 'time']
    feature_lst = ['Temperature', 'Speed', 'Current', 'q', 'target_q_', 'target_qd_']
    unit_lst = ["A", "m/s", "Degrees C", "rad", 'rad', "rad/s"]
-   st.session_state.frame_index  = 0
-
 else:
    df = df_rad
    hover_data = []
    color_lst = ['time', 'x', 'y', 'z']
    feature_lst = ['x', 'y', 'z']
    unit_lst = ['m', 'm', 'm']
-   st.session_state.frame_index  = 0
 
 
 
 if page_idx == 0:
+   is_data_set_selectable = False
+
    st.title("Robot Performance Analysis and Failure Prediction")
    st.header("By Ben Toaz", divider="gray")
    st.header("Introduction")
@@ -59,7 +64,7 @@ if page_idx == 0:
       st.markdown(intro_text(), unsafe_allow_html=True)
 
    with col3:
-      st.image("project/media/ur3.png", width='stretch')
+      st.image("project/media/ur3.png", use_container_width=False)
 
    st.header("Example UR3 Operation")
 
@@ -69,42 +74,44 @@ if page_idx == 0:
    st.video(video_bytes)
 
 elif page_idx == 1:
+   is_data_set_selectable = False
+
    st.title("Data Processing")
    st.markdown(data_collection_text(), unsafe_allow_html=True)
 
-   st.header(f"{df_name} Raw Data Samples")
+   # st.header(f"{df_name} Raw Data Samples")
 
-   st.dataframe(df.head(10), width='stretch')
+   # st.dataframe(df.head(10), use_container_width=False)
 
    # Generated with Claude Sonnet 4.5 10-19-25
-   st.header(f"{df_name} Dataset Overview")
-   # Summary metrics
-   col1, col2, col3, col4 = st.columns(4)
-   col1.metric("Total Rows", f"{len(df):,}")
-   col2.metric("Total Columns", len(df.columns))
-   col3.metric("Memory Usage", f"{df.memory_usage(deep=True).sum() / 1024**2:.2f} MB")
-   col4.metric("Missing Values", f"{df.isnull().sum().sum():,}")
-   # Detailed info table
-   st.write("**Column Details:**")
-   info_df = pd.DataFrame({
-      'Column': df.columns,
-      'Type': df.dtypes.astype(str),
-      'Non-Null': df.count().values,
-      'Null': df.isnull().sum().values,
-      'Null %': (df.isnull().sum() / len(df_cobots_original) * 100).round(2).astype(str) + '%'
-   })
-   st.dataframe(
-      info_df,
-      width='stretch',
-      hide_index=True,
-      column_config={
-         "Column": st.column_config.TextColumn("Column Name", width="medium"),
-         "Type": st.column_config.TextColumn("Data Type", width="small"),
-         "Non-Null": st.column_config.NumberColumn("Non-Null Count", format="%d"),
-         "Null": st.column_config.NumberColumn("Null Count", format="%d"),
-         "Null %": st.column_config.TextColumn("Missing %", width="small")
-      }
-   )
+   # st.header(f"{df_name} Dataset Overview")
+   # # Summary metrics
+   # col1, col2, col3, col4 = st.columns(4)
+   # col1.metric("Total Rows", f"{len(df):,}")
+   # col2.metric("Total Columns", len(df.columns))
+   # col3.metric("Memory Usage", f"{df.memory_usage(deep=True).sum() / 1024**2:.2f} MB")
+   # col4.metric("Missing Values", f"{df.isnull().sum().sum():,}")
+   # # Detailed info table
+   # st.write("**Column Details:**")
+   # info_df = pd.DataFrame({
+   #    'Column': df.columns,
+   #    'Type': df.dtypes.astype(str),
+   #    'Non-Null': df.count().values,
+   #    'Null': df.isnull().sum().values,
+   #    'Null %': (df.isnull().sum() / len(df_cobots_original) * 100).round(2).astype(str) + '%'
+   # })
+   # st.dataframe(
+   #    info_df,
+   #    use_container_width=False,
+   #    hide_index=True,
+   #    column_config={
+   #       "Column": st.column_config.TextColumn("Column Name", width="medium"),
+   #       "Type": st.column_config.TextColumn("Data Type", width="small"),
+   #       "Non-Null": st.column_config.NumberColumn("Non-Null Count", format="%d"),
+   #       "Null": st.column_config.NumberColumn("Null Count", format="%d"),
+   #       "Null %": st.column_config.TextColumn("Missing %", width="small")
+   #    }
+   # )
 
    st.header("Time Data Encoding")
    st.markdown(cycle_time_text(), unsafe_allow_html=True)
@@ -116,7 +123,7 @@ elif page_idx == 1:
         opacity=0.7,
         hover_data=['cycle', 'time']
     )
-   st.plotly_chart(fig, width='stretch')
+   st.plotly_chart(fig, use_container_width=False)
    st.markdown(cycle_time_text2(), unsafe_allow_html=True)
    fig = px.scatter(
         df_cobots,
@@ -126,7 +133,7 @@ elif page_idx == 1:
         opacity=0.7,
         hover_data=['cycle', 'time']
     )
-   st.plotly_chart(fig, width='stretch', key="cycle_time_fixed")
+   st.plotly_chart(fig, use_container_width=False, key="cycle_time_fixed")
 
    st.header("Missingness")
    fig = missingness_heatmap(df_cobots_original)
@@ -144,7 +151,7 @@ elif page_idx == 1:
    fig = interpolation_example(df_cobots, df_gaps, option)
    st.plotly_chart(
     fig,
-    width='stretch',
+    use_container_width=False,
     config={
         "displayModeBar": True,     # show toolbar
         "scrollZoom": True,         # enable zoom with scroll
@@ -153,6 +160,9 @@ elif page_idx == 1:
     })
 
 elif page_idx == 2:
+   is_data_set_selectable = True
+
+
    st.title("Exploratory Data Analysis (EDA)")
    st.markdown(eda_text(), unsafe_allow_html=True)
 
@@ -192,13 +202,13 @@ elif page_idx == 2:
                              color_continuous_scale='Viridis')
       fig.update_traces(marker=dict(size=5))
       fig.update_layout(height=700)
-      st.plotly_chart(fig, width='stretch')
+      st.plotly_chart(fig, use_container_width=False)
 
    if option == "Histogram":
       st.header("Feature Distributions")
       fig = histogram_plots(df, df_name)
 
-      st.plotly_chart(fig, width='stretch')
+      st.plotly_chart(fig, use_container_width=False)
 
    if option == "Time Series":
       st.header("Time Series Data")
@@ -218,7 +228,7 @@ elif page_idx == 2:
       print(fig_lst)
 
       for fig in fig_lst:
-         st.plotly_chart(fig, width='stretch')
+         st.plotly_chart(fig, use_container_width=False)
 
    if option == "Correlation Heatmaps":
 
@@ -227,15 +237,17 @@ elif page_idx == 2:
 
          is_cobotops = "CobotOps" == df_name
          fig = joint_correlation_heatmaps(df, df_name)
-         st.plotly_chart(fig, width='stretch')
+         st.plotly_chart(fig, use_container_width=False)
 
       st.header("Cross-Feature Correlations")
 
       fig = feature_correlation_heatmaps(df, df_name, feature_lst)
  
-      st.plotly_chart(fig, width='stretch')
+      st.plotly_chart(fig, use_container_width=False)
 
 elif page_idx == 3:
+   is_data_set_selectable = False
+
    st.title("Inverse Kinematic Feature Engineering")
    st.header("Intro to Robot Movement")
    st.markdown(kinematic_text(), unsafe_allow_html=True)
@@ -244,9 +256,10 @@ elif page_idx == 3:
 
    st.markdown(inverse_kinematic_text(), unsafe_allow_html=True)
    fig = time_series_inv_kin(df_rad)
-   st.plotly_chart(fig, width='stretch')
+   st.plotly_chart(fig, use_container_width=False)
 
 elif page_idx == 4:
+   is_data_set_selectable = True
 
    # --- Page setup ---
    st.set_page_config(layout="wide")
@@ -380,9 +393,57 @@ elif page_idx == 4:
       st.session_state.frame_index = (st.session_state.frame_index + 1) % len(animation_sequence)
       st.rerun()
 
+   # ==========================================================
+   # AUTO-PLAY LOOP (works both locally and on Streamlit Cloud)
+   # ==========================================================
+   # if st.session_state.playing:
+   #    count = st_autorefresh(interval=int(1000 / speed), key="frame_autorefresh")
+   #    st.session_state.frame_index = (st.session_state.frame_index + 1) % len(animation_sequence)
+
 elif page_idx == 5:
-   pass
+   is_data_set_selectable = False
+
+
+   st.title("Long Short-Term Memory Feature Reconstruction")
+   st.header("Recurent Neural Networks")
+   st.markdown(lstm_text(), unsafe_allow_html=True)
+
+   st.image('project/media/lstm.png')
+
+   st.header("Time Series Regression")
+
+   st.markdown(q_training_text(), unsafe_allow_html=True)
+
+
+   df_pred_q = pd.read_feather('project/data/predictions/predicted_joint_angles_light.feather')
+   fig = time_series_prediction_plot(df_pred_q, [f'q{i}' for i in range(6)], 'rad', 'Actual vs. Predicted Joint Angles')
+   st.plotly_chart(fig, use_container_width=False)
+
+   st.markdown(sequence_training_text(), unsafe_allow_html=True)
+
+   # fig = time_series_inv_kin(df_rad)
+   # st.plotly_chart(fig, use_container_width=False)
+
 
 elif page_idx == 6:
+   is_data_set_selectable = True
 
-   pass
+   st.title("Error Prediction")
+   st.header("Echo State Networks")
+   st.markdown(esn_text(), unsafe_allow_html=True)
+
+   st.image('project/media/esn.png')
+
+   st.header("State Classification from Time Series Data")
+   st.markdown(esn_training_text(), unsafe_allow_html=True)
+
+   # fig = time_series_inv_kin(df_rad)
+   # st.plotly_chart(fig, use_container_width=False)
+
+   st.markdown(baseline_training_text(), unsafe_allow_html=True)
+
+   # fig = time_series_inv_kin(df_rad)
+   # st.plotly_chart(fig, use_container_width=False)
+
+
+

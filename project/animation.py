@@ -164,3 +164,65 @@ def animation_plot(x, y, z, trajectory, frame_index):
         ))
 
     return fig
+
+# def animation_plot(frames_xyz, trajectory, frame_index):
+#     fig = go.Figure()
+
+#     # current frame coordinates
+#     coords = frames_xyz[frame_index]
+#     x, y, z = coords[:, 0], coords[:, 1], coords[:, 2]
+
+#     # draw robot arm
+#     fig.add_trace(go.Scatter3d(
+#         x=x, y=y, z=z,
+#         mode='lines+markers',
+#         line=dict(width=10, color='rgb(59,130,246)'),
+#         marker=dict(size=8, color='rgb(29,78,216)'),
+#         name='Robot Arm'
+#     ))
+
+#     # draw trajectory up to current frame
+#     traj = trajectory[:frame_index+1]
+#     fig.add_trace(go.Scatter3d(
+#         x=traj[:, 0], y=traj[:, 1], z=traj[:, 2],
+#         mode='markers',
+#         marker=dict(size=3, color='rgb(239,68,68)'),
+#         name='Trajectory'
+#     ))
+
+#     # end-effector marker
+#     fig.add_trace(go.Scatter3d(
+#         x=[x[-1]], y=[y[-1]], z=[z[-1]],
+#         mode='markers',
+#         marker=dict(size=12, color='white', line=dict(width=2, color='black')),
+#         name='End Effector'
+#     ))
+
+#     # base marker
+#     fig.add_trace(go.Scatter3d(
+#         x=[0], y=[0], z=[0],
+#         mode='markers',
+#         marker=dict(size=10, color='rgb(34,197,94)', symbol='diamond'),
+#         name='Base'
+#     ))
+
+#     return fig
+
+@st.cache_data
+def precompute_fk_frames(animation_sequence):
+    """Just return the joint angles — FK will be done outside and cached numerically."""
+    return animation_sequence
+
+
+def compute_fk_positions(animation_sequence, robot_chain):
+    """Compute all joint positions and trajectory once."""
+    frames_xyz = []
+    trajectory = []
+
+    for angles in animation_sequence:
+        mats = robot_chain.forward_kinematics([0.0] + angles, full_kinematics=True)
+        coords = np.array([m[:3, 3] for m in mats])
+        frames_xyz.append(coords)
+        trajectory.append(coords[-1])  # end effector
+
+    return np.array(frames_xyz), np.array(trajectory)
