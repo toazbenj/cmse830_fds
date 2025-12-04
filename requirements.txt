@@ -8,4 +8,4 @@ openpyxl
 ikpy
 echotorch
 torch
-sklearn
+scikit-learn
