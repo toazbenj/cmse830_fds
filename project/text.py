@@ -138,5 +138,28 @@ def baseline_training_text():
    return """
    <p>As a baseline, I also trained a logistic regression to compare to the ESN. The regression model took the same inputs of joint and position information from the undersampled data.
    It does not take any of the time dependencies into account and fails to find the errors in almost all cases. 
+   Notice that while the logistic regression has higher precision, it has very low recall, which is the most effective metric for catching the rare but important error cases.
    While not as effective as we'd hoped, the ESN is still the superior method for forecasting robot faults from time series data.</p>
    """
+
+def esn_training_stats():
+   return """
+      ### Model 1: Echo State Network
+            
+      | Class | Precision | Recall | F1-Score |
+      |-------|-----------|--------|----------|
+      | Normal operation | 0.493 | 0.226 | 0.310 |
+      | Damaged screw | 0.138 | 0.436 | 0.210 |
+      | Extra assembly component | 0.116 | 0.610 | 0.195 |
+      | Missing screw | 0.116 | 0.604 | 0.194 |"""
+
+def log_reg_training_stats():
+   return """
+      ### Model 2: Logistic Regression
+            
+      | Class | Precision | Recall | F1-Score |
+      |-------|-----------|--------|----------|
+      | Normal operation | 0.502 | 0.221 | 0.307 |
+      | Damaged screw | 0.400 | 0.001 | 0.003 |
+      | Extra assembly component | 0.500 | 0.004 | 0.007 |
+      | Missing screw | 0.857 | 0.005 | 0.011 |"""
