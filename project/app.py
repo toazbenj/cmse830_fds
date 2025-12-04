@@ -547,7 +547,7 @@ elif page_idx == 6:
       yaxis_title=feature_type,
       legend=dict(
          orientation="h", 
-         yanchor="bottom", y=1.02, 
+         yanchor="bottom", y=1.05, 
          xanchor="right", x=1
       ),
       height=500,
