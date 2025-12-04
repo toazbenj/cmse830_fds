@@ -579,7 +579,7 @@ elif page_idx == 6:
    cols = st.columns(len(class_names))
    for i, class_name in enumerate(class_names):
       with cols[i]:
-         st.metric(label=class_name, value=f"{probs[0][i]:.4f}")
+         st.metric(label=class_name, value=f"{probs[0][i]*100:.4f}%")
 
    st.success(f"Predicted Class: **{class_names[pred_class]}**")
 
