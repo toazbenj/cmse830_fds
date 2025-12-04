@@ -490,6 +490,11 @@ elif page_idx == 6:
    if 'selected_index' not in st.session_state:
       st.session_state.selected_index = len(df)//2
 
+   feature_type = st.selectbox(
+      "Select feature:",
+      (df.columns),
+   )
+
    # Select an index (row) from the DataFrame
    st.session_state.selected_index = st.slider(
       "Select time index for prediction",
@@ -497,11 +502,6 @@ elif page_idx == 6:
       max_value=len(df) - 1,
       value=len(df) // 2,
       step=1
-   )
-
-   feature_type = st.selectbox(
-      "Select feature:",
-      (df.columns),
    )
 
    color = px.colors.qualitative.Dark24[0]
