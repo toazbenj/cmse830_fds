@@ -491,7 +491,7 @@ elif page_idx == 6:
       st.session_state.selected_index = len(df)//2
 
    feature_type = st.selectbox(
-      "Select feature:",
+      "Select feature to view (other features loaded to model automatically):",
       (df.columns),
    )
 
