@@ -10,6 +10,11 @@ import warnings
 import streamlit as st
 import glob
 import os
+import torch
+import torch.nn as nn
+import torch.nn.functional as F
+from sklearn.preprocessing import StandardScaler
+
 
 warnings.filterwarnings("ignore", category=UserWarning, module='matplotlib')
 
@@ -18,6 +23,15 @@ warnings.filterwarnings("ignore", category=UserWarning, module='matplotlib')
 def load_aursad_data():
     df_aursad = pd.read_feather('project/data/aursad/aursad.feather')
     df_pred_q = pd.read_feather('project/data/predictions/predicted_joint_angles_light.feather')
+    # df_pred_current = pd.read_feather('project/data/predictions/pred_current_light.feather')
+    # df_pred_all_bad = pd.read_feather('project/data/predictions/pred_all_bad_light.feather')
+    # df_pred_all_good = pd.read_feather('project/data/predictions/predicted_joint_current_temp_speed_light.feather')
+    # df_pred_temp = pd.read_feather('project/data/predictions/pred_temp_light.feather')
+
+    # hot fix
+    # df_pred_temp = pd.concat([df_pred_temp.reset_index(drop=True), df_pred_current['time'].reset_index(drop=True)], axis=1)
+
+    # return df_aursad, df_pred_q, df_pred_current, df_pred_all_bad, df_pred_all_good, df_pred_temp
     return df_aursad, df_pred_q
 
 @st.cache_data
@@ -918,15 +932,152 @@ def time_series_prediction_plot(df, feature_type_lst, unit, title):
     # Axis titles
     fig.update_xaxes(title_text="Time (s)", row=6, col=1, rangeslider_visible=True)
     for i, feature_type in enumerate(feature_type_lst, start=1):
-        fig.update_yaxes(title_text=f"{feature_type.upper()}{unit}", row=i, col=1)
+        fig.update_yaxes(title_text=f"{feature_type.upper()} ({unit})", row=i, col=1)
 
     # Layout
+    # fig.update_layout(
+    #     height=1000,
+    #     title_text=title,
+    #     legend=dict(orientation="h", yanchor="bottom", y=1.05, xanchor="center", x=0.5)
+    # )
+
     fig.update_layout(
         height=1000,
-        title_text=title,
-        legend=dict(orientation="h", yanchor="bottom", y=1.0, xanchor="right", x=1)
+        title=dict(
+            text=title,
+            x=0.5,
+            xanchor='center',
+            yanchor='top',
+            y=0.97  # Move title higher up
+        ),
+        legend=dict(
+            orientation="h",
+            yanchor="top",
+            y=1.15,  # Slightly below the title
+            xanchor="center",
+            x=0.5,
+        ),
+        margin=dict(t=140, b=80)  # Add extra top margin for breathing room
     )
   
 
     return fig
 
+class SimpleESN(nn.Module):
+    def __init__(self, input_dim, hidden_dim, output_dim,
+                 spectral_radius=0.9, leaking_rate=1.0, ridge_param=1e-6, device="cpu"):
+        super(SimpleESN, self).__init__()
+        self.input_dim = input_dim
+        self.hidden_dim = hidden_dim
+        self.output_dim = output_dim
+        self.spectral_radius = spectral_radius
+        self.leaking_rate = leaking_rate
+        self.ridge_param = ridge_param
+        self.device = device
+
+        # Initialize fixed reservoir weights
+        W_raw = torch.randn(hidden_dim, hidden_dim)
+        eigvals = torch.linalg.eigvals(W_raw).abs()
+        W_raw /= eigvals.max() / spectral_radius
+        self.W = W_raw.to(device)
+
+        # Input and bias weights
+        self.W_in = (torch.randn(hidden_dim, input_dim) * 0.1).to(device)
+        self.bias = (torch.randn(hidden_dim) * 0.01).to(device)
+
+        # Output weights (trained via ridge regression)
+        # self.W_out = None
+        self.register_buffer("W_out", torch.zeros(hidden_dim, output_dim))
+
+
+    def forward(self, X):
+        """X: [batch, time, features]"""
+        batch_size, timesteps, _ = X.shape
+        h = torch.zeros(batch_size, self.hidden_dim, device=self.device)
+        states = []
+
+        for t in range(timesteps):
+            u = X[:, t, :]
+            pre_activation = (u @ self.W_in.T) + (h @ self.W.T) + self.bias
+            h = (1 - self.leaking_rate) * h + self.leaking_rate * torch.tanh(pre_activation)
+            states.append(h)
+
+        states = torch.stack(states, dim=1)  # [batch, time, hidden]
+        return states
+
+    def fit(self, X, y, class_weights=None):
+        states = self.forward(X)[:, -1, :]  # [N, hidden]
+
+        if y.ndim == 1:
+            y_onehot = F.one_hot(y, num_classes=self.output_dim).float()
+        else:
+            y_onehot = y.float()
+
+        if class_weights is not None:
+            w = torch.tensor([class_weights[int(yi)] for yi in y], device=self.device, dtype=states.dtype)
+            w = w.unsqueeze(1)  # [N,1]
+            w /= w.mean()       # normalize weights
+            # Weighted ridge regression without giant matrix
+            X_weighted = states * w
+            XTX = states.T @ X_weighted
+            XTY = states.T @ (w * y_onehot)
+        else:
+            XTX = states.T @ states
+            XTY = states.T @ y_onehot
+
+        ridge = self.ridge_param * torch.eye(XTX.shape[0], device=self.device)
+        self.W_out = torch.linalg.solve(XTX + ridge, XTY)
+
+    def predict(self, X):
+        """
+        Predict class probabilities.
+        X: [batch, time, features]
+        Returns: [batch, num_classes] softmax probabilities
+        """
+        with torch.no_grad():
+            states = self.forward(X)[:, -1, :]  # Get last timestep: [batch, hidden]
+            logits = states @ self.W_out  # [batch, num_classes]
+            probs = torch.softmax(logits, dim=1)
+            return probs
+
+
+@st.cache_resource
+def load_esn_model(model_name):
+
+    input_size = 27
+    hidden_dim = 300
+    output_size = 4
+
+    device = torch.device("cpu")
+    model = SimpleESN(input_size, hidden_dim, output_size, device=device).to(device)
+
+    state_dict = torch.load(model_name, map_location=device)
+    model.load_state_dict(state_dict)
+    model.eval()  
+
+    return model
+
+
+def data_prep(df, input_lst, output_lst, seq_len=50, target_ratio=1.0):
+    input_scaler = StandardScaler()
+    X_scaled = input_scaler.fit_transform(df[input_lst])
+
+    # y = df[output_lst].values
+    # y = np.argmax(y, axis=1)  # convert one-hot → integer class
+
+    num_samples = len(X_scaled) // seq_len
+    input_size = len(input_lst)
+
+    X_seq = X_scaled[:num_samples * seq_len].reshape(num_samples, seq_len, input_size)
+    # y_seq = y[:num_samples * seq_len].reshape(num_samples, seq_len)
+    # y_seq_last = y_seq[:, -1]  # last timestep label
+
+    X_tensor = torch.tensor(X_seq, dtype=torch.float32)
+    # y_tensor = torch.tensor(y_seq_last, dtype=torch.long)
+
+    # print(f"[INFO] Created {num_samples} sequences of length {seq_len}")
+    # print(f"[INFO] Input shape: {X_tensor.shape}, Target shape: {y_tensor.shape}")
+
+    # X_tensor, y_tensor = undersample_sequences(X_tensor, y_tensor, target_ratio=target_ratio)
+
+    return X_tensor
