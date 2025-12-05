@@ -85,40 +85,6 @@ elif page_idx == 1:
    st.title("Data Processing")
    st.markdown(data_collection_text(), unsafe_allow_html=True)
 
-   # st.header(f"{df_name} Raw Data Samples")
-
-   # st.dataframe(df.head(10), use_container_width=False)
-
-   # Generated with Claude Sonnet 4.5 10-19-25
-   # st.header(f"{df_name} Dataset Overview")
-   # # Summary metrics
-   # col1, col2, col3, col4 = st.columns(4)
-   # col1.metric("Total Rows", f"{len(df):,}")
-   # col2.metric("Total Columns", len(df.columns))
-   # col3.metric("Memory Usage", f"{df.memory_usage(deep=True).sum() / 1024**2:.2f} MB")
-   # col4.metric("Missing Values", f"{df.isnull().sum().sum():,}")
-   # # Detailed info table
-   # st.write("**Column Details:**")
-   # info_df = pd.DataFrame({
-   #    'Column': df.columns,
-   #    'Type': df.dtypes.astype(str),
-   #    'Non-Null': df.count().values,
-   #    'Null': df.isnull().sum().values,
-   #    'Null %': (df.isnull().sum() / len(df_cobots_original) * 100).round(2).astype(str) + '%'
-   # })
-   # st.dataframe(
-   #    info_df,
-   #    use_container_width=False,
-   #    hide_index=True,
-   #    column_config={
-   #       "Column": st.column_config.TextColumn("Column Name", width="medium"),
-   #       "Type": st.column_config.TextColumn("Data Type", width="small"),
-   #       "Non-Null": st.column_config.NumberColumn("Non-Null Count", format="%d"),
-   #       "Null": st.column_config.NumberColumn("Null Count", format="%d"),
-   #       "Null %": st.column_config.TextColumn("Missing %", width="small")
-   #    }
-   # )
-
    st.header("Time Data Encoding")
    st.markdown(cycle_time_text(), unsafe_allow_html=True)
    fig = px.scatter(
@@ -159,10 +125,10 @@ elif page_idx == 1:
     fig,
     use_container_width=False,
     config={
-        "displayModeBar": True,     # show toolbar
-        "scrollZoom": True,         # enable zoom with scroll
-        "editable": False,          # disable direct edits
-        "displaylogo": False        # hide Plotly logo
+        "displayModeBar": True,     
+        "scrollZoom": True,         
+        "editable": False,          
+        "displaylogo": False        
     })
 
 elif page_idx == 2:
@@ -266,29 +232,25 @@ elif page_idx == 3:
 elif page_idx == 4:
    is_data_set_selectable = True
 
-   # --- Page setup ---
+   #  Page setup 
    st.set_page_config(layout="wide")
    st.title("Robot Movement Animation")
 
-   # --- Data prep ---
+   #  Data prep 
    df_angles = df[['q0', 'q1', 'q2', 'q3', 'q4', 'q5']]
    animation_sequence = df_angles.values.tolist()
    robot_chain = get_robot_chain()
 
-   # --- Session state ---
+   #  Session state 
    if 'frame_index' not in st.session_state:
       st.session_state.frame_index = 0
    if 'playing' not in st.session_state:
       st.session_state.playing = False
 
-   # === MAIN LAYOUT ===
-   # ==========================================================
-   # LEFT COLUMN — Controls
-   # ==========================================================
    left_col, right_col = st.columns([1, 3])
    with left_col:
       st.markdown("### Controls")
-      st.markdown("---")
+      st.markdown("")
 
       # c1, c2, c3 = st.columns(3)
       c1, c3 = st.columns([1,1])
@@ -317,20 +279,17 @@ elif page_idx == 4:
 
       view_option = st.selectbox("Camera View", ["Isometric", "Front", "Side"], index=0)
 
-      st.markdown("---")
+      st.markdown("")
       st.markdown("Step forward to move the robot through the dataset. " \
       "Move quickly through time second by second using the frame slider. Press reset to return to the first frame.")
 
-   # ==========================================================
-   # RIGHT COLUMN — 3D Plot + Readouts
-   # ==========================================================
    with right_col:
-      # --- Forward kinematics ---
+      # Forward kinematics
       angles = animation_sequence[st.session_state.frame_index]
       frame_matrices = robot_chain.forward_kinematics([0.0] + angles, full_kinematics=True)
       x, y, z = zip(*[m[:3, 3] for m in frame_matrices])
 
-      # --- Camera presets ---
+      # Camera presets
       camera_presets = {
          "Isometric": dict(x=1.5, y=1.5, z=1.2),
          "Front": dict(x=0.0, y=2.5, z=0.5),
@@ -349,13 +308,13 @@ elif page_idx == 4:
 
       camera_eye = st.session_state.camera_eye
 
-      # --- Build 3D plot ---
+      # 3d plot 
       trajectory = df[['x', 'y', 'z']].to_numpy() 
 
       fig = animation_plot(x, y, z, trajectory, st.session_state.frame_index )
       fig.update_layout(
          autosize=False,
-         width=750,             # fixed width
+         width=750,        
          height=450,
          margin=dict(l=0, r=0, t=0, b=0),
          legend=dict(
@@ -372,26 +331,14 @@ elif page_idx == 4:
                   up=dict(x=0, y=0, z=1)
             )
          ),
-         uirevision='static_scene'  # <— prevents re-layout across reruns
+         uirevision='static_scene' 
       )
 
       st.plotly_chart(fig, use_container_width=False, key="animation_plot")
 
-
-      # st.markdown("<div style='width:650px; margin:auto;'>", unsafe_allow_html=True)
-      # st.plotly_chart(fig,  key="animation_plot")
-      # st.markdown("</div>", unsafe_allow_html=True)
-
-      # --- Readouts ---
+      # Readouts 
       st.markdown("### Robot State")
-      # cols = st.columns([0.05]*9)
-      # cols[0].metric("X", f"{x[-1]:.3f}")
-      # cols[1].metric("Y", f"{y[-1]:.3f}")
-      # cols[2].metric("Z", f"{z[-1]:.3f}")
-      # for i, (col, angle) in enumerate(zip(cols[3:], angles)):
-      #    col.metric(f"θ{i}", f"{angle:.3f}")
       cols = st.columns([1, 1, 1] + [1] * len(angles))
-
       cols[0].markdown(f"<small><b>X:</b> {x[-1]:.3f}</small>", unsafe_allow_html=True)
       cols[1].markdown(f"<small><b>Y:</b> {y[-1]:.3f}</small>", unsafe_allow_html=True)
       cols[2].markdown(f"<small><b>Z:</b> {z[-1]:.3f}</small>", unsafe_allow_html=True)
@@ -399,20 +346,10 @@ elif page_idx == 4:
       for i, (col, angle) in enumerate(zip(cols[3:], angles)):
          col.markdown(f"<small><b>θ{i}:</b> {angle:.3f}</small>", unsafe_allow_html=True)
 
-   # ==========================================================
-   # AUTO-PLAY LOOP
-   # ==========================================================
    if st.session_state.playing:
       time.sleep(1.0 / speed)
       st.session_state.frame_index = (st.session_state.frame_index + 1) % len(animation_sequence)
       st.rerun()
-
-   # ==========================================================
-   # AUTO-PLAY LOOP (works both locally and on Streamlit Cloud)
-   # ==========================================================
-   # if st.session_state.playing:
-   #    count = st_autorefresh(interval=int(1000 / speed), key="frame_autorefresh")
-   #    st.session_state.frame_index = (st.session_state.frame_index + 1) % len(animation_sequence)
 
 elif page_idx == 5:
    is_data_set_selectable = False
@@ -472,7 +409,6 @@ elif page_idx == 6:
    st.header("State Classification from Time Series Data")
    st.markdown(esn_training_text(), unsafe_allow_html=True)
 
-   # Create two columns
    col1, col2 = st.columns(2)
 
    with col1:
@@ -498,7 +434,6 @@ elif page_idx == 6:
       (df.columns),
    )
 
-   # Select an index (row) from the DataFrame
    st.session_state.selected_index = st.slider(
       "Select time index for prediction",
       min_value=0,
@@ -518,7 +453,7 @@ elif page_idx == 6:
       line=dict(color=color, width=2)
    ))
 
-   # Add a vertical line at the selected index
+   # Add vertical line at selected index
    fig.add_vline(
       x=st.session_state.selected_index,
       line_dash="dash",
@@ -543,8 +478,6 @@ elif page_idx == 6:
                   marker=dict(color=class_color, size=8)
                ))
 
-               
-
    fig.update_layout(
       xaxis_title="Time (s)",
       yaxis_title=feature_type,
@@ -554,7 +487,6 @@ elif page_idx == 6:
          xanchor="right", x=1
       ),
       height=500,
-      # template="plotly_white"
    )
 
    st.plotly_chart(fig, use_container_width=False)
@@ -567,7 +499,7 @@ elif page_idx == 6:
    output_lst = ['Normal operation', 'Screw Loosening', 'Damaged screw', 'Extra assembly component', 'Missing screw']
 
 
-   # Extract the feature vector at that index
+   # Extract the feature vector at index
    df_selected = df.iloc[:st.session_state.selected_index]
    inputs = data_prep(df_selected, input_lst, output_lst, seq_len=50, target_ratio=1.0)
 
@@ -578,15 +510,13 @@ elif page_idx == 6:
    st.subheader("Echo State Network Error Prediction (AURSAD Error Classes)")
    class_names = ['Normal operation', 'Damaged screw', 'Extra assembly component', 'Missing screw']
 
-   # Create horizontal columns for the probabilities
+   # Create columns for probabilities
    cols = st.columns(len(class_names))
    for i, class_name in enumerate(class_names):
       with cols[i]:
          st.metric(label=class_name, value=f"{probs[0][i]*100:.2f}%")
 
    st.success(f"Predicted Class: **{class_names[pred_class]}**")
-
-
 
 # For switching datasets
 st.session_state.df_name_last = df_name
