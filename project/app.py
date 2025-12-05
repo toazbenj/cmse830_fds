@@ -50,7 +50,12 @@ else:
    feature_lst = ['x', 'y', 'z']
    unit_lst = ['m', 'm', 'm']
 
+# df transition issue with mismatched frames
+if 'df_name_last' not in st.session_state:
+   st.session_state.df_name_last = None
 
+if df_name != st.session_state.df_name_last:
+   st.session_state.frame_index = 0
 
 if page_idx == 0:
    is_data_set_selectable = False
@@ -585,5 +590,5 @@ elif page_idx == 6:
 
 
 
-
-
+# For switching datasets
+st.session_state.df_name_last = df_name
