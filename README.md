@@ -1,13 +1,5 @@
 # UR3 Robot Performance Analysis and Failure Prediction
 
-## Datasets
-
-[CobotOps](https://archive.ics.uci.edu/dataset/963/ur3+cobotops)
-
-[AURSAD](https://zenodo.org/records/4559556)
-
-[RAD](https://github.com/ubc-systopia/dsn-2022-rad-artifact/tree/main)
-
 ## Summary
 
 ### Why UR3?
@@ -39,6 +31,14 @@ The LSTMs I used were implemented in PyTorch with a width of 128 neurons and two
 ### Error Prediction Models
 
 I trained an echo state network to take in the time series data and predict the failure states of the robot as seen in the AURSAD dataset, which was gathered while using the robot for screwdriving tasks. The model takes in 50 timesteps worth of data across 27 different input features (speed, current, temperature, angular position for 6 joints, then x, y, z position of the end effector). The network had a single large reservoir of 300 neurons, a spectral radius of 0.9, a leak rate of 1.0, and a ridge regression parameter of 1e-6. It was able to identify failures in the 4 operating state classes with a recall of about 60%, which was not as effective as expected. It still outperformed the logistic regression model in this metric, which could not identify the failure states at all.
+
+## Datasets
+
+[CobotOps](https://archive.ics.uci.edu/dataset/963/ur3+cobotops)
+
+[AURSAD](https://zenodo.org/records/4559556)
+
+[RAD](https://github.com/ubc-systopia/dsn-2022-rad-artifact/tree/main)
 
 ## Data Dictionaries (Original Data)
 
