@@ -5,7 +5,7 @@ def intro_text():
    boosting reproducibility and easy comparison across different types of results. \n
    In this project, I chose three major datasets who use the UR3 in their experiments but gather different types of data about the robot.
    Since all of the data was gathered using the same hardware, I used each dataset to fill in the missing features of the other
-   datasets with a Long Short-Term Memory neural network in order to gain a more complete picture of how well the robot performed and what caused it to fail
+   datasets with a Long Short-Term Memory neural network. This helps us gain a more complete picture of how well the robot performed and what caused it to fail
    (both because of hardware faults and at the given research task).
    I then implemented an Echo State Network (ESN) for the task of classifying failures based on the time series data.
 
@@ -92,10 +92,10 @@ def inverse_kinematic_text():
 
 def lstm_text():
    return """
-   <p>We use three different large-scale datasets in this project. Out of all of these, the most substantial is the AURSAD, which has 6 GB of detailed robot data with no missingness.
+   <p>I used three different large-scale datasets in this project. Out of all of these, the most substantial is the AURSAD, which has 6 GB of detailed robot data with no missingness.
    The Cobotops and RAD datasets are much smaller and have limited features. The Cobotops dataset for instance has speed, current, and temperature data, but crucially omits all position data.
    The RAD dataset contains logs from many devices, which is not useful for our application, and only includes robot position data.
-   Here we leverage the sheer size of the AURSAD data and the fact that all the logs come from the same type of robot in order to rebuild the missing features of position,
+   Here I leveraged the sheer size of the AURSAD data and the fact that all the logs come from the same type of robot in order to rebuild the missing features of position,
    speed, current, and temperature for these smaller datasets.
    
    Given the large amount of information that needs to be parsed, we chose to use a Long Short-Term Memory (LSTM) neural network.
@@ -114,11 +114,11 @@ def q_training_text():
 
 def sequence_training_text():
    return """
-   <p>Next we attempted to reconstruct the speed, current, and temperature of each robot joint in the RAD dataset using a single LSTM.
+   <p>Next I attempted to reconstruct the speed, current, and temperature of each robot joint in the RAD dataset using a single LSTM.
    Since the input was only the position of the end effector, there was not enough information to generalize to these other physical quantities, and the model was not successful.
-   To combat this, we trained LSTMs for each of these features separately one after the other. We started with current, then speed, then temperature.
-   After each successful reconstruction, we added the new feature data to the RAD dataset in order to become an additional input for the next model.
-   This approach was much more successful. The result is that we now have two much more complete datasets we can use for error prediction.</p>
+   To combat this, I trained LSTMs for each of these features separately one after the other. I started with current, then speed, then temperature.
+   After each successful reconstruction, I added the new feature data to the RAD dataset in order to become an additional input for the next model.
+   This approach was much more successful. The result was that there were two much more complete datasets to use for error prediction.</p>
    """
 
 
@@ -132,19 +132,19 @@ def esn_text():
 
 def esn_training_text():
    return """
-   <p>Here we use the ESN as a classification model in order to identify the time instants where the robot is most likely to fail at its given task.
+   <p>Here I used the ESN as a classification model in order to identify the time instants where the robot is most likely to fail at its given task.
    The inputs are end effector position, joint angle configuration, and speeds, temperatures, currents for each joint.
    The outputs are probabilities that the robot operates normally or falls into any of the failure categories.
-
 
    For the AURSAD, these categories are various ways you can mess up screwing in a screw.
    For Cobotops, they include dropping the item that was being gripped or throwing the emergency stop, possibly before an imminent collision with another object.
    The RAD dataset only had position data originally and was made in a pick and place scenario for transporting containers of suspicious liquid in a chemistry lab.
-   We can apply the same models to the RAD dataset just for fun to see what the errors could have been. This is only for grins since we don't have any ground truth.
+   CobotOps also has its own gripping task error states, though I chose not to build models for these due to time constraints.
+   I can apply the same ESN models to the other datasets just for fun to see what the errors could have been. This is only for grins since there isn't any ground truth.
    
    The Cobotops and AURSAD data suffers from a crippling class imbalance, which I was only able to partially alleviate using undersampling.
    I reduced the amount of good runs by a ratio of 0.1, meaning I adjusted the ratios of the classes so that the largest one was no more than 10
-   times larger than the smallest. This improved the recall of the model for finding the error cases, but still isn't much better than a coin flip.</p>
+   times larger than the smallest. This improved the recall of the model for finding the error cases, but only somewhat.</p>
    """
 
 
@@ -153,7 +153,7 @@ def baseline_training_text():
    <p>As a baseline, I also trained a logistic regression to compare to the ESN. The regression model took the same inputs of joint and position information from the undersampled data.
    It does not take any of the time dependencies into account and fails to find the errors in almost all cases.
    Notice that while the logistic regression has higher precision, it has very low recall, which is the most effective metric for catching the rare but important error cases.
-   While not as effective as we'd hoped, the ESN is still the superior method for forecasting robot faults from time series data.</p>
+   While not as effective as I'd hoped, the ESN is still the superior method for forecasting robot faults from time series data.</p>
    """
 
 
@@ -179,6 +179,3 @@ def log_reg_training_stats():
       | Damaged screw | 0.400 | 0.001 | 0.003 |
       | Extra assembly component | 0.500 | 0.004 | 0.007 |
       | Missing screw | 0.857 | 0.005 | 0.011 |"""
-
-
-

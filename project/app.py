@@ -168,7 +168,6 @@ elif page_idx == 1:
 elif page_idx == 2:
    is_data_set_selectable = True
 
-
    st.title("Exploratory Data Analysis (EDA)")
    st.markdown(eda_text(), unsafe_allow_html=True)
 
@@ -191,13 +190,13 @@ elif page_idx == 2:
 
       col1, col2, col3 = st.columns(3)
       with col1:
-         x_3d = st.selectbox("Select X-axis (3D):", numeric_cols, index=0, key='x3d')
+         x_3d = st.selectbox("Select X-axis:", numeric_cols, index=0, key='x3d')
       with col2:
-         y_3d = st.selectbox("Select Y-axis (3D):", numeric_cols, index=1, key='y3d')
+         y_3d = st.selectbox("Select Y-axis:", numeric_cols, index=1, key='y3d')
       with col3:
-         z_3d = st.selectbox("Select Z-axis (3D):", numeric_cols, index=2, key='z3d')
+         z_3d = st.selectbox("Select Z-axis:", numeric_cols, index=2, key='z3d')
 
-      color_3d = st.selectbox("Color by (3D):", color_lst, key='color3d')
+      color_3d = st.selectbox("Color by:", color_lst, key='color3d')
 
       df_melted = melt_features(df)
 
@@ -289,21 +288,23 @@ elif page_idx == 4:
    left_col, right_col = st.columns([1, 3])
    with left_col:
       st.markdown("### Controls")
-      # st.markdown("---")
+      st.markdown("---")
+
       # c1, c2, c3 = st.columns(3)
-      c1, c3 = st.columns(2)
+      c1, c3 = st.columns([1,1])
 
       with c1:
-         if st.button("⏮ Reset"):
+         if st.button("⏮ Reset", use_container_width=True):
                st.session_state.frame_index = 0
                st.session_state.playing = False
                st.rerun()
       # with c2:
-      #    if st.button("▶ Play" if not st.session_state.playing else "⏸ Pause"):
-      #          st.session_state.playing = not st.session_state.playing
-      #          st.rerun()
+         # if st.button("▶ Play" if not st.session_state.playing else "⏸ Pause", use_container_width=True):
+         #       st.session_state.playing = not st.session_state.playing
+         #       st.rerun()
+         # pass
       with c3:
-         if st.button("Step ⏭"):
+         if st.button("Step ⏭", use_container_width=True):
                st.session_state.frame_index = (st.session_state.frame_index + 1) % len(animation_sequence)
                st.rerun()
 
@@ -315,6 +316,10 @@ elif page_idx == 4:
          st.session_state.playing = False
 
       view_option = st.selectbox("Camera View", ["Isometric", "Front", "Side"], index=0)
+
+      st.markdown("---")
+      st.markdown("Step forward to move the robot through the dataset. " \
+      "Move quickly through time second by second using the frame slider. Press reset to return to the first frame.")
 
    # ==========================================================
    # RIGHT COLUMN — 3D Plot + Readouts
@@ -412,7 +417,6 @@ elif page_idx == 4:
 elif page_idx == 5:
    is_data_set_selectable = False
 
-
    st.title("Long Short-Term Memory Feature Reconstruction")
    st.header("Recurrent Neural Networks")
    st.markdown(lstm_text(), unsafe_allow_html=True)
@@ -446,7 +450,7 @@ elif page_idx == 5:
 
    left_col, mid_col, right_col = st.columns([1, 1, 1])
    with left_col:
-      st.subheader('Joint Angle Prediction (CobotOps)', width='content')
+      st.subheader('Joint Angle Prediction (CobotOps)')
       st.image("project/media/lstm_q_pred1.png", use_container_width=False)
    with mid_col:
       st.subheader('All Features at Once (RAD)')
