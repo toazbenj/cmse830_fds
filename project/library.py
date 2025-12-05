@@ -23,16 +23,10 @@ warnings.filterwarnings("ignore", category=UserWarning, module='matplotlib')
 def load_aursad_data():
     df_aursad = pd.read_feather('project/data/aursad/aursad.feather')
     df_pred_q = pd.read_feather('project/data/predictions/predicted_joint_angles_light.feather')
-    # df_pred_current = pd.read_feather('project/data/predictions/pred_current_light.feather')
-    # df_pred_all_bad = pd.read_feather('project/data/predictions/pred_all_bad_light.feather')
-    # df_pred_all_good = pd.read_feather('project/data/predictions/predicted_joint_current_temp_speed_light.feather')
-    # df_pred_temp = pd.read_feather('project/data/predictions/pred_temp_light.feather')
+    df_pred_all_good = pd.read_feather('project/data/predictions/pred_all_good.feather')
+    df_pred_all_bad = pd.read_feather('project/data/predictions/pred_all_bad_light.feather')
 
-    # hot fix
-    # df_pred_temp = pd.concat([df_pred_temp.reset_index(drop=True), df_pred_current['time'].reset_index(drop=True)], axis=1)
-
-    # return df_aursad, df_pred_q, df_pred_current, df_pred_all_bad, df_pred_all_good, df_pred_temp
-    return df_aursad, df_pred_q
+    return df_aursad, df_pred_q, df_pred_all_good, df_pred_all_bad 
 
 @st.cache_data
 def load_cobotops_data():

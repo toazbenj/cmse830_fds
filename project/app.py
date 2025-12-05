@@ -3,10 +3,11 @@ from library import *
 from text import *
 from animation import *
 
+
 # Main
 df_cobots, df_cobots_original, df_cycle_issue, df_gaps = load_cobotops_data()
-# df_aursad, df_pred_q, df_pred_current, df_pred_all_bad, df_pred_all_good, df_pred_temp = load_aursad_data()
-df_aursad, df_pred_q = load_aursad_data()
+df_aursad, df_pred_q, df_pred_all_good, df_pred_all_bad = load_aursad_data()
+# df_aursad, df_pred_q = load_aursad_data()
 df_rad = load_rad_data()
 
 st.set_page_config(page_title="Robostats", layout="wide")
@@ -413,7 +414,7 @@ elif page_idx == 5:
 
 
    st.title("Long Short-Term Memory Feature Reconstruction")
-   st.header("Recurent Neural Networks")
+   st.header("Recurrent Neural Networks")
    st.markdown(lstm_text(), unsafe_allow_html=True)
 
    st.image('project/media/lstm.png')
@@ -427,26 +428,19 @@ elif page_idx == 5:
 
    st.markdown(sequence_training_text(), unsafe_allow_html=True)
 
-   # graph_features = ['Speed', 'Current', "Temperature"]
-   # units = ['rad/s', 'A', 'C']
-   # feature = st.radio("Select Failed Prediction Type", graph_features)
-   # unit = units[graph_features.index(feature)]
+   graph_features = ['Speed', 'Current', "Temperature"]
+   units = ['rad/s', 'A', '°C']
+   feature = st.radio("Select Failed Prediction Type", graph_features)
+   unit = units[graph_features.index(feature)]
 
-   # fig = time_series_prediction_plot(df_pred_all_bad, [f'{feature}{i}' for i in range(6)], unit, 'Actual vs. Failed Prediction')
-   # st.plotly_chart(fig, use_container_width=False)
+   fig = time_series_prediction_plot(df_pred_all_bad, [f'{feature}{i}' for i in range(6)], unit, 'Actual vs. Failed Prediction')
+   st.plotly_chart(fig, use_container_width=False)
 
-   # feature = st.radio("Select Successful Prediction Type", graph_features)
-   # unit = units[graph_features.index(feature)]
+   feature = st.radio("Select Successful Prediction Type", graph_features)
+   unit = units[graph_features.index(feature)]
 
-   # fig = time_series_prediction_plot(df_pred_all_good, [f'{feature}{i}' for i in range(6)], unit, 'Actual vs. Successful Prediction')
-   # st.plotly_chart(fig, use_container_width=False)
-
-   # fig = time_series_prediction_plot(df_pred_all_bad, [f'{'Temperature'}{i}' for i in range(6)], 'A', 'Actual vs. Failed Prediction')
-   # st.plotly_chart(fig, use_container_width=False)
-
-   # fig = time_series_prediction_plot(df_pred_temp, [f'{'Temperature'}{i}' for i in range(6)], 'A', 'Actual vs. Successful Prediction')
-   # st.plotly_chart(fig, use_container_width=False)
-
+   fig = time_series_prediction_plot(df_pred_all_good, [f'{feature}{i}' for i in range(6)], unit, 'Actual vs. Successful Prediction')
+   st.plotly_chart(fig, use_container_width=False)
 
    st.header('Sample Training Curves')
 
