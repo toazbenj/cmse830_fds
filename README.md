@@ -32,13 +32,13 @@ The AURSAD dataset is 6 GB in its original form, so I had to do some compression
 ### Feature Engineering and Reconstruction
 
 The RAD and CobotOps datasets were not nearly as complete as AURSAD. CobotOps completely omits position data from the robot, and RAD only has position data with no additional physical measurements.
-In order to fix this, I used inverse kinematics to calculate the joint angles from the end effector position for the RAD dataset. Then I trained several LSTM neural networks to rebuild an approximiate of current, speed, and temeperature features given the joint positions as the inputs. For CobotOps, I used an LSTM to estimate the joint angles themselves and calculated the end effector position using forward kinematics. 
+In order to fix this, I used inverse kinematics to calculate the joint angles from the end effector position for the RAD dataset. Then I trained several LSTM neural networks to rebuild an approximation of current, speed, and temperature features given the joint positions as the inputs. For CobotOps, I used an LSTM to estimate the joint angles themselves and calculated the end effector position using forward kinematics. 
 
 The LSTMs I used were implemented in PyTorch with a width of 128 neurons and two stacked LSTM cells. The model uses 50 timesteps worth of data across 6-22 different input features (depending on what was being forecasted). The output for all LSTMs was 6 floats, physical quantities pertaining to each of the 6 robot joints.
 
 ### Error Prediction Models
 
-I trained an echo state network to take in the time series data and predict the failure states of the robot as seen in the AURSAD dataset, which was gathered while using the robot for screwdriving tasks. The model takes in 50 timesteps worth of data across 27 different input features (speed, current, temperature, angular position for 6 joints, then x, y, z position of the end effector). The network had a single large resevoir of 300 neurons, a spectral radius of 0.9, a leak rate of 1.0, and a ridge regression parameter of 1e-6. It was able to identify failures in the 4 operating state classes with a recall of about 60%, which was not as effective as expected. It still outperformed the logistic regression model in this metric, which could not identify the failure states at all.
+I trained an echo state network to take in the time series data and predict the failure states of the robot as seen in the AURSAD dataset, which was gathered while using the robot for screwdriving tasks. The model takes in 50 timesteps worth of data across 27 different input features (speed, current, temperature, angular position for 6 joints, then x, y, z position of the end effector). The network had a single large reservoir of 300 neurons, a spectral radius of 0.9, a leak rate of 1.0, and a ridge regression parameter of 1e-6. It was able to identify failures in the 4 operating state classes with a recall of about 60%, which was not as effective as expected. It still outperformed the logistic regression model in this metric, which could not identify the failure states at all.
 
 ## Data Dictionaries (Original Data)
 
@@ -73,7 +73,7 @@ I trained an echo state network to take in the time series data and predict the 
 
 ## Streamlit App
 
-My app contains visualizations of the time series data and corrlation matrices for the robot joint features. You can view it here: [Robostats](https://robotstats.streamlit.app/). 
+My app contains visualizations of the time series data and correlation matrices for the robot joint features. You can view it here: [Robostats](https://robotstats.streamlit.app/). 
 
 ### Installation
 
@@ -101,3 +101,5 @@ My app contains visualizations of the time series data and corrlation matrices f
    cd ~/cmse_fds
    streamlit run project/app.py
    ```
+
+
