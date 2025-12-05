@@ -5,18 +5,25 @@ from animation import *
 
 # Main
 df_cobots, df_cobots_original, df_cycle_issue, df_gaps = load_cobotops_data()
-df_aursad = load_aursad_data()
+# df_aursad, df_pred_q, df_pred_current, df_pred_all_bad, df_pred_all_good, df_pred_temp = load_aursad_data()
+df_aursad, df_pred_q = load_aursad_data()
 df_rad = load_rad_data()
 
 st.set_page_config(page_title="Robostats", layout="wide")
 
 # Sidebar page selector
-page_lst = ["Intro", "Data Processing", "EDA", 'Inverse Kinematics', 'Animation', 'LSTM', 'Error Prediction']
+page_lst = ["Intro", "Data Processing", "EDA", 'Inverse Kinematics', 'Animation', 'Reconstruction', 'Error Prediction']
+
 page = st.sidebar.radio("Select Page", page_lst)
 page_idx = page_lst.index(page)
 
-df_name = st.sidebar.radio("Select Dataset", ["CobotOps", "AURSAD", 'RAD'])
+pages_with_dataset = ["EDA", "Animation", "Error Prediction"]
+is_data_set_selectable = page in pages_with_dataset
 
+if is_data_set_selectable:
+   df_name = st.sidebar.radio("Select Dataset", ["CobotOps", "AURSAD", 'RAD'])
+else:
+   df_name = 'CobotOps'
 
 if df_name == "CobotOps":
    df = df_cobots
@@ -24,7 +31,6 @@ if df_name == "CobotOps":
    color_lst = ['grip_lost','Robot_ProtectiveStop', 'Temperature', 'Speed', 'Current']
    feature_lst = ['Temperature', 'Speed', 'Current']
    unit_lst = ["A", "m/s", "Degrees C"]
-   st.session_state.frame_index  = 0
 
 elif df_name == "AURSAD":
    df = df_aursad 
@@ -37,19 +43,23 @@ elif df_name == "AURSAD":
    color_lst = ["Damaged screw", "Extra assembly component", "Missing screw", 'time']
    feature_lst = ['Temperature', 'Speed', 'Current', 'q', 'target_q_', 'target_qd_']
    unit_lst = ["A", "m/s", "Degrees C", "rad", 'rad', "rad/s"]
-   st.session_state.frame_index  = 0
-
 else:
    df = df_rad
    hover_data = []
    color_lst = ['time', 'x', 'y', 'z']
    feature_lst = ['x', 'y', 'z']
    unit_lst = ['m', 'm', 'm']
-   st.session_state.frame_index  = 0
 
+# df transition issue with mismatched frames
+if 'df_name_last' not in st.session_state:
+   st.session_state.df_name_last = None
 
+if df_name != st.session_state.df_name_last:
+   st.session_state.frame_index = 0
 
 if page_idx == 0:
+   is_data_set_selectable = False
+
    st.title("Robot Performance Analysis and Failure Prediction")
    st.header("By Ben Toaz", divider="gray")
    st.header("Introduction")
@@ -59,7 +69,7 @@ if page_idx == 0:
       st.markdown(intro_text(), unsafe_allow_html=True)
 
    with col3:
-      st.image("project/media/ur3.png", width='stretch')
+      st.image("project/media/ur3.png", use_container_width=False)
 
    st.header("Example UR3 Operation")
 
@@ -69,42 +79,44 @@ if page_idx == 0:
    st.video(video_bytes)
 
 elif page_idx == 1:
+   is_data_set_selectable = False
+
    st.title("Data Processing")
    st.markdown(data_collection_text(), unsafe_allow_html=True)
 
-   st.header(f"{df_name} Raw Data Samples")
+   # st.header(f"{df_name} Raw Data Samples")
 
-   st.dataframe(df.head(10), width='stretch')
+   # st.dataframe(df.head(10), use_container_width=False)
 
    # Generated with Claude Sonnet 4.5 10-19-25
-   st.header(f"{df_name} Dataset Overview")
-   # Summary metrics
-   col1, col2, col3, col4 = st.columns(4)
-   col1.metric("Total Rows", f"{len(df):,}")
-   col2.metric("Total Columns", len(df.columns))
-   col3.metric("Memory Usage", f"{df.memory_usage(deep=True).sum() / 1024**2:.2f} MB")
-   col4.metric("Missing Values", f"{df.isnull().sum().sum():,}")
-   # Detailed info table
-   st.write("**Column Details:**")
-   info_df = pd.DataFrame({
-      'Column': df.columns,
-      'Type': df.dtypes.astype(str),
-      'Non-Null': df.count().values,
-      'Null': df.isnull().sum().values,
-      'Null %': (df.isnull().sum() / len(df_cobots_original) * 100).round(2).astype(str) + '%'
-   })
-   st.dataframe(
-      info_df,
-      width='stretch',
-      hide_index=True,
-      column_config={
-         "Column": st.column_config.TextColumn("Column Name", width="medium"),
-         "Type": st.column_config.TextColumn("Data Type", width="small"),
-         "Non-Null": st.column_config.NumberColumn("Non-Null Count", format="%d"),
-         "Null": st.column_config.NumberColumn("Null Count", format="%d"),
-         "Null %": st.column_config.TextColumn("Missing %", width="small")
-      }
-   )
+   # st.header(f"{df_name} Dataset Overview")
+   # # Summary metrics
+   # col1, col2, col3, col4 = st.columns(4)
+   # col1.metric("Total Rows", f"{len(df):,}")
+   # col2.metric("Total Columns", len(df.columns))
+   # col3.metric("Memory Usage", f"{df.memory_usage(deep=True).sum() / 1024**2:.2f} MB")
+   # col4.metric("Missing Values", f"{df.isnull().sum().sum():,}")
+   # # Detailed info table
+   # st.write("**Column Details:**")
+   # info_df = pd.DataFrame({
+   #    'Column': df.columns,
+   #    'Type': df.dtypes.astype(str),
+   #    'Non-Null': df.count().values,
+   #    'Null': df.isnull().sum().values,
+   #    'Null %': (df.isnull().sum() / len(df_cobots_original) * 100).round(2).astype(str) + '%'
+   # })
+   # st.dataframe(
+   #    info_df,
+   #    use_container_width=False,
+   #    hide_index=True,
+   #    column_config={
+   #       "Column": st.column_config.TextColumn("Column Name", width="medium"),
+   #       "Type": st.column_config.TextColumn("Data Type", width="small"),
+   #       "Non-Null": st.column_config.NumberColumn("Non-Null Count", format="%d"),
+   #       "Null": st.column_config.NumberColumn("Null Count", format="%d"),
+   #       "Null %": st.column_config.TextColumn("Missing %", width="small")
+   #    }
+   # )
 
    st.header("Time Data Encoding")
    st.markdown(cycle_time_text(), unsafe_allow_html=True)
@@ -116,7 +128,7 @@ elif page_idx == 1:
         opacity=0.7,
         hover_data=['cycle', 'time']
     )
-   st.plotly_chart(fig, width='stretch')
+   st.plotly_chart(fig, use_container_width=False)
    st.markdown(cycle_time_text2(), unsafe_allow_html=True)
    fig = px.scatter(
         df_cobots,
@@ -126,7 +138,7 @@ elif page_idx == 1:
         opacity=0.7,
         hover_data=['cycle', 'time']
     )
-   st.plotly_chart(fig, width='stretch', key="cycle_time_fixed")
+   st.plotly_chart(fig, use_container_width=False, key="cycle_time_fixed")
 
    st.header("Missingness")
    fig = missingness_heatmap(df_cobots_original)
@@ -144,7 +156,7 @@ elif page_idx == 1:
    fig = interpolation_example(df_cobots, df_gaps, option)
    st.plotly_chart(
     fig,
-    width='stretch',
+    use_container_width=False,
     config={
         "displayModeBar": True,     # show toolbar
         "scrollZoom": True,         # enable zoom with scroll
@@ -153,6 +165,9 @@ elif page_idx == 1:
     })
 
 elif page_idx == 2:
+   is_data_set_selectable = True
+
+
    st.title("Exploratory Data Analysis (EDA)")
    st.markdown(eda_text(), unsafe_allow_html=True)
 
@@ -192,13 +207,13 @@ elif page_idx == 2:
                              color_continuous_scale='Viridis')
       fig.update_traces(marker=dict(size=5))
       fig.update_layout(height=700)
-      st.plotly_chart(fig, width='stretch')
+      st.plotly_chart(fig, use_container_width=False)
 
    if option == "Histogram":
       st.header("Feature Distributions")
       fig = histogram_plots(df, df_name)
 
-      st.plotly_chart(fig, width='stretch')
+      st.plotly_chart(fig, use_container_width=False)
 
    if option == "Time Series":
       st.header("Time Series Data")
@@ -218,7 +233,7 @@ elif page_idx == 2:
       print(fig_lst)
 
       for fig in fig_lst:
-         st.plotly_chart(fig, width='stretch')
+         st.plotly_chart(fig, use_container_width=False)
 
    if option == "Correlation Heatmaps":
 
@@ -227,15 +242,17 @@ elif page_idx == 2:
 
          is_cobotops = "CobotOps" == df_name
          fig = joint_correlation_heatmaps(df, df_name)
-         st.plotly_chart(fig, width='stretch')
+         st.plotly_chart(fig, use_container_width=False)
 
       st.header("Cross-Feature Correlations")
 
       fig = feature_correlation_heatmaps(df, df_name, feature_lst)
  
-      st.plotly_chart(fig, width='stretch')
+      st.plotly_chart(fig, use_container_width=False)
 
 elif page_idx == 3:
+   is_data_set_selectable = False
+
    st.title("Inverse Kinematic Feature Engineering")
    st.header("Intro to Robot Movement")
    st.markdown(kinematic_text(), unsafe_allow_html=True)
@@ -244,9 +261,10 @@ elif page_idx == 3:
 
    st.markdown(inverse_kinematic_text(), unsafe_allow_html=True)
    fig = time_series_inv_kin(df_rad)
-   st.plotly_chart(fig, width='stretch')
+   st.plotly_chart(fig, use_container_width=False)
 
 elif page_idx == 4:
+   is_data_set_selectable = True
 
    # --- Page setup ---
    st.set_page_config(layout="wide")
@@ -270,23 +288,26 @@ elif page_idx == 4:
    left_col, right_col = st.columns([1, 3])
    with left_col:
       st.markdown("### Controls")
-      st.markdown("---")
-      c1, c2, c3 = st.columns(3)
+      # st.markdown("---")
+      # c1, c2, c3 = st.columns(3)
+      c1, c3 = st.columns(2)
+
       with c1:
          if st.button("⏮ Reset"):
                st.session_state.frame_index = 0
                st.session_state.playing = False
                st.rerun()
-      with c2:
-         if st.button("▶ Play" if not st.session_state.playing else "⏸ Pause"):
-               st.session_state.playing = not st.session_state.playing
-               st.rerun()
+      # with c2:
+      #    if st.button("▶ Play" if not st.session_state.playing else "⏸ Pause"):
+      #          st.session_state.playing = not st.session_state.playing
+      #          st.rerun()
       with c3:
          if st.button("Step ⏭"):
                st.session_state.frame_index = (st.session_state.frame_index + 1) % len(animation_sequence)
                st.rerun()
 
-      speed = st.slider("Speed (fps)", 1, 30, 30, key="speed")
+      # speed = st.slider("Speed (fps)", 1, 30, 30, key="speed")
+      speed = 0
       frame = st.slider("Frame", 0, len(animation_sequence)-1, st.session_state.frame_index, key="frame_slider")
       if frame != st.session_state.frame_index:
          st.session_state.frame_index = frame
@@ -380,9 +401,194 @@ elif page_idx == 4:
       st.session_state.frame_index = (st.session_state.frame_index + 1) % len(animation_sequence)
       st.rerun()
 
+   # ==========================================================
+   # AUTO-PLAY LOOP (works both locally and on Streamlit Cloud)
+   # ==========================================================
+   # if st.session_state.playing:
+   #    count = st_autorefresh(interval=int(1000 / speed), key="frame_autorefresh")
+   #    st.session_state.frame_index = (st.session_state.frame_index + 1) % len(animation_sequence)
+
 elif page_idx == 5:
-   pass
+   is_data_set_selectable = False
+
+
+   st.title("Long Short-Term Memory Feature Reconstruction")
+   st.header("Recurent Neural Networks")
+   st.markdown(lstm_text(), unsafe_allow_html=True)
+
+   st.image('project/media/lstm.png')
+
+   st.header("Time Series Regression")
+
+   st.markdown(q_training_text(), unsafe_allow_html=True)
+
+   fig = time_series_prediction_plot(df_pred_q, [f'q{i}' for i in range(6)], 'rad', 'Actual vs. Predicted Joint Angles')
+   st.plotly_chart(fig, use_container_width=False)
+
+   st.markdown(sequence_training_text(), unsafe_allow_html=True)
+
+   # graph_features = ['Speed', 'Current', "Temperature"]
+   # units = ['rad/s', 'A', 'C']
+   # feature = st.radio("Select Failed Prediction Type", graph_features)
+   # unit = units[graph_features.index(feature)]
+
+   # fig = time_series_prediction_plot(df_pred_all_bad, [f'{feature}{i}' for i in range(6)], unit, 'Actual vs. Failed Prediction')
+   # st.plotly_chart(fig, use_container_width=False)
+
+   # feature = st.radio("Select Successful Prediction Type", graph_features)
+   # unit = units[graph_features.index(feature)]
+
+   # fig = time_series_prediction_plot(df_pred_all_good, [f'{feature}{i}' for i in range(6)], unit, 'Actual vs. Successful Prediction')
+   # st.plotly_chart(fig, use_container_width=False)
+
+   # fig = time_series_prediction_plot(df_pred_all_bad, [f'{'Temperature'}{i}' for i in range(6)], 'A', 'Actual vs. Failed Prediction')
+   # st.plotly_chart(fig, use_container_width=False)
+
+   # fig = time_series_prediction_plot(df_pred_temp, [f'{'Temperature'}{i}' for i in range(6)], 'A', 'Actual vs. Successful Prediction')
+   # st.plotly_chart(fig, use_container_width=False)
+
+
+   st.header('Sample Training Curves')
+
+   left_col, mid_col, right_col = st.columns([1, 1, 1])
+   with left_col:
+      st.subheader('Joint Angle Prediction (CobotOps)', width='content')
+      st.image("project/media/lstm_q_pred1.png", use_container_width=False)
+   with mid_col:
+      st.subheader('All Features at Once (RAD)')
+      st.image("project/media/bad_lstm.png", use_container_width=False)
+   with right_col:
+      st.subheader('Joint Temperature Prediciton (RAD)')
+      st.image("project/media/lstm_temp_pred1.png", use_container_width=False)
+
 
 elif page_idx == 6:
+   is_data_set_selectable = True
 
-   pass
+   st.title("Error Prediction")
+   st.header("Echo State Networks")
+   st.markdown(esn_text(), unsafe_allow_html=True)
+
+   st.image('project/media/esn.png')
+
+   st.header("State Classification from Time Series Data")
+   st.markdown(esn_training_text(), unsafe_allow_html=True)
+
+   # Create two columns
+   col1, col2 = st.columns(2)
+
+   with col1:
+      st.markdown(esn_training_stats())
+
+   with col2:
+      st.markdown(log_reg_training_stats())
+
+   st.markdown(baseline_training_text(), unsafe_allow_html=True)
+
+
+   model = load_esn_model('project/models/esn_fully_balanced.pt')
+
+   st.subheader("Input Features")
+   cols = st.columns(4)
+   inputs = []
+
+   if 'selected_index' not in st.session_state:
+      st.session_state.selected_index = len(df)//2
+
+   feature_type = st.selectbox(
+      "Select feature to view (other features loaded to model automatically):",
+      (df.columns),
+   )
+
+   # Select an index (row) from the DataFrame
+   st.session_state.selected_index = st.slider(
+      "Select time index for prediction",
+      min_value=0,
+      max_value=len(df) - 1,
+      value=len(df) // 2,
+      step=1
+   )
+
+   color = px.colors.qualitative.Dark24[0]
+
+   fig = go.Figure()
+   fig.add_trace(go.Scatter(
+      x=df["time"],
+      y=df[feature_type],
+      mode="lines",
+      name=feature_type,
+      line=dict(color=color, width=2)
+   ))
+
+   # Add a vertical line at the selected index
+   fig.add_vline(
+      x=st.session_state.selected_index,
+      line_dash="dash",
+      line_color="red",
+      annotation_text=f"Selected: {st.session_state.selected_index}",
+      annotation_position="top"
+   )
+
+   class_names = ['Damaged screw', 'Extra assembly component', 'Missing screw']
+   class_colors = ['orange', 'purple', 'green', 'brown']
+
+   for class_name, class_color in zip(class_names, class_colors):
+      if class_name in df.columns:
+         # Find rows where this class has value 1
+         class_indices = df[df[class_name] == 1].index
+         if len(class_indices) > 0:
+               fig.add_trace(go.Scatter(
+                  x=df.loc[class_indices, "time"],
+                  y=df.loc[class_indices, feature_type],
+                  mode="markers",
+                  name=class_name,
+                  marker=dict(color=class_color, size=8)
+               ))
+
+               
+
+   fig.update_layout(
+      xaxis_title="Time (s)",
+      yaxis_title=feature_type,
+      legend=dict(
+         orientation="h", 
+         yanchor="bottom", y=1.05, 
+         xanchor="right", x=1
+      ),
+      height=500,
+      # template="plotly_white"
+   )
+
+   st.plotly_chart(fig, use_container_width=False)
+
+
+   input_lst = ['q0','q1','q2','q3','q4','q5', 'x', 'y', 'z',
+               'Current0','Current1','Current2','Current3','Current4','Current5',
+               'Speed0','Speed1','Speed2','Speed3','Speed4','Speed5',
+               'Temperature0','Temperature1','Temperature2','Temperature3','Temperature4','Temperature5']
+   output_lst = ['Normal operation', 'Screw Loosening', 'Damaged screw', 'Extra assembly component', 'Missing screw']
+
+
+   # Extract the feature vector at that index
+   df_selected = df.iloc[:st.session_state.selected_index]
+   inputs = data_prep(df_selected, input_lst, output_lst, seq_len=50, target_ratio=1.0)
+
+   # Run prediction
+   with torch.no_grad():
+      probs = np.array(model.predict(inputs))
+      pred_class = np.argmax(probs[0]).item()
+   st.subheader("Echo State Network Error Prediction (AURSAD Error Classes)")
+   class_names = ['Normal operation', 'Damaged screw', 'Extra assembly component', 'Missing screw']
+
+   # Create horizontal columns for the probabilities
+   cols = st.columns(len(class_names))
+   for i, class_name in enumerate(class_names):
+      with cols[i]:
+         st.metric(label=class_name, value=f"{probs[0][i]*100:.2f}%")
+
+   st.success(f"Predicted Class: **{class_names[pred_class]}**")
+
+
+
+# For switching datasets
+st.session_state.df_name_last = df_name

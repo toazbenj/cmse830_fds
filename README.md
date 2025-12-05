@@ -8,7 +8,7 @@
 
 [RAD](https://github.com/ubc-systopia/dsn-2022-rad-artifact/tree/main)
 
-## Progress Summary - Midterm
+## Progress Summary
 
 ### Why UR3?
 
