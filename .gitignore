@@ -7,6 +7,7 @@ project/preprocessing/predicted_joint_angles.feather
 project/preprocessing/pred_speed.feather
 project/preprocessing/predicted_joint_angles_and_speeds.feather
 project/preprocessing/predicted_joint_current_temp_speed.feather
+project/preprocessing/pred_all_bad.feather
 hw
 ICA
 .git ignore
