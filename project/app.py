@@ -276,10 +276,29 @@ elif page_idx == 4:
 
       # speed = st.slider("Speed (fps)", 1, 30, 30, key="speed")
       speed = 0
-      frame = st.slider("Frame", 0, len(animation_sequence)-1, st.session_state.frame_index, key="frame_slider")
+
+      # frame = st.slider("Frame", 0, len(animation_sequence)-1, st.session_state.frame_index, key="frame_slider")
+      # if frame != st.session_state.frame_index:
+      #    st.session_state.frame_index = frame
+      #    st.session_state.playing = False
+
+      # Sync the slider manually with session state
+      if "frame_slider" in st.session_state and st.session_state.frame_slider != st.session_state.frame_index:
+         st.session_state.frame_slider = st.session_state.frame_index
+
+      frame = st.slider(
+         "Frame",
+         0,
+         len(animation_sequence)-1,
+         value=st.session_state.frame_slider if "frame_slider" in st.session_state else st.session_state.frame_index,
+         key="frame_slider"
+      )
+
       if frame != st.session_state.frame_index:
          st.session_state.frame_index = frame
          st.session_state.playing = False
+
+      
 
       view_option = st.selectbox("Camera View", ["Isometric", "Front", "Side"], index=0)
 
