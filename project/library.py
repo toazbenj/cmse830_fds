@@ -635,6 +635,9 @@ def feature_correlation_heatmaps(df, df_name, feature_type_lst = ["Current", "Sp
             text_values[text_values == 'nan'] = ''
             
             col = pair_idx + 1  # 1, 2, or 3
+
+            # row = pair_idx // n_cols + 1
+            # col = pair_idx % n_cols + 1
             
             fig.add_trace(
                 go.Heatmap(
@@ -741,6 +744,8 @@ def histogram_plots_rad(df, feature_type_lst=["x", "y", "z"], unit=["pos", "pos"
     return fig
 
 def feature_correlation_heatmap_rad(df, feature_type_lst = ['time', "x", "y", "z"]):
+    df = df[feature_type_lst]
+    
     # Calculate correlation
     df_corr = df.corr().round(2)
 
@@ -771,7 +776,7 @@ def feature_correlation_heatmap_rad(df, feature_type_lst = ['time', "x", "y", "z
     fig.update_layout(
         height=400,
         width=425,
-        title_text="Correlation Analysis",
+        # title_text="Correlation Analysis",
         showlegend=False
     )
 
@@ -817,6 +822,8 @@ def time_series_plots_rad(df, error=None):
 
     return fig
 
+# ====================================================================================================================
+# Feature Engineering and Modeling
 
 def time_series_inv_kin(df):
     feature_type_lst = ["x", "y", "z"]
@@ -928,13 +935,6 @@ def time_series_prediction_plot(df, feature_type_lst, unit, title):
     for i, feature_type in enumerate(feature_type_lst, start=1):
         fig.update_yaxes(title_text=f"{feature_type.upper()} ({unit})", row=i, col=1)
 
-    # Layout
-    # fig.update_layout(
-    #     height=1000,
-    #     title_text=title,
-    #     legend=dict(orientation="h", yanchor="bottom", y=1.05, xanchor="center", x=0.5)
-    # )
-
     fig.update_layout(
         height=1000,
         title=dict(
@@ -957,6 +957,7 @@ def time_series_prediction_plot(df, feature_type_lst, unit, title):
 
     return fig
 
+# Code GPT 11-30-25
 class SimpleESN(nn.Module):
     def __init__(self, input_dim, hidden_dim, output_dim,
                  spectral_radius=0.9, leaking_rate=1.0, ridge_param=1e-6, device="cpu"):
@@ -1057,7 +1058,7 @@ def data_prep(df, input_lst, output_lst, seq_len=50, target_ratio=1.0):
     X_scaled = input_scaler.fit_transform(df[input_lst])
 
     # y = df[output_lst].values
-    # y = np.argmax(y, axis=1)  # convert one-hot → integer class
+    # y = np.argmax(y, axis=1)
 
     num_samples = len(X_scaled) // seq_len
     input_size = len(input_lst)

@@ -32,6 +32,7 @@ if df_name == "CobotOps":
    color_lst = ['grip_lost','Robot_ProtectiveStop', 'Temperature', 'Speed', 'Current']
    feature_lst = ['Temperature', 'Speed', 'Current']
    unit_lst = ["A", "m/s", "Degrees C"]
+   correlation_lst = feature_lst
 
 elif df_name == "AURSAD":
    df = df_aursad 
@@ -44,12 +45,15 @@ elif df_name == "AURSAD":
    color_lst = ["Damaged screw", "Extra assembly component", "Missing screw", 'time']
    feature_lst = ['Temperature', 'Speed', 'Current', 'q', 'target_q_', 'target_qd_']
    unit_lst = ["A", "m/s", "Degrees C", "rad", 'rad', "rad/s"]
+   correlation_lst =  ['Temperature', 'Speed', 'Current']
 else:
    df = df_rad
    hover_data = []
    color_lst = ['time', 'x', 'y', 'z']
    feature_lst = ['x', 'y', 'z']
    unit_lst = ['m', 'm', 'm']
+   correlation_lst = feature_lst
+
 
 # df transition issue with mismatched frames
 if 'df_name_last' not in st.session_state:
@@ -207,12 +211,12 @@ elif page_idx == 2:
          st.header("Correlations by Robot Joint")
 
          is_cobotops = "CobotOps" == df_name
-         fig = joint_correlation_heatmaps(df, df_name)
+         fig = joint_correlation_heatmaps(df, is_cobotops)
          st.plotly_chart(fig, use_container_width=False)
 
       st.header("Cross-Feature Correlations")
 
-      fig = feature_correlation_heatmaps(df, df_name, feature_lst)
+      fig = feature_correlation_heatmaps(df, df_name, correlation_lst)
  
       st.plotly_chart(fig, use_container_width=False)
 
